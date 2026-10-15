@@ -82,22 +82,22 @@ async function boot(){
 function showMethods(){
   for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-methods");
   const m = METHODS;
-  let h = `<h2>${esc(m.title)}</h2><p>${esc(m.intro)}</p><div class="card"><strong>Where the data comes from.</strong> ${esc(m.source_note)}</div>`;
+  let h = `<h2>${fmt(m.title)}</h2><p>${fmt(m.intro)}</p><div class="card"><strong>Where the data comes from.</strong> ${fmt(m.source_note)}</div>`;
   for(const t of m.methods){
-    h += `<h3>${esc(t.name)}</h3>`;
-    if(t.why) h += `<div class="card"><strong>Why this card exists.</strong> ${esc(t.why)}</div>`;
-    if(t.steps){ h += `<p><strong>How it was generated:</strong></p><ul>` + t.steps.map(s=>`<li>${esc(s)}</li>`).join("") + `</ul>`; }
+    h += `<h3>${fmt(t.name)}</h3>`;
+    if(t.why) h += `<div class="card"><strong>Why this card exists.</strong> ${fmt(t.why)}</div>`;
+    if(t.steps){ h += `<p><strong>How it was generated:</strong></p><ul>` + t.steps.map(s=>`<li>${fmt(s)}</li>`).join("") + `</ul>`; }
     if(t.standard_rules){
       h += `<p><strong>The standard rules we expect each type of actor to follow</strong> - the justification and the measured values. Specific per-actor values are on each actor's Test 2 tab.</p>`;
       for(const g of t.standard_rules){
-        h += `<div class="card"><span class="tag type">${esc(g.actor_type.split("(")[1] ? g.actor_type.split("(")[1].replace(")","").trim() : "")}</span><strong>${esc(g.actor_type)}</strong><table><tr><th>Rule</th><th>Why this rule</th><th>Measured values</th></tr>`;
-        for(const r of g.rules){ h += `<tr><td>${esc(r.rule)}</td><td>${esc(r.why)}</td><td>${esc(r.values)}</td></tr>`; }
+        h += `<div class="card"><span class="tag type">${fmt(g.actor_type.split("(")[1] ? g.actor_type.split("(")[1].replace(")","").trim() : "")}</span><strong>${fmt(g.actor_type)}</strong><table><tr><th>Rule</th><th>Why this rule</th><th>Measured values</th></tr>`;
+        for(const r of g.rules){ h += `<tr><td>${fmt(r.rule)}</td><td>${fmt(r.why)}</td><td>${fmt(r.values)}</td></tr>`; }
         h += `</table></div>`;
       }
-      h += `<p class="small">${esc(t.per_actor_note)}</p>`;
+      h += `<p class="small">${fmt(t.per_actor_note)}</p>`;
     }
-    if(t.generation) h += `<p class="small"><strong>What was mechanical vs model-made:</strong> ${esc(t.generation)}</p>`;
-    if(t.never) h += `<div class="hidden-note">${esc(t.never)}</div>`;
+    if(t.generation) h += `<p class="small"><strong>What was mechanical vs model-made:</strong> ${fmt(t.generation)}</p>`;
+    if(t.never) h += `<div class="hidden-note">${fmt(t.never)}</div>`;
   }
   $("main").innerHTML = h;
 }
@@ -106,51 +106,52 @@ function showMethods(){
 function showExperiment(){
   for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-exp");
   const e = EXPERIMENT;
-  let h = `<h2>${esc(e.title)}</h2><p>${esc(e.intro)}</p>`;
-  h += `<h3>Where this comes from: the project's earlier results</h3><ul>` + e.previous.map(p=>`<li>${esc(p)}</li>`).join("") + `</ul>`;
+  let h = `<h2>${fmt(e.title)}</h2><p>${fmt(e.intro)}</p>`;
+  h += `<h3>Where this comes from: the project's earlier results</h3><ul>` + e.previous.map(p=>`<li>${fmt(p)}</li>`).join("") + `</ul>`;
   h += `<h3>The comparison</h3>`;
-  for(const d of e.design){ h += `<div class="card"><strong>${esc(d.part)}.</strong> ${esc(d.text)}</div>`; }
-  h += `<h3>What the pipeline looks like</h3><div class="card">` + e.flow.map(f=>`<div><span class="chip core">${f.step}</span> ${esc(f.text)}</div>`).join("") + `</div>`;
-  h += `<h3>Pre-registered predictions</h3><ul>` + e.predictions.map(p=>`<li>${esc(p)}</li>`).join("") + `</ul>`;
+  for(const d of e.design){ h += `<div class="card"><strong>${fmt(d.part)}.</strong> ${fmt(d.text)}</div>`; }
+  h += `<h3>What the pipeline looks like</h3><div class="card">` + e.flow.map(f=>`<div><span class="chip core">${f.step}</span> ${fmt(f.text)}</div>`).join("") + `</div>`;
+  h += `<h3>Pre-registered predictions</h3><ul>` + e.predictions.map(p=>`<li>${fmt(p)}</li>`).join("") + `</ul>`;
   h += `<h3>The code to run it</h3>
-    <div class="card"><strong>Reused as-is.</strong> ${esc(e.code.reuse)}</div>
-    <div class="card"><strong>New code needed.</strong> ${esc(e.code.new_code)}</div>
-    <div class="card"><strong>Run size.</strong> ${esc(e.code.run_size)}</div>
-    <p class="small">${esc(e.code.full_plan)}</p>`;
+    <div class="card"><strong>Reused as-is.</strong> ${fmt(e.code.reuse)}</div>
+    <div class="card"><strong>New code needed.</strong> ${fmt(e.code.new_code)}</div>
+    <div class="card"><strong>Run size.</strong> ${fmt(e.code.run_size)}</div>
+    <p class="small">${fmt(e.code.full_plan)}</p>`;
   $("main").innerHTML = h;
 }
 
 function esc(s){ return (s??"").toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function fmt(s){ return esc(s).replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>'); }
 
 /* ---------- KEY ---------- */
 function showKey(){
   for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-key");
   tab = "t1";
   const k = KEY;
-  let h = `<h2>${esc(k.title)}</h2><p>${esc(k.intro)}</p>`;
+  let h = `<h2>${fmt(k.title)}</h2><p>${fmt(k.intro)}</p>`;
 
   h += `<h3>The three tests</h3>`;
   for(const t of k.tests){
-    h += `<div class="card"><strong>${esc(t.name)}</strong> — ${esc(t.one_line)}
-      <p class="meta">${esc(t.built_from)}</p>
-      <p>${esc(t.bet)}</p>
-      <p class="small"><strong>Exam:</strong> ${esc(t.exam)}</p></div>`;
+    h += `<div class="card"><strong>${fmt(t.name)}</strong> — ${fmt(t.one_line)}
+      <p class="meta">${fmt(t.built_from)}</p>
+      <p>${fmt(t.bet)}</p>
+      <p class="small"><strong>Exam:</strong> ${fmt(t.exam)}</p></div>`;
   }
 
   h += `<h3>What each persona is made of</h3>
   <table><tr><th>Part</th><th>What it is</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>In the original schema?</th></tr>`;
   for(const row of k.structure){
-    h += `<tr><td><strong>${esc(row.part)}</strong></td><td>${esc(row.what)}</td><td>${row.t1?"✓":"—"}</td><td>${row.t2?"✓":"—"}</td><td>${row.t3?"✓":"—"}</td><td>${esc(row.origin)}</td></tr>`;
+    h += `<tr><td><strong>${fmt(row.part)}</strong></td><td>${fmt(row.what)}</td><td>${row.t1?"✓":"—"}</td><td>${row.t2?"✓":"—"}</td><td>${row.t3?"✓":"—"}</td><td>${fmt(row.origin)}</td></tr>`;
   }
   h += `</table>`;
 
   h += `<h3>What we added or changed</h3><table><tr><th>Change</th><th>Why</th></tr>`;
-  for(const c of k.changes){ h += `<tr><td><strong>${esc(c.what)}</strong></td><td>${esc(c.why)}</td></tr>`; }
+  for(const c of k.changes){ h += `<tr><td><strong>${fmt(c.what)}</strong></td><td>${fmt(c.why)}</td></tr>`; }
   h += `</table>`;
 
   h += `<h3>How the exam works</h3><ul>`;
-  for(const s of k.exam){ h += `<li>${esc(s)}</li>`; }
-  h += `</ul><p class="small">${esc(k.footer)}</p>`;
+  for(const s of k.exam){ h += `<li>${fmt(s)}</li>`; }
+  h += `</ul><p class="small">${fmt(k.footer)}</p>`;
   $("main").innerHTML = h;
 }
 

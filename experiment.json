@@ -1,35 +1,65 @@
 {
-  "title": "The experiment: comparing the three persona methods",
-  "intro": "The point of building three cards is to race them. Each method gets the same questions about the same actors, and we score each against what the actor actually did. This page describes the comparison, how it connects to the project's earlier results, and exactly what code would run it.",
-  "previous": [
-    "This is the next step of the GPS-Bench line of work (paper: arXiv 2609.03553; code: linhlt-it-ee/castbench). That project established the discipline this experiment inherits:",
-    "One model reading an actor's whole record predicted policy impacts far better than six agents each seeing a slice (0.92 versus 0.73) - so all three cards here are single-model, no multi-agent chatter.",
-    "Fine-tuning on the grounded record beat every prompt-based mode on actor-level tasks (0.716 LoRA versus 0.604 prompted) - a fourth, weight-based arm is the natural extension once the three prompt arms are raced.",
-    "Contamination dominated early results (a clean-checkpoint model scored 0.577 where a contaminated one scored 0.885) - hence the frozen clocks, the pre-cutoff-only rule statistics, and a clean-cutoff model arm as control.",
-    "Per-actor admission gates already proved out in validation lanes: trade-data foundry agents called 6 of 6 real responses, lobbying-data lab agents 4 of 4, government agents 8 of 8 out-of-distribution, while regulators managed only 0.57 - the same gate logic decides which cards get to compete here."
-  ],
-  "design": [
-    {"part": "The question", "text": "Which persona method best predicts what a real actor did next: the raw record (Test 1), the distilled rules (Test 2), or the record plus expert readings (Test 3)? And does the answer depend on how much record an actor has?"},
-    {"part": "The arms", "text": "Three persona cards, plus two baselines that must be beaten for any card to count: predict nothing (the did-nothing base rate) and always pick the actor's most common verb. A fifth, optional arm re-runs the same questions under a different framing to check we are modeling the actor, not the story."},
-    {"part": "The questions", "text": "One per hidden action: 159 in total (CAC 99, Jensen Huang 11, MOFCOM 10, MIIT 9, Baidu 7, DeepSeek 7, SAMR 6, Huawei 5, NVIDIA 5). The agent is told the date and the situation, sees its card, and must answer with one verb from its own observed-action menu. It never sees the answer."},
-    {"part": "Scoring", "text": "Mechanical. Exact verb match (strict), direction match (lenient), macro-F1 across verbs. Reported per actor, per actor type (government, company, individual), and per evidence density (actors with fewer than 25 pre-cutoff rows versus more). Because CAC holds 99 of the 159 questions, every number is also reported with CAC excluded. Paired comparisons between arms use McNemar's test and bootstrap confidence intervals across actors."},
-    {"part": "Controls", "text": "Temperature 0, fixed decoding, identical question wording for every arm, question wording held fixed after piloting (the earlier project measured wording alone moving accuracy 0.698 to 0.804). Nothing any run produces is ever written back into a card or the record."}
-  ],
-  "predictions": [
-    "Pre-registered before running: fine-tuned weights (future arm) at or above the plain record; plain record above expert readings; expert readings above rule cards for data-rich actors; rule cards above the plain record for sparse actors. If the last holds, the practical deliverable is a rule for which card to build for which actor: match the card type to the evidence volume.",
-    "What each outcome means: the record wins - collect more evidence, summarize nothing. Rules win - estimation beats description. Lenses win - trained inference adds signal. Baselines win everywhere - none of these personas works yet, and the honest report says so."
-  ],
-  "code": {
-    "reuse": "The harness already exists in linhlt-it-ee/castbench (private; branch main for the persona stack, branch iclr2027 for the incident family): datasets/incident_rollout.py calls models through OpenRouter at temperature 0 with prompt caching; datasets/score_incident_forecast.py computes macro-F1, baselines, and paired bootstrap; datasets/m5_common.py carries the leakage guards and checkpointing.",
-    "new_code": "Three small renderers (one per card format, reading the JSONs on this site), a question builder (date + situation + verb menu from each actor's Test 1 file), a scoring adapter to the verb vocabulary, and a verb alias table. A few hundred lines total.",
-    "run_size": "159 questions x 4-5 arms x 4 models is roughly 2,500 to 3,200 model calls - a few dollars at current OpenRouter prices, one afternoon of wall-clock.",
-    "full_plan": "The complete runnable plan, with file names and step order, is in the repo docs and in persona-comparison-experiment-plan.md."
+ "title": "The experiment: comparing the three persona methods",
+ "intro": "The point of building three cards is to race them. Each method gets the same questions about the same actors, and we score each against what the actor actually did. This page describes the comparison, how it connects to the project's earlier results, and exactly what code would run it.",
+ "previous": [
+  "This is the next step of the GPS-Bench line of work (paper: [GPS-Bench, arXiv 2609.03553](https://arxiv.org/abs/2609.03553); code: linhlt-it-ee/castbench). That project established the discipline this experiment inherits:",
+  "One model reading an actor's whole record predicted policy impacts far better than six agents each seeing a slice (0.92 versus 0.73) - so all three cards here are single-model, no multi-agent chatter.",
+  "Fine-tuning on the grounded record beat every prompt-based mode on actor-level tasks (0.716 LoRA versus 0.604 prompted) - a fourth, weight-based arm is the natural extension once the three prompt arms are raced.",
+  "Contamination dominated early results (a clean-checkpoint model scored 0.577 where a contaminated one scored 0.885) - hence the frozen clocks, the pre-cutoff-only rule statistics, and a clean-cutoff model arm as control.",
+  "Per-actor admission gates already proved out in validation lanes: trade-data foundry agents called 6 of 6 real responses, lobbying-data lab agents 4 of 4, government agents 8 of 8 out-of-distribution, while regulators managed only 0.57 - the same gate logic decides which cards get to compete here."
+ ],
+ "design": [
+  {
+   "part": "The question",
+   "text": "Which persona method best predicts what a real actor did next: the raw record (Test 1), the distilled rules (Test 2), or the record plus expert readings (Test 3)? And does the answer depend on how much record an actor has?"
   },
-  "flow": [
-    {"step": 1, "text": "The actor's dated record, frozen at the cutoff."},
-    {"step": 2, "text": "Rendered three ways: plain record, rule card, record plus lens."},
-    {"step": 3, "text": "One question per hidden later action: the date and the situation."},
-    {"step": 4, "text": "Each arm answers with one verb from the actor's own menu."},
-    {"step": 5, "text": "Scored against the real action: exact verb, direction, macro-F1 - beside the two baselines."}
-  ]
+  {
+   "part": "The arms",
+   "text": "Three persona cards, plus two baselines that must be beaten for any card to count: predict nothing (the did-nothing base rate) and always pick the actor's most common verb. A fifth, optional arm re-runs the same questions under a different framing to check we are modeling the actor, not the story."
+  },
+  {
+   "part": "The questions",
+   "text": "One per hidden action: 159 in total (CAC 99, Jensen Huang 11, MOFCOM 10, MIIT 9, Baidu 7, DeepSeek 7, SAMR 6, Huawei 5, NVIDIA 5). The agent is told the date and the situation, sees its card, and must answer with one verb from its own observed-action menu. It never sees the answer."
+  },
+  {
+   "part": "Scoring",
+   "text": "Mechanical. Exact verb match (strict), direction match (lenient), macro-F1 across verbs. Reported per actor, per actor type (government, company, individual), and per evidence density (actors with fewer than 25 pre-cutoff rows versus more). Because CAC holds 99 of the 159 questions, every number is also reported with CAC excluded. Paired comparisons between arms use McNemar's test and bootstrap confidence intervals across actors."
+  },
+  {
+   "part": "Controls",
+   "text": "Temperature 0, fixed decoding, identical question wording for every arm, question wording held fixed after piloting (the earlier project measured wording alone moving accuracy 0.698 to 0.804). Nothing any run produces is ever written back into a card or the record. The IncidentBench paper under review (submission 225) supplies the paired-bootstrap and McNemar machinery for arm-versus-arm comparison."
+  }
+ ],
+ "predictions": [
+  "Pre-registered before running: fine-tuned weights (future arm) at or above the plain record; plain record above expert readings; expert readings above rule cards for data-rich actors; rule cards above the plain record for sparse actors. If the last holds, the practical deliverable is a rule for which card to build for which actor: match the card type to the evidence volume.",
+  "What each outcome means: the record wins - collect more evidence, summarize nothing. Rules win - estimation beats description. Lenses win - trained inference adds signal. Baselines win everywhere - none of these personas works yet, and the honest report says so."
+ ],
+ "code": {
+  "reuse": "The harness already exists in linhlt-it-ee/castbench (private; branch main for the persona stack, branch iclr2027 for the incident family): datasets/incident_rollout.py calls models through OpenRouter at temperature 0 with prompt caching; datasets/score_incident_forecast.py computes macro-F1, baselines, and paired bootstrap; datasets/m5_common.py carries the leakage guards and checkpointing.",
+  "new_code": "Three small renderers (one per card format, reading the JSONs on this site), a question builder (date + situation + verb menu from each actor's Test 1 file), a scoring adapter to the verb vocabulary, and a verb alias table. A few hundred lines total.",
+  "run_size": "159 questions x 4-5 arms x 4 models is roughly 2,500 to 3,200 model calls - a few dollars at current OpenRouter prices, one afternoon of wall-clock.",
+  "full_plan": "The complete runnable plan, with file names and step order, is in the repo docs and in persona-comparison-experiment-plan.md."
+ },
+ "flow": [
+  {
+   "step": 1,
+   "text": "The actor's dated record, frozen at the cutoff."
+  },
+  {
+   "step": 2,
+   "text": "Rendered three ways: plain record, rule card, record plus lens."
+  },
+  {
+   "step": 3,
+   "text": "One question per hidden later action: the date and the situation."
+  },
+  {
+   "step": 4,
+   "text": "Each arm answers with one verb from the actor's own menu."
+  },
+  {
+   "step": 5,
+   "text": "Scored against the real action: exact verb, direction, macro-F1 - beside the two baselines."
+  }
+ ]
 }

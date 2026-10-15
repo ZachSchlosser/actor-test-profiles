@@ -1,74 +1,118 @@
 {
-  "title": "How the cards were built",
-  "intro": "One record, three cards. This page shows exactly how each card was generated, why we built it that way, and - for rule cards - the standard rules we expect each kind of actor to follow, with the reasoning behind them. The per-actor values live on each actor's page; the method lives here.",
-  "source_note": "Everything starts from the records at actor-persona.pages.dev. That site holds, for each of the nine actors: dated rows (each with a date, a verb, a one-line description, a quote, and a source link), a cutoff date, and an analyst-written seven-step write-up (Purpose, Standing, Powers, Record, Reactions, Reach, Limits). We used the rows and the cutoffs. We did not use the analyst write-up in any prompt.",
-  "methods": [
+ "title": "How the cards were built",
+ "intro": "One record, three cards. This page shows exactly how each card was generated, why we built it that way, and - for rule cards - the standard rules we expect each kind of actor to follow, with the reasoning behind them. The per-actor values live on each actor's page; the method lives here.",
+ "source_note": "Everything starts from the records at actor-persona.pages.dev. That site holds, for each of the nine actors: dated rows (each with a date, a verb, a one-line description, a quote, and a source link), a cutoff date, and an analyst-written seven-step write-up (Purpose, Standing, Powers, Record, Reactions, Reach, Limits). We used the rows and the cutoffs. We did not use the analyst write-up in any prompt.",
+ "methods": [
+  {
+   "name": "Test 1 - The Plain Record: how it was built",
+   "why": "The two strongest results in the field got there with exactly this: a lawmaker agent that saw nothing but the member's party, committees, bills and past votes predicted votes at 92% ([Political Actor Agent, AAAI 2025](https://arxiv.org/abs/2412.07144)); interview agents that saw nothing but a person's own two-hour transcript matched 86% of that person's own consistency ([Park et al., Stanford, 2024](https://arxiv.org/abs/2411.10109)). So the plain record is both the simplest card and the one to beat.",
+   "steps": [
+    "Take every row the source site has for the actor, dated before that actor's cutoff. Nothing is rewritten, summarized, or re-worded.",
+    "Compute the actor's action menu from those rows: every verb the actor has used, split into core (used twice or more) and rare (used once). This is new - the source rules verbs out by power but never lists what the actor has actually done.",
+    "Build the prompt: one identity line (name and actor type), then the rows in date order with their sources. That is the whole prompt.",
+    "Deliberately exclude every analyst-written section of the source (purpose, standing, powers, gates, short answers) so the test measures the record, not our prose about it."
+   ],
+   "generation": "Fully mechanical. A script reads the source rows, splits at the cutoff, counts verbs, and writes the card. No model call, no judgment."
+  },
+  {
+   "name": "Test 2 - The Rule Card: how it was built",
+   "why": "The only simulation that ever beat standard economic forecasts worked this way - about seven measured behavior numbers per actor, estimated from decades of data, beating the next-best model in 33 of 38 countries ([Wiese et al., Oxford / Farmer group, 2024](https://arxiv.org/abs/2409.18760)). A rule card asks whether a few measured patterns generalize better than the raw facts they came from.",
+   "steps": [
+    "Pair every action row with the event it answered: a dated trigger within the previous 12 months that touches the actor (a rule change, a trade shift, an incident, another actor's move). A trigger must be a dated row or a dated shared event - the source site's own protocol: no row, no trigger.",
+    "Group the pairs by trigger type and response verb. Three or more independent episodes make a rule; two make a signal; one stays an anecdote and never predicts. (Independence follows the source protocol: same-cause triggers within 30 days count once.)",
+    "For each rule, compute the delay as the median and range of the day-gaps between trigger and response dates. Gaps are always computed from dates, never estimated by hand.",
+    "Compute the size where the record quantifies it (fine amounts, percent of sales, counts of goods). Where the record does not quantify, the size stays empty - never guessed.",
+    "Set the direction from the verb: open (eases, releases, funds) or closed (restricts, fines, bans).",
+    "Check stability: remove each episode in turn; if the direction or verb flips, the rule is marked unstable.",
+    "Carry over the rules already on the source site where present (CAC, NVIDIA, MOFCOM, Baidu had some; the other five had none) and generate the rest from the rows.",
+    "After the fact-check: recompute every rule from pre-cutoff episodes only. The first build had used 41 post-cutoff episodes - rows from the hidden answer key - which would have trained the card on the exam. Those episodes are kept for transparency but no longer count."
+   ],
+   "generation": "Pairing, grouping, and all numbers are computed by script from the dated rows. A model was used only to phrase each rule's when/then line in plain language; background research for sizes (NVIDIA's China revenue share, Huawei's Entity List date) was done by web search and cited.",
+   "standard_rules": [
     {
-      "name": "Test 1 - The Plain Record: how it was built",
-      "why": "The two strongest results in the field got there with exactly this: a lawmaker agent that saw nothing but the member's party, committees, bills and past votes predicted votes at 92%; interview agents that saw nothing but a person's own two-hour transcript matched 86% of that person's own consistency. So the plain record is both the simplest card and the one to beat.",
-      "steps": [
-        "Take every row the source site has for the actor, dated before that actor's cutoff. Nothing is rewritten, summarized, or re-worded.",
-        "Compute the actor's action menu from those rows: every verb the actor has used, split into core (used twice or more) and rare (used once). This is new - the source rules verbs out by power but never lists what the actor has actually done.",
-        "Build the prompt: one identity line (name and actor type), then the rows in date order with their sources. That is the whole prompt.",
-        "Deliberately exclude every analyst-written section of the source (purpose, standing, powers, gates, short answers) so the test measures the record, not our prose about it."
-      ],
-      "generation": "Fully mechanical. A script reads the source rows, splits at the cutoff, counts verbs, and writes the card. No model call, no judgment."
+     "actor_type": "Government bodies and regulators (CAC, MIIT, MOFCOM, SAMR)",
+     "rules": [
+      {
+       "rule": "Draft published → final rule follows",
+       "why": "Regulators repeat their own process. CAC's record shows the draft-to-final cycle over and over - 19 pre-cutoff episodes, median 171 days - making it the single most reliable pattern in the whole dataset.",
+       "values": "CAC: median 171 days, range 83-475, n=19. Co-issued with other bodies for AI rules."
+      },
+      {
+       "rule": "Incident or campaign → enforcement action",
+       "why": "Chinese regulators act after incidents and in named campaigns, not continuously. The DiDi case set the delay expectation: about a year from trigger to fine (¥8.026 billion). Fine confirmed at ¥8.026 billion by [Reuters, July 21 2022](https://www.reuters.com/technology/china-fines-didi-global-12-bln-violating-data-security-laws-2022-07-21).",
+       "values": "CAC enforcement delays run in months to a year; MIIT and SAMR act on campaign schedules (rare-earth, standards, antitrust probes)."
+      },
+      {
+       "rule": "Rival restricts → reciprocal measure on critical goods",
+       "why": "MOFCOM answers US restrictions with export controls on goods China dominates (gallium, germanium, antimony, rare earths) - the mirror-image lever, with thresholds written into the announcement.",
+       "values": "MOFCOM M2: rare-earth export control with a 0.1% value threshold (Announcement 61/2025); counters came within days to weeks of US moves. Threshold text in the [CSET translation of Announcement 61/2025](https://cset.georgetown.edu/publication/mofcom-notice-2025-61)."
+      },
+      {
+       "rule": "Summit or standards body → sign up",
+       "why": "States commit on scheduled occasions; the row record dates each signature.",
+       "values": "Seen across the four state actors; mostly single episodes so far, kept as signals or anecdotes until more land."
+      }
+     ]
     },
     {
-      "name": "Test 2 - The Rule Card: how it was built",
-      "why": "The only simulation that ever beat standard economic forecasts worked this way - about seven measured behavior numbers per actor, estimated from decades of data. A rule card asks whether a few measured patterns generalize better than the raw facts they came from.",
-      "steps": [
-        "Pair every action row with the event it answered: a dated trigger within the previous 12 months that touches the actor (a rule change, a trade shift, an incident, another actor's move). A trigger must be a dated row or a dated shared event - the source site's own protocol: no row, no trigger.",
-        "Group the pairs by trigger type and response verb. Three or more independent episodes make a rule; two make a signal; one stays an anecdote and never predicts. (Independence follows the source protocol: same-cause triggers within 30 days count once.)",
-        "For each rule, compute the delay as the median and range of the day-gaps between trigger and response dates. Gaps are always computed from dates, never estimated by hand.",
-        "Compute the size where the record quantifies it (fine amounts, percent of sales, counts of goods). Where the record does not quantify, the size stays empty - never guessed.",
-        "Set the direction from the verb: open (eases, releases, funds) or closed (restricts, fines, bans).",
-        "Check stability: remove each episode in turn; if the direction or verb flips, the rule is marked unstable.",
-        "Carry over the rules already on the source site where present (CAC, NVIDIA, MOFCOM, Baidu had some; the other five had none) and generate the rest from the rows.",
-        "After the fact-check: recompute every rule from pre-cutoff episodes only. The first build had used 41 post-cutoff episodes - rows from the hidden answer key - which would have trained the card on the exam. Those episodes are kept for transparency but no longer count."
-      ],
-      "generation": "Pairing, grouping, and all numbers are computed by script from the dated rows. A model was used only to phrase each rule's when/then line in plain language; background research for sizes (NVIDIA's China revenue share, Huawei's Entity List date) was done by web search and cited.",
-      "standard_rules": [
-        {
-          "actor_type": "Government bodies and regulators (CAC, MIIT, MOFCOM, SAMR)",
-          "rules": [
-            {"rule": "Draft published → final rule follows", "why": "Regulators repeat their own process. CAC's record shows the draft-to-final cycle over and over - 19 pre-cutoff episodes, median 171 days - making it the single most reliable pattern in the whole dataset.", "values": "CAC: median 171 days, range 83-475, n=19. Co-issued with other bodies for AI rules."},
-            {"rule": "Incident or campaign → enforcement action", "why": "Chinese regulators act after incidents and in named campaigns, not continuously. The DiDi case set the delay expectation: about a year from trigger to fine (¥8.026 billion).", "values": "CAC enforcement delays run in months to a year; MIIT and SAMR act on campaign schedules (rare-earth, standards, antitrust probes)."},
-            {"rule": "Rival restricts → reciprocal measure on critical goods", "why": "MOFCOM answers US restrictions with export controls on goods China dominates (gallium, germanium, antimony, rare earths) - the mirror-image lever, with thresholds written into the announcement.", "values": "MOFCOM M2: rare-earth export control with a 0.1% value threshold (Announcement 61/2025); counters came within days to weeks of US moves."},
-            {"rule": "Summit or standards body → sign up", "why": "States commit on scheduled occasions; the row record dates each signature.", "values": "Seen across the four state actors; mostly single episodes so far, kept as signals or anecdotes until more land."}
-          ]
-        },
-        {
-          "actor_type": "Companies (Baidu, DeepSeek, Huawei, NVIDIA)",
-          "rules": [
-            {"rule": "Export restriction hits → disclose, then redesign around it", "why": "Companies protect revenue first: disclose to investors fast, then ship a compliant product. NVIDIA's record shows both halves repeatedly - an 8-K within days, then a China-spec chip.", "values": "NVIDIA N1: 8-K within 0-6 days (n=3); redesign follows in months (A800, H800, then China-spec parts). Huawei's response to the 2019 Entity List followed the same shape."},
-            {"rule": "Rival cuts price or opens up → match quickly", "why": "In China's model market, waiting loses users; the record shows same-day to weeks matching moves.", "values": "Baidu BD1: free/open moves follow rivals (Alibaba's cuts, DeepSeek's open release), announced within days."},
-            {"rule": "Public allegation → same-day denial", "why": "Huawei's record contains the cleanest version: every public allegation drew a denial the next day - three independent episodes at exactly one day.", "values": "Huawei HU5: 1-day median response (n=3)."},
-            {"rule": "Announced date → ship on it", "why": "Chinese labs announce release dates and keep them; treating announced dates as scheduled facts beats predicting from attention.", "values": "Baidu BD4: ships on announced open-model dates (June 30 ERNIE open-sourcing kept to the day)."}
-          ]
-        },
-        {
-          "actor_type": "Individuals (Jensen Huang)",
-          "rules": [
-            {"rule": "US policy shift → same-day public statement", "why": "A founder-CEO with a public calendar responds in public, fast - praise for easing, criticism for tightening.", "values": "R1: statements within a day of Washington moves (n=2 pre-cutoff)."},
-            {"rule": "US tightens → Beijing trip", "why": "After each tightening, Huang traveled to China to keep the market - visible in the rows as a travel-and-meetings cluster.", "values": "R2: trips follow restrictions within weeks (n=2)."},
-            {"rule": "Company milestone → personal appearance or signature", "why": "His personal record tracks NVIDIA's; the attribution rule keeps them separate but the pattern links them.", "values": "Mostly single episodes - kept as anecdotes until the record fills."}
-          ]
-        }
-      ],
-      "per_actor_note": "The specific rule values for each actor - delays, sizes, episodes, sources - are on each actor's Test 2 tab. Counts after the leakage fix: NVIDIA 5 rules kept (3 rule-status), CAC 6 (5), MOFCOM 4 (2), Baidu 4 (1), Huawei 4 (1), Jensen Huang 4 (0 dropped R4), DeepSeek 3, MIIT 4, SAMR 3 (0 dropped S3)."
+     "actor_type": "Companies (Baidu, DeepSeek, Huawei, NVIDIA)",
+     "rules": [
+      {
+       "rule": "Export restriction hits → disclose, then redesign around it",
+       "why": "Companies protect revenue first: disclose to investors fast, then ship a compliant product. NVIDIA's record shows both halves repeatedly - an 8-K within days, then a China-spec chip. The disclosure half is documented in [NVIDIA 8-K, April 2025](https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm) and earlier 8-Ks; Huawei's Entity List response in [84 FR 22961, Federal Register](https://www.govinfo.gov/content/pkg/FR-2019-05-21/html/2019-10616.htm).",
+       "values": "NVIDIA N1: 8-K within 0-6 days (n=3); redesign follows in months (A800, H800, then China-spec parts). Huawei's response to the 2019 Entity List followed the same shape."
+      },
+      {
+       "rule": "Rival cuts price or opens up → match quickly",
+       "why": "In China's model market, waiting loses users; the record shows same-day to weeks matching moves.",
+       "values": "Baidu BD1: free/open moves follow rivals (Alibaba's cuts, DeepSeek's open release), announced within days."
+      },
+      {
+       "rule": "Public allegation → same-day denial",
+       "why": "Huawei's record contains the cleanest version: every public allegation drew a denial the next day - three independent episodes at exactly one day.",
+       "values": "Huawei HU5: 1-day median response (n=3)."
+      },
+      {
+       "rule": "Announced date → ship on it",
+       "why": "Chinese labs announce release dates and keep them; treating announced dates as scheduled facts beats predicting from attention.",
+       "values": "Baidu BD4: ships on announced open-model dates (June 30 ERNIE open-sourcing kept to the day)."
+      }
+     ]
     },
     {
-      "name": "Test 3 - The Expert Read: how it was built",
-      "why": "Adding four expert readings lifted the interview study from 83% to 86% - the only measured demonstration that inference over a record adds signal beyond the record itself. Nobody has tried it on organization records. The lens layer is that idea, transplanted.",
-      "steps": [
-        "Four lenses per actor: a psychologist (how the actor decides under pressure - what it says before it acts, what it avoids), an economist (what it protects - revenue exposure, cost of compliance versus resistance), a political scientist (who it answers to, who can stop it, how it treats power), and a domain expert (the industry pattern - chips, cloud models, Chinese regulation).",
-        "Each lens is written once, from the pre-cutoff rows only. Hard rules: every claim uses action words, not character adjectives; every claim cites the row it rests on; at most one marked inference per lens; empty stays empty - if the record lacks a fact, the lens says so.",
-        "Routing: each topic in the source site's topic taxonomy maps to the one lens best suited to answer it, so at question time only the matching lens is attached to the plain record.",
-        "Verification: all 187 claims across the 36 lenses cite row ids that exist, and zero citations fall after an actor's cutoff (one violation was caught and fixed during generation)."
-      ],
-      "generation": "A model read each actor's pre-cutoff rows and wrote the four readings under the hard rules above; a script then verified every citation and date. The full method statement is in the repo at docs/test3-method.md.",
-      "never": "Lenses are frozen after generation. Nothing a simulation ever produces is written back into a lens, a card, or the record."
+     "actor_type": "Individuals (Jensen Huang)",
+     "rules": [
+      {
+       "rule": "US policy shift → same-day public statement",
+       "why": "A founder-CEO with a public calendar responds in public, fast - praise for easing, criticism for tightening.",
+       "values": "R1: statements within a day of Washington moves (n=2 pre-cutoff)."
+      },
+      {
+       "rule": "US tightens → Beijing trip",
+       "why": "After each tightening, Huang traveled to China to keep the market - visible in the rows as a travel-and-meetings cluster.",
+       "values": "R2: trips follow restrictions within weeks (n=2)."
+      },
+      {
+       "rule": "Company milestone → personal appearance or signature",
+       "why": "His personal record tracks NVIDIA's; the attribution rule keeps them separate but the pattern links them.",
+       "values": "Mostly single episodes - kept as anecdotes until the record fills."
+      }
+     ]
     }
-  ]
+   ],
+   "per_actor_note": "The specific rule values for each actor - delays, sizes, episodes, sources - are on each actor's Test 2 tab. Counts after the leakage fix: NVIDIA 5 rules kept (3 rule-status), CAC 6 (5), MOFCOM 4 (2), Baidu 4 (1), Huawei 4 (1), Jensen Huang 4 (0 dropped R4), DeepSeek 3, MIIT 4, SAMR 3 (0 dropped S3)."
+  },
+  {
+   "name": "Test 3 - The Expert Read: how it was built",
+   "why": "Adding four expert readings lifted the interview study from 83% to 86% - the only measured demonstration that inference over a record adds signal beyond the record itself ([Park et al., Stanford, 2024](https://arxiv.org/abs/2411.10109)). Nobody has tried it on organization records. The lens layer is that idea, transplanted. The action-words rule follows the finding that action language is the only persona text that survives context changes ([Wang, Lester & Srivastava, 2026](https://arxiv.org/abs/2607.18566)).",
+   "steps": [
+    "Four lenses per actor: a psychologist (how the actor decides under pressure - what it says before it acts, what it avoids), an economist (what it protects - revenue exposure, cost of compliance versus resistance), a political scientist (who it answers to, who can stop it, how it treats power), and a domain expert (the industry pattern - chips, cloud models, Chinese regulation).",
+    "Each lens is written once, from the pre-cutoff rows only. Hard rules: every claim uses action words, not character adjectives; every claim cites the row it rests on; at most one marked inference per lens; empty stays empty - if the record lacks a fact, the lens says so.",
+    "Routing: each topic in the source site's topic taxonomy maps to the one lens best suited to answer it, so at question time only the matching lens is attached to the plain record.",
+    "Verification: all 187 claims across the 36 lenses cite row ids that exist, and zero citations fall after an actor's cutoff (one violation was caught and fixed during generation)."
+   ],
+   "generation": "A model read each actor's pre-cutoff rows and wrote the four readings under the hard rules above; a script then verified every citation and date. The full method statement is in the repo at docs/test3-method.md.",
+   "never": "Lenses are frozen after generation. Nothing a simulation ever produces is written back into a lens, a card, or the record."
+  }
+ ]
 }
