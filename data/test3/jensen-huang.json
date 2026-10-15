@@ -1,0 +1,62 @@
+{
+  "actor": "jensen-huang",
+  "name": "Jensen Huang",
+  "actor_type": "individual",
+  "cutoff": "2026-07-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Speed and self-correction. He answers restrictions in person and fast: he flew to Beijing two days after the H20 licence rule landed, met the Vice Premier, and said NVIDIA hopes to keep working with China. He skipped the inauguration and spent that day at NVIDIA's China offices instead. The tell under criticism is the same-day walk-back: he told the FT China would win, then reframed the answer within hours around America winning. When Beijing told firms to stop buying, he offered one word — disappointed. He declines invitations that cross his positions, refusing Senator Warren's hearing on AI, China and export controls. On jobs he rejects the premise outright, first as 'AI will change every job but won't take them,' later as nonsense. The margin note: he moves toward whichever capital holds the gate, and repairs off-message remarks the same day they land.",
+      "claims": [
+        {"text": "He flies to Beijing two days after the H20 licence requirement is disclosed and meets the Vice Premier, saying NVIDIA hopes to keep working with China.", "rows": ["J06"]},
+        {"text": "He skips Trump's inauguration and visits NVIDIA's China offices on the day instead.", "rows": ["J03"]},
+        {"text": "He tells the FT China will win, then reframes the answer hours later around America winning.", "rows": ["J19", "J20"]},
+        {"text": "He says he is disappointed after reports that Beijing told firms to stop buying NVIDIA's RTX Pro 6000D.", "rows": ["J17"]},
+        {"text": "He declines Senator Warren's invitation to testify on AI, China and export controls.", "rows": ["J45"]},
+        {"text": "He rejects job-loss warnings outright, first saying AI will change every job without taking them, later calling the fears nonsense.", "rows": ["J08", "J33"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Adapted for an individual: what he protects is the market for NVIDIA's chips, and his own capital sits on rails. He talks in market shares, not adjectives — China went from about 95 percent of NVIDIA's China-side position to 50 percent by May 2025 and to zero by October, and he calls the policy a mistake in those numbers. By 2026 he says NVIDIA has largely conceded China's AI chip market to Huawei. His first share sales ran under a 10b5-1 plan adopted in March 2025 — pre-set, not discretionary. He closes deals on presidential trips: Blackwell supply for Saudi Arabia's Humain at the Riyadh forum, £11 billion of UK AI investment during the state visit. And he restarts H200 manufacturing the moment licences and orders exist, having first talked up how high Chinese demand runs.",
+      "claims": [
+        {"text": "He says NVIDIA's China share fell from about 95% to 50%, later to zero, and calls the policy a mistake.", "rows": ["J10", "J18"]},
+        {"text": "He says NVIDIA has largely conceded China's AI chip market to Huawei.", "rows": ["J31"]},
+        {"text": "His first share sales run under a 10b5-1 plan adopted in March 2025, for up to 6 million shares.", "rows": ["J13"]},
+        {"text": "He announces supply deals on presidential trips: Blackwell for Saudi Humain at the Riyadh forum, and £11bn of UK AI investment during the state visit.", "rows": ["J09", "J44"]},
+        {"text": "He says Chinese demand for the H200 is very high and restarts H200 manufacturing once licences and orders are in hand.", "rows": ["J24", "J28"]},
+        {"text": "He says that if the US stays out of China, Huawei will serve it.", "rows": ["J12"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Access is the asset, and it is granted, not held. Meetings with Trump repeat through the record, and decisions follow within days: H20 licences were assured four days after one meeting, the 15 percent revenue-share was reported days after another, and H200 clearance came five days after a Senate-facing week in which the GAIN AI Act was dropped from the defence bill. When Trump left him off the China delegation and then called, he flew out via Alaska on Air Force One. Toward Beijing he travels anyway: despite a congressional letter warning him off entity-listed firms, he met Chinese officials and called Huawei formidable on the trip. He dines at Mar-a-Lago and US investment pledges follow. No office, no vote, no licence — but a standing seat next to whoever holds each gate, kept by going when called.",
+      "claims": [
+        {"text": "He meets Trump repeatedly, and decisions follow within days: H20 licences four days after one meeting, the 15% revenue-share reported days after another.", "rows": ["J14", "J16", "C05", "C07"]},
+        {"text": "He meets senators behind closed doors as the GAIN AI Act is dropped from the defence bill, then publicly calls leaving it out wise.", "rows": ["J21", "J22", "C09"]},
+        {"text": "Left off the China delegation, then called by Trump, he flies via Alaska on Air Force One.", "rows": ["J30", "C14"]},
+        {"text": "Despite a letter warning him not to meet entity-listed Chinese firms, he travels to Beijing and calls Huawei formidable.", "rows": ["J06", "J15", "C21"]},
+        {"text": "He dines with Trump at Mar-a-Lago and NVIDIA then announces US investment pledges.", "rows": ["J43"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "Framing, in both directions. Every restriction gets the same frame — it hands China to Huawei — whether the share number is 50 percent or zero. China is treated as a near-peer to engage rather than contain: DeepSeek's open reasoning model praised, Huawei called formidable, China described as close behind when he addresses Washington. On openness he argues safety comes from open models and rejects restrictions on them. On regulation he accepts it in principle and warns against moving early, backing one federal standard over state laws. And he holds one gate personally: after the Supermicro smuggling indictment he told the server maker to tighten export compliance. The craft read: he treats export politics as competitive analysis — every answer routes back to who serves the China market, and the argument is always market mechanics, never security language.",
+      "claims": [
+        {"text": "He frames each restriction as handing the China market to Huawei, at both the 50% and the zero share numbers.", "rows": ["J10", "J12", "J18"]},
+        {"text": "He treats China as a near-peer to engage: praising DeepSeek's open reasoning model, calling Huawei formidable, telling Washington China is close behind.", "rows": ["J05", "J15", "J07"]},
+        {"text": "He argues safety comes from openness and rejects restrictions on open models, while opposing state AI laws in favour of one federal standard.", "rows": ["J11", "J23"]},
+        {"text": "He accepts regulation in principle but warns against moving early.", "rows": ["J29"]},
+        {"text": "He tells Supermicro to tighten export compliance after the smuggling indictment — the supply gate he personally holds.", "rows": ["J32", "C13"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "political_scientist",
+    "regulation": "psychologist",
+    "safety_risk": "psychologist",
+    "china_race": "domain",
+    "open_source": "domain",
+    "labour": "psychologist"
+  }
+}

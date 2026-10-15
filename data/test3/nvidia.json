@@ -1,0 +1,62 @@
+{
+  "actor": "nvidia",
+  "name": "NVIDIA",
+  "actor_type": "company",
+  "cutoff": "2026-07-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Corporate voice: short, legal, repeatable. Each Beijing summons drew a same-day answer — cooperation after the SAMR probe, a denial of H20 backdoors after the CAC summons, a compliance statement after the preliminary finding — and no answer ever challenged the regulator's authority. Smuggling cases get one recycled line: smuggling is 'a nonstarter' and diverted products get no support. When a revenue-share arrangement with Washington was reported, the company neither confirmed nor denied it, saying only that it follows the rules the US government sets. The one visible silent edit: the Frontier AI Risk Assessment was reissued at the same URL with an 'Applicable from August 2025' stamp and no changelog. The margin note: the company never argues in its own name — argument is outsourced to the CEO, whose remarks live in a separate persona — and it says less, not more, under pressure.",
+      "claims": [
+        {"text": "NVIDIA answers each Chinese regulator move with a same-day statement: cooperation after the SAMR probe, a backdoors denial after the CAC summons, a compliance statement after the preliminary finding.", "rows": ["K20", "K38", "K46"]},
+        {"text": "NVIDIA repeats one line across smuggling cases: smuggling is a 'nonstarter' and diverted products get no support.", "rows": ["K42", "K56"]},
+        {"text": "NVIDIA neither confirms nor denies the 15% China revenue-share arrangement, saying only that it follows the rules the US government sets.", "rows": ["K43"]},
+        {"text": "NVIDIA reissues its Frontier AI Risk Assessment at the same URL with an 'Applicable from August 2025' stamp and no changelog.", "rows": ["K39"]},
+        {"text": "NVIDIA confirms the 2022 intrusion days after detecting it and says there is no evidence of ransomware.", "rows": ["K02"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "The compliance cost is quantified to the dollar in filings. Told privately of the 2022 licence requirement, it filed within days putting about $400 million of quarterly outlook at risk; the 2025 H20 freeze drew an 8-K with up to $5.5 billion in charges. Every limit is then engineered around: the A800 under the 2022 rule, the H800 and H20 under October 2023, an export-compliant RTX Pro GPU after the H20 freeze. Planning assumes the worst: guidance carries no China data-centre revenue even after small H200 licences were granted. Meanwhile the demand side is funded from its own balance sheet — $5 billion into Intel, a letter of intent for up to $100 billion into OpenAI, up to $10 billion into Anthropic — and lobbying spend rose 388 percent in a half-year while the company repeated that it follows the rules.",
+      "claims": [
+        {"text": "NVIDIA files within days of being told of restrictions, pricing the risk at about $400m of quarterly outlook in 2022 and up to $5.5bn in H20 charges in 2025.", "rows": ["K04", "K29"]},
+        {"text": "Each US limit is followed by a China-specific part: the A800, the H800 and H20, and an export-compliant RTX Pro GPU.", "rows": ["K06", "K07", "K14", "K35"]},
+        {"text": "Guidance assumes no data-centre compute revenue from China, and NVIDIA reports no H200 revenue after small licences were granted.", "rows": ["K58", "K59"]},
+        {"text": "NVIDIA funds its own customers: $5bn into Intel, a letter of intent for up to $100bn into OpenAI, and up to $10bn into Anthropic.", "rows": ["K48", "K49", "K50"]},
+        {"text": "Lobbying spend rises 388% in H1 2025 while the company says it follows the rules the US government sets.", "rows": ["K37", "K43"]},
+        {"text": "NVIDIA commits to building AI supercomputers in the US for the first time: up to half a trillion dollars of AI infrastructure over four years.", "rows": ["K28"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Complies with every gate, lobbies against each one. The Arm acquisition was abandoned citing regulatory obstacles; Run:ai closed only after unconditional EU clearance — merger regulators can stop it, and it steps aside when they do. On export policy it praises every easing (the Diffusion Rule rescission a 'once-in-a-generation opportunity', the H200 approval applauded) and criticises every tightening (the Diffusion Rule 'misguided and secretly drafted', the GAIN AI Act likened to it). It signs the voluntary instruments on offer — the White House commitments cohort, the Seoul Frontier commitments ahead of Paris — and sends its Chief Scientist to testify for balance rather than binding rules. Toward Beijing it answers summons without contesting authority. The posture: accept every gate's legitimacy, then work each one by comment, redesign and signature.",
+      "claims": [
+        {"text": "NVIDIA abandons the Arm acquisition citing regulatory obstacles and completes Run:ai only after unconditional EU clearance.", "rows": ["K01", "K19"]},
+        {"text": "NVIDIA welcomes each easing — the Diffusion Rule rescission and the H200 approval — and criticises each tightening, calling the Diffusion Rule 'misguided and secretly drafted'.", "rows": ["K21", "K31", "K51", "K45"]},
+        {"text": "NVIDIA signs the voluntary pacts available: the White House commitments and the Frontier AI Safety Commitments ahead of the Paris summit.", "rows": ["K09", "K23"]},
+        {"text": "Its Chief Scientist testifies urging balance between innovation and responsible deployment, focused on very large new models.", "rows": ["K10"]},
+        {"text": "NVIDIA's statements to Chinese regulators pledge cooperation or denial and never contest the regulator's authority.", "rows": ["K20", "K38", "K46"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "The loop is comply-disclose-redesign, three full turns: the A100 restriction to the A800; the October 2023 rule to the H800 and H20; the H20 freeze to an export-compliant RTX Pro part. Security engineering runs on coordinated disclosure: Wiz-reported container escapes were patched and bulletined the day the research went public, after private windows — including a fix for its own incomplete patch. Model policy follows its software-stack logic: open-weight Nemotron releases across generations, ending at a 550B-parameter open model, with open safety tooling from NeMo Guardrails to garak. Its hardware stance is absolute and repeated — no backdoors, no kill switches, no mandated tracking — while its opt-in fleet software can report a GPU's compute zone. And the safety framework is scoped to frontier models it says it does not build.",
+      "claims": [
+        {"text": "NVIDIA runs the comply-disclose-redesign loop three times: restriction to A800, the October 2023 rule to H800 and H20, and the H20 freeze to an RTX Pro part.", "rows": ["K04", "K06", "K11", "K14", "K29", "K35"]},
+        {"text": "NVIDIA patches Wiz-reported critical container escapes on the day the research publishes, after private report windows.", "rows": ["K17", "K36", "K40"]},
+        {"text": "When its first Container Toolkit patch proved incomplete, NVIDIA shipped the complete fix together with the bypass advisory.", "rows": ["K24"]},
+        {"text": "NVIDIA ships open-weight models across generations, up to a 550B-parameter release, alongside open safety tooling.", "rows": ["K16", "K27", "K61"]},
+        {"text": "NVIDIA publishes a formal no-backdoors, no-kill-switches, no-spyware position while launching opt-in fleet software that can report a GPU's compute zone.", "rows": ["K41", "K52"]},
+        {"text": "NVIDIA's Frontier AI Risk Assessment is scoped to frontier models it says it is not developing.", "rows": ["K25"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "economist",
+    "regulation": "political_scientist",
+    "safety_risk": "domain",
+    "china_race": "political_scientist",
+    "open_source": "domain",
+    "energy": "economist"
+  }
+}

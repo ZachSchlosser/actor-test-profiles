@@ -1,0 +1,69 @@
+{
+  "actor": "deepseek",
+  "name": "DeepSeek",
+  "actor_type": "company",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "A lab that speaks by shipping. The founder's last long interview is July 2024; afterwards the record holds terse posts, weights and papers. Under foreign pressure the responses are minimal and sized to the market: the day the app topped the US store it limited new registrations citing 'large-scale malicious attacks'; asked by Italy's Garante it said it does not operate in Italy and that European law does not apply to it, then pulled the app the same day; Korea got an admission of 'partly neglecting' the law, a local representative and a same-day download suspension; Berlin's demand drew no answer at all. Beijing gets different treatment: the labelling rules were implemented on the day they took effect, with an explicit bar on stripping labels. The asymmetry is the finding — it argues with nobody, complies where the state demands it, and withdraws where a small market demands it.",
+      "claims": [
+        {"text": "DeepSeek limits new registrations the day its app tops the US App Store, citing 'large-scale malicious attacks'.", "rows": ["DS07"]},
+        {"text": "Asked by Italy's Garante, DeepSeek says it does not operate in Italy and that European law does not apply to it.", "rows": ["DS08"]},
+        {"text": "DeepSeek removes its app from Italian app stores the same day the Garante questions its privacy policy.", "rows": ["DS09"]},
+        {"text": "DeepSeek admits to Korea's PIPC that it partly neglected Korean data-protection law, appoints a local representative and suspends new downloads the same day.", "rows": ["DS10"]},
+        {"text": "DeepSeek does not answer the Berlin data commissioner's demand to comply with EU transfer rules or withdraw.", "rows": ["DS16"]},
+        {"text": "Liang Wenfeng gives a July 2024 interview explaining pricing and leaves almost no on-record statements afterwards in this record.", "rows": ["DS02"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Prices at cost and proves it. V2 shipped at 1–2 yuan per million tokens, about one percent of GPT-4, and the founder said prices follow cost — no losses, no excess profit. It then published the numbers a lab usually hides: V3's final training run at 2.788 million H800 GPU-hours, about $5.6 million; R1's training at $294,000 in a peer-reviewed paper; and an inference-economics post claiming a theoretical 545 percent daily margin, with a disclaimer that actual revenue is 'substantially lower.' The weights stay free — V3.2 shipped open next to an API-only variant — while API prices were cut more than half on the Sparse Attention release. Funding never enters the record: no outside investors, no revenue figures, no capital events. The money story it tells is entirely a cost story, told to developers rather than investors.",
+      "claims": [
+        {"text": "DeepSeek prices V2 at 1–2 yuan per million tokens, about 1% of GPT-4 pricing.", "rows": ["DS01"]},
+        {"text": "Liang says prices follow cost and the price war was unintended: not losing money, not taking excess profit.", "rows": ["DS02"]},
+        {"text": "DeepSeek publishes V3's final training run at 2.788M H800 GPU-hours (about $5.6M) and R1's training cost of $294k in a peer-reviewed paper.", "rows": ["DS03", "DS19"]},
+        {"text": "DeepSeek publishes inference economics claiming a theoretical 545% daily margin while warning actual revenue is 'substantially lower'.", "rows": ["DS11"]},
+        {"text": "DeepSeek cuts API prices by more than 50% with V3.2-Exp and ships V3.2 open alongside an API-only variant.", "rows": ["DS20", "DS21"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Quiet at home, quieter abroad. The founder sits at the Premier's symposium on the Government Work Report and, weeks later, at Xi's private-enterprise symposium — no quote survives either. The state's rules get same-day compliance: labelling measures implemented on the effective date. The state's chip push gets engineering, not statements: after reported Ascend training failed — R2 delayed, NVIDIA kept for training, Ascend kept for inference — the next release carried a UE8M0 FP8 format explicitly targeting domestic chips. Foreign regulators get the minimum: a jurisdiction denial in Italy, a negotiated suspension and relaunch in Korea with a privacy notice letting users refuse transfers to China and US firms, and silence in Berlin. Pressed between two states, it does not pick a side in public; it adjusts the format and the notice.",
+      "claims": [
+        {"text": "Liang attends the Premier's symposium and Xi's private-enterprise symposium without leaving a quote.", "rows": ["DS06"]},
+        {"text": "DeepSeek implements CAC's labelling measures on the day they take effect and bars users from stripping labels.", "rows": ["DS18"]},
+        {"text": "DeepSeek keeps NVIDIA for training and Ascend for inference after the reported failure of Ascend training, and builds its UE8M0 FP8 format for upcoming domestic chips.", "rows": ["DS14", "DS17"]},
+        {"text": "DeepSeek relaunches in Korean app stores with a revised notice letting users refuse transfers to China and US firms.", "rows": ["DS13"]},
+        {"text": "DeepSeek answers Italy with a jurisdiction denial and Korea with negotiated compliance, sizing each response to the market at stake.", "rows": ["DS08", "DS09", "DS10"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "The open-weight craft pattern. Every frontier release since V3 ships as open weights; R1 carried an MIT licence and explicit permission to distil, and the V3 line moved from a custom licence to MIT within a year. Release cadence is its own: V3 in December, R1 in January, an R1 update shipped in place of the delayed R2, V3.1 in August, V3.2 in the autumn. Disclosure runs through technical papers, not press: training GPU-hours, inference margins, and a training-methodology document published alongside the labelling compliance. The chip-alignment move is visible in the stack — an FP8 format aimed at domestic silicon in the release notes. The domain read: watch the licence file and the format notes, not the interviews; policy signals arrive as engineering artifacts.",
+      "claims": [
+        {"text": "Every frontier release from V3 onward ships as open weights, with R1 under an MIT licence that explicitly allows distillation.", "rows": ["DS03", "DS05"]},
+        {"text": "DeepSeek moves the V3 line from its custom Model License to MIT within a year of R1.", "rows": ["DS12"]},
+        {"text": "DeepSeek releases on its own cadence and ships R1-0528 in place of the delayed R2.", "rows": ["DS15"]},
+        {"text": "DeepSeek's disclosure runs through papers and posts: training GPU-hours, a 545%-margin inference analysis, and a training-methodology document.", "rows": ["DS03", "DS11", "DS18"]},
+        {"text": "DeepSeek's UE8M0 FP8 format targets upcoming domestic chips in its next release.", "rows": ["DS17"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "political_scientist",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "political_scientist",
+    "competition": "economist",
+    "industrial_policy": "political_scientist",
+    "products": "domain",
+    "safety_risk": "psychologist",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "economist",
+    "bias": "psychologist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}

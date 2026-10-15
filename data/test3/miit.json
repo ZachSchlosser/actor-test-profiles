@@ -1,0 +1,67 @@
+{
+  "actor": "miit",
+  "name": "Ministry of Industry and Information Technology",
+  "actor_type": "government",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "A follower on content, a leader on industry. When CAC signs an AI rule, MIIT co-publishes within days — deep synthesis in 2022, generative AI in 2023, labelling in 2025 — and never drafts its own content rule. Toward Washington it keeps a fixed silence: no MIIT statement follows any US chip rule in this record; its answer arrived as a quiet order to state carriers, reported months later, to inventory and replace foreign processors by 2027. When Washington eased and H20 licences resumed, MIIT asked Chinese buyers to justify NVIDIA orders over domestic chips. It adopts national champions by announcement: state media relayed that all three state carriers had fully integrated DeepSeek within weeks of R1. The read: it avoids public confrontation entirely and steers through guidance, procurement and co-signature rather than through statements.",
+      "claims": [
+        {"text": "MIIT co-publishes CAC's AI rules within days of CAC signing them: deep synthesis in 2022, generative AI in 2023, labelling in 2025.", "rows": ["MI01", "MI03", "MI09"]},
+        {"text": "After US chip rules, MIIT issues no public statement in this record; its response arrives as a reported order to state carriers to replace foreign processors by 2027.", "rows": ["MI06"]},
+        {"text": "When H20 licences resumed, MIIT asked Chinese firms including Alibaba and ByteDance to justify NVIDIA orders rather than domestic chips.", "rows": ["MI10"]},
+        {"text": "MIIT announces through state media that all three state telecom carriers have fully integrated DeepSeek's open-source models.", "rows": ["MI08"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Adapted for a ministry: its economic instruments are targets attached to plans, and procurement steering attached to nothing published. The compute plan sets numbers — over 300 EFLOPS and a 35 percent intelligent-compute share by 2025 — without mandates or budget lines in the record. The standardization guidelines count outputs: fifty-plus national and industry AI standards by 2026. Substitution works through the state's own buying: carriers told to inventory Intel and AMD processors and replace them by 2027, and state-funded new data centres told to use only domestic AI chips, with projects under 30 percent complete required to remove foreign chips. Sector plans set dated milestones — humanoid robots with an innovation system by 2025 and world-advanced level by 2027 — and the data rules protect industry information, barring transfers to foreign law enforcement without approval. Targets are cheap, guidance is invisible, procurement does the spending.",
+      "claims": [
+        {"text": "MIIT's compute plan targets more than 300 EFLOPS and a 35% intelligent-compute share by 2025.", "rows": ["MI04"]},
+        {"text": "MIIT's standardization guidelines target more than 50 national and industry AI standards by 2026.", "rows": ["MI07"]},
+        {"text": "MIIT orders state carriers to inventory foreign processors and replace them by 2027.", "rows": ["MI06"]},
+        {"text": "State-funded new data centres are told to use only domestic AI chips, and projects under 30% complete must remove foreign chips.", "rows": ["C401"]},
+        {"text": "MIIT's data measures bar giving industry data to foreign law enforcement without MIIT approval.", "rows": ["MI02"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Never the lead drafter on content, always the convener on industry. The AI conduct rules it touches are CAC-led and co-issued within days; its own instruments are plans, standards and committees that it leads with multi-department consortia behind them. Its chip answers are exercised through buyers, not border rules — the outright purchase blocks in the record came from elsewhere, while MIIT's tool is asking firms to justify purchases. It answers to the State Council and implements commission rules; on chip purchases, NDRC and MOFCOM share the veto. Toward Washington it maintains a documented absence: the persona's own collection notes record no MIIT statement after the 2022, 2023 or 2024 US controls — silence logged as a finding, not a gap in collection.",
+      "claims": [
+        {"text": "MIIT co-issues CAC-led AI rules but leads its own industrial instruments with multi-department consortia.", "rows": ["MI01", "MI03", "MI04", "MI07"]},
+        {"text": "MIIT steers chip purchases through buyer guidance rather than border rules: it asks firms to justify foreign-chip orders after US easing.", "rows": ["MI10"]},
+        {"text": "MIIT convenes standards bodies for new AI waves, including a humanoid-robot and embodied-AI technical committee.", "rows": ["MI11"]},
+        {"text": "MIIT's sector plans set milestone dates without binding mandates: an innovation system for humanoid robots by 2025 and world-advanced level by 2027.", "rows": ["MI05"]},
+        {"text": "The only logged MIIT act following a US chip control is the reported carrier-substitution order; no public MIIT statement appears in the record.", "rows": ["MI06"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "The pattern is plan-standard-committee for each new AI wave. Compute first: an action plan for computing-power infrastructure with numeric targets. Then standardization guidelines counting the standards to be delivered. When a wave crests — humanoid robots — a dedicated technical committee follows. Content rules arrive only as co-issuer, on CAC's clock and effective on CAC's dates — the labelling rules MIIT co-issued took effect the same September day as CAC's measures. The craft read for an industrial-policy watcher: MIIT's name on a CAC rule signals state endorsement for enforcement across the sector, and MIIT's own plans signal where procurement and subsidies will flow next, two to three years ahead. When it announces adoption of a model by state carriers, treat it as the promotion channel working, not as news about the model.",
+      "claims": [
+        {"text": "MIIT runs plan-standard-committee for each wave: a compute action plan, AI standardization guidelines, and a humanoid-robot committee.", "rows": ["MI04", "MI07", "MI11"]},
+        {"text": "MIIT co-issues the AI labelling measures with CAC, effective the same day as CAC's measures take effect.", "rows": ["MI09"]},
+        {"text": "MIIT's humanoid-robot guidance sets an innovation system by 2025 and world-advanced level by 2027.", "rows": ["MI05"]},
+        {"text": "MIIT classifies industry data as general, important or core, and bars transfer to foreign law enforcement without approval.", "rows": ["MI02"]},
+        {"text": "MIIT announces state carriers' full integration of DeepSeek's open models within weeks of R1.", "rows": ["MI08"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "political_scientist",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "political_scientist",
+    "competition": "domain",
+    "industrial_policy": "domain",
+    "products": "domain",
+    "safety_risk": "domain",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "economist",
+    "energy": "domain",
+    "bias": "political_scientist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}

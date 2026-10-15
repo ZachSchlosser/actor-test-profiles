@@ -1,0 +1,69 @@
+{
+  "actor": "huawei",
+  "name": "Huawei",
+  "actor_type": "company",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Two voices, one company — read the pairing. In 2022 the founder ordered staff to make survival the goal and hold cash flow above revenue. In 2023 Huawei put the Mate 60 Pro on sale online, with no launch event, during the US Commerce Secretary's visit — then declined to answer questions about the chip inside it. When a TSMC-made die was reported in an Ascend 910B, the answer was a flat denial of any TSMC production since 2020; when a paper alleged Pangu Pro MoE correlates with Qwen, the answer was a flat denial and a pointer to Ascend training. The founder plays capability down on cue — the US exaggerates, the single chip is a generation behind, clustering closes the gap — while rotating chairs claim CloudMatrix beats NVIDIA's GB200. The pattern: never explain the process node, never confirm the foundry, answer allegations with denials, and split the messaging between modesty and parity.",
+      "claims": [
+        {"text": "Ren tells staff to make survival the main goal and hold cash flow and profit above revenue, citing US 'blockade and suppression'.", "rows": ["HW01"]},
+        {"text": "Huawei puts the Mate 60 Pro on sale online with no launch event during the US Commerce Secretary's visit.", "rows": ["HW04", "C101"]},
+        {"text": "Huawei does not answer Reuters' questions on the Kirin 9000S process node and does not publish the chip's specifications.", "rows": ["HW05"]},
+        {"text": "Ren says the US exaggerates Huawei's achievements, its single chip is one generation behind, and clustering makes up the gap.", "rows": ["HW15"]},
+        {"text": "Huawei denies any TSMC production since 2020 and denies Pangu Pro MoE derives from Qwen 2.5, saying the model was trained on Ascend.", "rows": ["HW10", "HW18"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Survival first, then spending. Net profit more than doubled to about CNY87bn in 2023 on CNY704bn revenue; 2024 brought revenue up 22.4 percent to CNY862bn while profit fell to CNY62.6bn — and R&D of CNY179.7bn, roughly a fifth of revenue, sustained through the export-control years. The stated method: build AI compute with the chipmaking technology available inside China, calling US restrictions both challenge and opportunity. Software substitution carries the revenue hedge: HarmonyOS NEXT drops Android app compatibility, the first HarmonyOS PCs drop Windows, and the company told investors ten years of computing preparation stood behind its AI gains. No litigation, no outside capital events and no safety-framework spending appear in the record; the money story is R&D against restriction, reported once a year.",
+      "claims": [
+        {"text": "Huawei reports 2023 net profit more than doubled to about CNY87bn on revenue of CNY704bn.", "rows": ["HW07"]},
+        {"text": "Huawei's 2024 report shows revenue up 22.4% to CNY862.1bn, net profit down to CNY62.6bn, and R&D of CNY179.7bn.", "rows": ["HW12"]},
+        {"text": "Eric Xu commits to using the chipmaking technology available in China to secure long-term AI computing power.", "rows": ["HW08"]},
+        {"text": "Huawei replaces foreign software: HarmonyOS NEXT ships without Android code and the first HarmonyOS PCs ship without Windows.", "rows": ["HW09", "HW14"]},
+        {"text": "Huawei credits ten years of preparation in computing for its AI gains in the 2024 annual report.", "rows": ["HW12"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "It does not lobby; Beijing answers for it. No row in this record shows Huawei commenting on a US rule — after the Ascend guidance the public answer came from the Chinese government, while Huawei itself published a three-year roadmap at its next fixed September conference. Posture toward the US rival is direct: CloudMatrix was given its first public showing with a claim of about 300 PFLOPS set against the GB200 NVL72, and the roadmap's SuperPoDs were aimed at NVIDIA's NVL144. Toward the Chinese state it supplies the national-champion role: serving DeepSeek's models on Ascend cloud within days of R1, and launching an 'All Intelligence' strategy pledging to build China's computing backbone. Toward Washington the signals are products and timing — the Mate 60 dropping during Raimondo's visit — rather than statements.",
+      "claims": [
+        {"text": "Huawei serves DeepSeek R1 and V3 on its Ascend cloud within days of R1's release, claiming performance matches premium global GPUs.", "rows": ["HW11"]},
+        {"text": "Meng launches an 'All Intelligence' strategy pledging to build China's computing backbone.", "rows": ["HW06"]},
+        {"text": "Huawei gives CloudMatrix 384 its first public showing at WAIC with performance claims set against NVIDIA's GB200 NVL72.", "rows": ["HW19"]},
+        {"text": "The record shows no Huawei statement on the US Ascend guidance itself; Huawei publishes a three-year Ascend roadmap at its September conference instead.", "rows": ["HW15", "HW21"]},
+        {"text": "Xu treats US restrictions as the new normal and calls them both challenges and opportunities.", "rows": ["HW02", "HW08"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "Cluster, don't chase the node. With foundry access capped, Huawei competes on systems: CloudMatrix 384 links 384 Ascend 910C chips and claims about 300 PFLOPS versus 180 for the GB200 NVL72 — at roughly four times the power draw, which the claim itself concedes. The roadmap closes the gap in public: 950PR in Q1 2026, 950DT by end-2026, 960 and 970 through 2028, in-house HBM, and Atlas SuperPoDs set against NVIDIA's NVL144. The ecosystem move is open-sourcing: Pangu Pro MoE weights with Ascend-optimised inference code, then commitments to open CANN and the Mind toolchains by end-2025. On devices, HarmonyOS NEXT cut Android code out entirely and HarmonyOS PCs followed. The craft read: benchmark against the China-market part, concede power draw, and open the software to buy the ecosystem the silicon cannot.",
+      "claims": [
+        {"text": "CloudMatrix 384 links 384 Ascend 910C chips and claims about 300 PFLOPS against 180 for NVIDIA's GB200 NVL72, at roughly four times the power draw.", "rows": ["HW13", "HW19"]},
+        {"text": "Huawei publishes a three-year Ascend roadmap — 950PR, 950DT, 960, 970, in-house HBM, SuperPoDs set against NVIDIA's NVL144.", "rows": ["HW21"]},
+        {"text": "Huawei open-sources Pangu Pro MoE weights with Ascend-optimised inference code and commits to open-sourcing CANN and the Mind toolchains.", "rows": ["HW17", "HW20", "HW22"]},
+        {"text": "HarmonyOS NEXT ships without Android code, and HarmonyOS PCs follow without Windows.", "rows": ["HW09", "HW14"]},
+        {"text": "Huawei reports domestic EDA design tools for 14nm and above, among 78 tools built with partners over three years.", "rows": ["HW03"]},
+        {"text": "Pangu Models 5.5 launch as a cloud service built on CloudMatrix 384 supernodes.", "rows": ["HW16"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "domain",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "political_scientist",
+    "competition": "domain",
+    "industrial_policy": "political_scientist",
+    "products": "domain",
+    "safety_risk": "psychologist",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "economist",
+    "bias": "psychologist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}

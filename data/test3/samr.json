@@ -1,0 +1,68 @@
+{
+  "actor": "samr",
+  "name": "State Administration for Market Regulation",
+  "actor_type": "government",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Case timing is the message. The NVIDIA probe opened one week after the December 2024 US chip rule; the Google probe was announced minutes after the US 10 percent tariff took effect; DuPont drew its case the same day Beijing announced counter-tariffs. Around talks the direction reverses: the DuPont probe was suspended in a brief website notice the week before Stockholm, and the Google probe was dropped during talks with Washington — while in Madrid week the same regulator escalated on NVIDIA three days after the US listed 23 Chinese entities. Closures never arrive on paper: after the Busan commitment to end probes of US semiconductor firms, the record to the cutoff shows no closure notice for the NVIDIA or Qualcomm investigations. The read: open fast after a US move, ease quietly before a meeting, and never sign the ending.",
+      "claims": [
+        {"text": "SAMR opens the NVIDIA probe one week after the US chip rule of 2 December 2024.", "rows": ["SM06"]},
+        {"text": "SAMR announces the Google probe minutes after the US 10% tariff takes effect.", "rows": ["SM07"]},
+        {"text": "SAMR suspends the DuPont probe in a brief website notice the week before the Stockholm talks.", "rows": ["SM13"]},
+        {"text": "In Madrid week, SAMR escalates on NVIDIA three days after the US lists 23 Chinese entities, having dropped Google that same month.", "rows": ["SM14", "SM15"]},
+        {"text": "After the Busan commitment to end probes of US semiconductor firms, the record to the cutoff shows no closure notice for the NVIDIA or Qualcomm investigations.", "rows": ["SM15", "SM16", "C38"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Adapted for a regulator: the fines are small; conditions and delay are the real sanctions. Unreported mergers drew 500,000-yuan penalties per case — pocket change to Tencent and Alibaba. Approvals carry behavioural conditions with long tails: AMD–Xilinx took six years of no-bundling, non-discriminatory supply and interoperability duties; Broadcom–VMware cleared with interoperability conditions; Synopsys–Ansys cleared with non-discrimination terms for Chinese customers twelve days after the US lifted its EDA curbs. Where it wants to stop a deal it runs out the clock: Intel–Tower lapsed at the outside date without a clearance decision — and no formal prohibition appears anywhere in the merger record. The draft platform guidelines price conduct risk in rules rather than numbers, listing algorithmic collusion on prices and commissions among eight risks.",
+      "claims": [
+        {"text": "SAMR fines unreported deals at 500,000 yuan per case, across 28 deals involving Tencent and Alibaba.", "rows": ["SM02"]},
+        {"text": "Merger conditions are behavioural and long: AMD–Xilinx carries six years of no-bundling and interoperability duties.", "rows": ["SM01"]},
+        {"text": "SAMR kills by delay where it never formally prohibits: Intel terminates the Tower deal after the outside date passes without clearance.", "rows": ["SM04"]},
+        {"text": "Synopsys–Ansys clears with non-discrimination conditions for Chinese customers twelve days after the US lifts its EDA curbs.", "rows": ["SM12"]},
+        {"text": "Draft platform guidelines list eight risk behaviours, including algorithmic collusion on prices and commissions.", "rows": ["SM18"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "The trade calendar sets the docket. Openings track US restrictions; suspensions, drops and clearances track talks and summits; and the record shows no formal closure even after the Busan commitment to end the semiconductor probes — the leverage simply stays open. Inside the state, SAMR co-issues where CAC leads: it set the mandatory AI-labelling standard to take effect the same September day as CAC's measures, and writes the security-requirements standards beneath them. It tells firms their obligations in public: Qualcomm, it said, was told in March 2024 that the Autotalks deal needed approval and admitted closing the deal without giving notice. It answers to the State Council, and its cases travel in the same news cycles as MOFCOM's counter-tariffs, listings and export controls.",
+      "claims": [
+        {"text": "SAMR opens probes after US moves and suspends or drops them around talks, and the record to the cutoff shows no closure after the Busan commitment.", "rows": ["SM06", "SM10", "SM13", "SM14", "C38"]},
+        {"text": "SAMR issues the mandatory AI-labelling standard to take effect the same day as CAC's labelling measures.", "rows": ["SM09"]},
+        {"text": "SAMR writes the technical standards beneath the AI rules: generative-AI security requirements with companion annotation and training-data standards.", "rows": ["SM11"]},
+        {"text": "SAMR states publicly that it told Qualcomm in March 2024 that Autotalks needed approval, and that Qualcomm admitted closing without notice.", "rows": ["SM17"]},
+        {"text": "SAMR's Google and DuPont cases appear in the same news cycles as MOFCOM's counter-tariffs and listings.", "rows": ["SM07", "SM10"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "Antitrust as a timing instrument needs a procedural hook, and the record shows the hooks. NVIDIA: suspected breach of the conditions attached to the 2020 Mellanox approval. Qualcomm: closing the Autotalks acquisition without notification. Google and DuPont: standard anti-monopoly openings against high-profile US firms. The merger docket shows one consistent style across a decade — conditions or clock-runout, never formal prohibition of a chip deal: AMD–Xilinx cleared with conditions, MaxLinear terminated Silicon Motion hours after clearance, Intel–Tower lapsed, Broadcom–VMware and Synopsys–Ansys cleared last with behavioural remedies. The standards side is quiet capacity: labelling, generative-AI security, annotation and training data — the technical floor that makes CAC's rules testable in practice. Watch the procedural hook first, then the trade calendar, and expect conditions rather than prohibition.",
+      "claims": [
+        {"text": "Each probe needs a procedural hook: the Mellanox conditions for NVIDIA, and the unnotified Autotalks closing for Qualcomm.", "rows": ["SM06", "SM16", "SM17"]},
+        {"text": "SAMR's merger record shows conditions or expiry, never formal prohibition of a chip deal.", "rows": ["SM01", "SM03", "SM04", "SM05", "SM12"]},
+        {"text": "SAMR opens cases against high-profile US firms within days of tariff rounds: Google after the February tariff, DuPont on counter-tariff day.", "rows": ["SM07", "SM10"]},
+        {"text": "SAMR supplies the standards floor for AI rules: mandatory labelling and generative-AI security requirements.", "rows": ["SM09", "SM11"]},
+        {"text": "SAMR opens the Qualcomm investigation the day after MOFCOM's rare-earth controls and after the BIS affiliates rule.", "rows": ["SM16"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "political_scientist",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "domain",
+    "competition": "domain",
+    "industrial_policy": "domain",
+    "products": "economist",
+    "safety_risk": "domain",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "domain",
+    "bias": "psychologist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}

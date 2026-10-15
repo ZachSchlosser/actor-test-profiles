@@ -1,0 +1,70 @@
+{
+  "actor": "baidu",
+  "name": "Baidu",
+  "actor_type": "company",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Margin notes on a fast reverser. Li unveils ERNIE Bot to invited testers, says on stage 'we cannot say that it's perfect,' and watches Hong Kong shares fall ten percent; the product opens to everyone the day CAC's approvals are reported. Under rival pressure the sequence repeats: concede the rival publicly, then match. Within a month of DeepSeek R1 it pledges free access, promises open weights, and puts the rival's model inside its own search box; on the earnings call Li credits DeepSeek for the open-source lesson, and ten weeks later calls DeepSeek 'slow and expensive' from the same keynote stage. It pulls commitments forward when the market moves — free ERNIE Bot landed ahead of the announced date. What it avoids is as telling: no row in this record shows Baidu criticising a regulator, and its chip-cut answers arrive as reassurance delivered at scheduled events, never as complaint.",
+      "claims": [
+        {"text": "Li unveils ERNIE Bot to invited testers only, says 'for sure we cannot say that it's perfect,' and Hong Kong shares fall as much as 10%.", "rows": ["BD01"]},
+        {"text": "Baidu opens ERNIE Bot to the general public on the day CAC's first generative-AI approvals are reported.", "rows": ["BD02", "C502"]},
+        {"text": "Within a month of DeepSeek R1, Baidu pledges free ERNIE Bot access, commits to open-sourcing ERNIE 4.5, and integrates R1 into Baidu Search.", "rows": ["BD07", "BD08", "BD09"]},
+        {"text": "Li credits DeepSeek by name for the open-source decision and ten weeks later calls DeepSeek 'slow and expensive' from the same keynote stage.", "rows": ["BD10", "BD13"]},
+        {"text": "Baidu makes ERNIE Bot free ahead of its announced 1 April date.", "rows": ["BD11"]},
+        {"text": "The record does not show Baidu publicly criticising CAC or a US rule; its answers to chip cuts arrive as reassurance at scheduled investor events, which given three such events suggests avoidance is a habit rather than chance.", "rows": ["BD04", "BD14", "BD15"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "What it protects: the AI-cloud line and the chip story told to investors. In the May 2024 price war it made two ERNIE models free within hours of Alibaba's 97 percent cut — matching on price the same trading day. After R1 it priced X1 as matching DeepSeek-R1 at half the price and 4.5 Turbo at 40 percent of DeepSeek-V3. On chips, each supply cut draws the same investor answer at the next scheduled event: the stockpile covers the near term, a 30,000-chip Kunlun cluster already trains DeepSeek-scale models, domestic chips shield the long term. Li does warn once that curbs 'inevitably will have an impact on the pace of AI development in China' — the caution goes out with the reassurance. It then publishes a five-year Kunlun roadmap to 2030 and keeps ERNIE 5.0 closed with no weights, protecting the frontier it believes it leads.",
+      "claims": [
+        {"text": "Baidu makes ERNIE Speed and Lite free hours after Alibaba cuts prices by up to 97%.", "rows": ["BD06", "C504"]},
+        {"text": "Baidu prices ERNIE X1 as matching DeepSeek-R1 at half the price and ERNIE 4.5 Turbo at 40% of DeepSeek-V3's price.", "rows": ["BD11", "BD12"]},
+        {"text": "After each supply cut, Baidu tells its next scheduled event the hit is manageable, citing stockpiles, Kunlun clusters and domestic chips.", "rows": ["BD04", "BD14", "BD15"]},
+        {"text": "Li pairs the reassurance with a warning that chip curbs 'inevitably will have an impact on the pace of AI development in China'.", "rows": ["BD04"]},
+        {"text": "Baidu publishes a five-year Kunlun roadmap targeting an inference chip in 2026, a training chip in 2027 and a one-million-card cluster by 2030.", "rows": ["BD20"]},
+        {"text": "Baidu previews ERNIE 5.0 as proprietary with no weights, stepping back from the open release of ERNIE 4.5.", "rows": ["BD19"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Answers to gates, not to voters. The cleanest fact in the record: when CAC's first approvals were reported on 31 August 2023, Baidu opened the product the same day — it treats the regulator's calendar as its launch calendar. On US controls it never takes the adversarial line: each cut is framed as manageable, without attacking the rule or the issuer. It hedges domestically by absorbing rather than blocking a rival — DeepSeek-R1 runs inside Baidu Search within a month of the shock. And it hedges geographically: Apollo Go expands through multi-year deals with Uber and Lyft for deployment outside the US and mainland China, first Asia and the Middle East, then Europe pending approval. The principal is Robin Li in person: he sets the stance in keynotes and earnings calls and personally delivers each reversal, including the closed-to-open turn on ERNIE 4.5.",
+      "claims": [
+        {"text": "Baidu launches ERNIE Bot on the day of CAC's first reported approvals, among the first firms cleared.", "rows": ["BD02", "C502"]},
+        {"text": "Baidu answers each US chip cut with reassurance about stockpiles and Kunlun chips rather than public criticism of the rule.", "rows": ["BD04", "BD15"]},
+        {"text": "Baidu Search integrates DeepSeek-R1 alongside ERNIE and adds DeepSeek to its developer platform within a month of R1.", "rows": ["BD09"]},
+        {"text": "Apollo Go signs multi-year deals with Uber and Lyft to deploy robotaxis outside the US and mainland China, starting in Asia, the Middle East and Europe.", "rows": ["BD17", "BD18"]},
+        {"text": "Robin Li sets the stance in person and announces the open-source reversal himself in a February WeChat post, reversing his own April 2024 position.", "rows": ["BD05", "BD08"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "A Chinese platform fast-follower, read on the industry pattern. Launches cluster at fixed events — Baidu World in November, Create in April — so timing near a trigger is weak evidence of reaction. Benchmark claims always name the leading rival: ERNIE 4.0 'not inferior in any aspect to GPT-4', X1 matching R1 at half the price. The open-closed swing tracks the market: 'open source makes little sense' in April 2024, Apache-2.0 weights for ERNIE 4.5 delivered on the promised June 2025 date, then ERNIE 5.0 back to closed. On silicon it runs its own Kunlun line for training clusters and publishes a five-year roadmap against the domestic-chip cycle. Robotaxis scale through carrier partnerships abroad rather than direct operation. The domain note: treat every Baidu launch as calendar-adjacent, and every price claim as the current leader at a fraction of the cost.",
+      "claims": [
+        {"text": "Baidu clusters frontier launches at fixed events: ERNIE 4.0 at Baidu World 2023, the Turbo models at Baidu Create 2025, the ERNIE 5.0 preview at Baidu World 2025.", "rows": ["BD03", "BD12", "BD19"]},
+        {"text": "Li claims parity with the leading rival at each launch: ERNIE 4.0 'not inferior in any aspect to GPT-4', X1 matching DeepSeek-R1 at half the price.", "rows": ["BD03", "BD11"]},
+        {"text": "Baidu swings from 'open source makes little sense' to Apache-2.0 open weights for ERNIE 4.5, delivered on the promised date.", "rows": ["BD05", "BD08", "BD16"]},
+        {"text": "Baidu switches on a 30,000-chip Kunlun P800 cluster and says it can train DeepSeek-like models on it.", "rows": ["BD14"]},
+        {"text": "Apollo Go expands abroad through multi-year partner deals with Uber and Lyft rather than direct operation.", "rows": ["BD17", "BD18"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "economist",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "political_scientist",
+    "competition": "economist",
+    "industrial_policy": "domain",
+    "products": "domain",
+    "safety_risk": "psychologist",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "economist",
+    "bias": "psychologist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}

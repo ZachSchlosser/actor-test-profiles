@@ -1,0 +1,68 @@
+{
+  "actor": "mofcom",
+  "name": "Ministry of Commerce",
+  "actor_type": "government",
+  "cutoff": "2026-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Words on schedule, acts by selection. Every major US chip rule drew a same-day or next-day condemnation — 'tech bullying', 'economic coercion' — each closing with the same promise of 'necessary measures'. The acts are choosier: mineral controls followed only some escalations, within days, and are always framed as routine non-proliferation, 'not targeting any country'; only the December 2024 ban named the US directly. Easing gets no welcome: asked about H20 approvals, the ministry told Washington to drop zero-sum thinking and lift other restrictions. Around truces the countermeasures are suspended with sunset dates matched to the US side, and the licensing regimes keep running underneath. The margin note: the condemnation is a reflex; the mineral move is a decision, and the two travel separately.",
+      "claims": [
+        {"text": "MOFCOM condemns each major US chip rule within a day, calling them 'tech bullying' and 'economic coercion', and promises 'necessary measures'.", "rows": ["MC01", "MC04", "MC07"]},
+        {"text": "MOFCOM frames its mineral export controls as routine and 'not targeting any country', even when the timing follows a US or allied move.", "rows": ["MC03", "MC05"]},
+        {"text": "Only the December 2024 export ban names the US directly, barring dual-use exports to US military users.", "rows": ["MC08"]},
+        {"text": "Asked about US approval of H20 sales, MOFCOM declines to welcome it and demands the US drop zero-sum thinking and lift other restrictions.", "rows": ["MC19"]},
+        {"text": "Around truces, MOFCOM suspends countermeasures with sunset dates while keeping the licensing regimes in force.", "rows": ["MC17", "MC28", "MC29"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Adapted for a trade ministry: it rations by licence, not by ban. The licensing net widened mineral by mineral: gallium and germanium in July 2023, graphite that October, antimony in 2024, tungsten and four others in February 2025, then seven medium and heavy rare earths under licence from April 2025. The October 2025 regime went extraterritorial: any foreign-made item with at least 0.1 percent Chinese rare-earth content, plus the technology itself, with licence carve-outs for defined military-relevant uses at advanced nodes. Channels stay open where it pays: Nexperia exemptions for eligible civilian exports, and suspensions rather than revocations around truces. Trade remedies run slow and adjustable — the anti-dumping case on US analog chips cites a 37 percent import surge and a 52 percent price fall — and tariff rounds draw same-day packages of controls and listings.",
+      "claims": [
+        {"text": "MOFCOM extends export licensing mineral by mineral: gallium and germanium, graphite, antimony, tungsten and four others, then seven medium and heavy rare earths.", "rows": ["MC03", "MC05", "MC06", "MC12", "MC15"]},
+        {"text": "The October 2025 rare-earth regime covers foreign-made items with at least 0.1% Chinese rare-earth content, plus the technology itself.", "rows": ["MC25"]},
+        {"text": "MOFCOM keeps channels open: Nexperia exemptions for eligible civilian exports, and suspensions rather than revocations around truces.", "rows": ["MC24", "MC28"]},
+        {"text": "The anti-dumping probe into US analog IC chips cites a 37% import surge and a 52% price fall over 2022–24.", "rows": ["MC21"]},
+        {"text": "Tariff rounds draw same-day packages of export controls and entity listings.", "rows": ["MC12", "MC13", "MC15", "MC16"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Big moves carry State Council approval and summit timing. The wide rare-earth regime landed with State Council sign-off between rounds of talks; after the Busan meeting the harshest measures were suspended within days, with sunset dates matched to the US suspensions agreed at Geneva. Escalation during negotiations uses adjustable instruments: anti-dumping and anti-discrimination probes into US chips opened on the eve of the Madrid talks, naming each US rule in the filing. Threats are met with the standing formula — rare-earth controls defended as 'not export bans', 'fight to the end, door open to talks'. Third countries get the same toolkit: the Nexperia notice answers the Dutch takeover of a Chinese-owned chipmaker. Veto power sits above the ministry: summit diplomacy, not the spokesperson rhythm, sets the suspensions.",
+      "claims": [
+        {"text": "The October 2025 rare-earth regime is issued with State Council approval.", "rows": ["MC25"]},
+        {"text": "After the Busan meeting, MOFCOM suspends the October measures until 10 November 2026, having already extended the April suspensions that followed the Geneva statement.", "rows": ["MC28", "MC29", "C204"]},
+        {"text": "On the eve of the Madrid talks, MOFCOM opens anti-dumping and anti-discrimination probes into US chip measures, naming the October 2022, October 2023, December 2024 and January 2025 rules and the May 2025 Ascend guidance.", "rows": ["MC21", "MC22"]},
+        {"text": "MOFCOM defends the rare-earth controls as 'not export bans' and repeats 'fight to the end, door open to talks' after Trump's 100% tariff threat.", "rows": ["MC27", "C207"]},
+        {"text": "The Nexperia export-control notice answers the Dutch government's takeover of the chipmaker.", "rows": ["MC24", "C206"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "The toolkit is mineral chokepoints plus two lists. Gallium, germanium, graphite, antimony, tungsten, tellurium, bismuth, molybdenum, indium and the heavy rare earths form the controlled set — inputs to chipmaking and defence that China dominates. The Unreliable Entity List and the export-control list run in parallel: fifteen US entities on one and ten firms on the other the same day in March 2025, opening with PVH and Illumina for allegedly discriminating against Chinese firms. Litigation was tried once — a WTO dispute against the 2022 controls — and never repeated after that; unilateral licensing replaced it. From late 2025 the controls reach extraterritorially by content threshold, and the standing defence against scrutiny is framing: non-proliferation procedure, 'not targeting any country'.",
+      "claims": [
+        {"text": "The controlled set spans gallium, germanium, graphite, antimony, tungsten, tellurium, bismuth, molybdenum, indium and seven medium and heavy rare earths.", "rows": ["MC03", "MC05", "MC06", "MC12", "MC15"]},
+        {"text": "The Unreliable Entity List and the export-control list run in parallel, added to on the same days as tariff answers.", "rows": ["MC13", "MC14", "MC16"]},
+        {"text": "MOFCOM filed one WTO dispute against the 2022 US controls and switched to unilateral licensing and listings afterwards.", "rows": ["MC02", "MC03", "MC12"]},
+        {"text": "Controls become extraterritorial by content threshold from October 2025: 0.1% Chinese rare-earth content brings foreign-made items into licence scope.", "rows": ["MC25"]},
+        {"text": "Entity listings cite discrimination against Chinese firms: PVH Group and Illumina lead the February 2025 list.", "rows": ["MC13"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "domain",
+    "china_race": "political_scientist",
+    "chips_and_compute": "economist",
+    "regulation": "political_scientist",
+    "competition": "economist",
+    "industrial_policy": "economist",
+    "products": "economist",
+    "safety_risk": "psychologist",
+    "open_source": "political_scientist",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "economist",
+    "bias": "psychologist",
+    "sanctions_and_trade": "domain"
+  }
+}

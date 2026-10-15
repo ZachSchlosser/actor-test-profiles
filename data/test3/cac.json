@@ -1,0 +1,68 @@
+{
+  "actor": "cac",
+  "name": "Cyberspace Administration of China",
+  "actor_type": "government",
+  "cutoff": "2025-01-01",
+  "lenses": [
+    {
+      "lens": "psychologist",
+      "summary": "Instrument behaviour, not personality — but the habits hold. Nothing goes final without a draft passing first: the generative-AI draft went out in April 2023, the signed measures in July. The calendar runs the campaigns: a Spring Festival clean-up launched days before each Lunar New Year, year after year. Reaction to being defied is fast and procedural — Didi drew a cybersecurity review two days after its US listing, app removal two days after that, seven departments on site within two weeks, and a penalty decision in the regulator's own name a year later. Foreign suppliers get one treatment in this record: Micron's review ended with critical-infrastructure operators barred from buying. Pressure on domestic firms is applied quietly — Alipay was summoned over its annual report; Tesla was summoned alongside four other bodies.",
+      "claims": [
+        {"text": "CAC publishes a draft for comment before the final rule: the generative-AI draft in April 2023, the signed interim measures in July.", "rows": ["A096", "O15"]},
+        {"text": "CAC launches its Spring Festival clean-up campaign days before each Lunar New Year, in each year of the record.", "rows": ["A044", "A071", "A092", "A128"]},
+        {"text": "CAC opens a cybersecurity review of Didi two days after its US listing and orders the app removed two days after that.", "rows": ["A054", "A055"]},
+        {"text": "Seven departments move into Didi to carry out the review, and a penalty decision in CAC's own name follows a year later.", "rows": ["A059", "A083"]},
+        {"text": "CAC's single review of a foreign chipmaker ends with critical-infrastructure operators barred from buying Micron products.", "rows": ["A095", "A098"]}
+      ]
+    },
+    {
+      "lens": "economist",
+      "summary": "Adapted for a regulator: its budget-relevant behaviour is penalties, licence gates and the cost it imposes by filing. Enforcement output is counted in takedowns — 110 websites in one 2014 notice, 31 in another, 65 in a third — and campaign follow-ups report the next batch of punished cases rather than fine amounts. The one penalty decision visible in the record is Didi's, issued under the cybersecurity review; the row logs the decision, not the sum. Where a rule proves costly it is eased, not repealed: the 2024 cross-border dataflow provisions loosen the 2022 outbound assessment regime while leaving the assessment and the standard-contract route standing. Filing regimes impose disclosure rather than fees, and the lists keep coming — algorithm, deep-synthesis and blockchain batches, roughly every two months. The record does not show CAC funding or subsidising any firm.",
+      "claims": [
+        {"text": "CAC's enforcement notices count takedowns: 110 websites in one 2014 notice, 31 in another, 65 in a third.", "rows": ["A001", "A002", "A004"]},
+        {"text": "Campaign follow-ups report batches of punished cases rather than individual penalty amounts.", "rows": ["A046", "A094"]},
+        {"text": "CAC eases a costly rule rather than repealing it: the 2024 cross-border dataflow provisions ease the 2022 outbound assessment while leaving it and the standard-contract route in place.", "rows": ["O16", "O11", "O13"]},
+        {"text": "CAC closes the Didi review with an administrative penalty decision issued in its own name.", "rows": ["A083"]},
+        {"text": "Filing duties convert into published lists on a rolling basis: nine deep-synthesis algorithm lists between June 2023 and December 2024.", "rows": ["A100", "A112", "A127", "A152"]}
+      ]
+    },
+    {
+      "lens": "political_scientist",
+      "summary": "Every binding AI instrument in the record is a joint order — deep synthesis, algorithm recommendation, generative AI — so each co-signing body can stop a text, and CAC does not legislate alone on AI content. Its principals sit above it: the office answers to the Central Cyberspace Affairs Commission and through it to the Politburo. Toward firms it holds approval and filing gates: nothing went public under the generative-AI measures before approval, and the first official filing list followed about eight months after the measures took effect. Toward Washington it has one move in this record — a security review of a US memory maker, logged as a retaliatory review, months after the US chip controls. Jurisdiction over listings abroad is enforced with reviews inside three weeks of an IPO.",
+      "claims": [
+        {"text": "CAC's binding AI rules are issued as joint instruments: the deep-synthesis provisions, the algorithm provisions and the generative-AI measures each carry multiple issuing bodies.", "rows": ["O12", "O9", "O15"]},
+        {"text": "CAC reviews platforms that list abroad within about three weeks: the Didi, Full Truck Alliance and BOSS Zhipin reviews all landed in July 2021.", "rows": ["A054", "A056"]},
+        {"text": "CAC reviews a US chip firm once in this record, months after the US chip controls, and bars critical-infrastructure operators from its products.", "rows": ["A095", "A098"]},
+        {"text": "The first official generative-AI filing list follows about eight months after the interim measures took effect.", "rows": ["O15", "A133"]},
+        {"text": "CAC summons firms together with other regulators when the subject crosses domains: Tesla was summoned by five bodies, Alipay summoned alone over its annual report.", "rows": ["A045", "A011"]}
+      ]
+    },
+    {
+      "lens": "domain",
+      "summary": "The legislative habit is two-step and it never skips: draft for comment, then a signed order, then a filing system, then published lists. Blockchain (draft October 2018, rule January 2019), algorithms (draft August 2021, rule December 2021), generative AI (draft April 2023, rule July 2023) all follow the same arc. Each new AI technique drew its own instrument: deep synthesis, then generative AI, then a labelling standard drafted as a mandatory national standard. Campaigns track both the lunar calendar and the summer minors' schedule. The pattern a China content-regulator watcher needs: watch the draft notice, not the press release — the draft fixes the scope, the signed order lands months later, and the published filing lists tell you who actually submitted and when.",
+      "claims": [
+        {"text": "The two-step habit repeats: blockchain drafted October 2018 and ordered January 2019; algorithms drafted August 2021 and ordered December 2021; generative AI drafted April 2023 and ordered July 2023.", "rows": ["A013", "O3", "A061", "O9", "A096", "O15"]},
+        {"text": "Each new AI technique draws a dedicated instrument: deep-synthesis provisions, then the generative-AI measures, then a draft mandatory labelling standard.", "rows": ["A072", "O12", "A096", "O15", "C63"]},
+        {"text": "Rules convert into filing systems with published lists: blockchain from 2019, algorithms from 2022, deep synthesis from 2023, generative-AI filings from April 2024.", "rows": ["A017", "A085", "A100", "A133"]},
+        {"text": "Campaigns run on two calendars: Spring Festival campaigns before each New Year and summer campaigns targeting minors' online environments.", "rows": ["A044", "A036", "A128"]},
+        {"text": "CAC targets content categories in waves — rumours, pornography, fan-club chaos — each with its own campaign name.", "rows": ["A001", "A002", "A052"]}
+      ]
+    }
+  ],
+  "routing": {
+    "export_controls": "political_scientist",
+    "china_race": "political_scientist",
+    "chips_and_compute": "domain",
+    "regulation": "domain",
+    "competition": "political_scientist",
+    "industrial_policy": "political_scientist",
+    "products": "domain",
+    "safety_risk": "psychologist",
+    "open_source": "domain",
+    "copyright": "domain",
+    "labour": "psychologist",
+    "energy": "domain",
+    "bias": "psychologist",
+    "sanctions_and_trade": "political_scientist"
+  }
+}
