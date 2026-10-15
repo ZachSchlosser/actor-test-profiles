@@ -1,0 +1,165 @@
+[
+  {
+    "id": "C40",
+    "date": "2022-08-26",
+    "actor": "US government",
+    "text": "Notifies NVIDIA that A100/H100 exports to China and Russia need a licence, effective immediately.",
+    "visible_to": "parties",
+    "surfaced": "2022-08-31",
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000146/nvda-20220826.htm"
+      }
+    ],
+    "parties": [
+      "nvidia"
+    ]
+  },
+  {
+    "id": "C41",
+    "date": "2024-09-01",
+    "actor": "Wiz Research",
+    "text": "Privately reports the Container Toolkit escape CVE-2024-0132 to NVIDIA PSIRT.",
+    "visible_to": "parties",
+    "surfaced": "2024-09-26",
+    "sources": [
+      {
+        "label": "Wiz",
+        "url": "https://www.wiz.io/blog/wiz-research-critical-nvidia-ai-vulnerability"
+      }
+    ],
+    "parties": [
+      "nvidia"
+    ]
+  },
+  {
+    "id": "C42",
+    "date": "2024-12-09",
+    "actor": "SAMR (China)",
+    "text": "Opens an anti-monopoly probe of NVIDIA tied to its Mellanox acquisition.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Yicai Global",
+        "url": "https://yicaiglobal.com/news/nvidia-says-its-willing-to-answer-questions-after-china-puts-us-chipmaker-under-antitrust-probe"
+      }
+    ]
+  },
+  {
+    "id": "C44",
+    "date": "2025-04-09",
+    "actor": "US government",
+    "text": "Tells NVIDIA that H20 exports to China need a licence; on 14 April, that the requirement is indefinite.",
+    "visible_to": "parties",
+    "surfaced": "2025-04-15",
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
+      }
+    ],
+    "parties": [
+      "nvidia"
+    ]
+  },
+  {
+    "id": "C45",
+    "date": "2025-04-30",
+    "actor": "Anthropic",
+    "text": "Submission backing the AI Diffusion Rule cites chip smuggling.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "CNBC",
+        "url": "https://www.cnbc.com/2025/05/01/nvidia-and-anthropic-clash-over-us-ai-chip-restrictions-on-china.html"
+      }
+    ]
+  },
+  {
+    "id": "C47",
+    "date": "2025-05-17",
+    "actor": "Wiz Research",
+    "text": "Reports the NVIDIAScape container escape (CVE-2025-23266) at Pwn2Own Berlin.",
+    "visible_to": "parties",
+    "surfaced": "2025-07-15",
+    "sources": [
+      {
+        "label": "Wiz",
+        "url": "https://wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape"
+      }
+    ],
+    "parties": [
+      "nvidia"
+    ]
+  },
+  {
+    "id": "C48",
+    "date": "2025-05-15",
+    "actor": "Wiz Research",
+    "text": "Privately reports a Triton Inference Server chain enabling unauthenticated RCE.",
+    "visible_to": "parties",
+    "surfaced": "2025-08-04",
+    "sources": [
+      {
+        "label": "Wiz",
+        "url": "https://www.wiz.io/blog/nvidia-triton-cve-2025-23319-vuln-chain-to-ai-server"
+      }
+    ],
+    "parties": [
+      "nvidia"
+    ]
+  },
+  {
+    "id": "C49",
+    "date": "2025-08-05",
+    "actor": "DOJ",
+    "text": "Charges ALX Solutions founders with smuggling NVIDIA GPUs to China.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TechCrunch",
+        "url": "https://techcrunch.com/2025/08/06/two-arrested-for-smuggling-ai-chips-to-china-nvidia-says-no-to-kill-switches"
+      }
+    ]
+  },
+  {
+    "id": "C50",
+    "date": "2025-09",
+    "actor": "Senate",
+    "text": "GAIN AI Act, requiring US buyers to be served first, is added to the Senate FY2026 NDAA. Month only.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TradingView (Reuters)",
+        "url": "https://de.tradingview.com/news/reuters.com%2C2025%3Anewsml_L4N3US19X%3A0-nvidia-says-gain-ai-act-would-restrict-competition-likens-it-to-ai-diffusion-rule"
+      }
+    ]
+  },
+  {
+    "id": "C52",
+    "date": "2026-07-28",
+    "actor": "Taiwan prosecutors (Keelung)",
+    "text": "Detain an NVIDIA employee in a probe into servers smuggled to China.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Forbes",
+        "url": "https://www.forbes.com/sites/siladityaray/2026/07/28/taiwan-prosecutors-reportedly-detain-nvidia-staffer-in-china-ai-chip-smuggling-probe/"
+      }
+    ]
+  },
+  {
+    "id": "C53",
+    "date": "2026-10-01",
+    "actor": "DOJ",
+    "text": "Arrests Greg Lui over ~$300m of NVIDIA servers smuggled via Malaysia and Singapore.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Transport Topics",
+        "url": "https://www.ttnews.com/articles/calif-man-charged-nvidia-chips"
+      }
+    ]
+  }
+]

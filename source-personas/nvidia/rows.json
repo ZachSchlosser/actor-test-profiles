@@ -1,0 +1,1559 @@
+[
+  {
+    "id": "K01",
+    "date": "2022-02-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Files an 8-K ending the ~$40bn Arm acquisition with SoftBank, citing regulatory obstacles; SoftBank keeps the $1.25bn prepayment.",
+    "quote": "significant regulatory challenges preventing the consummation of the transaction",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "inv",
+      "venue": "SEC 8-K"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000005/nvda-20220208.htm"
+      }
+    ]
+  },
+  {
+    "id": "K02",
+    "date": "2022-03-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "disclose_incident",
+    "text": "Confirms a cyberattack detected on 23 Feb in which employee credentials and proprietary data were taken; no evidence of ransomware.",
+    "quote": "the threat actor took employee credentials and some NVIDIA proprietary information from our systems",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "Statement to press"
+    },
+    "sources": [
+      {
+        "label": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/nvidia-confirms-data-was-stolen-in-recent-cyberattack"
+      }
+    ]
+  },
+  {
+    "id": "K03",
+    "date": "2022-03-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Announces the Hopper architecture and H100 GPU (80B transistors, HBM3).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "GTC 2022"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing"
+      }
+    ]
+  },
+  {
+    "id": "K04",
+    "date": "2022-08-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Discloses an immediate US licence requirement on A100/H100 exports to China and Russia; about $400m of Q3 outlook at risk.",
+    "quote": "may require the Company to transition certain operations out of China",
+    "trigger_ref": "C40",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 8-K"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000146/nvda-20220826.htm"
+      },
+      {
+        "label": "Tom's Hardware",
+        "url": "https://tomshardware.com/news/us-export-rules-may-cost-nvidia-400-million-prevent-h100-development"
+      }
+    ]
+  },
+  {
+    "id": "K05",
+    "date": "2022-09-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish",
+    "text": "Publishes the Model Card++ format, adding bias, explainability, privacy and safety/security subcards.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA Technical Blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA dev blog",
+        "url": "https://developer.nvidia.com/blog/enhancing-ai-transparency-and-ethical-considerations-with-model-card"
+      }
+    ]
+  },
+  {
+    "id": "K06",
+    "date": "2022-11-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Confirms the A800, an A100 with reduced interconnect built for Chinese customers under the new US limits.",
+    "quote": "meets the US Government’s clear test for reduced export control and cannot be programmed to exceed it",
+    "trigger_ref": "C01",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "cn",
+      "venue": "Statement to Reuters"
+    },
+    "sources": [
+      {
+        "label": "iTnews Asia (Reuters)",
+        "url": "https://www.itnews.asia/news/nvidia-offers-new-advanced-chip-to-chinese-customers-587528"
+      }
+    ]
+  },
+  {
+    "id": "K07",
+    "date": "2023-03-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Says it modified the H100 into the H800, legal to export to China and used by Alibaba, Baidu and Tencent clouds.",
+    "quote": null,
+    "trigger_ref": "C01",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "cn",
+      "venue": "Statement to Reuters"
+    },
+    "sources": [
+      {
+        "label": "TipRanks (Reuters)",
+        "url": "https://www.tipranks.com/news/nvidia-nasdaqnvda-dodges-china-chip-restrictions-with-h800"
+      }
+    ]
+  },
+  {
+    "id": "K08",
+    "date": "2023-04-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Releases NeMo Guardrails, open-source software to keep LLM apps on-topic, safe and secure.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/ai-chatbot-guardrails-nemo/"
+      }
+    ]
+  },
+  {
+    "id": "K09",
+    "date": "2023-09-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "sign",
+    "text": "Joins the second cohort endorsing the White House voluntary AI commitments.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "us",
+      "venue": "White House event"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/2023/09/12/ai-safety-washington"
+      }
+    ]
+  },
+  {
+    "id": "K10",
+    "date": "2023-09-12",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "testify",
+    "text": "Chief Scientist Bill Dally testifies, urging balance between innovation and responsible deployment and a focus on very large new models.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "us",
+      "venue": "Senate Judiciary subcommittee"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/2023/09/12/ai-safety-washington"
+      }
+    ]
+  },
+  {
+    "id": "K11",
+    "date": "2023-10-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Files an 8-K on the new BIS rule extending licences to A800, H800, L40, L40S and RTX 4090; expects no near-term meaningful impact.",
+    "quote": "we do not anticipate that the additional restrictions will have a near-term meaningful impact on our financial results",
+    "trigger_ref": "C02",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 8-K"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000217/nvda-20231017.htm"
+      }
+    ]
+  },
+  {
+    "id": "K12",
+    "date": "2023-11",
+    "date_precision": "month",
+    "type": "did",
+    "verb": "file",
+    "text": "10-Q discloses the US made the new licence requirements effective immediately on 23 Oct, removing the grace period.",
+    "quote": null,
+    "trigger_ref": "C02",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 10-Q"
+    },
+    "sources": [
+      {
+        "label": "SEC 10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000227/nvda-20231029.htm"
+      }
+    ]
+  },
+  {
+    "id": "K13",
+    "date": "2023-11-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Introduces the H200, the first HBM3e GPU (141GB, 4.8 TB/s).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "SC23"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform"
+      }
+    ]
+  },
+  {
+    "id": "K14",
+    "date": "2024-01",
+    "date_precision": "month",
+    "type": "did",
+    "verb": "launch",
+    "text": "Reported to plan Q2 2024 mass production of the H20, the strongest of three China chips designed under the Oct 2023 rules; declined to comment.",
+    "quote": null,
+    "trigger_ref": "C02",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "cn",
+      "venue": "Reuters report"
+    },
+    "sources": [
+      {
+        "label": "CNBC (Reuters)",
+        "url": "https://www.cnbc.com/2024/01/08/nvidia-to-launch-china-focused-ai-chip-in-q2-2024-sources-say.html"
+      }
+    ]
+  },
+  {
+    "id": "K15",
+    "date": "2024-03-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Unveils Blackwell (B200, 208B transistors; GB200 NVL72).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "GTC 2024"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+      }
+    ]
+  },
+  {
+    "id": "K16",
+    "date": "2024-06-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Releases open Nemotron-4 340B Base, Instruct and Reward models.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "NVIDIA blog / Hugging Face"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/nemotron-4-synthetic-data-generation-llm-training/"
+      }
+    ]
+  },
+  {
+    "id": "K17",
+    "date": "2024-09-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "patch",
+    "text": "Patches the critical Container Toolkit escape CVE-2024-0132 (v1.16.2), reported by Wiz on 1 Sept.",
+    "quote": null,
+    "trigger_ref": "C41",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA security bulletin"
+    },
+    "sources": [
+      {
+        "label": "Wiz",
+        "url": "https://www.wiz.io/blog/wiz-research-critical-nvidia-ai-vulnerability"
+      },
+      {
+        "label": "The Register",
+        "url": "https://www.theregister.com/2024/09/26/critical_nvidia_bug_container_escape/"
+      }
+    ]
+  },
+  {
+    "id": "K18",
+    "date": "2024-10-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Releases Llama-3.1-Nemotron-70B-Instruct (Arena Hard 85.0).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "Hugging Face"
+    },
+    "sources": [
+      {
+        "label": "HF model card",
+        "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF"
+      }
+    ]
+  },
+  {
+    "id": "K19",
+    "date": "2024-12",
+    "date_precision": "month",
+    "type": "did",
+    "verb": "acquire",
+    "text": "Completes the ~$700m Run:ai acquisition after unconditional EU clearance.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "pub",
+      "venue": "Company announcement"
+    },
+    "sources": [
+      {
+        "label": "Silicon UK",
+        "url": "https://www.silicon.co.uk/cloud/ai/runai-nvidia-buy-593979"
+      }
+    ]
+  },
+  {
+    "id": "K20",
+    "date": "2024-12-10",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Says it will answer the regulator’s questions after SAMR opens an antitrust probe tied to Mellanox.",
+    "quote": "We are happy to answer any questions the regulator may have about our business.",
+    "trigger_ref": "C42",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "cn",
+      "venue": "Statement to Yicai"
+    },
+    "sources": [
+      {
+        "label": "Yicai Global",
+        "url": "https://yicaiglobal.com/news/nvidia-says-its-willing-to-answer-questions-after-china-puts-us-chipmaker-under-antitrust-probe"
+      }
+    ]
+  },
+  {
+    "id": "K21",
+    "date": "2025-01-13",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "criticise",
+    "text": "Calls the AI Diffusion Rule misguided and secretly drafted, saying it would not improve US security.",
+    "quote": "these rules would do nothing to enhance U.S. security",
+    "trigger_ref": "C43",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 2,
+      "audience": "us",
+      "venue": "NVIDIA blog (Ned Finkle, VP government affairs)"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/ai-policy/"
+      }
+    ]
+  },
+  {
+    "id": "K22",
+    "date": "2025-01-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Launches NeMo Guardrails NIM microservices (content safety, topic control, jailbreak detection) and the garak scanner.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/nemo-guardrails-nim-microservices/"
+      }
+    ]
+  },
+  {
+    "id": "K23",
+    "date": "2025-02-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "sign",
+    "text": "Added as a signatory to the Frontier AI Safety Commitments ahead of the Paris AI Action Summit.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "UK government signatory list"
+    },
+    "sources": [
+      {
+        "label": "GOV.UK",
+        "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024"
+      }
+    ]
+  },
+  {
+    "id": "K24",
+    "date": "2025-02-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "patch",
+    "text": "Ships Container Toolkit 1.17.4, fixing CVE-2025-23359, a bypass of its incomplete CVE-2024-0132 patch.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA security bulletin"
+    },
+    "sources": [
+      {
+        "label": "Wiz deep dive",
+        "url": "https://wiz.io/blog/nvidia-ai-vulnerability-deep-dive-cve-2024-0132"
+      }
+    ]
+  },
+  {
+    "id": "K25",
+    "date": "2025-02-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_framework",
+    "text": "Publishes its Frontier AI Risk Assessment to meet the Seoul commitment, stating it is not developing frontier models.",
+    "quote": "frontier AI models are not currently under development at NVIDIA",
+    "trigger_ref": "K23",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "nvidia.com PDF (METR index)",
+      "subtopic": "frameworks"
+    },
+    "sources": [
+      {
+        "label": "METR FSP index",
+        "url": "https://metr.org/fsp"
+      },
+      {
+        "label": "NVIDIA PDF",
+        "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf"
+      }
+    ]
+  },
+  {
+    "id": "K26",
+    "date": "2025-03-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Announces Blackwell Ultra (GB300 NVL72, HGX B300) and Dynamo.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "GTC 2025"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-ultra-ai-factory-platform-paves-way-for-age-of-ai-reasoning"
+      }
+    ]
+  },
+  {
+    "id": "K27",
+    "date": "2025-04-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Releases open Llama-3.1-Nemotron-Ultra-253B (GPQA 76.0 in reasoning mode).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "Hugging Face"
+    },
+    "sources": [
+      {
+        "label": "VentureBeat",
+        "url": "https://venturebeat.com/ai/nvidias-new-llama-3-1-nemotron-ultra-outperforms-deepseek-r1-at-half-the-size/"
+      }
+    ]
+  },
+  {
+    "id": "K28",
+    "date": "2025-04-14",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "commit",
+    "text": "Commits to build AI supercomputers in the US for the first time: up to half a trillion dollars of AI infrastructure over four years.",
+    "quote": "half a trillion dollars of AI infrastructure",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "us",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/"
+      }
+    ]
+  },
+  {
+    "id": "K29",
+    "date": "2025-04-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Discloses that H20 exports to China need a licence indefinitely; expects up to ~$5.5bn of charges.",
+    "quote": "up to approximately $5.5 billion of charges associated with H20 products",
+    "trigger_ref": "C44",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 8-K"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
+      }
+    ]
+  },
+  {
+    "id": "K30",
+    "date": "2025-05-01",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "criticise",
+    "text": "Dismisses Anthropic’s smuggling claims as tall tales and says US firms should compete instead.",
+    "quote": "American firms should focus on innovation and rise to the challenge, rather than tell tall tales",
+    "trigger_ref": "C45",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 2,
+      "audience": "us",
+      "venue": "Statement to CNBC"
+    },
+    "sources": [
+      {
+        "label": "CNBC",
+        "url": "https://www.cnbc.com/2025/05/01/nvidia-and-anthropic-clash-over-us-ai-chip-restrictions-on-china.html"
+      }
+    ]
+  },
+  {
+    "id": "K31",
+    "date": "2025-05-07",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "praise",
+    "text": "Welcomes the rescission of the AI Diffusion Rule as a once-in-a-generation opportunity.",
+    "quote": "We welcome the Administration’s leadership and new direction on AI policy.",
+    "trigger_ref": "C46",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 2,
+      "audience": "us",
+      "venue": "Spokesperson statement"
+    },
+    "sources": [
+      {
+        "label": "SiliconANGLE",
+        "url": "https://siliconangle.com/2025/05/07/backlash-us-scraps-biden-administrations-curb-ai-chip-exports/"
+      }
+    ]
+  },
+  {
+    "id": "K32",
+    "date": "2025-05-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "partner",
+    "text": "Partners with Saudi PIF’s HUMAIN on AI factories of up to 500MW during Trump’s Riyadh visit.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "pub",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA IR",
+        "url": "https://investor.nvidia.com/news/press-release-details/2025/HUMAIN-and-NVIDIA-Announce-Strategic-Partnership-to-Build-AI-Factories-of-the-Future-in-Saudi-Arabia/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "K33",
+    "date": "2025-07-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish",
+    "text": "Responds to the GPUHammer Rowhammer research by recommending System-Level ECC.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA security notice"
+    },
+    "sources": [
+      {
+        "label": "BleepingComputer",
+        "url": "https://bleepingcomputer.com/news/security/nvidia-shares-guidance-to-defend-gddr6-gpus-against-rowhammer-attacks"
+      }
+    ]
+  },
+  {
+    "id": "K34",
+    "date": "2025-07-14",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Says it is filing to resume H20 sales and the US has assured it licences will be granted.",
+    "quote": "The U.S. government has assured NVIDIA that licenses will be granted",
+    "trigger_ref": "C44",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
+      }
+    ]
+  },
+  {
+    "id": "K35",
+    "date": "2025-07-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Announces a new export-compliant RTX PRO GPU for China (later reported as RTX Pro 6000D).",
+    "quote": "ideal for digital twin AI for smart factories and logistics",
+    "trigger_ref": "C44",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "cn",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
+      },
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2025/07/15/nvidia-secures-approval-to-resume-h20-ai-chip-sales-in-china-announces-new-gpu-rtx-pro/"
+      }
+    ]
+  },
+  {
+    "id": "K36",
+    "date": "2025-07-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "patch",
+    "text": "Patches the NVIDIAScape container escape CVE-2025-23266 (Toolkit 1.17.8), reported by Wiz at Pwn2Own.",
+    "quote": null,
+    "trigger_ref": "C47",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA security bulletin"
+    },
+    "sources": [
+      {
+        "label": "Wiz",
+        "url": "https://wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape"
+      }
+    ]
+  },
+  {
+    "id": "K37",
+    "date": "2025-07-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "lobby",
+    "text": "Lobbying disclosures show $1.6m spent in H1 2025, up 388% on H1 2024 (about $4.9m for 2025 per Bloomberg).",
+    "quote": null,
+    "trigger_ref": "C44",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "us",
+      "venue": "LDA filings (via Issue One)"
+    },
+    "sources": [
+      {
+        "label": "Issue One",
+        "url": "https://issueone.org/articles/as-washington-debates-major-tech-and-ai-policy-changes-big-techs-lobbying-is-relentless/"
+      },
+      {
+        "label": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/the-batch/meta-amazon-microsoft-google-and-nvidia-pour-millions-into-government-influence"
+      }
+    ]
+  },
+  {
+    "id": "K38",
+    "date": "2025-07-31",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Denies its H20 chips have backdoors after CAC summons it.",
+    "quote": "Nvidia does not have ‘backdoors’ in our chips that would give anyone a remote way to access or control them.",
+    "trigger_ref": "C06",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "cn",
+      "venue": "Statement to The Register"
+    },
+    "sources": [
+      {
+        "label": "The Register",
+        "url": "https://www.theregister.com/2025/07/31/beijing_nvidia_backdoors/"
+      }
+    ]
+  },
+  {
+    "id": "K39",
+    "date": "2025-08",
+    "date_precision": "month",
+    "type": "did",
+    "verb": "update_framework",
+    "text": "Reissues the Frontier AI Risk Assessment as “Applicable from August 2025” at the same URL, with no public changelog.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "nvidia.com PDF",
+      "subtopic": "frameworks"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA PDF",
+        "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf"
+      }
+    ]
+  },
+  {
+    "id": "K40",
+    "date": "2025-08-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "patch",
+    "text": "Releases Triton 25.07, fixing a Wiz-reported chain enabling unauthenticated remote code execution.",
+    "quote": null,
+    "trigger_ref": "C48",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA security bulletin"
+    },
+    "sources": [
+      {
+        "label": "The Register",
+        "url": "https://www.theregister.com/2025/08/05/nvidia_triton_bug_chain/"
+      },
+      {
+        "label": "Wiz",
+        "url": "https://www.wiz.io/blog/nvidia-triton-cve-2025-23319-vuln-chain-to-ai-server"
+      }
+    ]
+  },
+  {
+    "id": "K41",
+    "date": "2025-08-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish",
+    "text": "Publishes “No Backdoors. No Kill Switches. No Spyware.”, rejecting hardware kill switches and mandated tracking, aimed at Beijing and US tracking bills.",
+    "quote": "There are no back doors in NVIDIA chips. No kill switches. No spyware.",
+    "trigger_ref": "C06",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "stance": 2,
+      "audience": "pub",
+      "venue": "NVIDIA blog (CSO David Reber Jr.), English and Chinese"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/no-backdoors-no-kill-switches-no-spyware"
+      },
+      {
+        "label": "Tom's Hardware",
+        "url": "https://tomshardware.com/pc-components/gpus/nvidia-defiant-over-backdoors-and-kill-switches-in-gpus-as-u-s-mulls-tracking-requirements-calls-them-permanent-flaws-that-are-a-gift-to-hackers"
+      }
+    ]
+  },
+  {
+    "id": "K42",
+    "date": "2025-08-05",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "After DOJ charges ALX Solutions with smuggling its GPUs, says smuggling is a nonstarter and diverted products get no support.",
+    "quote": "This case demonstrates that smuggling is a nonstarter",
+    "trigger_ref": "C49",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "us",
+      "venue": "Spokesperson statement"
+    },
+    "sources": [
+      {
+        "label": "TechCrunch",
+        "url": "https://techcrunch.com/2025/08/06/two-arrested-for-smuggling-ai-chips-to-china-nvidia-says-no-to-kill-switches"
+      }
+    ]
+  },
+  {
+    "id": "K43",
+    "date": "2025-08-10",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Neither confirms nor denies the 15% China revenue-share deal; says it follows US rules.",
+    "quote": "We follow rules the U.S. government sets for our participation in worldwide markets.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 1,
+      "audience": "us",
+      "venue": "Statement to Reuters"
+    },
+    "sources": [
+      {
+        "label": "KSL (Reuters)",
+        "url": "https://www.ksl.com/article/news/business/nvidia-amd-to-pay-15-of-china-chip-sale-revenues-to-us-official-says/51358812"
+      }
+    ]
+  },
+  {
+    "id": "K44",
+    "date": "2025-08-19",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Responding to reports of a Blackwell-based B30A for China, says it evaluates products so it can compete as far as governments allow.",
+    "quote": "Everything we offer is with the full approval of the applicable authorities",
+    "trigger_ref": "C44",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 1,
+      "audience": "cn",
+      "venue": "Statement to The Register"
+    },
+    "sources": [
+      {
+        "label": "The Register",
+        "url": "https://www.theregister.com/2025/08/19/nvidia_cut_down_b300_for_china/"
+      }
+    ]
+  },
+  {
+    "id": "K45",
+    "date": "2025-09-05",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "criticise",
+    "text": "Opposes the GAIN AI Act, likening it to the Diffusion Rule.",
+    "quote": "In trying to solve a problem that does not exist, the proposed bill would restrict competition worldwide",
+    "trigger_ref": "C50",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 2,
+      "audience": "us",
+      "venue": "Statement to Reuters"
+    },
+    "sources": [
+      {
+        "label": "TradingView (Reuters)",
+        "url": "https://de.tradingview.com/news/reuters.com%2C2025%3Anewsml_L4N3US19X%3A0-nvidia-says-gain-ai-act-would-restrict-competition-likens-it-to-ai-diffusion-rule"
+      }
+    ]
+  },
+  {
+    "id": "K46",
+    "date": "2025-09-15",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "After SAMR’s preliminary anti-monopoly finding, says it complies with the law and will keep cooperating.",
+    "quote": "We comply with the law in all respects.",
+    "trigger_ref": "C22",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "cn",
+      "venue": "Statement to Euronews/AP"
+    },
+    "sources": [
+      {
+        "label": "Euronews",
+        "url": "https://euronews.com/business/2025/09/15/nvidia-violated-antitrust-laws-china-says-amid-trade-talks-with-the-us"
+      }
+    ]
+  },
+  {
+    "id": "K47",
+    "date": "2025-09-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "partner",
+    "text": "Announces up to £11bn of UK AI-factory investment with partners during Trump’s state visit.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "pub",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA IR",
+        "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-and-United-Kingdom-Build-Nations-AI-Infrastructure-and-Ecosystem-to-Fuel-Innovation-Economic-Growth-and-Jobs"
+      }
+    ]
+  },
+  {
+    "id": "K48",
+    "date": "2025-09-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "invest",
+    "text": "Invests $5bn in Intel common stock and agrees joint product development.",
+    "quote": "NVIDIA will invest $5 billion in Intel’s common stock",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products"
+      }
+    ]
+  },
+  {
+    "id": "K49",
+    "date": "2025-09-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "invest",
+    "text": "Signs a letter of intent to invest up to $100bn in OpenAI as at least 10GW of NVIDIA systems deploy.",
+    "quote": "NVIDIA intends to invest up to $100 billion in OpenAI as the new NVIDIA systems are deployed.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "energy",
+      "audience": "inv",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems"
+      }
+    ]
+  },
+  {
+    "id": "K50",
+    "date": "2025-11-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "invest",
+    "text": "Commits to invest up to $10bn in Anthropic, with a joint engineering partnership.",
+    "quote": "NVIDIA and Microsoft are committing to invest up to $10 billion and up to $5 billion respectively in Anthropic.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/microsoft-nvidia-anthropic-announce-partnership"
+      }
+    ]
+  },
+  {
+    "id": "K51",
+    "date": "2025-12-08",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "praise",
+    "text": "Applauds Trump’s decision to allow H200 sales to approved Chinese customers.",
+    "quote": "We applaud President Trump’s decision to allow America’s chip industry to compete",
+    "trigger_ref": "C10",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "stance": 2,
+      "audience": "us",
+      "venue": "Statement to NBC News"
+    },
+    "sources": [
+      {
+        "label": "NBC Washington",
+        "url": "https://www.nbcwashington.com/news/national-international/trump-allow-nvidia-sell-some-ai-chips-china/4025974/"
+      }
+    ]
+  },
+  {
+    "id": "K52",
+    "date": "2025-12-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Launches opt-in fleet software that can report a GPU’s compute zone, while insisting GPUs have no hardware tracking or kill switch.",
+    "quote": "NVIDIA GPUs do not have hardware tracking technology, kill switches and backdoors.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "us",
+      "venue": "NVIDIA blog"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA blog",
+        "url": "https://blogs.nvidia.com/blog/optional-data-center-fleet-management-software"
+      }
+    ]
+  },
+  {
+    "id": "K53",
+    "date": "2025-12-10",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Says reports of DeepSeek training on smuggled Blackwells are unsubstantiated, but it pursues every tip.",
+    "quote": "While smuggling seems farfetched, we pursue any tip we receive.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "us",
+      "venue": "Statement to Mobile World Live"
+    },
+    "sources": [
+      {
+        "label": "Mobile World Live",
+        "url": "https://www.mobileworldlive.com/ai-cloud/deepseek-using-banned-nvidia-chips-report/"
+      }
+    ]
+  },
+  {
+    "id": "K54",
+    "date": "2025-12-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Announces the open Nemotron 3 family, releasing Nano and ~3T tokens of training and safety data.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "Press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA IR",
+        "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Debuts-Nemotron-3-Family-of-Open-Models/"
+      }
+    ]
+  },
+  {
+    "id": "K55",
+    "date": "2026-01-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Says the six-chip Vera Rubin platform is in full production.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "audience": "inv",
+      "venue": "CES 2026"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA newsroom",
+        "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer"
+      }
+    ]
+  },
+  {
+    "id": "K56",
+    "date": "2026-03",
+    "date_precision": "month",
+    "type": "said",
+    "verb": "claim",
+    "text": "After the Super Micro co-founder indictment, says unlawful diversion is a losing proposition and it supports no such systems.",
+    "quote": "Unlawful diversion of controlled U.S. computers to China is a losing proposition across the board",
+    "trigger_ref": "C13",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "us",
+      "venue": "Spokesperson statement"
+    },
+    "sources": [
+      {
+        "label": "Epoch Times",
+        "url": "https://www.theepochtimes.com/china/us-charges-supermicro-co-founder-2-workers-with-sending-nvidia-chips-to-china-6001416"
+      }
+    ]
+  },
+  {
+    "id": "K57",
+    "date": "2026-03-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Releases open Nemotron 3 Super (120B total, 12B active).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "Hugging Face / NGC"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA NIM docs",
+        "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-super-120b-a12b"
+      }
+    ]
+  },
+  {
+    "id": "K58",
+    "date": "2026-05",
+    "date_precision": "month",
+    "type": "did",
+    "verb": "file",
+    "text": "10-Q says small H200 licences were granted since Feb 2026, with no H200 revenue yet.",
+    "quote": "To date, we have not generated any revenue under the H200 licensing program.",
+    "trigger_ref": "C12",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 10-Q"
+    },
+    "sources": [
+      {
+        "label": "SEC 10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000052/nvda-20260426.htm"
+      }
+    ]
+  },
+  {
+    "id": "K59",
+    "date": "2026-05-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Guidance assumes no Data Center compute revenue from China.",
+    "quote": "NVIDIA is not assuming any Data Center compute revenue from China in its outlook.",
+    "trigger_ref": "C11",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "inv",
+      "venue": "SEC 8-K (earnings release)"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K exhibit",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm"
+      }
+    ]
+  },
+  {
+    "id": "K60",
+    "date": "2026-06-01",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Says new BIS guidance on Chinese-headquartered firms abroad matches its existing vetting.",
+    "quote": "The guidance reaffirms that NVIDIA’s sales and vetting process is correct",
+    "trigger_ref": "C51",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "us",
+      "venue": "Statement to Al Jazeera"
+    },
+    "sources": [
+      {
+        "label": "Al Jazeera",
+        "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china"
+      }
+    ]
+  },
+  {
+    "id": "K61",
+    "date": "2026-06-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Releases open Nemotron 3 Ultra (550B total, 55B active), its largest published model.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "audience": "pub",
+      "venue": "NVIDIA dev blog / Hugging Face"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA dev blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/"
+      },
+      {
+        "label": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released"
+      }
+    ]
+  },
+  {
+    "id": "K62",
+    "date": "2026-07-29",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "After Taiwan detains an NVIDIA employee in a smuggling probe, repeats that smuggling is a nonstarter.",
+    "quote": "smuggling is a nonstarter",
+    "trigger_ref": "C52",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "pub",
+      "venue": "Statement to AFP"
+    },
+    "sources": [
+      {
+        "label": "Taipei Times",
+        "url": "https://www.taipeitimes.com/News/front/archives/2026/07/29/2003861557"
+      }
+    ]
+  },
+  {
+    "id": "K63",
+    "date": "2026-08-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Reports H200 China sales under 1% of data-centre revenue; guidance still assumes no China data-centre revenue.",
+    "quote": "NVIDIA is not assuming any Data Center compute revenue from China in its outlook.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "export_controls",
+      "audience": "inv",
+      "venue": "SEC 8-K (earnings release)"
+    },
+    "sources": [
+      {
+        "label": "SEC 8-K exhibit",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm"
+      }
+    ]
+  },
+  {
+    "id": "K64",
+    "date": "2026-09-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Launches the open-source Open Agent Safety Platform (OpenShell runtime, Sentry on BlueField-4) to contain AI agents, with 100+ partners.",
+    "quote": "It can quarantine a suspicious agent in milliseconds",
+    "trigger_ref": "C27",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "safety_risk",
+      "audience": "pub",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA IR",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/"
+      },
+      {
+        "label": "AP via NY1",
+        "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/09/28/nvidia-unveils-security-platform-to-stop-ai-agents-from-going-rogue"
+      }
+    ]
+  },
+  {
+    "id": "K66",
+    "date": "2026-10-02",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "After the $300m Greg Lui smuggling arrest, says smuggling is a losing proposition and its work with law enforcement led to prosecutions.",
+    "quote": "smuggling is a losing proposition — legally, economically and technically",
+    "trigger_ref": "C53",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "audience": "us",
+      "venue": "Statement"
+    },
+    "sources": [
+      {
+        "label": "Transport Topics",
+        "url": "https://www.ttnews.com/articles/calif-man-charged-nvidia-chips"
+      }
+    ]
+  },
+  {
+    "id": "K67",
+    "date": "2026-10-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "fund",
+    "text": "Commits $1bn over five years to US science R&D in quantum, healthcare and energy security.",
+    "quote": "NVIDIA today announced commitments valued at $1 billion to build out the United States’ capacity",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "china_race",
+      "audience": "us",
+      "venue": "NVIDIA press release"
+    },
+    "sources": [
+      {
+        "label": "NVIDIA IR",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Commits-1-Billion-to-Advance-US-Science-Over-the-Next-Five-Years/default.aspx"
+      }
+    ]
+  }
+]

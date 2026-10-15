@@ -1,0 +1,292 @@
+{
+ "actor": "miit",
+ "name": "Ministry of Industry and Information Technology",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "identity_line": "Ministry of Industry and Information Technology (government). Record before 2026-01-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "issue_rule",
+    "n": 4
+   },
+   {
+    "verb": "issue_guidance",
+    "n": 3
+   }
+  ],
+  "rare": [
+   {
+    "verb": "assert_control",
+    "n": 1
+   },
+   {
+    "verb": "deny_permission",
+    "n": 1
+   },
+   {
+    "verb": "state_reason",
+    "n": 1
+   },
+   {
+    "verb": "summon",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "MI01",
+   "date": "2022-12-11",
+   "verb": "issue_rule",
+   "text": "MIIT co-issued the Provisions on Deep Synthesis of Internet Information Services (signed 25 Nov 2022, effective 10 Jan 2023), which require labelling, real-name verification and filing.",
+   "sources": [
+    {
+     "label": "CAC 2022-12-11",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm"
+    },
+    {
+     "label": "gov.cn text",
+     "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/12/content_5731431.htm"
+    }
+   ]
+  },
+  {
+   "row": "MI02",
+   "date": "2022-12-13",
+   "verb": "issue_rule",
+   "text": "MIIT issued the trial Data Security Management Measures for the industry and IT sector (dated 8 Dec, effective 1 Jan 2023). They classify data as general, important or core and bar giving data to foreign law enforcement without MIIT approval.",
+   "sources": [
+    {
+     "label": "gov.cn 2022-12-14",
+     "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/14/content_5731918.htm"
+    },
+    {
+     "label": "MIIT",
+     "url": "https://wap.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2022/art_e0f06662e37140808d43d7735e9d9fd3.html"
+    }
+   ]
+  },
+  {
+   "row": "MI03",
+   "date": "2023-07-13",
+   "verb": "issue_rule",
+   "text": "MIIT was one of seven co-issuers of the CAC-led Interim Measures for Generative AI Services (dated 10 July, effective 15 Aug 2023).",
+   "sources": [
+    {
+     "label": "gov.cn text",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm"
+    },
+    {
+     "label": "gov.cn news 2023-07-13",
+     "url": "https://www.gov.cn/lianbo/bumen/202307/content_6891748.htm"
+    }
+   ]
+  },
+  {
+   "row": "MI04",
+   "date": "2023-10-08",
+   "verb": "issue_guidance",
+   "text": "MIIT led six departments in issuing the Action Plan for High-Quality Development of Computing Power Infrastructure, targeting more than 300 EFLOPS and a 35% intelligent-compute share by 2025.",
+   "sources": [
+    {
+     "label": "CAC 2023-10-10",
+     "url": "https://www.cac.gov.cn/2023-10/10/c_1698598959340810.htm"
+    },
+    {
+     "label": "gov.cn interpretation",
+     "url": "https://www.gov.cn/zhengce/202310/content_6908021.htm"
+    }
+   ]
+  },
+  {
+   "row": "MI05",
+   "date": "2023-10-20",
+   "verb": "issue_guidance",
+   "text": "MIIT issued Guiding Opinions on Innovative Development of Humanoid Robots (published early Nov 2023), aiming for an innovation system by 2025 and world-advanced level by 2027.",
+   "sources": [
+    {
+     "label": "NCSTI repost of MIIT notice",
+     "url": "https://www.ncsti.gov.cn/zcfg/zcwj/202311/t20231103_140346.html"
+    },
+    {
+     "label": "Hunan gov repost",
+     "url": "http://www.hunan.gov.cn/zqt/zcsd/202311/t20231103_31810495.html"
+    }
+   ]
+  },
+  {
+   "row": "MI06",
+   "date": "2024-04-11",
+   "verb": "deny_permission",
+   "text": "WSJ reported that MIIT ordered state carriers to inventory their foreign (Intel/AMD) core processors and replace them by 2027. MIIT did not comment.",
+   "sources": [
+    {
+     "label": "DCD (citing WSJ)",
+     "url": "https://datacenterdynamics.com/en/news/chinese-government-issues-rip-and-replace-order-for-us-made-chips-in-countrys-telco-networks"
+    },
+    {
+     "label": "IEEE ComSoc techblog",
+     "url": "https://techblog.comsoc.org/2024/04/15/wsj-china-telecom-carriers-to-phase-out-foreign-chips-intel-amd-hit-hard/"
+    }
+   ]
+  },
+  {
+   "row": "MI07",
+   "date": "2024-06-05",
+   "verb": "issue_guidance",
+   "text": "MIIT led four bodies in issuing the National AI Industry Comprehensive Standardization System Construction Guidelines (2024), published 2 July, targeting 50+ national and industry AI standards by 2026.",
+   "sources": [
+    {
+     "label": "gov.cn 2024-07",
+     "url": "https://www.gov.cn/lianbo/bumen/202407/content_6960709.htm"
+    },
+    {
+     "label": "Shaanxi MIIT dept repost",
+     "url": "https://gxt.shaanxi.gov.cn/cyfz/xygy/202407/t20240703_3316324.html"
+    }
+   ]
+  },
+  {
+   "row": "MI08",
+   "date": "2025-02-13",
+   "verb": "state_reason",
+   "text": "MIIT told state media that all three state telecom carriers had fully integrated DeepSeek's open-source models.",
+   "sources": [
+    {
+     "label": "Science and Technology Daily 2025-02-13",
+     "url": "https://www.stdaily.com/web/gdxw/2025-02/13/content_296431.html"
+    }
+   ]
+  },
+  {
+   "row": "MI09",
+   "date": "2025-03-14",
+   "verb": "issue_rule",
+   "text": "MIIT co-issued the Measures for Labelling AI-Generated Synthetic Content (dated 7 Mar, effective 1 Sept 2025), requiring explicit and implicit labels.",
+   "sources": [
+    {
+     "label": "CAC notice",
+     "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+    },
+    {
+     "label": "gov.cn",
+     "url": "https://www.gov.cn/lianbo/bumen/202503/content_7014283.htm"
+    }
+   ]
+  },
+  {
+   "row": "MI10",
+   "date": "2025-08-12",
+   "verb": "summon",
+   "text": "FT reported that MIIT asked companies including Alibaba and ByteDance to explain why they needed NVIDIA H20s rather than domestic chips. This followed the US resumption of H20 licences and CAC's backdoor summons.",
+   "sources": [
+    {
+     "label": "BusinessDay 2025-08-12 (citing FT)",
+     "url": "https://www.businessday.co.za/bd/companies/2025-08-12-china-warns-local-firms-on-nvidias-h20-chips-after-backdoor-claims"
+    },
+    {
+     "label": "Bloomberg 2025-08-12",
+     "url": "https://bloomberg.com/news/articles/2025-08-12/china-urges-firms-not-to-use-nvidia-h20-chips-in-new-guidance"
+    }
+   ]
+  },
+  {
+   "row": "MI11",
+   "date": "2025-12-26",
+   "verb": "assert_control",
+   "text": "MIIT established a Humanoid Robot and Embodied AI Standardization Technical Committee.",
+   "sources": [
+    {
+     "label": "Xinhua 2025-12-31",
+     "url": "https://www.news.cn/tech/20251231/f9cb6428750149f08bd17e210261cdab/c.html"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "9 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "MI12",
+   "date": "2026-01-07",
+   "verb": "issue_guidance",
+   "topic": "industrial_policy",
+   "text": "MIIT led eight departments in issuing Implementation Opinions on the 'AI+ Manufacturing' special action. Targets for 2027 include 3–5 general models deployed in manufacturing, 100 industrial datasets and 1,000 industrial agents."
+  },
+  {
+   "row": "MI13",
+   "date": "2026-01-30",
+   "verb": "grant_permission",
+   "topic": "chips_and_compute",
+   "text": "Reuters sources said China's industry and commerce ministries approved H200 purchases by ByteDance, Alibaba, Tencent and DeepSeek, with conditions still being set by NDRC. MIIT did not comment."
+  },
+  {
+   "row": "MI14",
+   "date": "2026-02-05",
+   "verb": "issue_guidance",
+   "topic": "safety_risk",
+   "text": "MIIT's NVDB vulnerability platform warned that misconfigured OpenClaw open-source AI agent instances carry high risk of attack and data leakage, and recommended hardening steps."
+  },
+  {
+   "row": "MI15",
+   "date": "2026-04-10",
+   "verb": "issue_rule",
+   "topic": "regulation",
+   "text": "MIIT co-issued the CAC-led Interim Measures on Anthropomorphic AI Interaction Services (effective 15 July 2026), which bar emotional manipulation and inducing dependence and add protections for minors."
+  },
+  {
+   "row": "MI16",
+   "date": "2026-05-08",
+   "verb": "issue_guidance",
+   "topic": "industrial_policy",
+   "text": "MIIT co-issued the Implementation Opinions on Standardized Application and Innovative Development of AI Agents, covering safety limits, standards and protocols, and 19 application scenarios."
+  },
+  {
+   "row": "MI17",
+   "date": "2026-05-08",
+   "verb": "issue_standard",
+   "topic": "industrial_policy",
+   "text": "MIIT, MOFCOM and SAMR launched the GB/Z 177-2026 AI-terminal intelligence grading standards (L1–L4) for phones, PCs, TVs and other devices, to be tied to trade-in subsidies."
+  },
+  {
+   "row": "MI18",
+   "date": "2026-06-03",
+   "verb": "issue_guidance",
+   "topic": "industrial_policy",
+   "text": "MIIT issued the 'AI+ Information and Communications' Implementation Opinions (2026–2028), with 17 tasks including autonomous networks and a 1ms metro compute-latency target."
+  },
+  {
+   "row": "MI19",
+   "date": "2026-06-09",
+   "verb": "launch_campaign",
+   "topic": "industrial_policy",
+   "text": "MIIT and SASAC launched the 2026 humanoid robot and embodied AI real-scene training campaign, targeting more than 100 high-value scenarios and deployment at the scale of tens of thousands of units."
+  },
+  {
+   "row": "MI20",
+   "date": "2026-08-31",
+   "verb": "launch_campaign",
+   "topic": "industrial_policy",
+   "text": "MIIT launched a special action to cultivate AI application service providers, including compute vouchers and links to national computing nodes, targeting 2,000+ providers by end-2026."
+  }
+ ]
+}

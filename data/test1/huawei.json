@@ -1,0 +1,404 @@
+{
+ "actor": "huawei",
+ "name": "Huawei",
+ "actor_type": "company",
+ "cutoff": "2026-01-01",
+ "identity_line": "Huawei (company). Record before 2026-01-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "claim",
+    "n": 7
+   },
+   {
+    "verb": "launch",
+    "n": 5
+   },
+   {
+    "verb": "commit",
+    "n": 4
+   },
+   {
+    "verb": "publish",
+    "n": 3
+   },
+   {
+    "verb": "release_model",
+    "n": 2
+   }
+  ],
+  "rare": [
+   {
+    "verb": "partner",
+    "n": 1
+   },
+   {
+    "verb": "warn",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "HW01",
+   "date": "2022-08-25",
+   "verb": "warn",
+   "text": "In a memo to all staff (reported 25 Aug 2022), Ren Zhengfei said Huawei must make survival its main goal through 2023–2025 and focus on cash flow and profit over revenue. He cited US 'blockade and suppression' as one reason.",
+   "sources": [
+    {
+     "label": "Light Reading 2022-08-25",
+     "url": "https://www.lightreading.com/asia/huaweis-ren-urges-profits-over-growth-as-prospects-dim/d/d-id/779919"
+    },
+    {
+     "label": "TotalTele 2022-08-25",
+     "url": "https://totaltele.com/feeling-the-chill-huawei-founder-tells-employees-to-focus-on-survival/"
+    }
+   ]
+  },
+  {
+   "row": "HW02",
+   "date": "2022-12-30",
+   "verb": "claim",
+   "text": "In his New Year letter, rotating chairman Eric Xu said Huawei had left crisis mode, treated US restrictions as the new normal and estimated 2022 revenue as flat.",
+   "sources": [
+    {
+     "label": "TechXplore/AFP 2022-12-30",
+     "url": "https://techxplore.com/news/2022-12-sanctions-hit-huawei-business-usual.html"
+    }
+   ]
+  },
+  {
+   "row": "HW03",
+   "date": "2023-02-28",
+   "verb": "claim",
+   "text": "Eric Xu said Huawei and domestic partners had built chip design (EDA) tools for 14nm and above, among 78 tools developed over three years to replace foreign products.",
+   "sources": [
+    {
+     "label": "Techzine (Reuters/Caijing) 2023-03",
+     "url": "https://www.techzine.eu/news/infrastructure/103686/huawei-makes-breakthroughs-in-design-tools-for-14nm-chips/"
+    }
+   ]
+  },
+  {
+   "row": "HW04",
+   "date": "2023-08-29",
+   "verb": "launch",
+   "text": "Huawei put the Mate 60 Pro on sale online through a 'Pioneer Program', with no launch event, during Commerce Secretary Raimondo's visit to China. The phone uses the SMIC 7nm Kirin 9000S.",
+   "sources": [
+    {
+     "label": "HuaweiCentral",
+     "url": "https://www.huaweicentral.com/heres-how-huawei-launched-its-new-flagship-throughout-a-month/amp/"
+    },
+    {
+     "label": "Prothom Alo (Reuters) 2023-09-05",
+     "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
+    }
+   ]
+  },
+  {
+   "row": "HW05",
+   "date": "2023-09-05",
+   "verb": "publish",
+   "text": "Huawei did not answer Reuters' request for comment on the TechInsights finding that the Kirin 9000S is a SMIC 7nm chip, and did not disclose the chip's specifications.",
+   "sources": [
+    {
+     "label": "Prothom Alo (Reuters) 2023-09-05",
+     "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
+    }
+   ]
+  },
+  {
+   "row": "HW06",
+   "date": "2023-09-20",
+   "verb": "commit",
+   "text": "At Huawei Connect 2023, rotating chair Sabrina Meng launched an 'All Intelligence' strategy and pledged to build China's computing backbone.",
+   "sources": [
+    {
+     "label": "CXOToday (Huawei press release)",
+     "url": "https://cxotoday.com/press-release/huawei-connect-2023-accelerating-intelligence-for-shared-success/"
+    }
+   ]
+  },
+  {
+   "row": "HW07",
+   "date": "2024-03-29",
+   "verb": "claim",
+   "text": "Huawei reported that 2023 net profit more than doubled to about CNY87bn on revenue of CNY704bn. Rotating chair Ken Hu said the company had kept growing through repeated challenges.",
+   "sources": [
+    {
+     "label": "EWN/AFP 2024-03-29",
+     "url": "https://www.ewn.co.za/2024/03/29/chinese-tech-giant-huawei-says-profits-more-than-doubled-in-2023"
+    }
+   ]
+  },
+  {
+   "row": "HW08",
+   "date": "2024-09-19",
+   "verb": "commit",
+   "text": "At Huawei Connect 2024, Eric Xu said Huawei would use the chipmaking technology available in China to secure long-term AI computing power, and called US restrictions both challenges and opportunities.",
+   "sources": [
+    {
+     "label": "Caixin Global 2024-09-20",
+     "url": "https://www.caixinglobal.com/2024-09-20/huawei-will-leverage-available-chip-tech-in-bid-for-self-reliance-102238465.html"
+    }
+   ]
+  },
+  {
+   "row": "HW09",
+   "date": "2024-10-22",
+   "verb": "launch",
+   "text": "Huawei launched HarmonyOS NEXT (HarmonyOS 5), its first operating system without Android code. It no longer runs Android apps.",
+   "sources": [
+    {
+     "label": "Caixin Global 2024-10-23",
+     "url": "https://www.caixinglobal.com/2024-10-23/briefing-huawei-makes-clean-break-from-android-with-new-os-102248669.html"
+    }
+   ]
+  },
+  {
+   "row": "HW10",
+   "date": "2024-10-23",
+   "verb": "claim",
+   "text": "After reports that a TSMC-made die was found in an Ascend 910B, Huawei denied having produced any chips through TSMC since the 2020 US rule changes. The date is when the denial was reported.",
+   "sources": [
+    {
+     "label": "Korea Times (Reuters) 2024-10-23",
+     "url": "https://www.koreatimes.co.kr/world/20241023/tsmc-told-us-of-chip-in-huawei-product-after-techinsights-finding-source"
+    }
+   ]
+  },
+  {
+   "row": "HW11",
+   "date": "2025-02-01",
+   "verb": "partner",
+   "text": "Huawei Cloud and SiliconFlow made DeepSeek R1 and V3 available on Huawei's Ascend cloud. Huawei said performance matched DeepSeek running on premium global GPUs.",
+   "sources": [
+    {
+     "label": "CRN Asia",
+     "url": "https://www.crnasia.com/news/2025/cloud/huawei-s-cloud-unit-now-supports-deepseek-models"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3297070/tech-war-huawei-cloud-unit-powers-deepseek-models-chinas-bid-ai-autonomy/"
+    }
+   ]
+  },
+  {
+   "row": "HW12",
+   "date": "2025-03-31",
+   "verb": "publish",
+   "text": "Huawei's 2024 annual report showed revenue up 22.4% to CNY862.1bn and net profit down to CNY62.6bn, with R&D of CNY179.7bn. Huawei credited 10 years of preparation in computing for its gains in AI.",
+   "sources": [
+    {
+     "label": "Huawei newsroom",
+     "url": "https://www.huawei.com/en/news/2025/3/annual-report-2024"
+    }
+   ]
+  },
+  {
+   "row": "HW13",
+   "date": "2025-04",
+   "verb": "launch",
+   "text": "Huawei quietly announced CloudMatrix 384, a system of 384 Ascend 910C chips positioned against NVIDIA's GB200 NVL72.",
+   "sources": [
+    {
+     "label": "SiliconANGLE 2025-07-27",
+     "url": "https://siliconangle.com/2025/07/27/huawei-launches-cloudmatrix-384-server-alternative-nvidias-ai-infrastructure-stack/"
+    }
+   ]
+  },
+  {
+   "row": "HW14",
+   "date": "2025-05-19",
+   "verb": "launch",
+   "text": "Huawei launched its first PCs running HarmonyOS (MateBook Pro and MateBook Fold), moving away from Windows.",
+   "sources": [
+    {
+     "label": "Caixin Global 2025-05-20",
+     "url": "https://www.caixinglobal.com/2025-05-20/huawei-unveils-harmonyos-pcs-in-challenge-to-windowsmacos-duopoly-102321343.html"
+    }
+   ]
+  },
+  {
+   "row": "HW15",
+   "date": "2025-06-10",
+   "verb": "claim",
+   "text": "In a People's Daily interview, Ren Zhengfei said Huawei's single chip is one generation behind the US, that the US exaggerates Huawei's achievements, and that clustering makes up the gap.",
+   "sources": [
+    {
+     "label": "The Register 2025-06-10",
+     "url": "https://www.theregister.com/2025/06/10/huawei_founder_interview_semiconductor_sophistication/"
+    }
+   ]
+  },
+  {
+   "row": "HW16",
+   "date": "2025-06-20",
+   "verb": "release_model",
+   "text": "At HDC 2025, Huawei Cloud CEO Zhang Ping'an launched Pangu Models 5.5 and an AI cloud service built on CloudMatrix 384 supernodes.",
+   "sources": [
+    {
+     "label": "Huawei Cloud newsroom",
+     "url": "https://www.huaweicloud.com/eu/news/20250620192415143.html"
+    },
+    {
+     "label": "Intelligent CIO 2025-06-24",
+     "url": "https://www.intelligentcio.com/apac/2025/06/24/huawei-cloud-announces-comprehensive-upgrade-with-pangu-models-5-5/"
+    }
+   ]
+  },
+  {
+   "row": "HW17",
+   "date": "2025-06-30",
+   "verb": "release_model",
+   "text": "Huawei open-sourced Pangu Pro MoE 72B weights and Ascend-optimised inference code on GitCode, and said a Pangu 7B dense model would follow.",
+   "sources": [
+    {
+     "label": "The Decoder 2025-07-01",
+     "url": "https://the-decoder.com/huawei-is-open-sourcing-ai-models-from-its-pangu-series/"
+    }
+   ]
+  },
+  {
+   "row": "HW18",
+   "date": "2025-07-05",
+   "verb": "claim",
+   "text": "Huawei's Noah's Ark Lab denied claims that Pangu Pro MoE was derived from Alibaba's Qwen 2.5 14B. It said the model was trained on Ascend and was its own work.",
+   "sources": [
+    {
+     "label": "Korea JoongAng Daily (Reuters) 2025-07-07",
+     "url": "https://www.koreajoongangdaily.com/world/huaweis-ai-lab-denies-that-one-of-its-pangu-models-copied-alibabas-qwen/11983549"
+    }
+   ]
+  },
+  {
+   "row": "HW19",
+   "date": "2025-07-26",
+   "verb": "claim",
+   "text": "Huawei gave CloudMatrix 384 its first public showing at WAIC Shanghai. It claimed about 300 PFLOPS, against 180 PFLOPS for the GB200 NVL72, at roughly four times the power draw.",
+   "sources": [
+    {
+     "label": "SiliconANGLE 2025-07-27",
+     "url": "https://siliconangle.com/2025/07/27/huawei-launches-cloudmatrix-384-server-alternative-nvidias-ai-infrastructure-stack/"
+    }
+   ]
+  },
+  {
+   "row": "HW20",
+   "date": "2025-08-05",
+   "verb": "commit",
+   "text": "At the Ascend Computing Industry Development Summit, Eric Xu announced Huawei would open-source its CANN Ascend toolkit and the Mind toolchains.",
+   "sources": [
+    {
+     "label": "HuaweiCentral 2025-08-06",
+     "url": "https://www.huaweicentral.com/huawei-open-sourcing-ai-chip-toolkit-amid-nvidia-h20s-re-entry-in-china/amp/"
+    }
+   ]
+  },
+  {
+   "row": "HW21",
+   "date": "2025-09-18",
+   "verb": "publish",
+   "text": "At Huawei Connect 2025, Eric Xu published a three-year Ascend roadmap: 950PR (Q1 2026), 950DT (Q4 2026), 960 (Q4 2027) and 970 (Q4 2028). It includes in-house HBM and Atlas 950/960 SuperPoDs, which he set against NVIDIA's NVL144.",
+   "sources": [
+    {
+     "label": "Huawei newsroom keynote",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3326210/tech-war-huaweis-ai-chip-road-map-bolsters-chinas-tech-self-sufficiency-efforts"
+    }
+   ]
+  },
+  {
+   "row": "HW22",
+   "date": "2025-09-18",
+   "verb": "commit",
+   "text": "Eric Xu committed to open-sourcing CANN by 31 Dec 2025, along with the Mind toolkits and openPangu models. On 20 Sep, Ascend head Zhang Dixuan set staged dates for releasing CANN operators and libraries on GitCode.",
+   "sources": [
+    {
+     "label": "Huawei newsroom keynote",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
+    },
+    {
+     "label": "Huawei newsroom HC open source",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource"
+    }
+   ]
+  },
+  {
+   "row": "HW23",
+   "date": "2025-11-25",
+   "verb": "launch",
+   "text": "Huawei launched the Mate 80 series with the Kirin 9030 and gave its first detailed Kirin presentation at a launch in five years. Richard Yu claimed up to 42% higher performance; TechInsights later identified the chip as SMIC N+3.",
+   "sources": [
+    {
+     "label": "Silicon UK 2025-12-16",
+     "url": "https://www.silicon.co.uk/mobility/smartphones/smic-huawei-kirin-9030-628027"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3334108/huaweis-latest-kirin-9030-processor-powers-premium-mate-80-smartphones"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "5 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "HW24",
+   "date": "2026-03-20",
+   "verb": "launch",
+   "topic": "china_race",
+   "text": "At its China Partner Conference, Huawei launched the Ascend 950PR with the Atlas 350 card and in-house HiBL HBM. Ascend head Zhang Dixuan claimed about 2.8x the FP4 compute of NVIDIA's H20."
+  },
+  {
+   "row": "HW25",
+   "date": "2026-03-31",
+   "verb": "warn",
+   "topic": "export_controls",
+   "text": "Huawei's 2025 annual report showed revenue up 2.2% to CNY880.9bn, net profit of CNY68bn and R&D of CNY192.3bn. Sabrina Meng warned of an uncertain future, and the release did not mention sanctions."
+  },
+  {
+   "row": "HW26",
+   "date": "2026-06-12",
+   "verb": "release_model",
+   "topic": "open_source",
+   "text": "At HDC 2026, Huawei debuted HarmonyOS 7 with an agent architecture and released openPangu 2.0. It reported more than 66m HarmonyOS 6 devices and 11m developers."
+  },
+  {
+   "row": "HW27",
+   "date": "2026-09-17",
+   "verb": "commit",
+   "topic": "china_race",
+   "text": "At Huawei Connect 2026, rotating chair Wang Tao (David Wang) brought the Ascend 960DT forward to Q1 2027 and the 960PR to Q3 2027. He also said more than 1,000 UnifiedBus systems had shipped to over 370 customers."
+  },
+  {
+   "row": "HW28",
+   "date": "2026-09-17",
+   "verb": "claim",
+   "topic": "china_race",
+   "text": "At a roundtable with international media at Huawei Connect 2026, Eric Xu claimed Ascend had overtaken NVIDIA in China but gave no figures."
+  }
+ ]
+}

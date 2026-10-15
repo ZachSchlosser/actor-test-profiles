@@ -1,0 +1,140 @@
+{
+  "id": "individual",
+  "kind": "non_state",
+  "label": "Individual",
+  "examples": [
+    "Jensen Huang",
+    "Donald Trump",
+    "Fei-Fei Li",
+    "David Sacks"
+  ],
+  "pronoun": "they",
+  "row_prefix": "J",
+  "attribution_rule": "A row counts as theirs when they did it in person (a trip, meeting, signature, share sale) or a reputable report names them as the one who announced or decided it. Anything their organisation does otherwise is a context row.",
+  "standing_fields": [
+    "class_role",
+    "principal",
+    "attribution_rule",
+    "veto_players",
+    "gates_held"
+  ],
+  "row_attributes": {
+    "speaker": "Named executive or founder who spoke for an organisation"
+  },
+  "powers": [
+    {
+      "id": "voice",
+      "name": "Voice",
+      "def": "Sets the terms of a debate",
+      "verbs": [
+        "claim",
+        "warn",
+        "praise",
+        "criticise",
+        "predict",
+        "walk_back"
+      ]
+    },
+    {
+      "id": "access",
+      "name": "Access",
+      "def": "Private time with people who decide",
+      "verbs": [
+        "meet",
+        "travel",
+        "attend"
+      ]
+    },
+    {
+      "id": "corporate_command",
+      "name": "Corporate command",
+      "def": "Directs a firm's resources",
+      "verbs": [
+        "launch",
+        "commit"
+      ]
+    },
+    {
+      "id": "coalition",
+      "name": "Coalition-building",
+      "def": "Gets others to act together",
+      "verbs": [
+        "sign",
+        "publish"
+      ]
+    },
+    {
+      "id": "endorsement",
+      "name": "Endorsement",
+      "def": "Lends credibility to others",
+      "verbs": [
+        "praise"
+      ]
+    },
+    {
+      "id": "personal_capital",
+      "name": "Personal capital",
+      "def": "Money of their own",
+      "verbs": [
+        "sell_shares",
+        "donate"
+      ]
+    },
+    {
+      "id": "formal_office",
+      "name": "Formal office",
+      "def": "Writes or votes on rules",
+      "verbs": [
+        "issue_rule",
+        "vote",
+        "sign_order"
+      ]
+    },
+    {
+      "id": "sanctioning",
+      "name": "Sanctioning",
+      "def": "Punishes others' breaches",
+      "verbs": [
+        "enforce",
+        "sanction"
+      ]
+    }
+  ],
+  "verbs": [
+    "claim",
+    "warn",
+    "praise",
+    "criticise",
+    "commit",
+    "predict",
+    "walk_back",
+    "meet",
+    "travel",
+    "sign",
+    "publish",
+    "launch",
+    "sell_shares",
+    "attend",
+    "testify",
+    "donate",
+    "vote",
+    "issue_rule",
+    "sign_order",
+    "enforce",
+    "sanction"
+  ],
+  "profile": [
+    "incentives",
+    "positions",
+    "red_lines",
+    "decision_style",
+    "relations",
+    "voice",
+    "say_do"
+  ],
+  "sources": [
+    "Primary: earnings calls, keynotes, testimony, op-eds, podcasts, social posts",
+    "CAIS Statement on AI Risk (signatories)",
+    "FEC and SEC Form 4 filings"
+  ]
+}

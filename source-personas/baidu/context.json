@@ -1,0 +1,93 @@
+[
+  {
+    "id": "C501",
+    "date": "2022-11-30",
+    "actor": "OpenAI",
+    "text": "ChatGPT launches, setting off a rush among Chinese firms to build rivals.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Reuters via Inquirer",
+        "url": "https://technology.inquirer.net/?p=122271"
+      }
+    ]
+  },
+  {
+    "id": "C502",
+    "date": "2023-08-31",
+    "actor": "CAC / Chinese regulators",
+    "text": "The first group of firms, reported as Baidu plus ByteDance, SenseTime, Zhipu, Baichuan and others (11 in Chinese media), are cleared to offer generative-AI chatbots to the public under the interim measures (O15) in force from 15 August. Not in CAC rows.json as a publish_list. Approval came on 30 August and was reported on the 31st.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2023/08/31/11-chinese-tech-companies-granted-permission-to-fully-release-chatgpt-like-tools/"
+      },
+      {
+        "label": "Malay Mail/Reuters",
+        "url": "https://www.malaymail.com/news/money/2023/08/31/china-approves-domestic-chatgpt-like-products-from-baidu-others/88248"
+      }
+    ]
+  },
+  {
+    "id": "C503",
+    "date": "2023-03-14",
+    "actor": "OpenAI",
+    "text": "GPT-4 is released and becomes the benchmark Baidu claims parity with.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2023/10/18/baidu-claims-latest-version-of-ernie-ai-model-is-on-a-par-with-gpt-4/"
+      }
+    ]
+  },
+  {
+    "id": "C504",
+    "date": "2024-05-21",
+    "actor": "Alibaba Cloud",
+    "text": "Alibaba cuts Qwen-Long input prices 97%. This follows ByteDance's sub-market pricing the prior week and High-Flyer/DeepSeek-V2's 1/2 yuan per million tokens on 6 May.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2024-05-21/alibaba-sparks-china-ai-price-war-with-spate-of-steep-discounts"
+      },
+      {
+        "label": "Yicai Global",
+        "url": "https://yicaiglobal.com/news/baidu-offers-two-ernie-models-for-free-as-chinese-llm-market-ushers-in-price-war"
+      }
+    ]
+  },
+  {
+    "id": "C505",
+    "date": "2026-03-31",
+    "actor": "Wuhan traffic police",
+    "text": "More than 100 Apollo Go robotaxis stall at about 9pm, and police attribute it to a 'system malfunction'. Bloomberg later reports (29 April) that regulators suspended new AV permits nationally.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "CnEVPost",
+        "url": "https://cnevpost.com/2026/04/01/baidu-apollo-go-robotaxis-mass-paralysis-wuhan/"
+      },
+      {
+        "label": "Caixin",
+        "url": "https://www.caixinglobal.com/2026-04-02/baidus-apollo-go-robotaxis-suffer-mass-malfunction-on-wuhan-roads-102430046.html"
+      }
+    ]
+  },
+  {
+    "id": "C506",
+    "date": "2026-01",
+    "date_precision": "month",
+    "actor": "Dubai RTA",
+    "text": "Dubai issues a fully driverless testing permit to Apollo Go, which reaches commercial operation by Q2 2026. Month only; the Baidu filing is the source.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Baidu Q2 2026 6-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001329099/000119312526355431/d112854dex991.htm"
+      }
+    ]
+  }
+]

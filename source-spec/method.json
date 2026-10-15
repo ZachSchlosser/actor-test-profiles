@@ -1,0 +1,25 @@
+{
+  "$comment": "The seven steps. Each step asks one question, uses one kind of evidence, and adds one part to the persona. `produces` names the persona.json field the step fills; the renderer draws one section per step in this order.",
+  "steps": [
+    {"n":1,"id":"purpose","name":"Purpose","question":"What decision will the persona inform?","evidence":"The forecasting question, and who controls the outcome","adds":"Scope: what the persona may forecast, and what it may not","produces":"purpose"},
+    {"n":2,"id":"standing","name":"Standing","question":"Who is the actor, and who can stop it?","evidence":"Role, principal, co-signers, the gates others hold over it","adds":"Class, principal, attribution rule, veto players, gates held","produces":"standing"},
+    {"n":3,"id":"power","name":"Power","question":"What can the actor do, and what can it not do?","evidence":"An eight-power checklist for the actor's class, with rows as proof","adds":"Verbs it may use, and verbs ruled out","produces":"powers"},
+    {"n":4,"id":"record","name":"Record","question":"What has the actor done, and how fast?","evidence":"Dated, sourced rows, each with a type, a verb and attributes","adds":"Base rates, response gaps, positions by topic and audience","produces":"rows"},
+    {"n":5,"id":"rules","name":"Reactions","question":"What does the actor do when something happens?","evidence":"Trigger → response pairs, with gaps computed from the rows","adds":"Reactions with time ranges, each a pattern or a signal","produces":"rules"},
+    {"n":6,"id":"reach","name":"Reach","question":"Who moves when the actor acts?","evidence":"The actor's acts, and later rows by others that followed them","adds":"Which levers are followed by decisions, and how fast","produces":"reach"},
+    {"n":7,"id":"limits","name":"Limits","question":"What don't we know?","evidence":"Gaps in the record, plus held-out events","adds":"Confidence notes and the next tests","produces":"limits"}
+  ],
+  "protocol": [
+    {"id":"P1","name":"No row, no trigger","rule":"A trigger must be a row dated to the day. Outside events enter as context rows with a source. The trigger date is when the actor could see it."},
+    {"id":"P2","name":"Gaps are computed","rule":"For each trigger → response pair the gap in days is computed from row dates. No gap is estimated by hand."},
+    {"id":"P3","name":"At least three independent episodes","rule":"A reaction becomes a pattern only with three or more. Triggers with the same cause within 30 days count as one wave."},
+    {"id":"P4","name":"Range from the data","rule":"The predicted range is the minimum to maximum gap seen so far."},
+    {"id":"P5","name":"Backtest with what was known then","rule":"Each episode is predicted from earlier episodes only. Rows after the cutoff are held out to test."},
+    {"id":"P6","name":"Two coders","rule":"Two people apply P1-P5 independently and log where they differ."}
+  ],
+  "principles": [
+    {"name":"Dated and sourced","text":"Every row carries a date, a verb and a link. A row with no source does not enter the persona."},
+    {"name":"Built and tested apart","text":"The persona uses rows before the cutoff only. Later rows are held out to test the rules."},
+    {"name":"Honest about origin","text":"Rows are primary when read in the original and secondary when taken from a report."}
+  ]
+}

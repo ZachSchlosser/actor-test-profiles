@@ -1,0 +1,396 @@
+{
+  "id": "mofcom",
+  "name": "Ministry of Commerce",
+  "short": "MOFCOM",
+  "class": "state",
+  "cutoff": "2026-01-01",
+  "hero": {
+    "eyebrow": "State ministry persona",
+    "title": "MOFCOM,",
+    "title_em": "China’s counter-controls",
+    "lede": "The commerce ministry runs China’s export controls, the Unreliable Entity List and trade remedies. It condemns every major US chip rule within a day, and answers the biggest ones with mineral controls."
+  },
+  "short_answer": [
+    {
+      "title": "Words are near-certain; acts are selective",
+      "body": "Six independent US chip rules each drew a same-day or next-day condemnation. Only some were followed by mineral export controls, within 1 to 10 days, four times."
+    },
+    {
+      "title": "Suspend, never revoke",
+      "body": "Around truces it suspends countermeasures with sunset dates matched to US moves, and keeps the licensing regimes in place."
+    }
+  ],
+  "purpose": {
+    "summary": "MOFCOM’s export controls, entity listings and trade probes are in its control, so its record can forecast China’s economic counter-moves to US chip and tariff actions.",
+    "use_for": [
+      "After a US chip control, will MOFCOM condemn it, and will it restrict a critical mineral?",
+      "After new US tariffs, what package of listings and controls follows?",
+      "When a truce is struck, what is suspended and until when?"
+    ],
+    "dont_use_for": [
+      "Purchase guidance on NVIDIA chips, which comes from CAC, MIIT and other bodies, not MOFCOM.",
+      "Antitrust probes, which are SAMR’s."
+    ]
+  },
+  "standing": {
+    "class_role": "State · ministry under the State Council: export controls (with Customs), the Unreliable Entity List, trade remedies and WTO disputes.",
+    "principal": "The State Council; big moves (the October 2025 rare-earth regime) carry State Council approval.",
+    "attribution_rule": "A row is MOFCOM’s when MOFCOM, its spokesperson, or MOFCOM jointly with Customs acts. Acts by SAMR, CAC or MIIT are theirs; the NDRC’s reported block of the Meta–Manus deal is left out.",
+    "veto_players": "The State Council and the top leadership, whose summits with Washington set suspensions (Geneva, Busan).",
+    "gates_held": "Export licences for gallium, germanium, antimony, graphite, tungsten and rare earths; listing on the Unreliable Entity List."
+  },
+  "powers": [
+    {
+      "id": "rule_making",
+      "status": "holds",
+      "use": "Export-control announcements, often with Customs",
+      "rows": [
+        "MC03",
+        "MC05",
+        "MC15",
+        "MC25"
+      ],
+      "limit": "Framed as non-proliferation, “not targeting any country”"
+    },
+    {
+      "id": "gatekeeping",
+      "status": "holds",
+      "use": "Licences for critical-mineral exports",
+      "rows": [
+        "MC08",
+        "MC25"
+      ],
+      "limit": "Licensing regimes outlast every suspension"
+    },
+    {
+      "id": "information",
+      "status": "partial",
+      "use": "End-use checks on mineral exports",
+      "rows": [
+        "MC08"
+      ],
+      "limit": "What it learns is not public"
+    },
+    {
+      "id": "sanctioning",
+      "status": "holds",
+      "use": "Unreliable Entity List and export-control list additions",
+      "rows": [
+        "MC13",
+        "MC14",
+        "MC16",
+        "MC26",
+        "MC35"
+      ],
+      "limit": "Mostly defence firms with little China business"
+    },
+    {
+      "id": "review",
+      "status": "holds",
+      "use": "Anti-dumping, anti-discrimination and trade-barrier probes",
+      "rows": [
+        "MC21",
+        "MC22",
+        "MC33"
+      ],
+      "limit": "Trade-remedy timelines run for months"
+    },
+    {
+      "id": "mobilisation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No campaigns in this log"
+    },
+    {
+      "id": "external_coercion",
+      "status": "holds",
+      "use": "Mineral controls and bans aimed at the US, the Netherlands and Japan",
+      "rows": [
+        "MC08",
+        "MC24",
+        "MC30"
+      ],
+      "limit": "Suspended around truces"
+    },
+    {
+      "id": "fiscal",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No fiscal role in this log"
+    }
+  ],
+  "verbs_ruled_out": [
+    "subsidise",
+    "fund"
+  ],
+  "rules": [
+    {
+      "id": "M1",
+      "name": "US chip rule → same-day condemnation",
+      "when": "Washington issues a major chip or AI export-control rule",
+      "then": "A MOFCOM spokesperson condemns it within 0-3 days and promises “necessary measures”",
+      "status": "rule",
+      "triggers": [
+        "us_chip_restriction"
+      ],
+      "episodes": [
+        {
+          "trigger": "C01",
+          "response": "MC01"
+        },
+        {
+          "trigger": "C02",
+          "response": "MC04"
+        },
+        {
+          "trigger": "C29",
+          "response": "MC07"
+        },
+        {
+          "trigger": "C43",
+          "response": "MC10"
+        },
+        {
+          "trigger": "C205",
+          "response": "MC20"
+        },
+        {
+          "trigger": "C36",
+          "response": "MC23"
+        },
+        {
+          "trigger": "C04",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C51",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "Near-certain for words; the “necessary measures” line predicts no act. No statement was found for the April 2025 H20 licence rule (during the tariff war) or the May 2026 guidance on Chinese-headquartered firms."
+    },
+    {
+      "id": "M2",
+      "name": "Big chip escalation → mineral export control",
+      "when": "A large US or allied chip-control escalation lands",
+      "then": "MOFCOM restricts a critical mineral within 1 to 10 days, framed as routine and “not targeting any country”",
+      "status": "rule",
+      "triggers": [
+        "us_chip_restriction"
+      ],
+      "episodes": [
+        {
+          "trigger": "C201",
+          "response": "MC03"
+        },
+        {
+          "trigger": "C02",
+          "response": "MC05"
+        },
+        {
+          "trigger": "C29",
+          "response": "MC08"
+        },
+        {
+          "trigger": "C36",
+          "response": "MC25"
+        },
+        {
+          "trigger": "C01",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C43",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C205",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C105",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C04",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C51",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "Four hits against six US chip moves that drew statements only (2022 controls, AI Diffusion Rule, VEU revocation, Ascend guidance, April 2025 H20 licence rule, May 2026 guidance). Only the December 2024 ban names the US; the other links are inferred from timing, which MOFCOM denies. The 2023 gallium control answered Dutch, not US, controls."
+    },
+    {
+      "id": "M3",
+      "name": "New US tariffs → controls and listings",
+      "when": "Washington imposes new tariffs on China",
+      "then": "MOFCOM answers within days with a package: mineral controls and entity listings",
+      "status": "hypothesis",
+      "triggers": [
+        "us_tariff"
+      ],
+      "episodes": [
+        {
+          "trigger": "C30",
+          "response": "MC12"
+        },
+        {
+          "trigger": "C30",
+          "response": "MC13"
+        },
+        {
+          "trigger": "C203",
+          "response": "MC14"
+        },
+        {
+          "trigger": "C31",
+          "response": "MC15"
+        },
+        {
+          "trigger": "C31",
+          "response": "MC16"
+        }
+      ],
+      "note": "Held through the 2025 tariff war, but the February, March and April rounds are each 30 days or less apart, so they chain into one wave. Tariff steps during the 2026 truce drew statements only."
+    },
+    {
+      "id": "M4",
+      "name": "Truce → suspend, not revoke",
+      "when": "Washington and Beijing strike a trade truce",
+      "then": "MOFCOM suspends countermeasures within days, with sunset dates matched to US suspensions, and keeps the licensing regimes",
+      "status": "hypothesis",
+      "triggers": [
+        "us_china_deescalation"
+      ],
+      "episodes": [
+        {
+          "trigger": "C204",
+          "response": "MC17"
+        },
+        {
+          "trigger": "C38",
+          "response": "MC28"
+        },
+        {
+          "trigger": "C38",
+          "response": "MC29"
+        }
+      ],
+      "note": "Two truces (Geneva, Busan). The October 2025 package is suspended until 10 November 2026: the key near-term test."
+    },
+    {
+      "id": "M5",
+      "name": "US targets chips during talks → trade-remedy probe",
+      "when": "Washington lists Chinese chip firms or opens a trade probe during negotiations",
+      "then": "MOFCOM opens anti-dumping, anti-discrimination or trade-barrier probes rather than bans, which keeps the answer adjustable",
+      "status": "hypothesis",
+      "triggers": [
+        "us_trade_probe"
+      ],
+      "episodes": [
+        {
+          "trigger": "C34",
+          "response": "MC21"
+        },
+        {
+          "trigger": "C34",
+          "response": "MC22"
+        },
+        {
+          "trigger": "C210",
+          "response": "MC33"
+        },
+        {
+          "trigger": "C202",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "One build episode (September 2025, on the eve of the Madrid talks); the 2026 trade-barrier probes fall after the cutoff. The December 2024 Section 301 probe (C202) drew only a statement (MC09)."
+    },
+    {
+      "id": "M6",
+      "name": "Washington eases → no welcome",
+      "when": "Washington lets NVIDIA sell more to China",
+      "then": "MOFCOM does not welcome it: it asks the US to lift other restrictions, or declines to comment on purchases",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_easing"
+      ],
+      "episodes": [
+        {
+          "trigger": "C05",
+          "response": "MC19"
+        },
+        {
+          "trigger": "C12",
+          "response": "MC32"
+        }
+      ],
+      "note": "Do not model MOFCOM as the body that blocks NVIDIA purchases; that came from CAC and others."
+    },
+    {
+      "id": "M7",
+      "name": "Distillation accusation → “AI hegemonism”",
+      "when": "Washington accuses Chinese AI labs of distillation or threatens sanctions",
+      "then": "MOFCOM condemns it with a conditional threat of countermeasures, but takes no act",
+      "status": "hypothesis",
+      "triggers": [
+        "us_ai_lab_accusation"
+      ],
+      "episodes": [
+        {
+          "trigger": "C19",
+          "response": "MC37"
+        },
+        {
+          "trigger": "C214",
+          "response": "MC39"
+        }
+      ],
+      "note": "Both after the cutoff, and C19 is dated to the month. FT-reported consultations on AI data and weight controls (MC36) are the likely toolkit if the US sanctions a lab."
+    }
+  ],
+  "tests": [
+    {
+      "rule": "M1",
+      "result": "fits",
+      "note": "The April 2026 MATCH Act markup drew a statement within three days (MC34)."
+    },
+    {
+      "rule": "M4",
+      "result": "untested",
+      "note": "The 10 November 2026 sunset of the October 2025 suspension has not arrived."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Strong primary sourcing",
+      "body": "Most rows were checked against mofcom.gov.cn announcements and spokesperson remarks; the spokesperson archive was listed in full to find counter-cases."
+    },
+    {
+      "title": "Links inferred from timing",
+      "body": "MOFCOM denies targeting any country in most mineral controls; only the December 2024 ban names the US."
+    },
+    {
+      "title": "Third-country cases set aside",
+      "body": "The Nexperia ban (MC24) and the Japan dual-use ban (MC30) are logged but do not yet form a reaction."
+    },
+    {
+      "title": "One coder",
+      "body": "Triggers were coded once (P6 not done)."
+    }
+  ]
+}

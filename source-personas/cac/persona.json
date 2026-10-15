@@ -1,0 +1,782 @@
+{
+  "id": "cac",
+  "name": "Cyberspace Administration of China",
+  "short": "CAC",
+  "class": "state",
+  "cutoff": "2025-01-01",
+  "hero": {
+    "eyebrow": "State regulator persona",
+    "title": "Who governs AI in China, and",
+    "title_em": "CAC as a persona",
+    "lede": "One actor from the party-state, built from its dated record: the orders it signed, the drafts that preceded them, and the campaigns and filing lists that followed."
+  },
+  "short_answer": [
+    {
+      "title": "Timing is predictable",
+      "body": "Drafts become rules in a median of about six months; campaigns follow the calendar. Five timing reactions are patterns, each resting on four or more independent cases."
+    },
+    {
+      "title": "Reactions to pressure are not, yet",
+      "body": "Responses to firms or foreign governments rest on one or two episodes. They stay signals until new events test them."
+    }
+  ],
+  "purpose": {
+    "summary": "Writing policy, and responding to it, is fully in the control of people and the organisations they lead. So a persona built from an actor's record can forecast policy. It can't forecast events no actor controls.",
+    "use_for": [
+      "When a new AI technique reaches the public, when will CAC draft a rule, and with whom?",
+      "How fast will CAC answer a domestic firm that moves without clearance, or a foreign restriction?",
+      "After a rule takes effect, what enforcement follows, and who has to file?",
+      "Which actors will move under a new CAC instrument, and how quickly?"
+    ],
+    "dont_use_for": [
+      "Loss-of-control incidents, such as AI agents hacking into systems. No one is in control of those.",
+      "Whether an incident happens at all. The persona speaks only to how CAC responds once one is public, and how long that takes."
+    ]
+  },
+  "standing": {
+    "class_role": "State · internet and information regulator. A Party commission's office and a state agency.",
+    "principal": "The Central Cyberspace Affairs Commission, reportedly headed by Cai Qi since 2023 (coded from web sources; still needs a corpus source row). It reports to the Politburo and its Standing Committee.",
+    "attribution_rule": "A row counts as CAC's when the body acted, not the person leading it: CAC, not Zhuang Rongwen.",
+    "veto_players": "Every final AI rule before the cutoff was co-issued: 3 bodies for deep synthesis, 4 for algorithms, 7 for generative AI. Each co-issuer must agree, so each is a veto player (Tsebelis, 2002).",
+    "gates_held": "Algorithm filing, generative-AI approval, data-export assessment, cybersecurity review. Filing works as a panopticon; approval and review work as chokepoints (Farrell & Newman, 2019).",
+    "gates": [
+      {
+        "gate": "Generative-AI service approval",
+        "held_by": "CAC",
+        "over": "Every provider going public in China",
+        "rows": [
+          "O15"
+        ],
+        "response": "First 11 approvals in August 2023; batches since"
+      },
+      {
+        "gate": "Algorithm filing",
+        "held_by": "CAC",
+        "over": "Recommendation and deep-synthesis providers",
+        "rows": [
+          "O9",
+          "O12"
+        ],
+        "response": "Filing lists published about every two months"
+      },
+      {
+        "gate": "Outbound data assessment",
+        "held_by": "CAC",
+        "over": "Firms sending data abroad",
+        "rows": [
+          "O11",
+          "O13",
+          "O16"
+        ],
+        "response": "Eased in 2024 with a new instrument, original left in place"
+      },
+      {
+        "gate": "Cybersecurity review",
+        "held_by": "CAC with 12 co-issuers",
+        "over": "Platforms listing abroad; foreign suppliers",
+        "rows": [
+          "O8"
+        ],
+        "response": "Didi (2021), Micron (2023)"
+      }
+    ]
+  },
+  "powers": [
+    {
+      "id": "rule_making",
+      "status": "holds",
+      "use": "Dedicated rules for each new AI technique",
+      "rows": [
+        "O9",
+        "O12",
+        "O15"
+      ],
+      "limit": "Binding AI rules are co-issued with 2-6 other bodies"
+    },
+    {
+      "id": "gatekeeping",
+      "status": "holds",
+      "use": "Approval before any generative-AI service goes public",
+      "rows": [
+        "O15"
+      ],
+      "limit": "Approval is batch by batch, with no published criteria in the record"
+    },
+    {
+      "id": "information",
+      "status": "holds",
+      "use": "Algorithm filing and data-export assessment",
+      "rows": [
+        "O9",
+        "O11"
+      ],
+      "limit": "What it learns is not public"
+    },
+    {
+      "id": "sanctioning",
+      "status": "holds",
+      "use": "Fines, app removal, takedowns (Didi fined RMB 8.026 billion, 2022)",
+      "rows": [
+        "O14"
+      ],
+      "limit": "Criminal cases go to the Ministry of Public Security"
+    },
+    {
+      "id": "review",
+      "status": "holds",
+      "use": "Cybersecurity review of platforms and suppliers",
+      "rows": [
+        "O8"
+      ],
+      "limit": "Used against a foreign firm once in the record (Micron)"
+    },
+    {
+      "id": "mobilisation",
+      "status": "holds",
+      "use": "Time-boxed Qinglang and Clear campaigns that report takedown counts",
+      "rows": [],
+      "limit": "Campaign rows are not yet in this repo's log"
+    },
+    {
+      "id": "external_coercion",
+      "status": "partial",
+      "use": "Only through reviews of foreign firms",
+      "rows": [],
+      "limit": "Export controls and sanctions sit with MOFCOM"
+    },
+    {
+      "id": "fiscal",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "The persona should never predict CAC subsidising a firm"
+    }
+  ],
+  "verbs_ruled_out": [
+    "subsidise",
+    "fund",
+    "restrict_exports"
+  ],
+  "limits": [
+    {
+      "title": "Acted under it, not caused by it",
+      "body": "Nearly every downstream line means an actor took a dated action under a CAC instrument. It shows reach and timing, not proof that CAC's act caused it."
+    },
+    {
+      "title": "Built from the full cac.gov.cn log",
+      "body": "289 acts: 23 official orders, 29 normative documents and 237 drafts, filing lists, enforcement notices and campaigns, as titled on cac.gov.cn (Chinese only). 7 further items issued by other bodies or standards committees are kept as context rows, not CAC acts."
+    },
+    {
+      "title": "The vocabulary shapes what we can see",
+      "body": "A firm launching right after CAC's approval is coded the same as an ordinary launch, so the gate disappears. Fix: keep the verb and add attributes (after_gate, gate_ref)."
+    },
+    {
+      "title": "No baseline",
+      "body": "Without one, a fit shows the persona is consistent with events, not that it forecasts better than a simpler guess."
+    },
+    {
+      "title": "Version 1 tests, kept for the record",
+      "body": "An earlier version had five rules (R1-R5) tested on events after the cutoff: R1 and R5 partly fit, R2-R4 had no qualifying trigger. They were rebuilt as C1-C4 and H1-H4 from the full act log, so those results no longer attach to a current reaction."
+    }
+  ],
+  "rules": [
+    {
+      "id": "C1",
+      "name": "Draft → final text",
+      "when": "CAC publishes a draft for comment",
+      "then": "Final text follows; AI rules are co-issued with other bodies.",
+      "status": "rule",
+      "episodes": [
+        {
+          "label": "Order 1",
+          "trigger_date": "2016-01-13",
+          "response_date": "2017-05-02"
+        },
+        {
+          "label": "Order 3",
+          "trigger_date": "2018-10-19",
+          "response_date": "2019-01-10"
+        },
+        {
+          "label": "Order 4",
+          "trigger_date": "2019-05-31",
+          "response_date": "2019-08-22"
+        },
+        {
+          "label": "Order 5",
+          "trigger_date": "2019-09-10",
+          "response_date": "2019-12-15"
+        },
+        {
+          "label": "Order 7",
+          "trigger_date": "2021-05-12",
+          "response_date": "2021-08-16"
+        },
+        {
+          "label": "Order 8",
+          "trigger_date": "2021-07-10",
+          "response_date": "2021-12-28"
+        },
+        {
+          "label": "Order 9 (AI)",
+          "trigger_date": "2021-08-27",
+          "response_date": "2021-12-31"
+        },
+        {
+          "label": "Order 10",
+          "trigger_date": "2021-10-26",
+          "response_date": "2022-06-27"
+        },
+        {
+          "label": "Order 11",
+          "trigger_date": "2021-10-29",
+          "response_date": "2022-07-07"
+        },
+        {
+          "label": "Order 12 (AI)",
+          "trigger_date": "2022-01-28",
+          "response_date": "2022-11-25"
+        },
+        {
+          "label": "Order 13",
+          "trigger_date": "2022-06-30",
+          "response_date": "2023-02-22"
+        },
+        {
+          "label": "Order 14",
+          "trigger_date": "2022-09-08",
+          "response_date": "2023-03-18"
+        },
+        {
+          "label": "Order 15 (AI)",
+          "trigger_date": "2023-04-11",
+          "response_date": "2023-07-10"
+        },
+        {
+          "label": "Order 16",
+          "trigger_date": "2023-09-28",
+          "response_date": "2024-03-22"
+        },
+        {
+          "label": "Order 17",
+          "trigger_date": "2023-07-07",
+          "response_date": "2024-06-12"
+        },
+        {
+          "label": "Order 18",
+          "trigger_date": "2023-08-03",
+          "response_date": "2025-02-12"
+        },
+        {
+          "label": "Order 19 (AI)",
+          "trigger_date": "2023-08-08",
+          "response_date": "2025-03-13"
+        },
+        {
+          "label": "Order 20",
+          "trigger_date": "2025-01-03",
+          "response_date": "2025-10-14"
+        },
+        {
+          "label": "Order 21 (AI)",
+          "trigger_date": "2025-12-27",
+          "response_date": "2026-04-10"
+        },
+        {
+          "label": "Order 23",
+          "trigger_date": "2025-01-10",
+          "response_date": "2026-05-29"
+        },
+        {
+          "label": "Order 24",
+          "trigger_date": "2025-12-06",
+          "response_date": "2026-06-18"
+        },
+        {
+          "label": "Order 25",
+          "trigger_date": "2026-04-03",
+          "response_date": "2026-07-22"
+        },
+        {
+          "label": "Labelling (AI)",
+          "trigger_date": "2024-09-14",
+          "response_date": "2025-03-07"
+        },
+        {
+          "label": "App necessary PI scope (normative)",
+          "trigger_date": "2020-12-01",
+          "response_date": "2021-03-12"
+        },
+        {
+          "label": "Mobile app info services (normative)",
+          "trigger_date": "2022-01-05",
+          "response_date": "2022-06-14"
+        },
+        {
+          "label": "Pop-up push services (normative)",
+          "trigger_date": "2022-03-02",
+          "response_date": "2022-09-09"
+        },
+        {
+          "label": "Comment services, revised (normative)",
+          "trigger_date": "2022-06-17",
+          "response_date": "2022-11-16"
+        },
+        {
+          "label": "Cybersecurity incident reporting (normative)",
+          "trigger_date": "2023-12-08",
+          "response_date": "2025-09-11"
+        },
+        {
+          "label": "Satellite direct-to-device (normative)",
+          "trigger_date": "2024-09-27",
+          "response_date": "2025-04-23"
+        },
+        {
+          "label": "Information harmful to minors (normative)",
+          "trigger_date": "2025-06-20",
+          "response_date": "2025-12-26"
+        },
+        {
+          "label": "Platforms with many minor users (normative)",
+          "trigger_date": "2025-09-16",
+          "response_date": "2026-02-11"
+        }
+      ],
+      "note": "CAC draft for comment → signed text (orders and normative documents)",
+      "triggers": [
+        "cac_draft"
+      ],
+      "emits": "rule_signed"
+    },
+    {
+      "id": "C2a",
+      "name": "Approval → signed",
+      "when": "CAC's office meeting passes a rule",
+      "then": "The rule is signed weeks later.",
+      "status": "rule",
+      "episodes": [
+        {
+          "label": "Order 7",
+          "trigger_date": "2021-07-05",
+          "response_date": "2021-08-16"
+        },
+        {
+          "label": "Order 8",
+          "trigger_date": "2021-11-16",
+          "response_date": "2021-12-28"
+        },
+        {
+          "label": "Order 9",
+          "trigger_date": "2021-11-16",
+          "response_date": "2021-12-31"
+        },
+        {
+          "label": "Order 10",
+          "trigger_date": "2022-06-09",
+          "response_date": "2022-06-27"
+        },
+        {
+          "label": "Order 11",
+          "trigger_date": "2022-05-19",
+          "response_date": "2022-07-07"
+        },
+        {
+          "label": "Order 12",
+          "trigger_date": "2022-11-03",
+          "response_date": "2022-11-25"
+        },
+        {
+          "label": "Order 13",
+          "trigger_date": "2023-02-03",
+          "response_date": "2023-02-22"
+        },
+        {
+          "label": "Order 14",
+          "trigger_date": "2023-02-03",
+          "response_date": "2023-03-18"
+        },
+        {
+          "label": "Order 15",
+          "trigger_date": "2023-05-23",
+          "response_date": "2023-07-10"
+        },
+        {
+          "label": "Order 16",
+          "trigger_date": "2023-11-28",
+          "response_date": "2024-03-22"
+        },
+        {
+          "label": "Order 17",
+          "trigger_date": "2023-12-25",
+          "response_date": "2024-06-12"
+        },
+        {
+          "label": "Order 18",
+          "trigger_date": "2024-05-20",
+          "response_date": "2025-02-12"
+        },
+        {
+          "label": "Order 19",
+          "trigger_date": "2024-09-30",
+          "response_date": "2025-03-13"
+        },
+        {
+          "label": "Order 20",
+          "trigger_date": "2025-07-21",
+          "response_date": "2025-10-14"
+        },
+        {
+          "label": "Order 21",
+          "trigger_date": "2026-02-02",
+          "response_date": "2026-04-10"
+        },
+        {
+          "label": "Order 23",
+          "trigger_date": "2026-05-08",
+          "response_date": "2026-05-29"
+        },
+        {
+          "label": "Order 24",
+          "trigger_date": "2026-06-01",
+          "response_date": "2026-06-18"
+        },
+        {
+          "label": "Order 25",
+          "trigger_date": "2026-06-26",
+          "response_date": "2026-07-22"
+        }
+      ],
+      "note": "CAC office meeting passes a rule → signed",
+      "triggers": [
+        "cac_approval"
+      ],
+      "emits": "rule_signed"
+    },
+    {
+      "id": "C2b",
+      "name": "Signed → in force",
+      "when": "A rule is signed",
+      "then": "It takes effect one to three months later.",
+      "status": "rule",
+      "episodes": [
+        {
+          "label": "Order 1",
+          "trigger_date": "2017-05-02",
+          "response_date": "2017-06-01"
+        },
+        {
+          "label": "Order 2",
+          "trigger_date": "2017-05-02",
+          "response_date": "2017-06-01"
+        },
+        {
+          "label": "Order 3",
+          "trigger_date": "2019-01-10",
+          "response_date": "2019-02-15"
+        },
+        {
+          "label": "Order 4",
+          "trigger_date": "2019-08-22",
+          "response_date": "2019-10-01"
+        },
+        {
+          "label": "Order 5",
+          "trigger_date": "2019-12-15",
+          "response_date": "2020-03-01"
+        },
+        {
+          "label": "Order 7",
+          "trigger_date": "2021-08-16",
+          "response_date": "2021-10-01"
+        },
+        {
+          "label": "Order 8",
+          "trigger_date": "2021-12-28",
+          "response_date": "2022-02-15"
+        },
+        {
+          "label": "Order 9",
+          "trigger_date": "2021-12-31",
+          "response_date": "2022-03-01"
+        },
+        {
+          "label": "Order 10",
+          "trigger_date": "2022-06-27",
+          "response_date": "2022-08-01"
+        },
+        {
+          "label": "Order 11",
+          "trigger_date": "2022-07-07",
+          "response_date": "2022-09-01"
+        },
+        {
+          "label": "Order 12",
+          "trigger_date": "2022-11-25",
+          "response_date": "2023-01-10"
+        },
+        {
+          "label": "Order 13",
+          "trigger_date": "2023-02-22",
+          "response_date": "2023-06-01"
+        },
+        {
+          "label": "Order 14",
+          "trigger_date": "2023-03-18",
+          "response_date": "2023-06-01"
+        },
+        {
+          "label": "Order 15",
+          "trigger_date": "2023-07-10",
+          "response_date": "2023-08-15"
+        },
+        {
+          "label": "Order 17",
+          "trigger_date": "2024-06-12",
+          "response_date": "2024-08-01"
+        },
+        {
+          "label": "Order 18",
+          "trigger_date": "2025-02-12",
+          "response_date": "2025-05-01"
+        },
+        {
+          "label": "Order 19",
+          "trigger_date": "2025-03-13",
+          "response_date": "2025-06-01"
+        },
+        {
+          "label": "Order 20",
+          "trigger_date": "2025-10-14",
+          "response_date": "2026-01-01"
+        },
+        {
+          "label": "Order 21",
+          "trigger_date": "2026-04-10",
+          "response_date": "2026-07-15"
+        },
+        {
+          "label": "Order 23",
+          "trigger_date": "2026-05-29",
+          "response_date": "2026-09-01"
+        },
+        {
+          "label": "Order 24",
+          "trigger_date": "2026-06-18",
+          "response_date": "2026-08-20"
+        },
+        {
+          "label": "Order 25",
+          "trigger_date": "2026-07-22",
+          "response_date": "2026-09-01"
+        }
+      ],
+      "note": "Rule signed → takes effect",
+      "triggers": [
+        "rule_signed"
+      ],
+      "emits": "rule_takes_effect"
+    },
+    {
+      "id": "C3",
+      "name": "Filing duty → first list",
+      "when": "A rule with a filing duty takes effect",
+      "then": "A first public filing list follows, then lists about every two months.",
+      "status": "rule",
+      "episodes": [
+        {
+          "label": "Blockchain",
+          "trigger_date": "2019-02-15",
+          "response_date": "2019-03-30"
+        },
+        {
+          "label": "Algorithms",
+          "trigger_date": "2022-03-01",
+          "response_date": "2022-08-12"
+        },
+        {
+          "label": "Deep synthesis",
+          "trigger_date": "2023-01-10",
+          "response_date": "2023-06-20"
+        },
+        {
+          "label": "Generative AI (first official list)",
+          "trigger_date": "2023-08-15",
+          "response_date": "2024-04-02"
+        },
+        {
+          "label": "Outbound PI certification bodies",
+          "trigger_date": "2026-01-01",
+          "response_date": "2025-12-30",
+          "counter": true
+        }
+      ],
+      "note": "Rule with a filing duty takes effect → first official filing list",
+      "triggers": [
+        "rule_takes_effect"
+      ]
+    },
+    {
+      "id": "C4a",
+      "name": "Spring Festival campaign",
+      "when": "Lunar New Year approaches",
+      "then": "A clean-up campaign launches 4-12 days before the holiday (a calendar regularity, not a reaction; left out of simulations)",
+      "status": "rule",
+      "episodes": [
+        {
+          "label": "2021",
+          "trigger_date": "2021-02-04",
+          "response_date": "2021-02-12"
+        },
+        {
+          "label": "2022",
+          "trigger_date": "2022-01-24",
+          "response_date": "2022-02-01"
+        },
+        {
+          "label": "2023",
+          "trigger_date": "2023-01-18",
+          "response_date": "2023-01-22"
+        },
+        {
+          "label": "2024",
+          "trigger_date": "2024-01-29",
+          "response_date": "2024-02-10"
+        },
+        {
+          "label": "2025",
+          "trigger_date": "2025-01-19",
+          "response_date": "2025-01-29"
+        },
+        {
+          "label": "2026",
+          "trigger_date": "2026-02-12",
+          "response_date": "2026-02-17"
+        }
+      ],
+      "note": "Spring Festival campaign launched → Lunar New Year",
+      "triggers": []
+    },
+    {
+      "id": "C4b",
+      "name": "Sports-event campaign",
+      "when": "A major sports event approaches",
+      "then": "A campaign launches 5-26 days before the opening (a calendar regularity, not a reaction; left out of simulations)",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "label": "Chengdu Universiade",
+          "trigger_date": "2023-07-18",
+          "response_date": "2023-07-28"
+        },
+        {
+          "label": "Hangzhou Asian Games",
+          "trigger_date": "2023-08-28",
+          "response_date": "2023-09-23"
+        },
+        {
+          "label": "Chengdu World Games",
+          "trigger_date": "2025-07-31",
+          "response_date": "2025-08-07"
+        },
+        {
+          "label": "15th National Games",
+          "trigger_date": "2025-11-04",
+          "response_date": "2025-11-09"
+        }
+      ],
+      "note": "Event campaign launched → major sports event opens",
+      "triggers": []
+    },
+    {
+      "id": "H1",
+      "name": "Listing abroad → review",
+      "when": "A Chinese platform lists or moves data abroad",
+      "then": "CAC review within about three weeks.",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "label": "Kanzhun",
+          "trigger_date": "2021-06-11",
+          "response_date": "2021-07-05"
+        },
+        {
+          "label": "Full Truck Alliance",
+          "trigger_date": "2021-06-22",
+          "response_date": "2021-07-05"
+        },
+        {
+          "label": "Didi",
+          "trigger_date": "2021-06-30",
+          "response_date": "2021-07-02"
+        }
+      ],
+      "note": "One wave (Didi and two others, 2021).",
+      "triggers": [
+        "listing_abroad"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "US chip move → action on a US firm",
+      "when": "Washington changes chip policy, tightening or easing",
+      "then": "CAC opens a security review of, or summons, a US chip firm within weeks to months, citing security",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "label": "Micron review (CAC)",
+          "trigger_date": "2022-10-07",
+          "response_date": "2023-03-31"
+        },
+        {
+          "trigger": "C05",
+          "response": "A177"
+        }
+      ],
+      "note": "Two episodes: the Micron review after the October 2022 controls, and the NVIDIA summons 16 days after H20 sales were assured (July 2025). The December 2024 NVIDIA antitrust probe was SAMR’s.",
+      "triggers": [
+        "us_chip_restriction",
+        "us_chip_easing"
+      ],
+      "emits": "beijing_pressure"
+    },
+    {
+      "id": "H3",
+      "name": "Costly rule → eased",
+      "when": "A rule adds a costly approval step",
+      "then": "Eased within about two years, original left in place.",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "label": "Outbound data",
+          "trigger_date": "2022-09-01",
+          "response_date": "2024-03-22"
+        }
+      ],
+      "note": "One episode.",
+      "triggers": [
+        "costly_rule"
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "New AI product → draft",
+      "when": "A new AI product category reaches the public",
+      "then": "Draft within about five months.",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "label": "ChatGPT → generative-AI draft",
+          "trigger_date": "2022-11-30",
+          "response_date": "2023-04-11"
+        }
+      ],
+      "note": "One episode.",
+      "triggers": [
+        "new_ai_product"
+      ],
+      "emits": "cac_draft"
+    }
+  ],
+  "tests": []
+}

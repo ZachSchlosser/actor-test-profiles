@@ -1,0 +1,111 @@
+[
+  {
+    "id": "C601",
+    "date": "2024-12-05",
+    "actor": "OpenAI",
+    "text": "OpenAI's o1 reasoning model is fully released (preview September 2024). R1 is positioned against it. Date from general knowledge; the R1 page benchmarks against o1.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "DeepSeek R1 release",
+        "url": "https://api-docs.deepseek.com/news/news250120"
+      }
+    ]
+  },
+  {
+    "id": "C602",
+    "date": "2025-01-30",
+    "actor": "Italy Garante",
+    "text": "Italy's Garante blocks DeepSeek with immediate effect and opens an investigation. Data regulators in Ireland and France also query DeepSeek.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Reuters via StreetInsider",
+        "url": "https://www.streetinsider.com/Reuters/Italy%27s+regulator+blocks+Chinese+AI+app+DeepSeek+on+data+protection/24272382.html"
+      }
+    ]
+  },
+  {
+    "id": "C603",
+    "date": "2025-02-17",
+    "actor": "Korea PIPC",
+    "text": "The PIPC announces the suspension of new DeepSeek downloads (effective 15 February). On 24 April it finds unauthorised transfers of user data and prompts.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "NBC News",
+        "url": "https://www.nbcnews.com/news/world/south-korea-suspends-new-downloads-deepseek-citing-privacy-concerns-rcna192432"
+      }
+    ]
+  },
+  {
+    "id": "C604",
+    "date": "2025-08-14",
+    "actor": "Financial Times",
+    "text": "The FT reports R2 was delayed by failed training on Huawei Ascend after authorities encouraged its use.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "The Decoder",
+        "url": "https://the-decoder.com/deepseek-reportedly-delayed-its-latest-ai-model-after-technical-issues-with-huaweis-ascend-chips/"
+      }
+    ]
+  },
+  {
+    "id": "C605",
+    "date": "2025-06-27",
+    "actor": "Berlin Data Protection Commissioner",
+    "text": "Meike Kamp reports DeepSeek's app to Apple and Google under DSA Art. 16 over unlawful transfers to China.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "JURIST",
+        "url": "https://www.jurist.org/news/2025/06/germany-data-commissioner-orders-apple-and-google-to-remove-deepseek-over-data-concerns"
+      }
+    ]
+  },
+  {
+    "id": "C606",
+    "date": "2025-06",
+    "date_precision": "month",
+    "actor": "US officials",
+    "text": "US officials tell Reuters that DeepSeek had access to restricted H100s. NVIDIA says it used lawful H800s. Month only.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Reuters via CTV",
+        "url": "https://www.ctvnews.ca/business/article/chinas-deepseek-says-its-hit-ai-model-cost-just-us294000-to-train/"
+      }
+    ]
+  },
+  {
+    "id": "C607",
+    "date": "2026-02-23",
+    "actor": "Anthropic / OpenAI",
+    "text": "Anthropic accuses DeepSeek, Moonshot and MiniMax of distillation using about 24k fake accounts. This follows OpenAI's February 2026 memo to the House China Committee.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TechCrunch",
+        "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/"
+      }
+    ]
+  },
+  {
+    "id": "C608",
+    "date": "2025-01-31",
+    "actor": "US agencies",
+    "text": "NASA bars DeepSeek. The Navy (late January), Pentagon/DISA and House CAO had already restricted it, and Commerce bureaus ban it on government devices (reported 2025-03-17). No DeepSeek response was found.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "TechCrunch",
+        "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech"
+      },
+      {
+        "label": "Reuters via The Edge",
+        "url": "https://theedgemalaysia.com/node/748331"
+      }
+    ]
+  }
+]

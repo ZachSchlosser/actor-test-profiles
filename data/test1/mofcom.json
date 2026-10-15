@@ -1,0 +1,575 @@
+{
+ "actor": "mofcom",
+ "name": "Ministry of Commerce",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "identity_line": "Ministry of Commerce (government). Record before 2026-01-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "state_reason",
+    "n": 11
+   },
+   {
+    "verb": "restrict_exports",
+    "n": 8
+   },
+   {
+    "verb": "sanction",
+    "n": 4
+   },
+   {
+    "verb": "delay_rule",
+    "n": 2
+   },
+   {
+    "verb": "investigate",
+    "n": 2
+   }
+  ],
+  "rare": [
+   {
+    "verb": "ease_rule",
+    "n": 1
+   },
+   {
+    "verb": "sue",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "MC01",
+   "date": "2022-10-10",
+   "verb": "state_reason",
+   "text": "A MOFCOM spokesperson called the US 7 Oct semiconductor controls, and the addition of 31 Chinese firms to the Unverified List, typical 'tech bullying' and said China firmly opposes them.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson remarks (CN), 2022-10-10",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2022/art_3088eda9585040e785c43cd23e656fca.html"
+    }
+   ]
+  },
+  {
+   "row": "MC02",
+   "date": "2022-12-12",
+   "verb": "sue",
+   "text": "MOFCOM announced that China had filed a WTO dispute challenging the US chip export controls.",
+   "sources": [
+    {
+     "label": "Caixin Global, 2022-12-13",
+     "url": "https://www.caixinglobal.com/2022-12-13/china-pushes-back-on-us-chip-sanctions-with-wto-case-101977484.html"
+    },
+    {
+     "label": "VOA",
+     "url": "https://www.voanews.com/a/china-launches-wto-dispute-over-us-chip-export-controls/6885310.html"
+    }
+   ]
+  },
+  {
+   "row": "MC03",
+   "date": "2023-07-03",
+   "verb": "restrict_exports",
+   "text": "MOFCOM and Customs put gallium and germanium items under export licensing, effective 1 Aug 2023.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 23/2023 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_ee1756db75754420b820d34d4fd3d2d3.html"
+    }
+   ]
+  },
+  {
+   "row": "MC04",
+   "date": "2023-10-18",
+   "verb": "state_reason",
+   "text": "MOFCOM said it was strongly dissatisfied with the 17 Oct US final rule tightening AI chip and equipment controls, urged the US to lift it, and vowed 'all necessary measures'.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson remarks (CN), 2023-10-18",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_e2ad3f4029ec4a1fb67de37d2acabcfc.html"
+    }
+   ]
+  },
+  {
+   "row": "MC05",
+   "date": "2023-10-20",
+   "verb": "restrict_exports",
+   "text": "MOFCOM and Customs moved three highly sensitive graphite items, including spherical graphite, onto the dual-use control list, effective 1 Dec 2023, and said the move was not aimed at any country.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 39/2023 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_2b2f5a88d0354d6ea761a1de0fa427de.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on graphite (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_06e2fa2af7b64257af0537f49559d3b0.html"
+    }
+   ]
+  },
+  {
+   "row": "MC06",
+   "date": "2024-08-15",
+   "verb": "restrict_exports",
+   "text": "MOFCOM and Customs imposed export controls on antimony and super-hard materials, effective 15 Sept 2024.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 33/2024 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_d8d45f1062554034a386bf131110a1b4.html"
+    }
+   ]
+  },
+  {
+   "row": "MC07",
+   "date": "2024-12-02",
+   "verb": "state_reason",
+   "text": "MOFCOM called the 2 Dec US rules on chip equipment and memory chips, which added 136 Chinese entities, 'economic coercion' and promised necessary measures.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2024-12-02",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_be61cee67b6340e59038896021e67453.html"
+    }
+   ]
+  },
+  {
+   "row": "MC08",
+   "date": "2024-12-03",
+   "verb": "restrict_exports",
+   "text": "MOFCOM banned dual-use exports to US military users, said it would in principle not license gallium, germanium, antimony or super-hard material exports to the US, and tightened end-use checks on graphite.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 46/2024 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_3d5e990b43424e60828030f58a547b60.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2024-12-03",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_1fb6c837ed174fc69db96a97471eed0b.html"
+    }
+   ]
+  },
+  {
+   "row": "MC09",
+   "date": "2024-12-23",
+   "verb": "state_reason",
+   "text": "MOFCOM said it strongly opposed the USTR Section 301 probe into China's chip-industry policies and would take all necessary measures.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2024-12-23",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_8f4f45db13844a078b62532d56559eb6.html"
+    }
+   ]
+  },
+  {
+   "row": "MC10",
+   "date": "2025-01-13",
+   "verb": "state_reason",
+   "text": "MOFCOM called the Biden AI diffusion rule, which controls AI chips and model weights, hasty overregulation and an abuse of export controls, and said China would take necessary measures. No concrete countermeasure followed.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-01-13",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_4955f2d7ff714592bcf33e2dcd8062c5.html"
+    }
+   ]
+  },
+  {
+   "row": "MC11",
+   "date": "2025-01-16",
+   "verb": "state_reason",
+   "text": "MOFCOM said domestic industry was complaining about low-priced, subsidised US mature-node chips and that investigators would open a case under the law if an application met the rules.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-01-16",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_95fb1d4932874bce890a928a7489fc96.html"
+    }
+   ]
+  },
+  {
+   "row": "MC12",
+   "date": "2025-02-04",
+   "verb": "restrict_exports",
+   "text": "MOFCOM and Customs put export controls on 25 tungsten, tellurium, bismuth, molybdenum and indium products and related technologies, effective the same day.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 10/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e623090907fc4e1092f0a4db72f57b95.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7b08ff0fc4f0405d855c03a48cdbbea1.html"
+    }
+   ]
+  },
+  {
+   "row": "MC13",
+   "date": "2025-02-04",
+   "verb": "sanction",
+   "text": "The MOFCOM-run Unreliable Entity List mechanism listed PVH Group and Illumina for allegedly discriminating against Chinese firms.",
+   "sources": [
+    {
+     "label": "UEL announcement (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_ab15d2258dda4e93b8ad1ec4776d37c3.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_c7c7d2b79488401f8d0de093e91d8c2f.html"
+    }
+   ]
+  },
+  {
+   "row": "MC14",
+   "date": "2025-03-04",
+   "verb": "sanction",
+   "text": "MOFCOM added 15 US entities to the export control list and 10 US firms to the UEL, and banned Illumina from exporting gene sequencers to China.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson on 15 entities (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_917a395fd6614f07abd0f6bdc71a6e9a.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on Illumina (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7f92dc4e457d496782e65f09db4749b1.html"
+    },
+    {
+     "label": "UEL announcement, 10 US firms (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_beb25dc3bf9447f9ba7a34b25cca8f64.html"
+    }
+   ]
+  },
+  {
+   "row": "MC15",
+   "date": "2025-04-04",
+   "verb": "restrict_exports",
+   "text": "MOFCOM and Customs put seven medium and heavy rare earths (Sm, Gd, Tb, Dy, Lu, Sc, Y) and related items under export licensing, effective immediately.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 18/2025 (EN)",
+     "url": "https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_2eb722ef209c4d268dcd1aca8b2abf40.html"
+    }
+   ]
+  },
+  {
+   "row": "MC16",
+   "date": "2025-04-04",
+   "verb": "sanction",
+   "text": "MOFCOM added 16 US entities to the export control list and 11 US firms, including Skydio and BRINC, to the UEL. On 9 April a further 12 entities went on the control list and 6 firms, including Shield AI, on the UEL.",
+   "sources": [
+    {
+     "label": "UEL announcement, Skydio etc. (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e4f474d3aeba4672913db1042d845d78.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on 16 entities (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_b79820f22afe4b0b835cd996432f1b52.html"
+    },
+    {
+     "label": "UEL announcement, Shield AI etc., 9 Apr (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_c29bed8111a5406ea44f363694865ac2.html"
+    }
+   ]
+  },
+  {
+   "row": "MC17",
+   "date": "2025-05-14",
+   "verb": "ease_rule",
+   "text": "To implement the Geneva consensus, MOFCOM suspended for 90 days the UEL measures on the 11 firms listed on 4 April, and suspended the measures on the 6 firms listed on 9 April.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-05-14",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_53ec1f591dba49a39b65fd89b6d73e6f.html"
+    }
+   ]
+  },
+  {
+   "row": "MC18",
+   "date": "2025-05-19",
+   "verb": "state_reason",
+   "text": "MOFCOM said the US softening of its Huawei Ascend press-release wording did not change the guidance's discriminatory nature, and warned of 'resolute measures'. A further formal statement on the 'global ban on Chinese advanced chips' followed on 21 May.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-05-19",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_89c5c1d493dd4ae48f25daba13087632.html"
+    },
+    {
+     "label": "MOFCOM statement (CN), 2025-05-21",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_9eadf7e9c71c4a4f80d7ca5ea5759a28.html"
+    }
+   ]
+  },
+  {
+   "row": "MC19",
+   "date": "2025-07-18",
+   "verb": "state_reason",
+   "text": "Asked about US approval of NVIDIA H20 sales, MOFCOM did not welcome it. It said the US should drop zero-sum thinking and lift other restrictions, and restated its opposition to the Ascend guidance.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-07-18",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7d2d2dd5288341d9bc0f99aee84355ba.html"
+    }
+   ]
+  },
+  {
+   "row": "MC20",
+   "date": "2025-08-30",
+   "verb": "state_reason",
+   "text": "MOFCOM opposed the US revocation of Validated End-User status for Samsung, SK Hynix and Intel fabs in China and promised necessary measures.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_267bddaf8d52497289627453b3d5636a.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-08-30",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_0562e88bac2f4b16b549d4fa97610acd.html"
+    }
+   ]
+  },
+  {
+   "row": "MC21",
+   "date": "2025-09-13",
+   "verb": "investigate",
+   "text": "MOFCOM opened an anti-dumping investigation into US interface and gate-driver analog IC chips, citing a 37% import surge and a 52% price fall over 2022–24.",
+   "sources": [
+    {
+     "label": "MOFCOM announcement (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_c7f379bfff21421596c6f1df5d925400.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_fbe5b1354a344214921101ae311ddffb.html"
+    }
+   ]
+  },
+  {
+   "row": "MC22",
+   "date": "2025-09-13",
+   "verb": "investigate",
+   "text": "MOFCOM opened an anti-discrimination investigation under the Foreign Trade Law into US IC measures, naming the Oct 2022, Oct 2023, Dec 2024 and Jan 2025 rules and the May 2025 Ascend guidance.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 50/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_10f0b79967124892ba1be0981d9e56f6.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_5840109850204506adc8b6bb63185fb8.html"
+    }
+   ]
+  },
+  {
+   "row": "MC23",
+   "date": "2025-09-29",
+   "verb": "state_reason",
+   "text": "MOFCOM called the BIS 50% Affiliates Rule 'extremely egregious' and said China would take necessary measures.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-09-29",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_220cc0d9436d455eab67490be3d45265.html"
+    }
+   ]
+  },
+  {
+   "row": "MC24",
+   "date": "2025-10-04",
+   "verb": "restrict_exports",
+   "text": "MOFCOM issued an export-control notice barring Nexperia China and its subcontractors from exporting certain China-made finished components. From 1 Nov 2025 it offered exemptions for eligible civilian exports.",
+   "sources": [
+    {
+     "label": "Reuters timeline via Yahoo Finance",
+     "url": "https://finance.yahoo.com/news/timeline-sino-dutch-row-over-093000431.html"
+    },
+    {
+     "label": "Caixin Global, 2025-10-15",
+     "url": "https://www.caixinglobal.com/2025-10-15/china-hits-nexperia-with-export-curbs-after-netherlands-freezes-assets-102371720.html"
+    },
+    {
+     "label": "MOFCOM on exemptions (CN), 2025-11-01",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_8ddabadb3308441085e4326442930d89.html"
+    }
+   ]
+  },
+  {
+   "row": "MC25",
+   "date": "2025-10-09",
+   "verb": "restrict_exports",
+   "text": "With State Council approval, MOFCOM extended rare-earth controls to foreign-made items with at least 0.1% Chinese rare-earth content and to rare-earth technology. Uses for chips at 14nm or below, 256-layer or higher memory, and military-relevant AI are reviewed case by case. Same-day joint announcements Nos. 55–58 added holmium and other rare earths, rare-earth equipment, super-hard materials and lithium-battery and graphite-anode items.",
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 61/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html"
+    },
+    {
+     "label": "MOFCOM Announcement 62/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_6cb42957741440c6984de696b70df9ae.html"
+    },
+    {
+     "label": "MOFCOM spokesperson, 12 Oct (EN; cites the Affiliates Rule)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_c202dcc0433d476db52b1e7f7fe53926.html"
+    }
+   ]
+  },
+  {
+   "row": "MC26",
+   "date": "2025-10-09",
+   "verb": "sanction",
+   "text": "MOFCOM's UEL mechanism listed 14 foreign entities, including chip-teardown firm TechInsights and Dedrone by Axon. It barred their China trade and investment and banned Chinese parties from sending them data.",
+   "sources": [
+    {
+     "label": "UEL announcement (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_9b662990fa4a4d26ba3984ab5d826960.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_ae8ca3f16ddb475cb3a9b51a025887c9.html"
+    }
+   ]
+  },
+  {
+   "row": "MC27",
+   "date": "2025-10-14",
+   "verb": "state_reason",
+   "text": "Responding to Trump's 100% tariff threat, MOFCOM defended the rare-earth controls as 'not export bans' and repeated its 'fight to the end / door open to talks' line.",
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-10-14",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_8b50c88876144fbf9901f203ce161d30.html"
+    }
+   ]
+  },
+  {
+   "row": "MC28",
+   "date": "2025-11-07",
+   "verb": "delay_rule",
+   "text": "MOFCOM and Customs suspended the 9 Oct measures (Nos. 55–58, 61 and 62) until 10 Nov 2026. Two days earlier MOFCOM had extended for a year its suspension of the April UEL and control-list measures and ended the March ones.",
+   "sources": [
+    {
+     "label": "MOFCOM/GAC Announcement 70/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html"
+    },
+    {
+     "label": "MOFCOM on Kuala Lumpur outcomes (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_d3b018b922a4458989e43a46a04be6fe.html"
+    },
+    {
+     "label": "MOFCOM on UEL adjustment (CN), 2025-11-05",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_3cd57285290044edb3036563bc4c7352.html"
+    }
+   ]
+  },
+  {
+   "row": "MC29",
+   "date": "2025-11-09",
+   "verb": "delay_rule",
+   "text": "MOFCOM suspended until 27 Nov 2026 the de facto ban on gallium, germanium, antimony and super-hard material exports to the US, and the stricter graphite checks. Licensing and the military-user ban stay in force.",
+   "sources": [
+    {
+     "label": "Reuters via Engineering News",
+     "url": "https://www.engineeringnews.co.za/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10"
+    },
+    {
+     "label": "TVB News",
+     "url": "https://news.tvb.com/en/802902-ChinasuspendsabanonexportsofgalliumgermaniumandantimonytoUS"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "10 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "MC30",
+   "date": "2026-01-06",
+   "verb": "restrict_exports",
+   "topic": "export_controls",
+   "text": "MOFCOM banned all dual-use exports to Japanese military users and to any use that could enhance Japan's military capability, with extraterritorial liability for re-transfers. It followed with 20+20 Japanese entities on its control and watch lists on 24 Feb and 29 Jun 2026."
+  },
+  {
+   "row": "MC31",
+   "date": "2026-01-08",
+   "verb": "state_reason",
+   "topic": "export_controls",
+   "text": "MOFCOM spokesperson He Yadong said the ministry would work with other departments to assess whether Meta's acquisition of Manus complies with Chinese export-control, technology-export and outbound-investment rules."
+  },
+  {
+   "row": "MC32",
+   "date": "2026-01-22",
+   "verb": "state_reason",
+   "topic": "export_controls",
+   "text": "Asked whether Beijing approves H200 purchases only in special cases, MOFCOM spokesperson He Yongqian said she was not aware of the situation. She repeated that answer on 19 Mar 2026."
+  },
+  {
+   "row": "MC33",
+   "date": "2026-03-27",
+   "verb": "investigate",
+   "topic": "sanctions_and_trade",
+   "text": "MOFCOM opened two trade-barrier investigations into US practices that 'disrupt global supply chains' and 'obstruct green-product trade', as a reciprocal answer to two new USTR Section 301 probes."
+  },
+  {
+   "row": "MC34",
+   "date": "2026-04-25",
+   "verb": "state_reason",
+   "topic": "export_controls",
+   "text": "MOFCOM said it would closely watch the MATCH Act and other chip export-control bills passed by the House Foreign Affairs Committee and would take necessary measures if they became law."
+  },
+  {
+   "row": "MC35",
+   "date": "2026-06-22",
+   "verb": "sanction",
+   "topic": "export_controls",
+   "text": "MOFCOM added 10 US military-related entities, including Aveox, to its export-control restricted list, explicitly in response to the Pentagon's expanded 'Chinese military companies' list."
+  },
+  {
+   "row": "MC36",
+   "date": "2026-07-21",
+   "verb": "issue_draft",
+   "topic": "export_controls",
+   "text": "FT and Reuters reported that MOFCOM had consulted Alibaba, ByteDance and Zhipu on curbing overseas transfer of model-training data and weights, and sought views on stopping TSMC and Qualcomm from fabbing Chinese-designed chips. No rule had been issued."
+  },
+  {
+   "row": "MC37",
+   "date": "2026-07-27",
+   "verb": "state_reason",
+   "topic": "copyright",
+   "text": "MOFCOM called US threats to investigate and sanction Chinese AI firms over 'distillation' 'typical AI hegemonism', claimed US firms distil Chinese models, and vowed all necessary measures."
+  },
+  {
+   "row": "MC38",
+   "date": "2026-08-05",
+   "verb": "restrict_exports",
+   "topic": "export_controls",
+   "text": "MOFCOM and other departments announced countermeasures against FCC and DHS actions. These were strict case-by-case review of drone and drone-component exports to the US, with no licence facilitation; countermeasures on Compliance Testing LLC and six other US entities; and suspended CCC follow-up inspections by US bodies."
+  },
+  {
+   "row": "MC39",
+   "date": "2026-09-09",
+   "verb": "state_reason",
+   "topic": "copyright",
+   "text": "MOFCOM called the NSA/CISA/FBI advisory on 'industrial-scale' distillation by Chinese AI firms groundless, and said China would take countermeasures if the US used it to suppress Chinese AI companies."
+  }
+ ]
+}

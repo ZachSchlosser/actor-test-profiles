@@ -1,0 +1,316 @@
+{
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "short": "DeepSeek",
+  "class": "company",
+  "cutoff": "2026-01-01",
+  "context_from": [
+    "baidu",
+    "cac"
+  ],
+  "hero": {
+    "eyebrow": "Company persona for policy forecasting",
+    "title": "DeepSeek,",
+    "title_em": "quiet and open-weight",
+    "lede": "The High-Flyer-funded lab whose R1 release shook markets in January 2025. It speaks through model releases and papers, complies with Beijing on the day, and gives foreign regulators the minimum."
+  },
+  "short_answer": [
+    {
+      "title": "Its releases are the trigger",
+      "body": "DeepSeek releases on its own cadence; others answer it. Baidu, Huawei and MIIT all moved within weeks of R1."
+    },
+    {
+      "title": "Minimal answers abroad, same-day compliance at home",
+      "body": "Foreign bans get a jurisdiction denial or a market exit; China’s labelling measures got compliance on the day they took effect."
+    }
+  ],
+  "purpose": {
+    "summary": "What DeepSeek releases and how it answers regulators is in its control, so its record can forecast the behaviour of a frontier Chinese open-weight lab.",
+    "use_for": [
+      "When a foreign government restricts DeepSeek, what does it do?",
+      "When Beijing pushes domestic chips, does DeepSeek align its models with Chinese hardware?",
+      "When a CAC rule takes effect, does DeepSeek comply on time?"
+    ],
+    "dont_use_for": [
+      "Release timing, which follows its own research schedule.",
+      "US chip smuggling claims, which DeepSeek does not answer."
+    ]
+  },
+  "standing": {
+    "class_role": "Company · private AI lab funded by the quant fund High-Flyer; MIT-licensed open weights.",
+    "principal": "Founder Liang Wenfeng and High-Flyer; no outside investors in this log.",
+    "attribution_rule": "A row is DeepSeek’s when it comes from the company: releases, API notices, papers, or Liang Wenfeng speaking for it.",
+    "veto_players": "CAC (filing and labelling), Beijing on chips, foreign data regulators (Italy, Korea, Berlin), US agencies.",
+    "gates_held": "Open weights: anyone can run its models, including Baidu Search and Huawei’s Ascend cloud."
+  },
+  "powers": [
+    {
+      "id": "supply",
+      "status": "partial",
+      "use": "Open weights and low-priced APIs",
+      "rows": [
+        "DS03",
+        "DS05",
+        "DS21"
+      ],
+      "limit": "Depends on others’ chips"
+    },
+    {
+      "id": "release",
+      "status": "holds",
+      "use": "Frontier open-weight releases on its own cadence",
+      "rows": [
+        "DS03",
+        "DS05",
+        "DS17",
+        "DS24"
+      ],
+      "limit": "R2 reportedly delayed by training on Ascend (DS14)"
+    },
+    {
+      "id": "capital",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "Funded by High-Flyer; no investments in this log"
+    },
+    {
+      "id": "lobbying",
+      "status": "partial",
+      "use": "Founder attends the Premier’s symposium",
+      "rows": [
+        "DS06"
+      ],
+      "limit": "No public lobbying"
+    },
+    {
+      "id": "coalition",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No formal partnerships in this log"
+    },
+    {
+      "id": "self_governance",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No published safety framework found in this log"
+    },
+    {
+      "id": "disclosure",
+      "status": "partial",
+      "use": "Technical papers, including training costs",
+      "rows": [
+        "DS11",
+        "DS19"
+      ],
+      "limit": "Silent on distillation and chip claims (DS22)"
+    },
+    {
+      "id": "litigation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No lawsuit in this log"
+    }
+  ],
+  "verbs_ruled_out": [
+    "issue_rule",
+    "enforce",
+    "license_exports",
+    "sanction"
+  ],
+  "profile": {
+    "incentives": [
+      "Research-driven pursuit of AGI, funded by High-Flyer and not dependent on revenue",
+      "Lower inference cost so APIs are cheap enough for everyone, priced at cost",
+      "Credibility with the Chinese state (Li Qiang and Xi symposia) and the domestic-chip ecosystem",
+      "Global developer adoption through MIT-licensed weights"
+    ],
+    "red_lines": [
+      "No public engagement with US or EU political criticism (bans, distillation, H100 claims)",
+      "Speaks only via official channels ('Please rely only on our official accounts')",
+      "Will not publicly contradict Chinese regulators; complies on effective dates"
+    ],
+    "decision_style": "Quiet and engineering-led. Founder Liang rarely speaks and leaves no on-record statements after 2024 interviews. Releases are terse posts on api-docs, Hugging Face and GitHub, often right before holidays. Acts are technical (weights, kernels, papers) rather than rhetorical. It reacts to foreign pressure by doing little or withdrawing rather than arguing.",
+    "positions": [
+      {
+        "topic": "open_source",
+        "position": "MIT-licensed open weights, distillation allowed",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "DS05",
+          "DS12"
+        ]
+      },
+      {
+        "topic": "china_race",
+        "position": "Aligns with Chinese hardware when Beijing pushes domestic chips",
+        "confidence": "medium",
+        "rows": [
+          "DS17",
+          "DS28"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "actor": "CAC",
+        "kind": "gate",
+        "note": "Complies with CAC rules on the effective date",
+        "rows": [
+          "DS18"
+        ]
+      },
+      {
+        "actor": "Baidu",
+        "kind": "rival",
+        "note": "R1 set off Baidu’s open-source reversal",
+        "rows": [
+          "DS05"
+        ]
+      }
+    ],
+    "voice": {
+      "summary": "Terse, technical posts on official channels; the founder rarely speaks.",
+      "quotes": [
+        "DS05"
+      ]
+    },
+    "say_do": [
+      {
+        "say": "Prices at cost, for everyone",
+        "do": "Announces a significant price increase in August 2026",
+        "rows": [
+          "DS01",
+          "DS25"
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "date": "2024-12-26",
+        "frontier_model": "DeepSeek-V3, 671B MoE, open weights",
+        "benchmarks": {
+          "training": "2.788M H800 GPU-hours"
+        }
+      },
+      {
+        "date": "2025-01-20",
+        "frontier_model": "DeepSeek-R1, MIT license",
+        "benchmarks": {}
+      },
+      {
+        "date": "2026-04-24",
+        "frontier_model": "DeepSeek V4 Preview (Pro 1.6T, 1M context)",
+        "benchmarks": {}
+      }
+    ],
+    "incidents": [
+      {
+        "incident": "Italy’s Garante blocks the app",
+        "public_date": "2025-01-30",
+        "acknowledged": "2025-01-30",
+        "patched": null,
+        "what_changed": "Denied operating in Italy; app removed from Italian stores",
+        "rows": [
+          "DS08",
+          "DS09"
+        ]
+      },
+      {
+        "incident": "Anthropic accuses DeepSeek of industrial-scale distillation",
+        "public_date": "2026-02-23",
+        "acknowledged": null,
+        "patched": null,
+        "what_changed": "No public response",
+        "rows": [
+          "DS22"
+        ]
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "DS1",
+      "name": "Foreign restriction → minimal response",
+      "when": "A foreign government restricts DeepSeek",
+      "then": "DeepSeek gives a minimal answer sized to the market: a jurisdiction denial, a market exit or silence, the same day",
+      "status": "hypothesis",
+      "triggers": [
+        "foreign_ban"
+      ],
+      "episodes": [
+        {
+          "trigger": "C602",
+          "response": "DS09"
+        },
+        {
+          "trigger": "C603",
+          "response": "DS10"
+        }
+      ],
+      "note": "One clean episode (Italy). DS09 says the app was pulled after the Garante’s questions, which may predate the formal block. The Korea suspension took effect before the regulator announced it; the Berlin case drew silence, logged but not counted."
+    },
+    {
+      "id": "DS2",
+      "name": "NVIDIA access cut → align with Chinese chips",
+      "when": "Beijing or Washington cuts NVIDIA supply in China",
+      "then": "DeepSeek aligns its next release with Chinese hardware (FP8 formats, Ascend support) within weeks to months",
+      "status": "hypothesis",
+      "triggers": [
+        "nvidia_access_cut"
+      ],
+      "episodes": [
+        {
+          "trigger": "C06",
+          "response": "DS17"
+        },
+        {
+          "trigger": "C11",
+          "response": "DS24"
+        }
+      ],
+      "note": "The V4 release with Huawei day-0 support (DS24) falls after the cutoff."
+    },
+    {
+      "id": "DS3",
+      "name": "CAC rule takes effect → same-day compliance",
+      "when": "A CAC rule takes effect",
+      "then": "DeepSeek posts a terse compliance notice on the effective date",
+      "status": "hypothesis",
+      "triggers": [
+        "rule_takes_effect"
+      ],
+      "episodes": [
+        {
+          "label": "Labelling measures take effect (CAC N24)",
+          "trigger_date": "2025-09-01",
+          "response_date": "2025-09-01"
+        },
+        {
+          "label": "Outbound PI certification measures take effect (CAC O20), no DeepSeek notice",
+          "trigger_date": "2026-01-01",
+          "counter": true
+        }
+      ],
+      "note": "One episode."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Little on the record",
+      "body": "The founder has made almost no on-record statements since 2024; several quotes come from translations."
+    },
+    {
+      "title": "Single-source rows",
+      "body": "DS25 (price increase) rests on one 36Kr article; DS24 is dated to the month."
+    },
+    {
+      "title": "One coder",
+      "body": "Triggers were coded once (P6 not done)."
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "MI01",
+    "date": "2022-12-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "MIIT co-issued the Provisions on Deep Synthesis of Internet Information Services (signed 25 Nov 2022, effective 10 Jan 2023), which require labelling, real-name verification and filing.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "target": "deep synthesis providers",
+      "co_issuers": [
+        "CAC",
+        "MPS"
+      ],
+      "subtopic": "ai_rule"
+    },
+    "sources": [
+      {
+        "label": "CAC 2022-12-11",
+        "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm"
+      },
+      {
+        "label": "gov.cn text",
+        "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/12/content_5731431.htm"
+      }
+    ]
+  },
+  {
+    "id": "MI02",
+    "date": "2022-12-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "MIIT issued the trial Data Security Management Measures for the industry and IT sector (dated 8 Dec, effective 1 Jan 2023). They classify data as general, important or core and bar giving data to foreign law enforcement without MIIT approval.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "target": "industrial, telecom and radio data handlers",
+      "subtopic": "data_rule"
+    },
+    "sources": [
+      {
+        "label": "gov.cn 2022-12-14",
+        "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/14/content_5731918.htm"
+      },
+      {
+        "label": "MIIT",
+        "url": "https://wap.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2022/art_e0f06662e37140808d43d7735e9d9fd3.html"
+      }
+    ]
+  },
+  {
+    "id": "MI03",
+    "date": "2023-07-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "MIIT was one of seven co-issuers of the CAC-led Interim Measures for Generative AI Services (dated 10 July, effective 15 Aug 2023).",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "target": "generative AI providers",
+      "co_issuers": [
+        "CAC",
+        "NDRC",
+        "MOE",
+        "MOST",
+        "MPS",
+        "NRTA"
+      ],
+      "subtopic": "ai_rule"
+    },
+    "sources": [
+      {
+        "label": "gov.cn text",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm"
+      },
+      {
+        "label": "gov.cn news 2023-07-13",
+        "url": "https://www.gov.cn/lianbo/bumen/202307/content_6891748.htm"
+      }
+    ]
+  },
+  {
+    "id": "MI04",
+    "date": "2023-10-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT led six departments in issuing the Action Plan for High-Quality Development of Computing Power Infrastructure, targeting more than 300 EFLOPS and a 35% intelligent-compute share by 2025.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "target": "computing infrastructure",
+      "co_issuers": [
+        "CAC",
+        "MOE",
+        "NHC",
+        "PBOC",
+        "SASAC"
+      ],
+      "subtopic": "compute_policy"
+    },
+    "sources": [
+      {
+        "label": "CAC 2023-10-10",
+        "url": "https://www.cac.gov.cn/2023-10/10/c_1698598959340810.htm"
+      },
+      {
+        "label": "gov.cn interpretation",
+        "url": "https://www.gov.cn/zhengce/202310/content_6908021.htm"
+      }
+    ]
+  },
+  {
+    "id": "MI05",
+    "date": "2023-10-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT issued Guiding Opinions on Innovative Development of Humanoid Robots (published early Nov 2023), aiming for an innovation system by 2025 and world-advanced level by 2027.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "humanoid robotics",
+      "subtopic": "embodied_ai"
+    },
+    "sources": [
+      {
+        "label": "NCSTI repost of MIIT notice",
+        "url": "https://www.ncsti.gov.cn/zcfg/zcwj/202311/t20231103_140346.html"
+      },
+      {
+        "label": "Hunan gov repost",
+        "url": "http://www.hunan.gov.cn/zqt/zcsd/202311/t20231103_31810495.html"
+      }
+    ]
+  },
+  {
+    "id": "MI06",
+    "date": "2024-04-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "deny_permission",
+    "text": "WSJ reported that MIIT ordered state carriers to inventory their foreign (Intel/AMD) core processors and replace them by 2027. MIIT did not comment.",
+    "quote": null,
+    "trigger_ref": "C02",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "target": "Intel, AMD; China Mobile, China Telecom",
+      "subtopic": "chip_localisation"
+    },
+    "sources": [
+      {
+        "label": "DCD (citing WSJ)",
+        "url": "https://datacenterdynamics.com/en/news/chinese-government-issues-rip-and-replace-order-for-us-made-chips-in-countrys-telco-networks"
+      },
+      {
+        "label": "IEEE ComSoc techblog",
+        "url": "https://techblog.comsoc.org/2024/04/15/wsj-china-telecom-carriers-to-phase-out-foreign-chips-intel-amd-hit-hard/"
+      }
+    ]
+  },
+  {
+    "id": "MI07",
+    "date": "2024-06-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT led four bodies in issuing the National AI Industry Comprehensive Standardization System Construction Guidelines (2024), published 2 July, targeting 50+ national and industry AI standards by 2026.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "AI industry",
+      "co_issuers": [
+        "CAC",
+        "NDRC",
+        "SAC"
+      ],
+      "subtopic": "standards"
+    },
+    "sources": [
+      {
+        "label": "gov.cn 2024-07",
+        "url": "https://www.gov.cn/lianbo/bumen/202407/content_6960709.htm"
+      },
+      {
+        "label": "Shaanxi MIIT dept repost",
+        "url": "https://gxt.shaanxi.gov.cn/cyfz/xygy/202407/t20240703_3316324.html"
+      }
+    ]
+  },
+  {
+    "id": "MI08",
+    "date": "2025-02-13",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "state_reason",
+    "text": "MIIT told state media that all three state telecom carriers had fully integrated DeepSeek's open-source models.",
+    "quote": "三家基础电信企业已全面接入国产开源大模型DeepSeek",
+    "trigger_ref": "C03",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "DeepSeek; telecom carriers"
+    },
+    "sources": [
+      {
+        "label": "Science and Technology Daily 2025-02-13",
+        "url": "https://www.stdaily.com/web/gdxw/2025-02/13/content_296431.html"
+      }
+    ]
+  },
+  {
+    "id": "MI09",
+    "date": "2025-03-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "MIIT co-issued the Measures for Labelling AI-Generated Synthetic Content (dated 7 Mar, effective 1 Sept 2025), requiring explicit and implicit labels.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "target": "AI content providers and platforms",
+      "co_issuers": [
+        "CAC",
+        "MPS",
+        "NRTA"
+      ],
+      "subtopic": "ai_rule"
+    },
+    "sources": [
+      {
+        "label": "CAC notice",
+        "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+      },
+      {
+        "label": "gov.cn",
+        "url": "https://www.gov.cn/lianbo/bumen/202503/content_7014283.htm"
+      }
+    ]
+  },
+  {
+    "id": "MI10",
+    "date": "2025-08-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "FT reported that MIIT asked companies including Alibaba and ByteDance to explain why they needed NVIDIA H20s rather than domestic chips. This followed the US resumption of H20 licences and CAC's backdoor summons.",
+    "quote": null,
+    "trigger_ref": "C05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "target": "NVIDIA H20; Alibaba, ByteDance",
+      "subtopic": "chip_localisation"
+    },
+    "sources": [
+      {
+        "label": "BusinessDay 2025-08-12 (citing FT)",
+        "url": "https://www.businessday.co.za/bd/companies/2025-08-12-china-warns-local-firms-on-nvidias-h20-chips-after-backdoor-claims"
+      },
+      {
+        "label": "Bloomberg 2025-08-12",
+        "url": "https://bloomberg.com/news/articles/2025-08-12/china-urges-firms-not-to-use-nvidia-h20-chips-in-new-guidance"
+      }
+    ]
+  },
+  {
+    "id": "MI11",
+    "date": "2025-12-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "assert_control",
+    "text": "MIIT established a Humanoid Robot and Embodied AI Standardization Technical Committee.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "humanoid / embodied AI",
+      "subtopic": [
+        "standards",
+        "embodied_ai"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2025-12-31",
+        "url": "https://www.news.cn/tech/20251231/f9cb6428750149f08bd17e210261cdab/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI12",
+    "date": "2026-01-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT led eight departments in issuing Implementation Opinions on the 'AI+ Manufacturing' special action. Targets for 2027 include 3–5 general models deployed in manufacturing, 100 industrial datasets and 1,000 industrial agents.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "manufacturing",
+      "co_issuers": [
+        "CAC",
+        "NDRC",
+        "MOE",
+        "MOFCOM",
+        "SASAC",
+        "SAMR",
+        "NDA"
+      ]
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2026-01-13",
+        "url": "https://www.news.cn/tech/20260113/635d4b8aa5ed44d6af693ae39fe53b14/c.html"
+      },
+      {
+        "label": "Guangming 2026-01-08",
+        "url": "https://m.gmw.cn/2026-01/08/content_1304294899.htm"
+      }
+    ]
+  },
+  {
+    "id": "MI13",
+    "date": "2026-01-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "grant_permission",
+    "text": "Reuters sources said China's industry and commerce ministries approved H200 purchases by ByteDance, Alibaba, Tencent and DeepSeek, with conditions still being set by NDRC. MIIT did not comment.",
+    "quote": "China's industry and commerce ministries have granted approvals for all four companies",
+    "trigger_ref": "C12",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "target": "NVIDIA H200; ByteDance, Alibaba, Tencent, DeepSeek",
+      "co_issuers": [
+        "MOFCOM"
+      ],
+      "subtopic": "chip_policy"
+    },
+    "sources": [
+      {
+        "label": "Aaj (Reuters) 2026-01-30",
+        "url": "https://english.aaj.tv/news/amp/330451722"
+      },
+      {
+        "label": "The Standard HK 2026-01-28",
+        "url": "https://www.thestandard.com.hk/innovation/article/322910/China-gives-nod-to-ByteDance-Alibaba-and-Tencent-to-buy-Nvidias-H200-chips-says-sources"
+      }
+    ]
+  },
+  {
+    "id": "MI14",
+    "date": "2026-02-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT's NVDB vulnerability platform warned that misconfigured OpenClaw open-source AI agent instances carry high risk of attack and data leakage, and recommended hardening steps.",
+    "quote": "OpenClaw开源AI智能体部分实例在默认或不当配置情况下存在较高安全风险",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "target": "OpenClaw users",
+      "subtopic": "ai_security"
+    },
+    "sources": [
+      {
+        "label": "Sina Finance 2026-02-05",
+        "url": "https://finance.sina.com.cn/jjxw/2026-02-05/doc-inhkuimi2883451.shtml"
+      },
+      {
+        "label": "Science and Technology Daily 2026-03-08",
+        "url": "https://www.stdaily.com/web/gdxw/2026-03/08/content_482508.html"
+      }
+    ]
+  },
+  {
+    "id": "MI15",
+    "date": "2026-04-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "MIIT co-issued the CAC-led Interim Measures on Anthropomorphic AI Interaction Services (effective 15 July 2026), which bar emotional manipulation and inducing dependence and add protections for minors.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "regulation",
+      "target": "companion / anthropomorphic AI",
+      "co_issuers": [
+        "CAC",
+        "NDRC",
+        "MPS",
+        "SAMR"
+      ],
+      "subtopic": "ai_rule"
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2026-04-10",
+        "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI16",
+    "date": "2026-05-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT co-issued the Implementation Opinions on Standardized Application and Innovative Development of AI Agents, covering safety limits, standards and protocols, and 19 application scenarios.",
+    "quote": "智能体是具备自主感知、记忆、决策、交互与执行能力的智能系统",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "AI agent developers",
+      "co_issuers": [
+        "CAC",
+        "NDRC"
+      ],
+      "subtopic": "ai_agents"
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2026-05-08",
+        "url": "https://www.news.cn/politics/20260508/aa31c404610e4cc59f47fea3ab04929b/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI17",
+    "date": "2026-05-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_standard",
+    "text": "MIIT, MOFCOM and SAMR launched the GB/Z 177-2026 AI-terminal intelligence grading standards (L1–L4) for phones, PCs, TVs and other devices, to be tied to trade-in subsidies.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "AI consumer devices",
+      "co_issuers": [
+        "MOFCOM",
+        "SAMR"
+      ],
+      "subtopic": "standards"
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2026-05-12",
+        "url": "https://www.news.cn/tech/20260512/1517350612df4612b741b5498554b62a/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI18",
+    "date": "2026-06-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_guidance",
+    "text": "MIIT issued the 'AI+ Information and Communications' Implementation Opinions (2026–2028), with 17 tasks including autonomous networks and a 1ms metro compute-latency target.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "telecom sector",
+      "subtopic": "telecom"
+    },
+    "sources": [
+      {
+        "label": "China News 2026-06-10",
+        "url": "https://www.chinanews.com.cn/gn/2026/06-10/10637646.shtml"
+      },
+      {
+        "label": "Xinhua 2026-06-12",
+        "url": "https://www.news.cn/tech/20260612/a0fe3e279bc24fce8ef99f3bb63b70ff/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI19",
+    "date": "2026-06-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "MIIT and SASAC launched the 2026 humanoid robot and embodied AI real-scene training campaign, targeting more than 100 high-value scenarios and deployment at the scale of tens of thousands of units.",
+    "quote": "坚持应用牵引，面向工业、特种、服务等领域重点场景",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "humanoid robotics",
+      "co_issuers": [
+        "SASAC"
+      ],
+      "subtopic": "embodied_ai"
+    },
+    "sources": [
+      {
+        "label": "Xinhua 2026-06-12",
+        "url": "https://www.news.cn/tech/20260612/a069b3a9948b4e0aaaa94cf3d618e545/c.html"
+      }
+    ]
+  },
+  {
+    "id": "MI20",
+    "date": "2026-08-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "MIIT launched a special action to cultivate AI application service providers, including compute vouchers and links to national computing nodes, targeting 2,000+ providers by end-2026.",
+    "quote": "支持服务商加强与国家算力网络枢纽节点、国家算力互联互通节点、中国算力平台等对接",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "industrial_policy",
+      "target": "AI service providers"
+    },
+    "sources": [
+      {
+        "label": "10jqka 2026-08-31",
+        "url": "https://stock.10jqka.com.cn/20260831/c679442524.shtml"
+      }
+    ]
+  }
+]

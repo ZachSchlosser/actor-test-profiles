@@ -1,0 +1,36 @@
+{
+  "$comment": "Topic vocabulary for rows (attributes.topic, attributes.subtopic, attributes.also) and for stance coding. A row has one primary topic (a domain), an optional subtopic for nuance, and optional secondary domains in `also`. Stance (-2..+2) is read against the domain's poles.",
+  "topics": [
+    { "id": "export_controls", "label": "Export controls", "definition": "Controls on exporting or importing chips, minerals, technology and data; entity listings and sanctions tied to them.", "neg": "tighten controls", "pos": "remove controls",
+      "subtopics": ["us_chip_controls", "sanctions", "mineral_controls", "entity_listing"] },
+    { "id": "china_race", "label": "China race", "definition": "US-China technology competition, self-reliance and how each side frames the other.", "neg": "China is a threat to contain", "pos": "China is a peer to engage",
+      "subtopics": ["self_reliance", "state_relations"] },
+    { "id": "chips_and_compute", "label": "Chips and compute", "definition": "Chip supply, domestic chips, compute infrastructure and disclosure of compute used.", "neg": "restrict or ration compute", "pos": "build out compute freely",
+      "subtopics": ["domestic_chips", "chip_localisation", "chip_policy", "compute_policy", "compute_disclosure"] },
+    { "id": "regulation", "label": "Regulation", "definition": "Binding AI, data and platform rules, compliance with them, and foreign regulators' actions.", "neg": "new binding AI laws", "pos": "no new AI laws",
+      "subtopics": ["ai_rule", "data_rule", "compliance", "foreign_regulation"] },
+    { "id": "competition", "label": "Competition", "definition": "Antitrust probes, merger review, pricing and responses to rivals.", "neg": "intervene in markets", "pos": "let markets decide",
+      "subtopics": ["antitrust_us_firms", "algorithm_antitrust", "platform_antitrust", "merger_review", "pricing", "rival_response"] },
+    { "id": "industrial_policy", "label": "Industrial policy", "definition": "State plans, programmes, standards and promotion of AI sectors.", "neg": "leave sectors to the market", "pos": "state-led promotion",
+      "subtopics": ["standards", "ai_agents", "telecom", "embodied_ai"] },
+    { "id": "products", "label": "Products", "definition": "Model and product releases, launches and their terms.", "neg": "hold back releases", "pos": "release fast and widely",
+      "subtopics": ["model_release", "product_launch", "robotaxi", "cost_transparency"] },
+    { "id": "safety_risk", "label": "Safety risk", "definition": "AI safety and security risks, incidents, and how actors frame them.", "neg": "catastrophic risk is urgent", "pos": "risk talk is overblown",
+      "subtopics": ["ai_security", "service_security", "robotaxi_safety", "frameworks"] },
+    { "id": "open_source", "label": "Open source", "definition": "Open weights, licensing and openness of models and tools.", "neg": "restrict open weights", "pos": "open weights are essential",
+      "subtopics": ["open_weights", "licensing"] },
+    { "id": "copyright", "label": "Copyright and IP", "definition": "Training-data rights, model copying and distillation claims.", "neg": "strong IP protection", "pos": "permissive use",
+      "subtopics": ["distillation", "training_data"] },
+    { "id": "labour", "label": "Labour", "definition": "AI's effect on jobs.", "neg": "mass job loss", "pos": "AI creates jobs", "subtopics": [] },
+    { "id": "energy", "label": "Energy", "definition": "Power and data-centre build-out for AI.", "neg": "limit build-out", "pos": "build out compute", "subtopics": [] },
+    { "id": "bias", "label": "Bias", "definition": "Fairness and ideological content in AI systems.", "neg": "regulate model content", "pos": "no content mandates", "subtopics": [] },
+    { "id": "sanctions_and_trade", "label": "Sanctions and trade", "definition": "Tariffs, trade remedies and retaliation beyond export controls.", "neg": "escalate trade measures", "pos": "de-escalate", "subtopics": ["tariffs", "trade_remedy"] }
+  ],
+  "audiences": [
+    { "id": "us", "label": "US government / Washington" },
+    { "id": "cn", "label": "China" },
+    { "id": "inv", "label": "Investors / industry" },
+    { "id": "pub", "label": "Global press / public" },
+    { "id": "eu", "label": "Europe" }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "id": "baidu",
+  "name": "Baidu",
+  "short": "Baidu",
+  "class": "company",
+  "cutoff": "2026-01-01",
+  "context_from": [
+    "deepseek",
+    "cac"
+  ],
+  "hero": {
+    "eyebrow": "Company persona for policy forecasting",
+    "title": "Baidu,",
+    "title_em": "first through the gate",
+    "lede": "China’s search giant turned AI company: ERNIE models, Kunlun chips, Apollo Go robotaxis. It moves the day a state gate opens and follows rivals fast on price and openness."
+  },
+  "short_answer": [
+    {
+      "title": "First through any state gate",
+      "body": "Baidu opened ERNIE Bot to the public on the day CAC’s first generative-AI approvals were reported. One episode, but a clean one."
+    },
+    {
+      "title": "It plays down US chip limits",
+      "body": "After each US or Chinese move that cuts NVIDIA supply, Baidu says the impact is manageable and points to its Kunlun chips, within days to weeks. Three independent cases."
+    }
+  ],
+  "purpose": {
+    "summary": "What Baidu launches, prices and says is in its control, so its record can forecast how a large Chinese platform answers state gates, rival releases and chip limits.",
+    "use_for": [
+      "When CAC approves a new batch of AI services, does Baidu launch at once?",
+      "When a rival releases a cheaper or open model, how fast does Baidu match it?",
+      "After a chip restriction, what does Baidu tell investors?"
+    ],
+    "dont_use_for": [
+      "Whether CAC approves a service: that is CAC’s act.",
+      "Robotaxi incidents themselves; the persona covers only Baidu’s response."
+    ]
+  },
+  "standing": {
+    "class_role": "Company · listed in the US and Hong Kong; search, AI cloud, ERNIE models, Kunlun chips, Apollo Go.",
+    "principal": "Its board; founder and CEO Robin Li sets the stance in keynotes and earnings calls.",
+    "attribution_rule": "A row is Baidu’s when it comes from the company: launches, filings, earnings calls, and Robin Li or named executives speaking for it.",
+    "veto_players": "CAC (service approval and filing), MIIT and Beijing on chip purchases, Commerce/BIS on chip supply, city regulators on robotaxis.",
+    "gates_held": "Baidu Search distribution: it integrated DeepSeek-R1 into search within a month of R1 (BD09)."
+  },
+  "powers": [
+    {
+      "id": "supply",
+      "status": "partial",
+      "use": "Kunlun chips for its own clusters",
+      "rows": [
+        "BD14",
+        "BD20"
+      ],
+      "limit": "Kunlun supply is mostly internal"
+    },
+    {
+      "id": "release",
+      "status": "holds",
+      "use": "ERNIE models, free tiers and price cuts",
+      "rows": [
+        "BD02",
+        "BD11",
+        "BD16",
+        "BD19"
+      ],
+      "limit": "Keeps frontier models closed when it believes it leads"
+    },
+    {
+      "id": "capital",
+      "status": "partial",
+      "use": "Kunlunxin IPO filing",
+      "rows": [
+        "BD21"
+      ],
+      "limit": "One capital row"
+    },
+    {
+      "id": "lobbying",
+      "status": "partial",
+      "use": "Calls for light-touch regulation",
+      "rows": [
+        "BD24"
+      ],
+      "limit": "Never challenges CAC in public"
+    },
+    {
+      "id": "coalition",
+      "status": "holds",
+      "use": "Robotaxi partnerships abroad; DeepSeek in Baidu Search",
+      "rows": [
+        "BD09",
+        "BD17",
+        "BD18"
+      ],
+      "limit": "Commercial partnerships, not policy coalitions"
+    },
+    {
+      "id": "self_governance",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No published AI safety framework found in this log"
+    },
+    {
+      "id": "disclosure",
+      "status": "partial",
+      "use": "Earnings calls and filings",
+      "rows": [
+        "BD04",
+        "BD21"
+      ],
+      "limit": "Silent on robotaxi incidents (BD25)"
+    },
+    {
+      "id": "litigation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No lawsuit in this log"
+    }
+  ],
+  "verbs_ruled_out": [
+    "issue_rule",
+    "enforce",
+    "license_exports",
+    "sanction"
+  ],
+  "profile": {
+    "incentives": [
+      "Defend a falling ads business by becoming 'AI-first' (cloud, Kunlun chips, Apollo Go)",
+      "Be first through any state gate to signal regulator favour",
+      "Show investors that US chip controls are manageable (stockpile, Kunlunxin IPO)",
+      "Overseas robotaxi growth (Uber, Lyft, Gulf states, Hong Kong) as a hedge against a crowded domestic market"
+    ],
+    "red_lines": [
+      "Never publicly challenges CAC or central policy; regulatory comment is limited to calls for 'guardrails' and 'clearer frameworks'",
+      "Does not criticise US export controls directly; frames them as surmountable",
+      "Keeps frontier models closed when it believes it leads (ERNIE 5.x)"
+    ],
+    "decision_style": "Fast-follower and announcement-driven. Li sets the stance in keynotes and earnings calls, and reverses quickly when the market moves (closed to open to closed again). Launches cluster at fixed events (Baidu World in Nov, Create in Apr, earnings). Claims usually benchmark against the leading rival, at a fraction of the price.",
+    "positions": [
+      {
+        "topic": "open_source",
+        "position": "Reversed from “open source makes little sense” to open-sourcing ERNIE 4.5 after DeepSeek, then kept ERNIE 5 closed",
+        "confidence": "medium",
+        "rows": [
+          "BD05",
+          "BD08",
+          "BD16",
+          "BD22"
+        ]
+      },
+      {
+        "topic": "export_controls",
+        "position": "US chip limits are manageable thanks to stockpiles and Kunlun",
+        "stance": 1,
+        "confidence": "high",
+        "rows": [
+          "BD04",
+          "BD14",
+          "BD23"
+        ]
+      },
+      {
+        "topic": "regulation",
+        "position": "Light-touch rules with guardrails; never challenges CAC",
+        "stance": 1,
+        "confidence": "medium",
+        "rows": [
+          "BD24"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "actor": "CAC",
+        "kind": "gate",
+        "note": "Service approvals and filings",
+        "rows": [
+          "BD02"
+        ]
+      },
+      {
+        "actor": "DeepSeek",
+        "kind": "rival",
+        "note": "R1 forced Baidu’s open-source and pricing reversal",
+        "rows": [
+          "BD07",
+          "BD08",
+          "BD10",
+          "BD13"
+        ]
+      }
+    ],
+    "voice": {
+      "summary": "Confident keynotes from Robin Li; quick reversals presented as strategy.",
+      "quotes": [
+        "BD01"
+      ]
+    },
+    "say_do": [
+      {
+        "say": "Open source makes little sense (April 2024)",
+        "do": "Open-sourced ERNIE 4.5 within months of DeepSeek R1",
+        "rows": [
+          "BD05",
+          "BD08",
+          "BD16"
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "date": "2023-10-17",
+        "frontier_model": "ERNIE 4.0",
+        "benchmarks": {
+          "claim": "“not inferior in any aspect to GPT-4”"
+        },
+        "source": "https://technode.com/2023/08/31/baidu-opens-ernie-bot-to-public-after-regulatory-approval/"
+      },
+      {
+        "date": "2025-06-30",
+        "frontier_model": "ERNIE 4.5 family, open weights (Apache 2.0)",
+        "benchmarks": {}
+      },
+      {
+        "date": "2025-11-13",
+        "frontier_model": "ERNIE 5.0 preview, 2.4T parameters, omni-modal",
+        "benchmarks": {}
+      }
+    ],
+    "incidents": [
+      {
+        "incident": "More than 100 Apollo Go robotaxis stall in Wuhan",
+        "public_date": "2026-03-31",
+        "acknowledged": "2026-04-01",
+        "patched": null,
+        "what_changed": "Brief notice; police and local government spoke for it",
+        "rows": [
+          "BD25"
+        ]
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "BD1",
+      "name": "Rival open model or price cut → Baidu matches",
+      "when": "A Chinese rival releases a major open model or slashes prices",
+      "then": "Baidu matches with free tiers, price cuts or open weights within hours to weeks",
+      "status": "hypothesis",
+      "triggers": [
+        "open_model_release"
+      ],
+      "episodes": [
+        {
+          "trigger": "C504",
+          "response": "BD06"
+        },
+        {
+          "trigger": "DS05",
+          "response": "BD07"
+        },
+        {
+          "trigger": "DS05",
+          "response": "BD08"
+        }
+      ],
+      "note": "Two independent waves: Alibaba’s May 2024 price cut and DeepSeek R1 in January 2025."
+    },
+    {
+      "id": "BD2",
+      "name": "CAC approves services → Baidu launches that day",
+      "when": "CAC approves a batch of generative-AI services",
+      "then": "Baidu opens the approved product to the public the same day",
+      "status": "hypothesis",
+      "triggers": [
+        "cac_service_approval"
+      ],
+      "episodes": [
+        {
+          "trigger": "C502",
+          "response": "BD02"
+        }
+      ],
+      "note": "One episode, the first approval batch of 31 August 2023."
+    },
+    {
+      "id": "BD3",
+      "name": "NVIDIA supply cut → “manageable”",
+      "when": "A US rule or a Chinese purchase halt cuts NVIDIA chip supply",
+      "then": "Baidu plays down the hit at its next scheduled event (earnings call, Baidu Create, Baidu World), citing its stockpile and Kunlun chips",
+      "status": "rule",
+      "triggers": [
+        "us_chip_restriction",
+        "nvidia_access_cut"
+      ],
+      "episodes": [
+        {
+          "trigger": "C02",
+          "response": "BD04"
+        },
+        {
+          "trigger": "C04",
+          "response": "BD14"
+        },
+        {
+          "trigger": "C08",
+          "response": "BD20"
+        }
+      ],
+      "note": "Three independent waves, but two different trigger types (US rules and a CAC purchase halt) pooled into one reaction. Two of the three responses (BD14, BD20) are claims at scheduled conferences, so the timing is partly calendar-driven."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Mostly secondary",
+      "body": "Reuters originals could not be fetched; rows use syndicated copies, TechNode and company posts."
+    },
+    {
+      "title": "Calendar confound",
+      "body": "Big launches cluster at Baidu World (November) and Baidu Create (April)."
+    },
+    {
+      "title": "One coder",
+      "body": "Triggers were coded once (P6 not done)."
+    }
+  ]
+}

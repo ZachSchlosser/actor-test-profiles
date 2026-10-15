@@ -1,0 +1,709 @@
+[
+  {
+    "id": "BD01",
+    "date": "2023-03-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Baidu unveils ERNIE Bot at a pre-recorded Beijing event, with access limited to invited testers. It says 650 companies have signed up. Hong Kong shares fall as much as 10%.",
+    "quote": "For sure we cannot say that it's perfect.",
+    "trigger_ref": "C501",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "speaker": "Robin Li",
+      "model": "ERNIE Bot",
+      "subtopic": "product_launch"
+    },
+    "sources": [
+      {
+        "label": "AP via News4JAX",
+        "url": "https://news4jax.com/tech/2023/03/16/baidu-unveils-chatgpt-rival-ernie-bot-650-companies-sign-up"
+      },
+      {
+        "label": "Reuters via Inquirer",
+        "url": "https://technology.inquirer.net/?p=122271"
+      }
+    ]
+  },
+  {
+    "id": "BD02",
+    "date": "2023-08-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Baidu opens ERNIE Bot to the general public on the day Chinese approvals under the generative-AI measures were reported. It is among the first approved firms, and the app tops the App Store free chart within 12 hours.",
+    "quote": null,
+    "trigger_ref": "C502",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "model": "ERNIE Bot",
+      "after_gate": true,
+      "gate_ref": "C502",
+      "subtopic": "product_launch"
+    },
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2023/08/31/baidu-opens-ernie-bot-to-public-after-regulatory-approval/"
+      },
+      {
+        "label": "TechNode (11 firms approved)",
+        "url": "https://technode.com/2023/08/31/11-chinese-tech-companies-granted-permission-to-fully-release-chatgpt-like-tools/"
+      },
+      {
+        "label": "Reuters via FMT",
+        "url": "https://www.freemalaysiatoday.com/category/business/2023/08/31/baidu-ai-bot-gets-chinese-regulatory-ok"
+      }
+    ]
+  },
+  {
+    "id": "BD03",
+    "date": "2023-10-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "At Baidu World, Baidu unveils ERNIE 4.0, which Robin Li says is 'not inferior in any aspect to GPT-4'. It is open to invited users only, with enterprise API access by application.",
+    "quote": null,
+    "trigger_ref": "C503",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "speaker": "Robin Li",
+      "model": "ERNIE 4.0",
+      "subtopic": "model_release"
+    },
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2023/10/18/baidu-claims-latest-version-of-ernie-ai-model-is-on-a-par-with-gpt-4/"
+      },
+      {
+        "label": "AP via ClickOrlando",
+        "url": "https://www.clickorlando.com/tech/2023/10/17/chinese-search-engine-company-baidu-unveils-ernie-40-ai-model-claims-that-it-rivals-gpt-4/"
+      }
+    ]
+  },
+  {
+    "id": "BD04",
+    "date": "2023-11-21",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "warn",
+    "text": "On the Q3 2023 earnings call, Li says Baidu's chip stockpile covers the near term, then alternatives and in-house chips. He warns that the difficulty of getting advanced chips 'inevitably will have an impact on the pace of AI development in China'.",
+    "quote": null,
+    "trigger_ref": "C02",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "speaker": "Robin Li",
+      "subtopic": "us_chip_controls"
+    },
+    "sources": [
+      {
+        "label": "SCMP",
+        "url": "https://mcdn.i-scmp.com/tech/big-tech/article/3242461/baidu-forecasts-ai-revenue-growth-and-limited-short-term-impact-us-chip-curbs"
+      },
+      {
+        "label": "DCD",
+        "url": "https://datacenterdynamics.com/en/news/impact-of-us-gpu-sanctions-minimal-baidu-claims"
+      }
+    ]
+  },
+  {
+    "id": "BD05",
+    "date": "2024-04",
+    "date_precision": "month",
+    "type": "said",
+    "verb": "criticise",
+    "text": "In an internal speech reported on 12-15 April, Li says open-source LLMs 'make little sense' and that closed source is needed for a viable business.",
+    "quote": "Being closed source allows us to make money, and only by making money can we attract computational resources and talent.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "open_source",
+      "speaker": "Robin Li"
+    },
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2024/04/15/open-source-models-make-little-sense-says-baidu-ceo/"
+      },
+      {
+        "label": "Yicai Global",
+        "url": "https://www.yicaiglobal.com/news/future-of-llms-is-closed-source-baidu-ceo-says"
+      }
+    ]
+  },
+  {
+    "id": "BD06",
+    "date": "2024-05-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch",
+    "text": "Baidu AI Cloud makes ERNIE Speed and ERNIE Lite free for all business users. They had cost 0.003-0.008 yuan per 1,000 tokens. The move comes hours after Alibaba's cut of up to 97%, in a price war that DeepSeek-V2 and ByteDance set off.",
+    "quote": "Ernie Speed and Ernie Lite are now free of charge for all business users",
+    "trigger_ref": "C504",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "competition",
+      "model": "ERNIE Speed/Lite",
+      "subtopic": "pricing"
+    },
+    "sources": [
+      {
+        "label": "Yicai Global",
+        "url": "https://yicaiglobal.com/news/baidu-offers-two-ernie-models-for-free-as-chinese-llm-market-ushers-in-price-war"
+      },
+      {
+        "label": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2024-05-21/alibaba-sparks-china-ai-price-war-with-spate-of-steep-discounts"
+      }
+    ]
+  },
+  {
+    "id": "BD07",
+    "date": "2025-02-13",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "commit",
+    "text": "In a WeChat post, Baidu says ERNIE Bot, including premium features, will be free on desktop and mobile from 1 April. Press widely frames this as a response to DeepSeek.",
+    "quote": null,
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "competition",
+      "model": "ERNIE Bot",
+      "subtopic": "pricing"
+    },
+    "sources": [
+      {
+        "label": "Fortune",
+        "url": "https://www.fortune.com/asia/2025/02/13/baidu-makes-ernie-bot-free-china-ai-shares"
+      }
+    ]
+  },
+  {
+    "id": "BD08",
+    "date": "2025-02-14",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "commit",
+    "text": "Baidu commits to open-sourcing the ERNIE 4.5 series from 30 June, reversing Li's closed-source stance.",
+    "quote": "We will gradually launch the Ernie 4.5 series in the coming months and officially open-source it from June 30.",
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "open_source",
+      "model": "ERNIE 4.5"
+    },
+    "sources": [
+      {
+        "label": "Reuters via Business Standard",
+        "url": "https://www.business-standard.com/world-news/baidu-to-make-latest-ernie-ai-model-open-source-as-competition-heats-up-125021400534_1.html"
+      },
+      {
+        "label": "RTHK",
+        "url": "https://news.rthk.hk/rthk/en/component/k2/1791606-20250214.htm"
+      }
+    ]
+  },
+  {
+    "id": "BD09",
+    "date": "2025-02-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "partner",
+    "text": "Baidu Search announces it will fully integrate DeepSeek-R1 alongside ERNIE, and adds DeepSeek to its developer platform.",
+    "quote": null,
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "competition",
+      "model": "DeepSeek-R1 / ERNIE",
+      "subtopic": "rival_response"
+    },
+    "sources": [
+      {
+        "label": "TechNode",
+        "url": "https://technode.com/2025/02/17/baidu-search-integrates-deepseek-and-large-model-ernie-for-advanced-search/"
+      },
+      {
+        "label": "Caixin",
+        "url": "https://www.caixinglobal.com/2025-02-17/tencent-baidu-look-to-capitalize-on-deepseeks-stunning-rise-102289220.html"
+      }
+    ]
+  },
+  {
+    "id": "BD10",
+    "date": "2025-02-18",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "praise",
+    "text": "On the Q4 2024 earnings call, Li credits DeepSeek for the open-source decision.",
+    "quote": "One thing we learned from DeepSeek is that open-sourcing the best models can greatly help adoption",
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "open_source",
+      "speaker": "Robin Li"
+    },
+    "sources": [
+      {
+        "label": "Business Insider via AOL",
+        "url": "https://www.aol.com/baidus-ceo-credits-deepseek-push-063721771.html"
+      },
+      {
+        "label": "Reuters via DealStreetAsia (shorter wording)",
+        "url": "https://media.dealstreetasia.com/stories/china-baidu-deepseek-open-source-move-430980"
+      }
+    ]
+  },
+  {
+    "id": "BD11",
+    "date": "2025-03-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Baidu releases ERNIE 4.5 and the reasoning model ERNIE X1, which it claims matches DeepSeek-R1 at half the price. It makes ERNIE Bot free ahead of the 1 April schedule.",
+    "quote": null,
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "products",
+      "model": "ERNIE 4.5 / X1",
+      "subtopic": "model_release"
+    },
+    "sources": [
+      {
+        "label": "Baidu PR (Seeking Alpha)",
+        "url": "https://seekingalpha.com/pr/20035243-baidu-unveils-ernie-4_5-and-reasoning-model-ernie-x1-makes-ernie-bot-free-ahead-of-schedule"
+      },
+      {
+        "label": "Yicai Global",
+        "url": "https://www2.yicaiglobal.com/news/chinas-baidu-launches-free-version-of-ernie-bot-new-reasoning-model-to-rival-gpt-deepseek-r1"
+      }
+    ]
+  },
+  {
+    "id": "BD12",
+    "date": "2025-04-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "At Baidu Create, Baidu launches ERNIE 4.5 Turbo (80% cheaper, priced at 40% of DeepSeek-V3) and X1 Turbo (50% cheaper, about 25% of R1's price).",
+    "quote": null,
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "competition",
+      "speaker": "Robin Li",
+      "model": "ERNIE 4.5 Turbo / X1 Turbo",
+      "subtopic": "pricing"
+    },
+    "sources": [
+      {
+        "label": "Baidu PR (Seeking Alpha)",
+        "url": "https://seekingalpha.com/pr/20079791-baidu-launches-ernie-4_5-turbo-ernie-x1-turbo-and-new-suite-of-ai-tools-to-empower-developers"
+      },
+      {
+        "label": "Digitimes",
+        "url": "https://www.digitimes.com/news/a20250428PD235.html"
+      }
+    ]
+  },
+  {
+    "id": "BD13",
+    "date": "2025-04-25",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "criticise",
+    "text": "In the same keynote, Li credits DeepSeek but calls it 'slow and expensive' and prone to hallucination compared with mainstream Chinese models. This comes from Chinese media accounts; no transcript was found.",
+    "quote": null,
+    "trigger_ref": "DS05",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "competition",
+      "speaker": "Robin Li",
+      "subtopic": "rival_response"
+    },
+    "sources": [
+      {
+        "label": "Digitimes",
+        "url": "https://www.digitimes.com/news/a20250428PD235.html"
+      },
+      {
+        "label": "The Decoder",
+        "url": "https://the-decoder.com/baidus-new-ernie-models-are-taking-on-deepseek-and-openai-with-ultra-low-pricing/"
+      }
+    ]
+  },
+  {
+    "id": "BD14",
+    "date": "2025-04-25",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "Li says Baidu has switched on a cluster of 30,000 third-generation Kunlun P800 chips. He says it can train DeepSeek-like models with hundreds of billions of parameters. This comes 10 days after the US made H20 licences indefinite.",
+    "quote": null,
+    "trigger_ref": "C04",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "speaker": "Robin Li",
+      "model": "Kunlun P800",
+      "subtopic": "domestic_chips"
+    },
+    "sources": [
+      {
+        "label": "Reuters via Yahoo",
+        "url": "https://finance.yahoo.com/news/baidu-launches-ai-model-amid-021731378.html"
+      },
+      {
+        "label": "Seeking Alpha",
+        "url": "https://seekingalpha.com/news/4435467-baidu-unveils-new-ernie-ai-models-says-self-made-chip-cluster-can-train-deepseek-like-models"
+      }
+    ]
+  },
+  {
+    "id": "BD15",
+    "date": "2025-05-21",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "On the Q1 2025 call, VP Shen Dou says domestic chips and software give a 'strong foundation for long-term innovation' that will shield Baidu's AI push from US curbs on the H20.",
+    "quote": null,
+    "trigger_ref": "C04",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "export_controls",
+      "speaker": "Shen Dou (EVP, AI Cloud)",
+      "subtopic": "us_chip_controls"
+    },
+    "sources": [
+      {
+        "label": "Baidu Q1 2025 6-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312525123961/d58002dex991.htm"
+      },
+      {
+        "label": "Reuters via AOL",
+        "url": "https://www.aol.com/chinas-baidu-reports-first-quarter-090806998.html"
+      }
+    ]
+  },
+  {
+    "id": "BD16",
+    "date": "2025-06-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Baidu open-sources the ERNIE 4.5 family on Hugging Face under Apache 2.0, built on PaddlePaddle, on the date it committed to in February.",
+    "quote": "The ERNIE 4.5 models are provided under the Apache License 2.0.",
+    "trigger_ref": "BD08",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "model": "ERNIE 4.5"
+    },
+    "sources": [
+      {
+        "label": "Hugging Face model card",
+        "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT"
+      },
+      {
+        "label": "Gigazine",
+        "url": "https://www.gigazine.net/news/20250630-baidu-ernie-open-source/"
+      }
+    ]
+  },
+  {
+    "id": "BD17",
+    "date": "2025-07-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "partner",
+    "text": "Apollo Go signs a multi-year deal with Uber to deploy thousands of robotaxis outside the US and mainland China, starting in Asia and the Middle East.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "model": "Apollo Go RT6",
+      "subtopic": "robotaxi"
+    },
+    "sources": [
+      {
+        "label": "CnEVPost",
+        "url": "https://cnevpost.com/2025/07/15/baidu-uber-deploy-robotaxis-globally/"
+      }
+    ]
+  },
+  {
+    "id": "BD18",
+    "date": "2025-08-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "partner",
+    "text": "Apollo Go and Lyft announce robotaxi deployment in Europe, with Germany and the UK first from 2026, pending regulatory approval.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "model": "Apollo Go RT6",
+      "subtopic": "robotaxi"
+    },
+    "sources": [
+      {
+        "label": "CnEVPost",
+        "url": "https://cnevpost.com/2025/08/04/baidu-lyft-to-deploy-robotaxis-europe/"
+      }
+    ]
+  },
+  {
+    "id": "BD19",
+    "date": "2025-11-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "At Baidu World, Baidu previews ERNIE 5.0, a 2.4-trillion-parameter natively omni-modal model. It is proprietary with no weights, a move back from the open release of ERNIE 4.5.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "speaker": "Robin Li",
+      "model": "ERNIE 5.0 Preview",
+      "subtopic": "model_release"
+    },
+    "sources": [
+      {
+        "label": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2025-11-13/baidu-unveils-new-model-chips-to-keep-up-in-china-s-ai-race"
+      },
+      {
+        "label": "InfoWorld",
+        "url": "https://www.infoworld.com/article/4089778/baidu-launches-new-generation-of-ernie-ai.html"
+      }
+    ]
+  },
+  {
+    "id": "BD20",
+    "date": "2025-11-13",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "commit",
+    "text": "Baidu publishes a five-year Kunlun chip roadmap: M100 for inference in early 2026, M300 for training in early 2027, Tianchi supernodes, and a one-million-card cluster by 2030.",
+    "quote": null,
+    "trigger_ref": "C08",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "model": "Kunlun M100/M300",
+      "subtopic": "domestic_chips"
+    },
+    "sources": [
+      {
+        "label": "Caixin",
+        "url": "https://www.caixinglobal.com/2025-11-14/tech-brief-nov-14-baidu-unveils-ambitious-ai-chip-roadmap-102382783.html"
+      },
+      {
+        "label": "China Daily",
+        "url": "https://mobile.chinadaily.com.cn/html5/2025-11/14/content_013_6916532bed50ccabe151cebd.htm"
+      }
+    ]
+  },
+  {
+    "id": "BD21",
+    "date": "2026-01-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Baidu discloses that its chip unit Kunlunxin filed confidentially for a Hong Kong IPO on 1 January. Baidu will stay the controlling shareholder. Press frames the move as riding China's self-reliance push amid US controls.",
+    "quote": null,
+    "trigger_ref": "C10",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "chips_and_compute",
+      "model": "Kunlunxin",
+      "subtopic": "domestic_chips"
+    },
+    "sources": [
+      {
+        "label": "Caixin",
+        "url": "https://www.caixinglobal.com/2026-01-02/baidus-chip-unit-kunlunxin-files-for-hong-kong-ipo-to-tap-ai-investment-boom-102399601.html"
+      }
+    ]
+  },
+  {
+    "id": "BD22",
+    "date": "2026-01-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "ERNIE 5.0 leaves preview and becomes the official version. It stays proprietary, with no weights and only a later technical report on 6 February. On 15 January it had ranked #8 globally on LMArena.",
+    "quote": null,
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "products",
+      "model": "ERNIE 5.0",
+      "subtopic": "model_release"
+    },
+    "sources": [
+      {
+        "label": "The Decoder",
+        "url": "https://the-decoder.com/baidus-ernie-5-0-tops-all-chinese-ai-models-in-lmarena-with-2-4-trillion-parameters/"
+      },
+      {
+        "label": "LLM Stats",
+        "url": "https://llm-stats.com/models/ernie-5.0"
+      }
+    ]
+  },
+  {
+    "id": "BD23",
+    "date": "2026-01-25",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "In a TIME interview, Li plays down open source and US chip limits while admitting China lags by generations.",
+    "quote": "I don't think open source is the key for value creation.",
+    "trigger_ref": "C12",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "open_source",
+      "speaker": "Robin Li",
+      "also": [
+        "export_controls"
+      ]
+    },
+    "sources": [
+      {
+        "label": "TIME interview",
+        "url": "https://time.com/7357630/robin-li-baidu-interview/"
+      }
+    ]
+  },
+  {
+    "id": "BD24",
+    "date": "2026-01-25",
+    "date_precision": "day",
+    "type": "said",
+    "verb": "claim",
+    "text": "In the same interview, Li backs light-touch regulation. He also says 'I'm not so worried about the restrictions on the chip' and that China is 'probably two, three generations behind the U.S.' on accelerators.",
+    "quote": "You want to regulate it, a half step back, watch how it evolves and put in the right regulation.",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "regulation",
+      "speaker": "Robin Li"
+    },
+    "sources": [
+      {
+        "label": "TIME interview",
+        "url": "https://time.com/7357630/robin-li-baidu-interview/"
+      }
+    ]
+  },
+  {
+    "id": "BD25",
+    "date": "2026-04-01",
+    "date_precision": "day",
+    "type": "not_taken",
+    "verb": "disclose_incident",
+    "text": "After more than 100 Apollo Go robotaxis stall in Wuhan on the evening of 31 March, Baidu issues no official statement. Customer service blames 'network issues', police cite a system failure, and operations resume.",
+    "quote": null,
+    "trigger_ref": "C505",
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {
+      "topic": "safety_risk",
+      "model": "Apollo Go",
+      "subtopic": "robotaxi_safety"
+    },
+    "sources": [
+      {
+        "label": "CnEVPost",
+        "url": "https://cnevpost.com/2026/04/01/baidu-apollo-go-robotaxis-mass-paralysis-wuhan/"
+      },
+      {
+        "label": "Caixin",
+        "url": "https://www.caixinglobal.com/2026-04-02/baidus-apollo-go-robotaxis-suffer-mass-malfunction-on-wuhan-roads-102430046.html"
+      }
+    ]
+  },
+  {
+    "id": "BD26",
+    "date": "2026-05-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "release_model",
+    "text": "Baidu releases ERNIE 5.1, claiming leading performance at 6% of comparable pre-training cost. The preview had ranked #1 Chinese model on LMArena on 30 April.",
+    "quote": null,
+    "trigger_ref": "DS24",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "products",
+      "model": "ERNIE 5.1",
+      "subtopic": "model_release"
+    },
+    "sources": [
+      {
+        "label": "ERNIE blog",
+        "url": "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/"
+      }
+    ]
+  },
+  {
+    "id": "BD27",
+    "date": "2026-08-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "file",
+    "text": "Q2 2026 results report Apollo Go starting fully driverless commercial service in Dubai (also on Uber) and getting Hong Kong's first fully driverless test permits. They also report London testing with Uber and Lyft, Switzerland with PostBus, and a Kazakhstan MoU. Li cites 'strengthening its safety and operational capabilities'.",
+    "quote": "Apollo Go made steady progress with its global expansion",
+    "trigger_ref": "C506",
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "topic": "products",
+      "speaker": "Robin Li",
+      "model": "Apollo Go",
+      "after_gate": true,
+      "subtopic": "robotaxi"
+    },
+    "sources": [
+      {
+        "label": "Baidu Q2 2026 6-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001329099/000119312526355431/d112854dex991.htm"
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "id": "company",
+  "kind": "non_state",
+  "label": "Company",
+  "examples": [
+    "NVIDIA",
+    "OpenAI",
+    "Anthropic",
+    "Google DeepMind"
+  ],
+  "pronoun": "it",
+  "row_prefix": "K",
+  "attribution_rule": "A row counts as the company's when it comes from the company (filing, product release, official statement, spokesperson, executives at company events). Statements its CEO or founder makes in person (interviews, internal speeches) go to that person's individual persona when one exists; until then they stay here, marked with attributes.speaker. Acts an individual persona already logs enter here as context rows, never twice.",
+  "standing_fields": [
+    "class_role",
+    "principal",
+    "attribution_rule",
+    "veto_players",
+    "gates_held"
+  ],
+  "row_attributes": {
+    "speaker": "Named executive or founder who spoke for an organisation",
+    "product": "Product or hardware launched or discussed",
+    "model": "AI model released or discussed",
+    "framework_ref": "Row id of the safety-framework version the act was taken under"
+  },
+  "powers": [
+    {
+      "id": "supply",
+      "name": "Supply",
+      "def": "Controls a scarce input others need (compute, models, data)",
+      "verbs": [
+        "restrict_access",
+        "allocate"
+      ]
+    },
+    {
+      "id": "release",
+      "name": "Release",
+      "def": "Decides what ships and when",
+      "verbs": [
+        "release_model",
+        "pause_release",
+        "launch"
+      ]
+    },
+    {
+      "id": "capital",
+      "name": "Capital",
+      "def": "Invests, acquires, funds others",
+      "verbs": [
+        "invest",
+        "acquire",
+        "fund"
+      ]
+    },
+    {
+      "id": "lobbying",
+      "name": "Lobbying",
+      "def": "Spends to shape rules",
+      "verbs": [
+        "lobby",
+        "testify",
+        "comment_on_rule",
+        "praise",
+        "criticise",
+        "claim",
+        "warn",
+        "meet"
+      ]
+    },
+    {
+      "id": "coalition",
+      "name": "Coalition-building",
+      "def": "Gets others to act together",
+      "verbs": [
+        "sign",
+        "partner"
+      ]
+    },
+    {
+      "id": "self_governance",
+      "name": "Self-governance",
+      "def": "Binds itself with a published framework",
+      "verbs": [
+        "publish_framework",
+        "update_framework",
+        "commit"
+      ]
+    },
+    {
+      "id": "disclosure",
+      "name": "Disclosure",
+      "def": "Decides what the public learns",
+      "verbs": [
+        "disclose_incident",
+        "publish",
+        "file"
+      ]
+    },
+    {
+      "id": "litigation",
+      "name": "Litigation",
+      "def": "Takes rules or rivals to court",
+      "verbs": [
+        "sue"
+      ]
+    }
+  ],
+  "verbs": [
+    "restrict_access",
+    "allocate",
+    "release_model",
+    "pause_release",
+    "launch",
+    "invest",
+    "acquire",
+    "fund",
+    "lobby",
+    "testify",
+    "comment_on_rule",
+    "sign",
+    "partner",
+    "publish_framework",
+    "update_framework",
+    "commit",
+    "disclose_incident",
+    "patch",
+    "publish",
+    "sue",
+    "comply",
+    "claim",
+    "warn",
+    "file",
+    "praise",
+    "criticise",
+    "meet"
+  ],
+  "profile": [
+    "incentives",
+    "positions",
+    "red_lines",
+    "decision_style",
+    "relations",
+    "voice",
+    "say_do",
+    "safety_frameworks",
+    "capabilities",
+    "incidents"
+  ],
+  "sources": [
+    "METR index of frontier safety frameworks (every version)",
+    "Epoch AI company data (compute, revenue, models)",
+    "Company announcements and incident post-mortems",
+    "MIT AI Governance Map (risk areas)"
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "id": "huawei",
+  "name": "Huawei",
+  "short": "Huawei",
+  "class": "company",
+  "cutoff": "2026-01-01",
+  "hero": {
+    "eyebrow": "Company persona for policy forecasting",
+    "title": "Huawei,",
+    "title_em": "as a company persona",
+    "lede": "China’s national champion in AI chips and phones, read from its launches, roadmaps and executives’ statements. It answers US controls with products, not press releases."
+  },
+  "short_answer": [
+    {
+      "title": "It answers with products, on its own calendar",
+      "body": "Big moves land at fixed company events (Huawei Connect in September, HDC in June, the March annual report), so a launch soon after a US move may be coincidence. Every reaction here is still a signal."
+    },
+    {
+      "title": "Silence is part of the method",
+      "body": "Huawei does not comment on US rules or confirm how its chips are made; founder Ren Zhengfei plays capability down while rotating chairs claim parity with NVIDIA."
+    }
+  ],
+  "purpose": {
+    "summary": "What Huawei launches, open-sources and claims is in its control, so its record can inform forecasts of China’s domestic answer to US chip controls.",
+    "use_for": [
+      "After a US chip restriction, does Huawei answer with a product, a roadmap or a claim, and how soon?",
+      "When NVIDIA loses or regains Chinese buyers, how does Huawei position Ascend?",
+      "Will Huawei open-source models and tools to grow its chip ecosystem?"
+    ],
+    "dont_use_for": [
+      "Chip process or foundry details, which Huawei does not disclose.",
+      "Beijing’s purchase guidance, which belongs to the state personas (CAC, MIIT)."
+    ]
+  },
+  "standing": {
+    "class_role": "Company · private, employee-owned; China’s leading maker of AI chips (Ascend), phones and telecom equipment. On the US Entity List since 2019.",
+    "principal": "Its employee shareholding union and board; rotating chairs speak for it, founder Ren Zhengfei on strategy.",
+    "attribution_rule": "A row is Huawei’s when it comes from the company: launches, annual reports, newsroom statements, rotating chairs and named executives. Ren Zhengfei counts only when he speaks as founder about company strategy.",
+    "veto_players": "Commerce/BIS (Entity List, foreign direct product rule, the May 2025 Ascend guidance), foundry access (TSMC cut off since 2020; SMIC capacity), and Beijing, whose purchase guidance steers buyers toward Ascend.",
+    "gates_held": "Supply of Ascend chips and CloudMatrix systems to Chinese AI labs (it served DeepSeek models on Ascend within days, HW11), and the HarmonyOS ecosystem."
+  },
+  "powers": [
+    {
+      "id": "supply",
+      "status": "holds",
+      "use": "Ascend chips and CloudMatrix systems for Chinese AI labs",
+      "rows": [
+        "HW13",
+        "HW19",
+        "HW24"
+      ],
+      "limit": "Capped by SMIC process nodes; no advanced foundry access"
+    },
+    {
+      "id": "release",
+      "status": "holds",
+      "use": "Phones on domestic chips, HarmonyOS, Pangu models",
+      "rows": [
+        "HW04",
+        "HW09",
+        "HW16"
+      ],
+      "limit": "Release dates follow its own event calendar"
+    },
+    {
+      "id": "capital",
+      "status": "partial",
+      "use": "R&D spending of about CNY180-190bn a year",
+      "rows": [
+        "HW12",
+        "HW25"
+      ],
+      "limit": "No major outside investments in this log"
+    },
+    {
+      "id": "lobbying",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "Does not comment publicly on US rules; the Chinese government answers for it"
+    },
+    {
+      "id": "coalition",
+      "status": "partial",
+      "use": "Partners with Chinese labs on Ascend (DeepSeek on Ascend cloud)",
+      "rows": [
+        "HW11"
+      ],
+      "limit": "One partnership row so far"
+    },
+    {
+      "id": "self_governance",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No published AI safety framework found in this log"
+    },
+    {
+      "id": "disclosure",
+      "status": "partial",
+      "use": "Annual reports and roadmaps",
+      "rows": [
+        "HW12",
+        "HW21"
+      ],
+      "limit": "Never confirms chip process or foundry (HW05)"
+    },
+    {
+      "id": "litigation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No lawsuit by Huawei in this log"
+    }
+  ],
+  "verbs_ruled_out": [
+    "issue_rule",
+    "enforce",
+    "license_exports",
+    "sanction"
+  ],
+  "audiences": [
+    {
+      "id": "cn",
+      "label": "China",
+      "series": 3
+    },
+    {
+      "id": "pub",
+      "label": "Global press / public",
+      "series": 4
+    }
+  ],
+  "profile": {
+    "incentives": [
+      "Sell Ascend hardware; open-sourced software exists to support it",
+      "Take China’s AI chip market while NVIDIA is restricted",
+      "Show self-reliance to state customers and the party-state",
+      "Make up for weak single chips with clusters and in-house memory"
+    ],
+    "positions": [
+      {
+        "topic": "export_controls",
+        "position": "US controls are the “new normal”: an obstacle to work around, never called effective",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "HW02",
+          "HW08",
+          "HW15",
+          "HW21"
+        ]
+      },
+      {
+        "topic": "china_race",
+        "position": "Ascend can match or pass NVIDIA in China through clustering",
+        "stance": 2,
+        "confidence": "medium",
+        "rows": [
+          "HW19",
+          "HW24",
+          "HW28"
+        ]
+      },
+      {
+        "topic": "open_source",
+        "position": "Open-source models and tools to grow the Ascend ecosystem",
+        "stance": 2,
+        "confidence": "medium",
+        "rows": [
+          "HW17",
+          "HW20",
+          "HW22"
+        ]
+      }
+    ],
+    "red_lines": [
+      "Confirming chip process or foundry details",
+      "Any suggestion of post-2020 TSMC manufacturing or model copying",
+      "Public lobbying on US rules"
+    ],
+    "decision_style": "Long-horizon and calendar-driven. Rotating chairs give confident roadmaps and NVIDIA comparisons; founder Ren plays capability down to lower US alarm. Quiet launches (the Mate 60 online drop, HW04) and silence (HW05) are used as signals.",
+    "relations": [
+      {
+        "actor": "NVIDIA",
+        "kind": "rival",
+        "note": "Ascend is positioned directly against NVIDIA in China",
+        "rows": [
+          "HW19",
+          "HW24",
+          "HW28"
+        ]
+      },
+      {
+        "actor": "DeepSeek",
+        "kind": "ally",
+        "note": "DeepSeek models served on Ascend cloud",
+        "rows": [
+          "HW11"
+        ]
+      },
+      {
+        "actor": "Commerce · BIS",
+        "kind": "gate",
+        "note": "Entity List, foreign direct product rule, Ascend guidance",
+        "rows": [
+          "HW10",
+          "HW15"
+        ]
+      }
+    ],
+    "voice": {
+      "summary": "Measured and long-term from rotating chairs; deliberately modest from the founder.",
+      "quotes": [
+        "HW02",
+        "HW15",
+        "HW21",
+        "HW25",
+        "HW28"
+      ]
+    },
+    "say_do": [
+      {
+        "say": "Founder Ren: the US exaggerates Huawei’s achievements; its chips are a generation behind",
+        "do": "Rotating chairs claim CloudMatrix beats NVIDIA’s GB200 and that Ascend has passed NVIDIA in China",
+        "rows": [
+          "HW15",
+          "HW19",
+          "HW28"
+        ]
+      }
+    ],
+    "capabilities": [
+      {
+        "date": "2023-08-29",
+        "frontier_model": "Kirin 9000S (SMIC 7nm), in the Mate 60 Pro",
+        "benchmarks": {},
+        "source": "https://en.prothomalo.com/science-technology/qtoviiozas"
+      },
+      {
+        "date": "2025-07-26",
+        "frontier_model": "CloudMatrix 384 (384 Ascend 910C)",
+        "benchmarks": {
+          "claim": "about 300 PFLOPS vs 180 for GB200 NVL72, at about 4x the power"
+        },
+        "source": "https://siliconangle.com/2025/07/27/huawei-launches-cloudmatrix-384-server-alternative-nvidias-ai-infrastructure-stack/"
+      },
+      {
+        "date": "2026-03-20",
+        "frontier_model": "Ascend 950PR with in-house HBM",
+        "benchmarks": {
+          "claim": "about 2.8x the FP4 compute of NVIDIA H20"
+        },
+        "source": "https://www.trendforce.com/news/2026/03/23/news-huawei-debuts-atlas-350-on-ascend-950pr-with-in-house-hbm-touting-2-8x-h20-performance/"
+      }
+    ],
+    "incidents": [
+      {
+        "incident": "TSMC-made die reported in an Ascend 910B",
+        "public_date": "2024-10-22",
+        "acknowledged": "2024-10-23",
+        "patched": null,
+        "what_changed": "Denied any TSMC production since 2020",
+        "rows": [
+          "HW10"
+        ]
+      },
+      {
+        "incident": "Pangu Pro MoE alleged to copy Alibaba’s Qwen 2.5",
+        "public_date": "2025-07-04",
+        "acknowledged": "2025-07-05",
+        "patched": null,
+        "what_changed": "Flat denial: trained on Ascend, its own work",
+        "rows": [
+          "HW18"
+        ]
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "HU1",
+      "name": "US restriction → self-reliance claim",
+      "when": "The US tightens chip controls or targets Huawei’s chips",
+      "then": "Huawei answers weeks to months later with a self-reliance product, roadmap or claim, never with a statement on the rule itself",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_restriction"
+      ],
+      "episodes": [
+        {
+          "trigger": "C01",
+          "response": "HW02"
+        },
+        {
+          "trigger": "C105",
+          "response": "HW15"
+        },
+        {
+          "trigger": "C105",
+          "response": "HW21"
+        }
+      ],
+      "note": "The Mate 60 launch during Raimondo’s 2023 visit (C101 → HW04) is a famous signal but answers a visit, not a restriction, so it is not counted. Counter-case: no verified Huawei statement on the May 2025 guidance itself; MOFCOM answered instead. HW02 is the annual New Year letter, so its timing is calendar-driven."
+    },
+    {
+      "id": "HU2",
+      "name": "NVIDIA loses Chinese buyers → Ascend push",
+      "when": "NVIDIA’s access to Chinese buyers is cut (a US licence rule, a CAC summons, a purchase halt)",
+      "then": "Huawei unveils or pulls forward Ascend products and open-sources its software within days to weeks",
+      "status": "hypothesis",
+      "triggers": [
+        "nvidia_access_cut"
+      ],
+      "episodes": [
+        {
+          "trigger": "C04",
+          "response": "HW13"
+        },
+        {
+          "trigger": "C06",
+          "response": "HW20"
+        }
+      ],
+      "note": "Confounded by Huawei’s own calendar: HW21 is its annual September conference. The April 2025 CloudMatrix row is month-only, so it cannot count (P1)."
+    },
+    {
+      "id": "HU3",
+      "name": "NVIDIA regains access → head-to-head claims",
+      "when": "Washington lets NVIDIA sell more to China",
+      "then": "Huawei compares Ascend directly with NVIDIA’s China parts within weeks",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_easing"
+      ],
+      "episodes": [
+        {
+          "trigger": "C05",
+          "response": "HW19"
+        },
+        {
+          "trigger": "C12",
+          "response": "HW24"
+        }
+      ],
+      "note": "Huawei compares against the H20, the China-only part. Ren’s modest framing (HW15) is a counter-case. WAIC (July) and the March partner conference are annual events."
+    },
+    {
+      "id": "HU4",
+      "name": "Rival open model → Huawei open-sources",
+      "when": "A Chinese lab releases a major open-weight model",
+      "then": "Huawei open-sources a Pangu model or Ascend software, framed as ecosystem building",
+      "status": "hypothesis",
+      "triggers": [
+        "open_model_release"
+      ],
+      "episodes": [
+        {
+          "trigger": "C106",
+          "response": "HW17",
+          "counter": true
+        }
+      ],
+      "note": "No usable episode: Baidu pre-announced the 30 June ERNIE open-sourcing in February (BD08), so Huawei’s same-day Pangu release is not a reaction to it. Kept as a hypothesis to watch."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Mostly secondary sources",
+      "body": "Annual reports and the 2025 keynote were read in the original; most other rows rest on Reuters, Caixin or trade press."
+    },
+    {
+      "title": "Calendar confound",
+      "body": "Huawei times big moves to fixed events, so a launch soon after a US move is weak evidence of a response."
+    },
+    {
+      "title": "Not searched",
+      "body": "Safety commitments, lobbying records and litigation were not part of this pass."
+    },
+    {
+      "title": "One coder",
+      "body": "Topics, triggers and attributions were coded once (P6 not done)."
+    }
+  ],
+  "context_from": [
+    "deepseek",
+    "baidu"
+  ]
+}

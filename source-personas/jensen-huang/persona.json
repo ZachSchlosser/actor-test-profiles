@@ -1,0 +1,616 @@
+{
+  "id": "jensen-huang",
+  "name": "Jensen Huang",
+  "short": "Jensen",
+  "class": "individual",
+  "cutoff": "2026-07-01",
+  "hero": {
+    "eyebrow": "Individual persona for policy forecasting",
+    "title": "Jensen Huang,",
+    "title_em": "as a persona",
+    "lede": "An individual with no office, standing on a chokepoint. He can't write or veto a rule; what he has is a company that controls the main supply of AI compute, and direct access to the people who decide where it may be sold."
+  },
+  "short_answer": [
+    {
+      "title": "Responses are fast and in person",
+      "body": "He answers a restriction within days: a trip to the capital that holds the gate, or public criticism."
+    },
+    {
+      "title": "Few patterns yet",
+      "body": "One reaction (R2) is a pattern, with three independent cases. The rest rest on one or two and stay signals until new events test them."
+    }
+  ],
+  "purpose": {
+    "summary": "What Jensen says and does is in his control, so a persona built from his record can forecast it. It can't forecast events nobody controls.",
+    "use_for": [
+      "When the US or China restricts chip sales, what does Jensen say, where does he go, and how fast?",
+      "Which proposed AI laws will he oppose, and in what terms?",
+      "After a safety incident is public, does he call for rules or reframe it?",
+      "Whom does he answer when criticised, and does his position move?"
+    ],
+    "dont_use_for": [
+      "Whether an incident happens at all, such as the July 2026 breach of Hugging Face by OpenAI's agents. The persona covers only his response once it is public.",
+      "NVIDIA's product and pricing decisions. Those belong to a company persona (see the attribution rule in step 2)."
+    ]
+  },
+  "standing": {
+    "class_role": "Individual · founder and CEO of NVIDIA since 1993. No public office.",
+    "principal": "Answers to NVIDIA's board and shareholders. No row in the log shows the board overriding him, which is itself a gap (step 7).",
+    "attribution_rule": "A row counts as Jensen's when he did it in person (a trip, a meeting, a signature, a share sale) or when a reputable report names him as the one who announced or decided it. Anything else NVIDIA does is a context row: it can trigger his response but is not his act.",
+    "veto_players": "Commerce/BIS (licences), the President (deals on top of licences), Congress (statute, such as the GAIN AI Act) and Beijing (CAC and purchase guidance). Each can block a sale he wants.",
+    "gates_held": "Supply to partners: he told Supermicro to tighten compliance after a smuggling case (J32). His share sales run under a pre-set plan (J13).",
+    "gates": [
+      {
+        "gate": "Export licence to China",
+        "held_by": "Commerce/BIS, with deals set by the President",
+        "over": "NVIDIA's China sales",
+        "rows": [
+          "C02",
+          "C04",
+          "C10",
+          "C12"
+        ],
+        "response": "Lobbies in person (J16, J21), criticises in public (J10, J18, J22), restarts supply when cleared (J28)"
+      },
+      {
+        "gate": "Statute on chip exports",
+        "held_by": "Congress",
+        "over": "All US chip sellers",
+        "rows": [
+          "C09"
+        ],
+        "response": "Closed-door meetings with senators (J21); public attack on the GAIN AI Act (J22)"
+      },
+      {
+        "gate": "Permission for Chinese firms to buy",
+        "held_by": "CAC and other Beijing bodies",
+        "over": "Chinese buyers of NVIDIA chips",
+        "rows": [
+          "C06",
+          "C08",
+          "C11"
+        ],
+        "response": "Goes to China and praises its tech (J06, J15, J26); says he is disappointed (J17)"
+      },
+      {
+        "gate": "Supply to partners",
+        "held_by": "NVIDIA, through Jensen",
+        "over": "Server makers such as Supermicro",
+        "rows": [
+          "C13"
+        ],
+        "response": "Demands compliance (J32): he holds this gate"
+      },
+      {
+        "gate": "Who joins a presidential trip or accord",
+        "held_by": "The President",
+        "over": "CEOs",
+        "rows": [
+          "C14"
+        ],
+        "response": "Goes when called (J30); signs when invited (J42)"
+      }
+    ]
+  },
+  "verbs_ruled_out": [
+    "issue_rule",
+    "enforce",
+    "license_exports",
+    "vote",
+    "sanction"
+  ],
+  "limits": [
+    {
+      "title": "All rows secondary",
+      "body": "Every row rests on a report by an established outlet; none has been checked against the original transcript, video or filing."
+    },
+    {
+      "title": "Personal records not pulled",
+      "body": "FEC donations, SEC Form 4 filings and foundation filings haven't been searched directly. The only personal financial row (J13) comes from a CNBC report of a Form 4."
+    },
+    {
+      "title": "One coder",
+      "body": "Topics, stances and audiences were coded by one person (P6 not done). Stance on conditional statements (J40) is the most disputable."
+    },
+    {
+      "title": "Board and private channels",
+      "body": "Nothing in the log shows the board constraining him, and most of his contact with Trump is private. Private lobbying is under-recorded."
+    },
+    {
+      "title": "No baseline forecaster",
+      "body": "A fair baseline would predict from base rates alone, such as the median response gap. Without one, a fit shows the persona is consistent with events, not that it forecasts better."
+    }
+  ],
+  "audiences": [
+    {
+      "id": "us",
+      "label": "US government / Washington",
+      "series": 1
+    },
+    {
+      "id": "inv",
+      "label": "Investors / industry",
+      "series": 2
+    },
+    {
+      "id": "cn",
+      "label": "China",
+      "series": 3
+    },
+    {
+      "id": "pub",
+      "label": "Global press / public",
+      "series": 4
+    }
+  ],
+  "topics": [
+    {
+      "id": "export_controls",
+      "label": "Export controls",
+      "neg": "tighten controls",
+      "pos": "remove controls"
+    },
+    {
+      "id": "regulation",
+      "label": "Regulation",
+      "neg": "new binding AI laws",
+      "pos": "no new AI laws"
+    },
+    {
+      "id": "safety_risk",
+      "label": "Safety risk",
+      "neg": "catastrophic risk is urgent",
+      "pos": "risk talk is overblown"
+    },
+    {
+      "id": "china_race",
+      "label": "China race",
+      "neg": "China is a threat to contain",
+      "pos": "China is a peer to engage"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "neg": "restrict open weights",
+      "pos": "open weights are essential"
+    },
+    {
+      "id": "labour",
+      "label": "Labour",
+      "neg": "mass job loss",
+      "pos": "AI creates jobs"
+    }
+  ],
+  "powers": [
+    {
+      "id": "voice",
+      "status": "holds",
+      "use": "Frames controls as handing China to Huawei; frames doom talk as harmful",
+      "rows": [
+        "J10",
+        "J12",
+        "J25",
+        "J38"
+      ],
+      "limit": "Walk-backs show the frame has limits (J20)"
+    },
+    {
+      "id": "access",
+      "status": "holds",
+      "use": "Repeated meetings with Trump; Vice Premier He Lifeng",
+      "rows": [
+        "J04",
+        "J06",
+        "J16",
+        "J21",
+        "J30"
+      ],
+      "limit": "Access is granted, not held: he was dropped from a delegation (C14)"
+    },
+    {
+      "id": "corporate_command",
+      "status": "partial",
+      "use": "Restarts China supply; launches an alliance",
+      "rows": [
+        "J28",
+        "J36"
+      ],
+      "limit": "Board above him; product choices belong to the NVIDIA persona"
+    },
+    {
+      "id": "coalition",
+      "status": "holds",
+      "use": "Open-weight letter with 20+ firms; 37-member alliance",
+      "rows": [
+        "J35",
+        "J36"
+      ],
+      "limit": "Only one episode so far"
+    },
+    {
+      "id": "endorsement",
+      "status": "holds",
+      "use": "Praises DeepSeek and Huawei in Beijing",
+      "rows": [
+        "J05",
+        "J15"
+      ],
+      "limit": "Can cost him in Washington (J19→J20)"
+    },
+    {
+      "id": "personal_capital",
+      "status": "partial",
+      "use": "Large holdings; sales under a pre-set plan",
+      "rows": [
+        "J13"
+      ],
+      "limit": "No political donation found in reputable reports; FEC not yet searched"
+    },
+    {
+      "id": "formal_office",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "Rules out issue_rule, vote"
+    },
+    {
+      "id": "sanctioning",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "He can demand compliance from partners (J32) but not enforce law"
+    }
+  ],
+  "rules": [
+    {
+      "id": "R2",
+      "name": "Restriction → public criticism",
+      "when": "A US restriction or a Chinese purchase block cuts NVIDIA's China sales",
+      "then": "Jensen criticises the policy in public, framed as handing the market to China or Huawei",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C04",
+          "response": "J10"
+        },
+        {
+          "trigger": "C08",
+          "response": "J18"
+        },
+        {
+          "trigger": "C02",
+          "response": "J01",
+          "counter": true
+        }
+      ],
+      "note": "Two independent episodes in 2025, both under Trump (the GAIN Act being dropped, C09, was an easing and is not counted). The 2023 episode under Biden went the other way: he promised compliance. The reaction may depend on who holds the White House, which three episodes can't separate. Held out: no new restriction after the cutoff, so no test yet.",
+      "triggers": [
+        "us_chip_restriction",
+        "nvidia_access_cut"
+      ]
+    },
+    {
+      "id": "R5",
+      "name": "Trump invites → Jensen goes",
+      "when": "Trump invites him to a trip, meeting or signing",
+      "then": "He goes, including at short notice",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C14",
+          "response": "J30"
+        },
+        {
+          "trigger": null,
+          "response": "J09"
+        },
+        {
+          "trigger": null,
+          "response": "J42"
+        },
+        {
+          "trigger": null,
+          "response": "J03",
+          "counter": true
+        }
+      ],
+      "note": "One computable episode: the May 2026 delegation (C14 is his being left off, then called back). J09 and J42 have no invitation row, so they cannot count. The reaction predicts attendance, not policy.",
+      "triggers": [
+        "trump_invitation"
+      ]
+    },
+    {
+      "id": "R1",
+      "name": "Restriction public → trip to China",
+      "when": "A restriction on China sales becomes public",
+      "then": "He travels to China within 2-10 days",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C04",
+          "response": "J06"
+        },
+        {
+          "trigger": "C02",
+          "response": "J02",
+          "counter": true
+        }
+      ],
+      "note": "Two day-precise episodes. Confounded: J26 and J02 are also his annual Lunar New Year trip. Needs a restriction that lands away from late January.",
+      "triggers": [
+        "us_chip_restriction"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "Safety alarm → reframe, not rules",
+      "when": "A public safety incident or warning",
+      "then": "Within 0-12 days he reframes it as an engineering, open-model or commercial question, not a reason for law",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C15",
+          "response": "J34"
+        },
+        {
+          "trigger": "C15",
+          "response": "J35"
+        },
+        {
+          "trigger": "C27",
+          "response": "J47"
+        },
+        {
+          "trigger": "C18",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "Two independent waves (the July 2026 breach and the September 2026 disclosures), both after the cutoff, so built from held-out rows. The platform launch (K64) is NVIDIA’s act, not his. C16 is dated only to the week and is not counted.",
+      "triggers": [
+        "safety_incident"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "Off-message remark → same-day reframing",
+      "when": "A remark breaks the 'America must win' line",
+      "then": "He reframes it the same day around US leadership",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "J19",
+          "response": "J20"
+        }
+      ],
+      "note": "One episode. Watch for a second.",
+      "triggers": [
+        "off_message_remark"
+      ]
+    },
+    {
+      "id": "R6",
+      "name": "Restriction → compliant product",
+      "when": "A new control",
+      "then": "A chip designed to fit just under the limit",
+      "status": "dropped",
+      "episodes": [],
+      "note": "This is a company act (A800/H800, H20, RTX Pro 6000D). Under the attribution rule it belongs to the NVIDIA persona, where it is reaction N5."
+    }
+  ],
+  "reach": [
+    {
+      "act": "J04",
+      "followed_by": null,
+      "reading": "No federal decision on China sales logged in the next 30 days."
+    },
+    {
+      "act": "J14",
+      "followed_by": "C05",
+      "reading": "H20 licences assured five days after the meeting."
+    },
+    {
+      "act": "J16",
+      "followed_by": "C07",
+      "reading": "15% revenue-share deal announced five days later."
+    },
+    {
+      "act": "J21",
+      "followed_by": "C10",
+      "reading": "H200 sales cleared with a 25% cut five days later. The GAIN AI Act was dropped the same day (C09), so its order relative to the meeting is unknown."
+    },
+    {
+      "act": "J35",
+      "followed_by": null,
+      "reading": "20+ firms co-signed the letter he shared; they acted with him, not after him."
+    },
+    {
+      "act": "J32",
+      "followed_by": null,
+      "reading": "No Supermicro response logged."
+    }
+  ],
+  "tests": [
+    {
+      "rule": "R2",
+      "result": "untested",
+      "note": "No new US restriction or Chinese purchase block after the cutoff."
+    },
+    {
+      "rule": "R5",
+      "result": "fits",
+      "note": "He signed the White House accord at Trump's lunch on 29 Sep 2026 (J42)."
+    },
+    {
+      "rule": "R1",
+      "result": "untested",
+      "note": "No new restriction after the cutoff."
+    },
+    {
+      "rule": "R4",
+      "result": "not_a_test",
+      "note": "Built from held-out rows (C15, C16, C27), so the rows can't also test it. Needs the next incident."
+    },
+    {
+      "rule": "R3",
+      "result": "untested",
+      "note": "No second off-message remark logged."
+    }
+  ],
+  "protocol_status": {
+    "P1": "applied",
+    "P2": "applied",
+    "P3": "applied",
+    "P4": "applied",
+    "P5": "partly: few new triggers after the cutoff",
+    "P6": "not done"
+  },
+  "profile": {
+    "incentives": [
+      "Grow the market for NVIDIA chips",
+      "Keep China open as a market",
+      "Keep developers worldwide on NVIDIA software (CUDA)"
+    ],
+    "positions": [
+      {
+        "topic": "export_controls",
+        "position": "Against export controls",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "J10",
+          "J12",
+          "J18",
+          "J22",
+          "J31"
+        ]
+      },
+      {
+        "topic": "regulation",
+        "position": "Against new AI regulation; accepts it in principle but calls it premature",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "J23",
+          "J29",
+          "J38"
+        ]
+      },
+      {
+        "topic": "china_race",
+        "position": "Treats China as a near-peer competitor to engage, not contain",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "J07",
+          "J15",
+          "J19",
+          "J20",
+          "J41"
+        ]
+      },
+      {
+        "topic": "safety_risk",
+        "position": "Labs that cannot contain their systems should pause or shut down themselves",
+        "stance": -1,
+        "confidence": "medium",
+        "rows": [
+          "J40",
+          "J47"
+        ]
+      },
+      {
+        "topic": "open_source",
+        "position": "Open weights are essential",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "J05",
+          "J35",
+          "J36",
+          "J46"
+        ]
+      }
+    ],
+    "red_lines": [
+      "Rules that shut NVIDIA out of whole markets",
+      "Framing AI as an existential threat"
+    ],
+    "decision_style": "Commercial and pragmatic. Builds relationships with whoever holds power. When a remark causes trouble, he walks it back quickly (J19 → J20).",
+    "relations": [
+      {
+        "actor": "Trump",
+        "kind": "access",
+        "note": "Decides deals on top of licences and who travels with him",
+        "rows": [
+          "J04",
+          "J14",
+          "J16",
+          "J21",
+          "J30",
+          "J42"
+        ]
+      },
+      {
+        "actor": "Commerce · BIS",
+        "kind": "gate",
+        "note": "Licenses what NVIDIA may ship to China",
+        "rows": [
+          "J06",
+          "J10"
+        ]
+      },
+      {
+        "actor": "CAC and Beijing",
+        "kind": "gate",
+        "note": "Decides whether Chinese firms may buy",
+        "rows": [
+          "J17",
+          "J26"
+        ]
+      },
+      {
+        "actor": "Dario Amodei",
+        "kind": "rival",
+        "note": "Public disagreement on jobs and safety",
+        "rows": [
+          "J11",
+          "J38"
+        ]
+      },
+      {
+        "actor": "Supermicro",
+        "kind": "polices",
+        "note": "He holds the supply gate",
+        "rows": [
+          "J32"
+        ]
+      }
+    ],
+    "voice": {
+      "summary": "Engineer’s framing, upbeat, big numbers. Calls AI risk talk a “doomer narrative”.",
+      "quotes": [
+        "J10",
+        "J20",
+        "J25",
+        "J38",
+        "J40"
+      ]
+    },
+    "say_do": [
+      {
+        "say": "America must win the AI race",
+        "do": "Lobbies to sell advanced chips to China",
+        "rows": [
+          "J20",
+          "J16",
+          "J21",
+          "J24"
+        ]
+      }
+    ]
+  },
+  "context_from": [
+    "nvidia"
+  ]
+}

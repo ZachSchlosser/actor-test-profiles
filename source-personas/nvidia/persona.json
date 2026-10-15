@@ -1,0 +1,915 @@
+{
+  "id": "nvidia",
+  "name": "NVIDIA",
+  "short": "NVIDIA",
+  "class": "company",
+  "cutoff": "2026-07-01",
+  "context_from": [
+    "jensen-huang"
+  ],
+  "hero": {
+    "eyebrow": "Company persona for policy forecasting",
+    "title": "NVIDIA,",
+    "title_em": "as a company persona",
+    "lede": "The main supplier of AI compute, read from its filings, product launches and spokesperson statements, not from its CEO. Jensen Huang’s remarks enter here only as context."
+  },
+  "short_answer": [
+    {
+      "title": "Corporate NVIDIA answers within a day, in writing",
+      "body": "US chip-policy moves, Beijing pressure and smuggling cases each draw a short company statement on the same or next day. US restrictions draw an SEC filing within a week."
+    },
+    {
+      "title": "It complies, then redesigns",
+      "body": "Each new export limit has been followed by a chip built to sit just under it. The public fight over the rules is left to its CEO."
+    }
+  ],
+  "purpose": {
+    "summary": "What NVIDIA as a company files, ships, says and funds is in its control, so a persona built from that record can forecast it. It does not forecast Jensen Huang’s personal remarks (his own persona) or whether incidents happen.",
+    "use_for": [
+      "When the US tightens chip exports, how soon does NVIDIA disclose the hit, and does a compliant China chip follow?",
+      "When the US eases or tightens chip policy, what does the company say, and how fast?",
+      "When Beijing summons or investigates NVIDIA, what does it say?",
+      "When a researcher reports a vulnerability, how long until a patch?",
+      "Which safety commitments will it sign, and does it change its framework when it does?"
+    ],
+    "dont_use_for": [
+      "Jensen Huang’s trips, meetings and statements. Those belong to the Jensen Huang persona and appear here as context rows (J…).",
+      "Whether an incident or smuggling case happens at all. The persona covers only NVIDIA’s response once it is public.",
+      "Product roadmaps and pricing beyond policy-relevant launches."
+    ]
+  },
+  "standing": {
+    "class_role": "Company · the largest supplier of AI accelerators and the CUDA software stack. US-listed (NASDAQ: NVDA).",
+    "principal": "Its board and shareholders. Its founder-CEO Jensen Huang speaks for it in public most often; his remarks are logged in his own persona.",
+    "attribution_rule": "A row is NVIDIA’s when it comes from the company: SEC filings, press releases, blog posts, security bulletins, named spokespeople and officers speaking for the company (e.g. its CSO or VP of government affairs). Huang’s personal remarks are context rows from his persona.",
+    "veto_players": "Commerce/BIS (export licences), the President (deals on top of licences), Congress (statute such as the GAIN AI Act), CAC and SAMR in Beijing (purchases, antitrust), and merger regulators (the FTC, EU and UK, which ended the Arm deal in 2022).",
+    "gates_held": "GPU supply and allocation, the CUDA software stack, and service and support: diverted products get “no service, support, or updates”.",
+    "gates": [
+      {
+        "gate": "Export licence to China",
+        "held_by": "Commerce/BIS, with deals set by the President",
+        "over": "NVIDIA’s China data-centre sales",
+        "rows": [
+          "K04",
+          "K11",
+          "K29",
+          "K58"
+        ],
+        "response": "Discloses within a week (K04, K11, K29), then ships a compliant chip (K06, K14, K35)"
+      },
+      {
+        "gate": "Purchase permission and antitrust in China",
+        "held_by": "CAC, SAMR and other Beijing bodies",
+        "over": "Chinese buyers; the Mellanox merger",
+        "rows": [
+          "K38",
+          "K20",
+          "K46"
+        ],
+        "response": "Same-day denial or cooperation statement (K38, K46); guidance assumes zero China revenue (K59)"
+      },
+      {
+        "gate": "Merger review",
+        "held_by": "FTC, EU and UK regulators",
+        "over": "Acquisitions",
+        "rows": [
+          "K01",
+          "K19"
+        ],
+        "response": "Abandoned Arm (K01); completed Run:ai after EU clearance (K19)"
+      },
+      {
+        "gate": "Service and support for its GPUs",
+        "held_by": "NVIDIA",
+        "over": "Every buyer, including diverted chips",
+        "rows": [
+          "K42",
+          "K62",
+          "K66"
+        ],
+        "response": "Says diverted products get no support (K42); opt-in fleet software can report location (K52)"
+      }
+    ]
+  },
+  "powers": [
+    {
+      "id": "supply",
+      "status": "holds",
+      "use": "Designs and allocates chips per market, including China-only parts (K06, K07, K35)",
+      "rows": [
+        "K06",
+        "K07",
+        "K35"
+      ],
+      "limit": "What may ship to China is set by BIS licences"
+    },
+    {
+      "id": "release",
+      "status": "holds",
+      "use": "Ships hardware generations and open-weight Nemotron models (K16, K61)",
+      "rows": [
+        "K03",
+        "K15",
+        "K16",
+        "K61"
+      ],
+      "limit": "Its framework says it does not build frontier models"
+    },
+    {
+      "id": "capital",
+      "status": "holds",
+      "use": "Invests in its customers and partners: Intel K48, OpenAI K49, Anthropic K50",
+      "rows": [
+        "K48",
+        "K49",
+        "K50"
+      ],
+      "limit": "The OpenAI deal is a letter of intent, not a definitive agreement"
+    },
+    {
+      "id": "lobbying",
+      "status": "holds",
+      "use": "Comments on rules and lobbies against them; spend up 388% in H1 2025 (K37)",
+      "rows": [
+        "K21",
+        "K45",
+        "K37"
+      ],
+      "limit": "Most access runs through Huang personally"
+    },
+    {
+      "id": "coalition",
+      "status": "partial",
+      "use": "Joins voluntary pacts and sovereign-AI partnerships (K09, K23, K65, K32)",
+      "rows": [
+        "K09",
+        "K23",
+        "J42",
+        "K32"
+      ],
+      "limit": "Joins coalitions others convene; the open-weight alliance was led by Huang"
+    },
+    {
+      "id": "self_governance",
+      "status": "partial",
+      "use": "Publishes a Frontier AI Risk Assessment (K25), revised silently (K39)",
+      "rows": [
+        "K25",
+        "K39"
+      ],
+      "limit": "Scoped to models it says it does not build; no public changelog"
+    },
+    {
+      "id": "disclosure",
+      "status": "holds",
+      "use": "SEC filings on export hits; security bulletins and patches",
+      "rows": [
+        "K29",
+        "K17",
+        "K02"
+      ],
+      "limit": "Discloses what securities law and coordinated disclosure require"
+    },
+    {
+      "id": "litigation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No suit by NVIDIA in the log"
+    }
+  ],
+  "verbs_ruled_out": [
+    "issue_rule",
+    "enforce",
+    "license_exports",
+    "sanction"
+  ],
+  "topics": [
+    {
+      "id": "export_controls",
+      "label": "Export controls",
+      "neg": "tighten controls",
+      "pos": "remove controls"
+    },
+    {
+      "id": "regulation",
+      "label": "Regulation",
+      "neg": "new binding AI laws",
+      "pos": "no new AI laws"
+    },
+    {
+      "id": "safety_risk",
+      "label": "Safety risk",
+      "neg": "catastrophic risk is urgent",
+      "pos": "risk talk is overblown"
+    },
+    {
+      "id": "china_race",
+      "label": "China race",
+      "neg": "China is a threat to contain",
+      "pos": "China is a peer to engage"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "neg": "restrict open weights",
+      "pos": "open weights are essential"
+    },
+    {
+      "id": "energy",
+      "label": "Energy",
+      "neg": "limit build-out",
+      "pos": "build out compute"
+    }
+  ],
+  "audiences": [
+    {
+      "id": "us",
+      "label": "US government / Washington",
+      "series": 1
+    },
+    {
+      "id": "inv",
+      "label": "Investors / industry",
+      "series": 2
+    },
+    {
+      "id": "cn",
+      "label": "China",
+      "series": 3
+    },
+    {
+      "id": "pub",
+      "label": "Global press / public",
+      "series": 4
+    }
+  ],
+  "profile": {
+    "incentives": [
+      "Sell into every market the law allows, including China",
+      "Keep developers on CUDA and its open models",
+      "Fund its own customers so demand for compute keeps growing"
+    ],
+    "positions": [
+      {
+        "topic": "export_controls",
+        "position": "Against export controls; welcomes every easing and criticises every tightening",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "K21",
+          "K30",
+          "K31",
+          "K45",
+          "K51"
+        ]
+      },
+      {
+        "topic": "regulation",
+        "position": "Against hardware kill switches, backdoors and mandated tracking",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "K41",
+          "K52"
+        ]
+      },
+      {
+        "topic": "open_source",
+        "position": "Releases open-weight models and open safety tooling",
+        "stance": 2,
+        "confidence": "high",
+        "rows": [
+          "K16",
+          "K27",
+          "K54",
+          "K61",
+          "K08"
+        ]
+      },
+      {
+        "topic": "safety_risk",
+        "position": "Signs voluntary commitments and ships safety tooling, but scopes its framework to frontier models it says it does not build",
+        "confidence": "medium",
+        "rows": [
+          "K09",
+          "K23",
+          "K25",
+          "K64"
+        ]
+      },
+      {
+        "topic": "china_race",
+        "position": "Follows US rules while planning for zero China revenue",
+        "confidence": "medium",
+        "rows": [
+          "K43",
+          "K59",
+          "K63"
+        ]
+      }
+    ],
+    "red_lines": [
+      "Hardware kill switches, backdoors or mandated tracking in its GPUs",
+      "Rules that make it serve US buyers first (the GAIN AI Act)",
+      "Tiered country caps on chip access (the AI Diffusion Rule)"
+    ],
+    "decision_style": "Comply, disclose, redesign. Each new limit draws an SEC filing within a week and, months later, a chip built to sit just under it. Company statements are short and legal (K43); the public argument is left to Huang.",
+    "relations": [
+      {
+        "actor": "Commerce · BIS",
+        "kind": "gate",
+        "note": "Licenses what NVIDIA may ship to China",
+        "rows": [
+          "K04",
+          "K29",
+          "K60"
+        ]
+      },
+      {
+        "actor": "CAC and SAMR",
+        "kind": "gate",
+        "note": "Summons, purchase guidance and antitrust in China",
+        "rows": [
+          "K38",
+          "K20",
+          "K46"
+        ]
+      },
+      {
+        "actor": "Jensen Huang",
+        "kind": "access",
+        "note": "Its CEO, who carries its access to Trump and Beijing",
+        "rows": [
+          "J16",
+          "J21",
+          "J30"
+        ]
+      },
+      {
+        "actor": "Anthropic",
+        "kind": "rival",
+        "note": "Opposed on export policy, yet an investee from Nov 2025",
+        "rows": [
+          "K30",
+          "K50"
+        ]
+      },
+      {
+        "actor": "OpenAI",
+        "kind": "ally",
+        "note": "Largest announced investment and customer",
+        "rows": [
+          "K49"
+        ]
+      },
+      {
+        "actor": "Wiz Research",
+        "kind": "influences",
+        "note": "Finds the vulnerabilities NVIDIA patches",
+        "rows": [
+          "K17",
+          "K36",
+          "K40"
+        ]
+      }
+    ],
+    "voice": {
+      "summary": "Short, legal and declarative. Repeats set phrases across cases: “smuggling is a nonstarter”, “we follow rules the U.S. government sets”.",
+      "quotes": [
+        "K21",
+        "K41",
+        "K43",
+        "K42",
+        "K25"
+      ]
+    },
+    "say_do": [
+      {
+        "say": "No hardware tracking, no kill switches",
+        "do": "Ships opt-in fleet software that can report a GPU’s location",
+        "rows": [
+          "K41",
+          "K52"
+        ]
+      },
+      {
+        "say": "We follow the rules the US government sets",
+        "do": "Lobbying spend rose about sevenfold in 2025, against those rules",
+        "rows": [
+          "K43",
+          "K37",
+          "K45"
+        ]
+      },
+      {
+        "say": "Frontier AI models are not under development at NVIDIA",
+        "do": "Releases a 550B-parameter open-weight model",
+        "rows": [
+          "K25",
+          "K61"
+        ]
+      }
+    ],
+    "safety_frameworks": [
+      {
+        "name": "Model Card++",
+        "version": "public description",
+        "date": "2022-09-19",
+        "url": "https://developer.nvidia.com/blog/enhancing-ai-transparency-and-ethical-considerations-with-model-card",
+        "changes": "Bias, explainability, privacy and safety/security subcards"
+      },
+      {
+        "name": "NeMo Guardrails",
+        "version": "initial open-source release",
+        "date": "2023-04-25",
+        "url": "https://blogs.nvidia.com/blog/ai-chatbot-guardrails-nemo/",
+        "changes": "Topical, safety and security rails for LLM apps"
+      },
+      {
+        "name": "White House Voluntary AI Commitments",
+        "version": "second cohort",
+        "date": "2023-09-12",
+        "url": "https://blogs.nvidia.com/blog/2023/09/12/ai-safety-washington",
+        "changes": "Red-teaming, security, vulnerability reporting, watermarking"
+      },
+      {
+        "name": "NeMo Guardrails NIMs (NemoGuard) and garak",
+        "version": "launch",
+        "date": "2025-01-16",
+        "url": "https://blogs.nvidia.com/blog/nemo-guardrails-nim-microservices/",
+        "changes": "Content-safety, topic-control and jailbreak-detection services for agents"
+      },
+      {
+        "name": "Frontier AI Safety Commitments (Seoul)",
+        "version": "late signatory",
+        "date": "2025-02-07",
+        "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024",
+        "changes": "Not among the May 2024 signatories; added before the Paris summit"
+      },
+      {
+        "name": "Frontier AI Risk Assessment",
+        "version": "v1",
+        "date": "2025-02-17",
+        "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+        "changes": "Five model-risk levels; cyber and CBRN; says no frontier models in development"
+      },
+      {
+        "name": "Frontier AI Risk Assessment",
+        "version": "“Applicable from August 2025”",
+        "date": "2025-08",
+        "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+        "changes": "Reissued at the same URL; no changelog, changes unknown"
+      },
+      {
+        "name": "No Backdoors. No Kill Switches. No Spyware.",
+        "version": "position (CSO)",
+        "date": "2025-08-05",
+        "url": "https://blogs.nvidia.com/blog/no-backdoors-no-kill-switches-no-spyware",
+        "changes": "Formal position against hardware disablement and tracking"
+      },
+      {
+        "name": "Open Agent Safety Platform",
+        "version": "launch",
+        "date": "2026-09-28",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Open-Agent-Safety-Platform-to-Secure-Agents-From-Testing-to-Deployment/",
+        "changes": "Open-source agent sandbox plus hardware watchdog"
+      },
+      {
+        "name": "White House Accord on Super Intelligence",
+        "version": "signatory, one of 6",
+        "date": "2026-09-29",
+        "url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work",
+        "changes": "Voluntary: internal audits, safety team, external auditor, board committee"
+      }
+    ],
+    "capabilities": [
+      {
+        "date": "2022-03-22",
+        "frontier_model": "H100 (Hopper)",
+        "benchmarks": {
+          "transistors": "80B",
+          "memory_bw": "3 TB/s HBM3"
+        },
+        "source": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing"
+      },
+      {
+        "date": "2023-11-13",
+        "frontier_model": "H200",
+        "benchmarks": {
+          "memory": "141GB HBM3e",
+          "bandwidth": "4.8 TB/s"
+        },
+        "source": "https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform"
+      },
+      {
+        "date": "2024-03-18",
+        "frontier_model": "Blackwell B200 / GB200 NVL72",
+        "benchmarks": {
+          "transistors": "208B"
+        },
+        "source": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+      },
+      {
+        "date": "2024-06-14",
+        "frontier_model": "Nemotron-4 340B (open)",
+        "benchmarks": {
+          "pretraining_tokens": "9T"
+        },
+        "source": "https://blogs.nvidia.com/blog/nemotron-4-synthetic-data-generation-llm-training/"
+      },
+      {
+        "date": "2024-10-01",
+        "frontier_model": "Llama-3.1-Nemotron-70B-Instruct",
+        "benchmarks": {
+          "Arena_Hard": 85,
+          "AlpacaEval2_LC": 57.6
+        },
+        "source": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF"
+      },
+      {
+        "date": "2025-03-18",
+        "frontier_model": "Blackwell Ultra (GB300 NVL72)",
+        "benchmarks": {
+          "claim": "1.5x AI performance vs GB200 NVL72"
+        },
+        "source": "https://nvidianews.nvidia.com/news/nvidia-blackwell-ultra-ai-factory-platform-paves-way-for-age-of-ai-reasoning"
+      },
+      {
+        "date": "2025-04-07",
+        "frontier_model": "Llama-3.1-Nemotron-Ultra-253B (open)",
+        "benchmarks": {
+          "GPQA": 76.01,
+          "AIME25": 72.5
+        },
+        "source": "https://venturebeat.com/ai/nvidias-new-llama-3-1-nemotron-ultra-outperforms-deepseek-r1-at-half-the-size/"
+      },
+      {
+        "date": "2026-01-05",
+        "frontier_model": "Vera Rubin platform",
+        "benchmarks": {
+          "claim": "up to 10x lower inference token cost vs Blackwell"
+        },
+        "source": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer"
+      },
+      {
+        "date": "2026-06-04",
+        "frontier_model": "Nemotron 3 Ultra 550B-A55B (open)",
+        "benchmarks": {
+          "AA_Intelligence_Index": "47.7-48.2 (Kimi K2.6: 53.9)",
+          "Terminal_Bench_2": "54%"
+        },
+        "source": "https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released"
+      }
+    ],
+    "incidents": [
+      {
+        "incident": "Lapsus$ breach: credentials and ~1TB of proprietary data taken",
+        "public_date": "2022-02-25",
+        "acknowledged": "2022-03-01",
+        "patched": null,
+        "what_changed": "Hardened network, engaged responders, notified law enforcement. Public date approximate.",
+        "rows": [
+          "K02"
+        ]
+      },
+      {
+        "incident": "CVE-2024-0132: Container Toolkit escape (CVSS 9.0), found by Wiz",
+        "public_date": "2024-09-26",
+        "acknowledged": "2024-09-03",
+        "patched": "2024-09-26",
+        "what_changed": "Fixed in Toolkit 1.16.2; Wiz estimated >35% of cloud environments exposed",
+        "rows": [
+          "K17"
+        ]
+      },
+      {
+        "incident": "CVE-2025-23359: bypass of the incomplete CVE-2024-0132 patch",
+        "public_date": "2025-02-11",
+        "acknowledged": "2025-02-11",
+        "patched": "2025-02-11",
+        "what_changed": "Toolkit 1.17.4 fixes both",
+        "rows": [
+          "K24"
+        ]
+      },
+      {
+        "incident": "GPUHammer: Rowhammer bit-flips on GDDR6 GPUs",
+        "public_date": "2025-07",
+        "acknowledged": "2025-07-09",
+        "patched": null,
+        "what_changed": "Recommends System-Level ECC (mitigation, not a patch)",
+        "rows": [
+          "K33"
+        ]
+      },
+      {
+        "incident": "CVE-2025-23266 “NVIDIAScape” container escape (CVSS 9.0)",
+        "public_date": "2025-07-15",
+        "acknowledged": "2025-07-15",
+        "patched": "2025-07-15",
+        "what_changed": "Toolkit 1.17.8; reported 17 May at Pwn2Own",
+        "rows": [
+          "K36"
+        ]
+      },
+      {
+        "incident": "Triton Inference Server unauthenticated RCE chain",
+        "public_date": "2025-08-04",
+        "acknowledged": "2025-08-04",
+        "patched": "2025-08-04",
+        "what_changed": "Triton 25.07; reported 15 May",
+        "rows": [
+          "K40"
+        ]
+      },
+      {
+        "incident": "CAC alleges H20 backdoors",
+        "public_date": "2025-07-31",
+        "acknowledged": "2025-07-31",
+        "patched": null,
+        "what_changed": "Same-day denial, then the CSO’s “No Backdoors” post",
+        "rows": [
+          "K38",
+          "K41"
+        ]
+      },
+      {
+        "incident": "DOJ charges ALX Solutions with GPU smuggling",
+        "public_date": "2025-08-05",
+        "acknowledged": "2025-08-05",
+        "patched": null,
+        "what_changed": "Says diverted products get no support",
+        "rows": [
+          "K42"
+        ]
+      },
+      {
+        "incident": "Taiwan detains an NVIDIA employee in a smuggling probe",
+        "public_date": "2026-07-28",
+        "acknowledged": "2026-07-29",
+        "patched": null,
+        "what_changed": "Repeats “smuggling is a nonstarter”",
+        "rows": [
+          "K62"
+        ]
+      },
+      {
+        "incident": "Greg Lui arrested over ~$300m of smuggled NVIDIA servers",
+        "public_date": "2026-10-01",
+        "acknowledged": "2026-10-02",
+        "patched": null,
+        "what_changed": "Bloomberg (unopened) reports NVIDIA cut over half its authorised Asian buyers",
+        "rows": [
+          "K66"
+        ]
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "N1",
+      "name": "US restriction → SEC disclosure",
+      "when": "The US imposes an export restriction that hits NVIDIA",
+      "then": "NVIDIA files an 8-K within 0-6 days of being told privately; the filing is usually how the public learns, so on a public timeline it lands on day 0",
+      "status": "rule",
+      "episodes": [
+        {
+          "trigger": "C40",
+          "response": "K04"
+        },
+        {
+          "trigger": "C02",
+          "response": "K11"
+        },
+        {
+          "trigger": "C44",
+          "response": "K29"
+        }
+      ],
+      "note": "Trigger dates are when NVIDIA was told (it is a party to the notice); the public learned from the filing itself.",
+      "triggers": [
+        "us_chip_restriction"
+      ]
+    },
+    {
+      "id": "N2",
+      "name": "US chip-policy move → same-day statement",
+      "when": "Washington eases or tightens chip export policy in public",
+      "then": "NVIDIA issues a statement within a day: praise for easing; criticism or a compliance line for tightening",
+      "status": "rule",
+      "episodes": [
+        {
+          "trigger": "C43",
+          "response": "K21"
+        },
+        {
+          "trigger": "C46",
+          "response": "K31"
+        },
+        {
+          "trigger": "C10",
+          "response": "K51"
+        },
+        {
+          "trigger": "C51",
+          "response": "K60"
+        }
+      ],
+      "note": "The July 2025 revenue-share report drew a statement (K43) a day before Trump confirmed the deal (C07), so it is not counted.",
+      "triggers": [
+        "us_chip_restriction",
+        "us_chip_easing"
+      ]
+    },
+    {
+      "id": "N3",
+      "name": "Beijing pressure → denial or cooperation",
+      "when": "A Chinese regulator summons or investigates NVIDIA",
+      "then": "NVIDIA answers the same or next day: denies the allegation or says it will cooperate",
+      "status": "rule",
+      "episodes": [
+        {
+          "trigger": "C42",
+          "response": "K20"
+        },
+        {
+          "trigger": "C06",
+          "response": "K38"
+        },
+        {
+          "trigger": "C22",
+          "response": "K46"
+        }
+      ],
+      "note": "Three bodies, three years. The response never challenges the regulator’s authority.",
+      "triggers": [
+        "beijing_pressure"
+      ]
+    },
+    {
+      "id": "N4",
+      "name": "Private vulnerability report → patch",
+      "when": "A researcher privately reports a critical vulnerability",
+      "then": "NVIDIA ships a patch and bulletin 25-81 days later, on the day the researcher publishes",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C41",
+          "response": "K17"
+        },
+        {
+          "trigger": "C48",
+          "response": "K40"
+        },
+        {
+          "trigger": "C47",
+          "response": "K36"
+        }
+      ],
+      "note": "All three reports came from Wiz, and two arrived two days apart (one wave under P3). One more independent report would make this a pattern.",
+      "triggers": [
+        "vuln_report"
+      ]
+    },
+    {
+      "id": "N5",
+      "name": "Export limit → compliant China chip",
+      "when": "A new export limit cuts NVIDIA’s China product",
+      "then": "A China-specific chip designed to sit just under the limit follows within months",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C01",
+          "response": "K06"
+        },
+        {
+          "trigger": "C01",
+          "response": "K07"
+        },
+        {
+          "trigger": "C02",
+          "response": "K14"
+        },
+        {
+          "trigger": "C44",
+          "response": "K35"
+        }
+      ],
+      "note": "Moved here from the Jensen persona (his R6): it is a company act. The H20 date (K14) is month-only, and A800/H800 answer the same trigger, so only two independent waves are computable.",
+      "triggers": [
+        "us_chip_restriction"
+      ]
+    },
+    {
+      "id": "N6",
+      "name": "Smuggling case public → “nonstarter” statement",
+      "when": "Prosecutors announce a case involving smuggled NVIDIA chips",
+      "then": "NVIDIA says the same or next day that smuggling is a nonstarter and diverted chips get no support",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C49",
+          "response": "K42"
+        },
+        {
+          "trigger": "C13",
+          "response": "K56"
+        },
+        {
+          "trigger": "C52",
+          "response": "K62"
+        },
+        {
+          "trigger": "C53",
+          "response": "K66"
+        }
+      ],
+      "note": "One build episode (the March 2026 reply K56 is month-only). Both held-out cases fit, so this is the next signal likely to become a pattern.",
+      "triggers": [
+        "smuggling_case"
+      ]
+    },
+    {
+      "id": "N7",
+      "name": "Agent-safety alarm → product, not policy",
+      "when": "A lab discloses misaligned or rogue AI agents",
+      "then": "NVIDIA ships safety tooling rather than backing new rules",
+      "status": "hypothesis",
+      "episodes": [
+        {
+          "trigger": "C27",
+          "response": "K64"
+        }
+      ],
+      "note": "Mirrors Jensen’s R4. Built from held-out rows only, so it still needs a fresh test.",
+      "triggers": [
+        "safety_incident"
+      ]
+    }
+  ],
+  "reach": [
+    {
+      "act": "K21",
+      "followed_by": "C46",
+      "reading": "Commerce rescinded the Diffusion Rule 114 days later, after the change of administration. Followed, not caused."
+    },
+    {
+      "act": "K45",
+      "followed_by": "C09",
+      "reading": "The GAIN AI Act was left out of the defence bill three months later; Huang also lobbied senators in person (J21)."
+    },
+    {
+      "act": "K49",
+      "followed_by": null,
+      "reading": "No definitive agreement had been signed by early 2026. The log can’t yet show what the investment moved."
+    }
+  ],
+  "tests": [
+    {
+      "rule": "N2",
+      "result": "untested",
+      "note": "No public US chip-policy change between the cutoff and October 2026 drew a logged statement."
+    },
+    {
+      "rule": "N6",
+      "result": "fits",
+      "note": "Taiwan detention (C52) → statement next day (K62); Lui arrest (C53) → statement next day (K66)."
+    },
+    {
+      "rule": "N7",
+      "result": "not_a_test",
+      "note": "Built from held-out rows (C15, C27), so they cannot also test it."
+    }
+  ],
+  "protocol_status": {
+    "P5": "applied: cutoff 2026-07-01; tests above",
+    "P6": "not done: one coder"
+  },
+  "limits": [
+    {
+      "title": "Most rows are reports of statements",
+      "body": "SEC filings, NVIDIA blog posts and security bulletins were read in the original; spokesperson quotes come from news reports, some through syndicated copies."
+    },
+    {
+      "title": "Left out as unconfirmed",
+      "body": "A reported ~$12.9bn Hugging Face acquisition (Sept 2026) and a $105bn credit guarantee for an OpenAI data centre (Aug 2026) rest on press summaries, one of them AI-generated. Check both on EDGAR before adding rows."
+    },
+    {
+      "title": "The framework changed without a changelog",
+      "body": "The Frontier AI Risk Assessment was reissued in August 2025 (K39) at the same URL. What changed is unknown; METR lists only the February version."
+    },
+    {
+      "title": "CEO and company overlap",
+      "body": "Huang signed the September 2026 accord for NVIDIA and carries most of its access. The attribution rule keeps his remarks in his persona, which makes NVIDIA look quieter on policy than it is."
+    },
+    {
+      "title": "Lobbying is thin",
+      "body": "Only one lobbying-disclosure row. LDA filings by quarter, and comments on BIS rules, should be pulled directly."
+    },
+    {
+      "title": "No baseline",
+      "body": "Without a base-rate forecaster, a fit shows consistency, not forecasting skill."
+    }
+  ]
+}

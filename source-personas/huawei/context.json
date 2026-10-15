@@ -1,0 +1,81 @@
+[
+  {
+    "id": "C101",
+    "date": "2023-08-27",
+    "actor": "US Commerce Dept (Raimondo)",
+    "text": "Commerce Secretary Raimondo visits China (27–30 Aug 2023); the Mate 60 Pro appears during the visit.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Prothom Alo (Reuters)",
+        "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
+      }
+    ]
+  },
+  {
+    "id": "C102",
+    "date": "2023-09-04",
+    "actor": "TechInsights",
+    "text": "A teardown finds the Mate 60 Pro's Kirin 9000S is made on SMIC's 7nm (N+2) process; analyst calls it a 'slap in the face' to the US.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Prothom Alo (Reuters) 2023-09-05",
+        "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
+      }
+    ]
+  },
+  {
+    "id": "C103",
+    "date": "2024-10-22",
+    "actor": "TechInsights / TSMC",
+    "text": "Reports say TechInsights found a TSMC-made die in Huawei's Ascend 910B and that TSMC notified the US Commerce Dept.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Korea Times (Reuters) 2024-10-23",
+        "url": "https://www.koreatimes.co.kr/world/20241023/tsmc-told-us-of-chip-in-huawei-product-after-techinsights-finding-source"
+      }
+    ]
+  },
+  {
+    "id": "C104",
+    "date": "2025-03",
+    "date_precision": "month",
+    "actor": "Microsoft / US licensing",
+    "text": "Huawei's Windows licence for PCs expires in March 2025 and is not renewed. Caixin gives 2024 instead, so the date is disputed.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "HuaweiCentral",
+        "url": "https://www.huaweicentral.com/windows-license-expiring-for-huawei-pcs-harmonyos-can-be-next-choice/"
+      }
+    ]
+  },
+  {
+    "id": "C106",
+    "date": "2025-06-30",
+    "actor": "Baidu",
+    "text": "Baidu open-sources Ernie 4.5 just before Huawei's Pangu release; part of the wave of Chinese open-weight models after DeepSeek.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "The Decoder",
+        "url": "https://the-decoder.com/huawei-is-open-sourcing-ai-models-from-its-pangu-series/"
+      }
+    ]
+  },
+  {
+    "id": "C107",
+    "date": "2025-07-04",
+    "actor": "HonestAGI (anonymous)",
+    "text": "A GitHub paper alleges Pangu Pro MoE has an 'extraordinary correlation' with Alibaba's Qwen 2.5 14B.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Korea JoongAng Daily (Reuters)",
+        "url": "https://www.koreajoongangdaily.com/world/huaweis-ai-lab-denies-that-one-of-its-pangu-models-copied-alibabas-qwen/11983549"
+      }
+    ]
+  }
+]

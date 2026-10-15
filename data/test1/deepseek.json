@@ -1,0 +1,430 @@
+{
+ "actor": "deepseek",
+ "name": "DeepSeek",
+ "actor_type": "company",
+ "cutoff": "2026-01-01",
+ "identity_line": "DeepSeek (company). Record before 2026-01-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "release_model",
+    "n": 9
+   },
+   {
+    "verb": "comply",
+    "n": 4
+   },
+   {
+    "verb": "claim",
+    "n": 2
+   },
+   {
+    "verb": "publish",
+    "n": 2
+   },
+   {
+    "verb": "restrict_access",
+    "n": 2
+   }
+  ],
+  "rare": [
+   {
+    "verb": "launch",
+    "n": 1
+   },
+   {
+    "verb": "meet",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "DS01",
+   "date": "2024-05-06",
+   "verb": "release_model",
+   "text": "DeepSeek (High-Flyer) releases DeepSeek-V2, an open-weight MoE model allowing commercial use, priced at CNY1 input and CNY2 output per million tokens, about 1% of GPT-4. The release sets off China's LLM price war. Paper dated 7 May.",
+   "sources": [
+    {
+     "label": "Hugging Face model card",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2"
+    },
+    {
+     "label": "Yicai Global",
+     "url": "https://yicaiglobal.com/news/baidu-offers-two-ernie-models-for-free-as-chinese-llm-market-ushers-in-price-war"
+    }
+   ]
+  },
+  {
+   "row": "DS02",
+   "date": "2024-07",
+   "verb": "claim",
+   "text": "In the 36Kr/Waves interview, Liang Wenfeng says the price war was unintended and that prices follow cost, not losing money but not taking excess profit. He says China must move from imitation to original innovation. The quote is from a translation.",
+   "sources": [
+    {
+     "label": "ChinaTalk translation",
+     "url": "https://www.chinatalk.media/p/deepseek-ceo-interview-with-chinas"
+    },
+    {
+     "label": "Jie Xu translation",
+     "url": "https://jiexu.substack.com/p/interview-deepseek-founder-liang-wenfeng-a-journey-by-curiosity"
+    }
+   ]
+  },
+  {
+   "row": "DS03",
+   "date": "2024-12-26",
+   "verb": "release_model",
+   "text": "DeepSeek releases DeepSeek-V3 as open weights: 671B MoE with 37B active, trained in 2.788M H800 GPU-hours, which it puts at about $5.6M at rental rates for the final run only.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news1226"
+    },
+    {
+     "label": "heise",
+     "url": "https://heise.de/-10267795"
+    }
+   ]
+  },
+  {
+   "row": "DS04",
+   "date": "2025-01-15",
+   "verb": "launch",
+   "text": "DeepSeek launches its consumer app.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250115"
+    }
+   ]
+  },
+  {
+   "row": "DS05",
+   "date": "2025-01-20",
+   "verb": "release_model",
+   "text": "DeepSeek releases R1 and R1-Zero under the MIT license and explicitly allows distillation, along with six distilled Qwen and Llama models.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250120"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://www.gigazine.net/gsc_news/en/20250121-deepseek-r1-open-released"
+    }
+   ]
+  },
+  {
+   "row": "DS06",
+   "date": "2025-01-20",
+   "verb": "meet",
+   "text": "Liang attends Premier Li Qiang's symposium on the draft Government Work Report, reportedly discussing domestic large models. No quote is on record. He is also reported at Xi's private-enterprise symposium on 2025-02-17.",
+   "sources": [
+    {
+     "label": "CLS (财联社)",
+     "url": "https://www.cls.cn/detail/1925054"
+    },
+    {
+     "label": "CGTN/Xinhua",
+     "url": "https://news.cgtn.com/news/2025-01-21/Li-Qiang-chairs-symposium-to-hear-opinions-on-draft-govt-work-report-1AkU7auuARG/share_amp.html"
+    }
+   ]
+  },
+  {
+   "row": "DS07",
+   "date": "2025-01-27",
+   "verb": "restrict_access",
+   "text": "On the day the app tops the US App Store and NVIDIA loses $589bn (C03), DeepSeek temporarily limits new registrations, citing 'large-scale malicious attacks'. Existing users are unaffected.",
+   "sources": [
+    {
+     "label": "The Register",
+     "url": "https://www.theregister.com/2025/01/27/deepseek_suspends_new_registrations_amid/"
+    },
+    {
+     "label": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/deepseek-halts-new-signups-amid-large-scale-cyberattack/"
+    }
+   ]
+  },
+  {
+   "row": "DS08",
+   "date": "2025-01-30",
+   "verb": "claim",
+   "text": "Answering Italy's Garante, the DeepSeek companies say they do not operate in Italy and that European law does not apply to them. The Garante calls the reply insufficient and orders a block. Per the Garante's account.",
+   "sources": [
+    {
+     "label": "Reuters via StreetInsider",
+     "url": "https://www.streetinsider.com/Reuters/Italy%27s+regulator+blocks+Chinese+AI+app+DeepSeek+on+data+protection/24272382.html"
+    },
+    {
+     "label": "AP via WSLS",
+     "url": "https://www.wsls.com/tech/2025/01/30/deepseek-blocked-by-some-app-stores-in-italy-to-protect-users-personal-data/"
+    }
+   ]
+  },
+  {
+   "row": "DS09",
+   "date": "2025-01-30",
+   "verb": "restrict_access",
+   "text": "DeepSeek removes its app from Italian app stores after the Garante questions its privacy policy, according to Garante board member Ghiglia.",
+   "sources": [
+    {
+     "label": "Reuters via StreetInsider",
+     "url": "https://www.streetinsider.com/Reuters/Italy%27s+regulator+blocks+Chinese+AI+app+DeepSeek+on+data+protection/24272382.html"
+    }
+   ]
+  },
+  {
+   "row": "DS10",
+   "date": "2025-02-15",
+   "verb": "comply",
+   "text": "DeepSeek agrees with Korea's PIPC to suspend new downloads in Korea from 6pm on 15 February. It acknowledges partly neglecting Korean data-protection law and appoints a local representative. Announced by the PIPC on 17 February.",
+   "sources": [
+    {
+     "label": "NBC News",
+     "url": "https://www.nbcnews.com/news/world/south-korea-suspends-new-downloads-deepseek-citing-privacy-concerns-rcna192432"
+    },
+    {
+     "label": "The Hacker News",
+     "url": "https://thehackernews.com/2025/02/south-korea-suspends-deepseek-ai.html"
+    }
+   ]
+  },
+  {
+   "row": "DS11",
+   "date": "2025-03-01",
+   "verb": "publish",
+   "text": "Closing its Open Source Week, DeepSeek publishes V3/R1 inference economics: a theoretical 545% daily margin, with a disclaimer that actual revenue is 'substantially lower'.",
+   "sources": [
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3300734/deepseek-shows-power-v3-r1-models-theoretical-545-profit-margin"
+    },
+    {
+     "label": "Reuters via The Edge",
+     "url": "https://theedgemalaysia.com/node/746409"
+    }
+   ]
+  },
+  {
+   "row": "DS12",
+   "date": "2025-03-25",
+   "verb": "release_model",
+   "text": "DeepSeek releases V3-0324 and moves the V3 line from its custom Model License to MIT.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250325"
+    }
+   ]
+  },
+  {
+   "row": "DS13",
+   "date": "2025-04-28",
+   "verb": "comply",
+   "text": "DeepSeek relaunches in Korean app stores with a revised privacy notice that lets users refuse transfers to China and US firms. This follows the PIPC's 24 April finding of unauthorised data transfers; the transfers stopped on 10 April.",
+   "sources": [
+    {
+     "label": "Reuters via Anews",
+     "url": "https://www.anews.com.tr/europe/2025/04/28/deepseek-available-to-download-again-in-south-korea-after-suspension/amp"
+    },
+    {
+     "label": "MLex",
+     "url": "https://www.mlex.com/mlex/amp/articles/2330850"
+    }
+   ]
+  },
+  {
+   "row": "DS14",
+   "date": "2025-05",
+   "verb": "release_model",
+   "text": "R2, expected in May, is not released. The FT (14 August) reports that training on Huawei Ascend after official encouragement failed despite Huawei engineers on site. DeepSeek reverted to NVIDIA for training and kept Ascend for inference. DeepSeek did not confirm.",
+   "sources": [
+    {
+     "label": "The Decoder (FT summary)",
+     "url": "https://the-decoder.com/deepseek-reportedly-delayed-its-latest-ai-model-after-technical-issues-with-huaweis-ascend-chips/"
+    },
+    {
+     "label": "insideHPC (FT summary)",
+     "url": "https://insidehpc.com/2025/08/report-deepseek-model-delay-forces-use-of-nvidia-gpus/"
+    }
+   ]
+  },
+  {
+   "row": "DS15",
+   "date": "2025-05-28",
+   "verb": "release_model",
+   "text": "DeepSeek ships R1-0528, an R1 update, in place of R2.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250528"
+    }
+   ]
+  },
+  {
+   "row": "DS16",
+   "date": "2025-06-27",
+   "verb": "comply",
+   "text": "DeepSeek does not respond to the Berlin data commissioner's May demand to comply with EU transfer rules or withdraw. The commissioner reports the app to Apple and Google under DSA Art. 16.",
+   "sources": [
+    {
+     "label": "JURIST",
+     "url": "https://www.jurist.org/news/2025/06/germany-data-commissioner-orders-apple-and-google-to-remove-deepseek-over-data-concerns"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://gigazine.net/gsc_news/en/20250628-deepseek-ban-apple-google-app-stores-germany"
+    }
+   ]
+  },
+  {
+   "row": "DS17",
+   "date": "2025-08-21",
+   "verb": "release_model",
+   "text": "DeepSeek releases V3.1, a hybrid think/non-think model with open weights and new pricing from 5 September. In a WeChat comment it says its UE8M0 FP8 format targets upcoming domestic chips. Translation per The Register.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250821"
+    },
+    {
+     "label": "The Register",
+     "url": "https://www.theregister.com/2025/08/22/deepseek_v31_chinese_chip_hints/"
+    }
+   ]
+  },
+  {
+   "row": "DS18",
+   "date": "2025-09-01",
+   "verb": "comply",
+   "text": "On the day China's AI-content labeling measures take effect, DeepSeek announces explicit and implicit labels on generated content and bars users from stripping them. The same day it publishes a 'Model Principles and Training Methodology' disclosure.",
+   "sources": [
+    {
+     "label": "IT之家",
+     "url": "https://www.ithome.com/0/879/640.htm"
+    },
+    {
+     "label": "DoNews",
+     "url": "https://www.donews.com/news/detail/1/6041790.html"
+    }
+   ]
+  },
+  {
+   "row": "DS19",
+   "date": "2025-09-17",
+   "verb": "publish",
+   "text": "A peer-reviewed R1 paper in Nature discloses a $294k R1 training cost on 512 H800s. It acknowledges A100s were used for early experiments. Published amid US claims that DeepSeek had H100 access.",
+   "sources": [
+    {
+     "label": "Reuters via CTV",
+     "url": "https://www.ctvnews.ca/business/article/chinas-deepseek-says-its-hit-ai-model-cost-just-us294000-to-train/"
+    }
+   ]
+  },
+  {
+   "row": "DS20",
+   "date": "2025-09-29",
+   "verb": "release_model",
+   "text": "DeepSeek releases V3.2-Exp with DeepSeek Sparse Attention and cuts API prices by more than 50%.",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250929"
+    },
+    {
+     "label": "TechCrunch",
+     "url": "https://techcrunch.com/2025/09/29/deepseek-releases-sparse-attention-model-that-cuts-api-costs-in-half/"
+    }
+   ]
+  },
+  {
+   "row": "DS21",
+   "date": "2025-12-01",
+   "verb": "release_model",
+   "text": "DeepSeek releases V3.2 (open) and V3.2-Speciale (API-only until 15 December).",
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news251201"
+    },
+    {
+     "label": "DeepSeek transparency page",
+     "url": "https://www.deepseek.com/en/transparency/"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "7 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "DS22",
+   "date": "2026-02-23",
+   "verb": "claim",
+   "topic": "copyright",
+   "text": "DeepSeek makes no public response to Anthropic's accusation of 'industrial-scale distillation' (more than 150k exchanges attributed to DeepSeek) or to OpenAI's February memo to the House China Committee."
+  },
+  {
+   "row": "DS24",
+   "date": "2026-04-24",
+   "verb": "release_model",
+   "topic": "open_source",
+   "text": "DeepSeek releases the V4 Preview (Pro: 1.6T/49B active; Flash: 284B/13B active; 1M context) as MIT open weights in FP4+FP8. Huawei announces day-zero Ascend support the same day."
+  },
+  {
+   "row": "DS23",
+   "date": "2026-04-27",
+   "verb": "launch",
+   "topic": "competition",
+   "text": "Days after launch, DeepSeek cuts V4-Pro input price 75%, from 1 yuan to 0.25 yuan per million tokens. Reported 27 April."
+  },
+  {
+   "row": "DS25",
+   "date": "2026-08-06",
+   "verb": "commit",
+   "topic": "competition",
+   "text": "DeepSeek announces a coming 'significant increase' in overall API pricing from 1/2 yuan per million tokens, its first move away from floor pricing."
+  },
+  {
+   "row": "DS26",
+   "date": "2026-08-13",
+   "verb": "release_model",
+   "topic": "products",
+   "text": "V4-Pro reaches general availability with reasoning-effort levels and the Responses API. Peak and off-peak pricing starts 16 August, with off-peak 50% lower."
+  },
+  {
+   "row": "DS27",
+   "date": "2026-09-10",
+   "verb": "release_model",
+   "topic": "products",
+   "text": "DeepSeek releases V4.1-Flash (552B MoE, native vision), routing deepseek-v4-pro calls to it from 14 September and offering help with large deployments."
+  },
+  {
+   "row": "DS28",
+   "date": "2026-09-30",
+   "verb": "publish",
+   "topic": "chips_and_compute",
+   "text": "DeepSeek open-sources Ascend 950 versions of its training and inference stack: TileLang-Ascend, DeepGEMM-Ascend, DeepEP-Ascend, FlashMLA, TileKernels and DeepSelect. Bloomberg called TileLang 'China's answer to Nvidia CUDA'."
+  }
+ ]
+}

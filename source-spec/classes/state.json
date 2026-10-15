@@ -1,0 +1,166 @@
+{
+  "id": "state",
+  "kind": "state",
+  "label": "State actor",
+  "examples": [
+    "CAC",
+    "Commerce · BIS",
+    "US Congress",
+    "EU Commission",
+    "the White House as an institution"
+  ],
+  "pronoun": "it",
+  "row_prefix": "O",
+  "attribution_rule": "A row belongs to the body that acted, not the person leading it. Acts by its leader in a personal capacity go to an individual persona.",
+  "standing_fields": [
+    "class_role",
+    "principal",
+    "attribution_rule",
+    "veto_players",
+    "co_issuers",
+    "gates_held",
+    "pressure"
+  ],
+  "row_attributes": {
+    "instrument": "Type of legal or official instrument",
+    "instrument_ref": "Document number or name as issued (e.g. MOFCOM Announcement No. 46 of 2024)",
+    "title_zh": "Official Chinese title of the instrument",
+    "lead": "Body that led a jointly issued act (short name, e.g. CAC, SAMR)",
+    "capacity": "own: acted alone; joint: issued with other bodies; on_behalf: drafted for the State Council or NPC",
+    "co_issuers": "Every other body that co-signed (each is a veto player)",
+    "draft_date": "Date the draft for comment was published",
+    "approved": "Date an internal meeting passed it",
+    "effective": "Date it takes effect",
+    "ai": "true for AI-specific instruments"
+  },
+  "powers": [
+    {
+      "id": "rule_making",
+      "name": "Rule-making",
+      "def": "Writes binding rules others must follow",
+      "verbs": [
+        "issue_draft",
+        "issue_rule",
+        "soften_rule",
+        "ease_rule",
+        "revoke_rule",
+        "delay_rule",
+        "issue_standard",
+        "introduce_bill",
+        "pass_bill",
+        "enact",
+        "veto",
+        "vote",
+        "preempt",
+        "sign_order"
+      ]
+    },
+    {
+      "id": "gatekeeping",
+      "name": "Gatekeeping",
+      "def": "Decides who may enter a market",
+      "verbs": [
+        "stand_up_program",
+        "grant_permission",
+        "deny_permission",
+        "license_exports"
+      ]
+    },
+    {
+      "id": "information",
+      "name": "Information",
+      "def": "Sees inside the actors it governs",
+      "verbs": [
+        "open_filing",
+        "publish_list"
+      ]
+    },
+    {
+      "id": "sanctioning",
+      "name": "Sanctioning",
+      "def": "Punishes breaches",
+      "verbs": [
+        "enforce"
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review",
+      "def": "Opens national-security investigations",
+      "verbs": [
+        "retaliate_review",
+        "investigate",
+        "summon"
+      ]
+    },
+    {
+      "id": "mobilisation",
+      "name": "Mobilisation",
+      "def": "Runs campaigns that direct others to act",
+      "verbs": [
+        "launch_campaign"
+      ]
+    },
+    {
+      "id": "external_coercion",
+      "name": "External coercion",
+      "def": "Imposes costs on foreign actors",
+      "verbs": [
+        "restrict_exports",
+        "sanction",
+        "sue"
+      ]
+    },
+    {
+      "id": "fiscal",
+      "name": "Fiscal",
+      "def": "Spends or subsidises",
+      "verbs": [
+        "subsidise",
+        "fund"
+      ]
+    }
+  ],
+  "verbs": [
+    "issue_draft",
+    "issue_rule",
+    "soften_rule",
+    "ease_rule",
+    "issue_guidance",
+    "stand_up_program",
+    "grant_permission",
+    "open_filing",
+    "publish_list",
+    "enforce",
+    "retaliate_review",
+    "launch_campaign",
+    "assert_control",
+    "align_with",
+    "restrict_exports",
+    "sanction",
+    "subsidise",
+    "fund",
+    "summon",
+    "state_reason",
+    "revoke_rule",
+    "delay_rule",
+    "issue_standard",
+    "introduce_bill",
+    "pass_bill",
+    "enact",
+    "veto",
+    "vote",
+    "preempt",
+    "sign_order",
+    "license_exports",
+    "deny_permission",
+    "investigate",
+    "sue"
+  ],
+  "profile": [],
+  "sources": [
+    "Official gazette / own site (e.g. cac.gov.cn)",
+    "ETO AGORA (laws, bills, executive orders)",
+    "OECD.AI Policy Navigator (national strategies)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$comment": "Shared by every actor class. Row fields and attributes are declared (and validated) in spec/schema/row.schema.json; topics and audiences in spec/topics.json. A class file adds its own powers, verbs, attribution rule, class-specific attributes and profile blocks.",
+  "row": {
+    "types": [
+      "did",
+      "said",
+      "not_taken"
+    ],
+    "visible_to": [
+      "internal",
+      "parties",
+      "public"
+    ],
+    "verified": [
+      "primary",
+      "secondary"
+    ],
+    "required": [
+      "id",
+      "date",
+      "date_precision",
+      "type",
+      "verb",
+      "text",
+      "sources",
+      "visible_to",
+      "verified"
+    ],
+    "attributes": {
+      "topic": "Primary policy domain: an id from spec/topics.json",
+      "subtopic": "Nuance within the primary topic: one or more of that topic's subtopics in spec/topics.json",
+      "also": "Secondary policy domains the row also touches (ids from spec/topics.json)",
+      "stance": "Position on the primary topic, read against its poles in spec/topics.json: -2 strongly restrict ... +2 strongly accelerate. Requires topic.",
+      "audience": "Who it was aimed at: an id from spec/topics.json audiences",
+      "venue": "Where it was said or done (event, outlet, filing type)",
+      "target": "Who or what the act hits (firm, sector, country, product)",
+      "after_gate": "true when the act came right after a gate opened (e.g. a launch on the day of an approval)",
+      "gate_ref": "Row id of the gate decision; only with after_gate",
+      "rule_ref": "Row id of the instrument the act was taken under"
+    }
+  },
+  "topics": [
+    "export_controls",
+    "china_race",
+    "chips_and_compute",
+    "regulation",
+    "competition",
+    "industrial_policy",
+    "products",
+    "safety_risk",
+    "open_source",
+    "copyright",
+    "labour",
+    "energy",
+    "bias",
+    "sanctions_and_trade"
+  ],
+  "blocks": [
+    "hero",
+    "short_answer",
+    "purpose",
+    "standing",
+    "powers",
+    "rules",
+    "limits"
+  ]
+}

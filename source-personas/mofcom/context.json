@@ -1,0 +1,186 @@
+[
+  {
+    "id": "C201",
+    "date": "2023-06-30",
+    "actor": "Netherlands government",
+    "text": "The Netherlands announces export controls on some advanced lithography and other chip equipment; MOFCOM voiced dissatisfaction on 1 July.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN), 2023-07-01",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_becd67e7d0d44376a51b8ca834c314a2.html"
+      }
+    ]
+  },
+  {
+    "id": "C202",
+    "date": "2024-12-23",
+    "actor": "USTR",
+    "text": "USTR opens a Section 301 investigation into China's policies on legacy and mature-node chips.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN)",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_8f4f45db13844a078b62532d56559eb6.html"
+      }
+    ]
+  },
+  {
+    "id": "C203",
+    "date": "2025-03-03",
+    "actor": "White House",
+    "text": "US announces a further 10% fentanyl tariff on Chinese goods from 4 March.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM statement (CN), 2025-03-04",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_3bad1cf006c74f52ab552ca44b4ab70e.html"
+      }
+    ]
+  },
+  {
+    "id": "C204",
+    "date": "2025-05-12",
+    "actor": "US and China",
+    "text": "The Geneva joint statement commits China to suspend or remove non-tariff countermeasures taken since 2 April.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN), 2025-05-14",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_53ec1f591dba49a39b65fd89b6d73e6f.html"
+      }
+    ]
+  },
+  {
+    "id": "C205",
+    "date": "2025-08-29",
+    "actor": "Commerce · BIS",
+    "text": "BIS revokes Validated End-User status for the Samsung, SK Hynix and Intel fabs in China.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (EN)",
+        "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_267bddaf8d52497289627453b3d5636a.html"
+      }
+    ]
+  },
+  {
+    "id": "C206",
+    "date": "2025-09-30",
+    "actor": "Netherlands Ministry of Economic Affairs",
+    "text": "The Dutch government invokes the Goods Availability Act to take control of Wingtech-owned Nexperia.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Reuters timeline via Yahoo Finance",
+        "url": "https://finance.yahoo.com/news/timeline-sino-dutch-row-over-093000431.html"
+      }
+    ]
+  },
+  {
+    "id": "C207",
+    "date": "2025-10-10",
+    "actor": "Trump",
+    "text": "Trump threatens an extra 100% tariff on China after the 9 Oct rare-earth controls.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN), 2025-10-14",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_8b50c88876144fbf9901f203ce161d30.html"
+      }
+    ]
+  },
+  {
+    "id": "C208",
+    "date": "2025-11",
+    "date_precision": "month",
+    "actor": "Japan PM Takaichi",
+    "text": "Takaichi's remarks hint at possible armed intervention over Taiwan. Month only.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN), 2026-01-06",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_1f25cb39adfa4561b34b4ea46d2bcee7.html"
+      }
+    ]
+  },
+  {
+    "id": "C209",
+    "date": "2025-12",
+    "date_precision": "month",
+    "actor": "Meta",
+    "text": "Meta agrees to acquire Singapore-based, China-rooted AI agent startup Manus (about $2bn). Month only.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "AP via ClickOrlando",
+        "url": "https://www.clickorlando.com/business/2026/01/08/china-to-probe-metas-acquisition-of-artificial-intelligence-startup-manus/"
+      }
+    ]
+  },
+  {
+    "id": "C210",
+    "date": "2026-03-12",
+    "actor": "USTR",
+    "text": "USTR opens Section 301 probes into 16 economies over 'overcapacity' (12 Mar) and into 60 over forced-labour imports (13 Mar), both including China.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (CN), 2026-03-27",
+        "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_ee17eb5bcfa04653b0f5f66c13466c74.html"
+      }
+    ]
+  },
+  {
+    "id": "C211",
+    "date": "2026-04-22",
+    "actor": "House Foreign Affairs Committee",
+    "text": "Committee passes the MATCH Act and other chip export-control bills.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (EN)",
+        "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_7481476c406341cbb73f0b568341a1cf.html"
+      }
+    ]
+  },
+  {
+    "id": "C212",
+    "date": "2026-06-08",
+    "actor": "US Department of War",
+    "text": "Adds several Chinese companies to its 'Chinese military companies' (1260H) list.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (EN)",
+        "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_b274a520549f4ce4951c80b4fb95bad3.html"
+      }
+    ]
+  },
+  {
+    "id": "C213",
+    "date": "2026-07-31",
+    "actor": "FCC and DHS",
+    "text": "Post-Busan FCC restrictions (labs, drones, routers, inverters, robotics) culminate in 40+ Chinese entities added to the UFLPA Entity List on 31 July.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (EN)",
+        "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_6be5c49c9672486d816a3256ec58e3a2.html"
+      }
+    ]
+  },
+  {
+    "id": "C214",
+    "date": "2026-09-08",
+    "actor": "NSA, CISA, FBI",
+    "text": "Joint advisory warns of 'industrial-scale' distillation campaigns by China-based AI companies against US frontier models.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "MOFCOM spokesperson (EN)",
+        "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2026/art_9b97b0c7213742c9946830e5aa6c923d.html"
+      }
+    ]
+  }
+]

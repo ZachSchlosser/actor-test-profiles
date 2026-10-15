@@ -1,0 +1,109 @@
+{
+  "$comment": "Trigger vocabulary for simulations. A rule lists the triggers it answers (rules[].triggers) and may emit one (rules[].emits), which lets one persona's response trigger another rule. Scenarios in data/simulations/ start from one of these.",
+  "triggers": [
+    {
+      "id": "us_chip_restriction",
+      "label": "Washington restricts AI-chip sales to China"
+    },
+    {
+      "id": "us_chip_easing",
+      "label": "Washington eases AI-chip sales to China"
+    },
+    {
+      "id": "china_purchase_block",
+      "label": "Beijing blocks purchases of a US chip"
+    },
+    {
+      "id": "beijing_pressure",
+      "label": "A Chinese regulator summons or investigates a US chip firm"
+    },
+    {
+      "id": "safety_incident",
+      "label": "A public AI safety incident or warning"
+    },
+    {
+      "id": "smuggling_case",
+      "label": "Prosecutors announce a chip-smuggling case"
+    },
+    {
+      "id": "vuln_report",
+      "label": "A researcher privately reports a vulnerability"
+    },
+    {
+      "id": "trump_invitation",
+      "label": "The President invites a CEO to a trip, meeting or signing"
+    },
+    {
+      "id": "off_message_remark",
+      "label": "A remark breaks the actor's own line"
+    },
+    {
+      "id": "new_ai_product",
+      "label": "A new AI product category reaches the public in China"
+    },
+    {
+      "id": "listing_abroad",
+      "label": "A Chinese platform lists or moves data abroad without clearance"
+    },
+    {
+      "id": "costly_rule",
+      "label": "A rule adds a costly approval step"
+    },
+    {
+      "id": "cac_draft",
+      "label": "CAC publishes a draft rule for comment"
+    },
+    {
+      "id": "cac_approval",
+      "label": "CAC's office meeting passes a rule"
+    },
+    {
+      "id": "rule_signed",
+      "label": "A CAC rule is signed"
+    },
+    {
+      "id": "rule_takes_effect",
+      "label": "A CAC rule takes effect"
+    },
+    {
+      "id": "lunar_new_year",
+      "label": "Lunar New Year approaches"
+    },
+    {
+      "id": "sports_event",
+      "label": "A major sports event approaches"
+    },
+    {
+      "id": "nvidia_access_cut",
+      "label": "NVIDIA loses access to Chinese buyers"
+    },
+    {
+      "id": "open_model_release",
+      "label": "A Chinese lab releases a major open model or slashes prices"
+    },
+    {
+      "id": "us_tariff",
+      "label": "Washington raises tariffs on Chinese goods"
+    },
+    {
+      "id": "us_china_deescalation",
+      "label": "Washington and Beijing hold talks or strike a deal"
+    },
+    {
+      "id": "cac_service_approval",
+      "label": "CAC approves a batch of generative-AI services"
+    },
+    {
+      "id": "foreign_ban",
+      "label": "A foreign government restricts a Chinese AI app"
+    },
+    {
+      "id": "us_trade_probe",
+      "label": "Washington opens a trade investigation into China (Section 301)"
+    },
+    {
+      "id": "us_ai_lab_accusation",
+      "label": "Washington accuses Chinese AI labs of distillation or theft"
+    }
+  ]
+}

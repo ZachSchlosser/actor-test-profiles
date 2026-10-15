@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persona Test Profiles</title>
+<style>
+:root{
+  --ink:#1E1916; --paper:#FDFAF3; --card:#fff; --line:#E5DDCE;
+  --accent:#7B1E36; --accent2:#8C7B66; --soft:#F4EEE0;
+  --good:#2E6B4F; --warn:#8A6D1A; --bad:#8C2F2F;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.85em}
+header{border-bottom:2px solid var(--ink);padding:28px 8vw 18px}
+header h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:34px;margin:0}
+header .sub{color:var(--accent2);margin-top:6px;max-width:70ch}
+nav{display:flex;gap:4px;padding:10px 8vw 0;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:5}
+nav button{border:1px solid transparent;border-bottom:none;background:none;padding:8px 14px;font:inherit;cursor:pointer;color:var(--accent2);border-radius:6px 6px 0 0}
+nav button.on{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600}
+main{padding:24px 8vw 80px;max-width:1200px}
+h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;margin:26px 0 10px}
+h3{font-size:17px;margin:20px 0 8px}
+p{max-width:78ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:600}
+.chip{display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:1px 10px;margin:2px 3px 2px 0;font-size:13px}
+.chip.core{background:#EAF2EC;border-color:#BFD4C6}
+.tag{display:inline-block;border-radius:4px;padding:0 7px;font-size:12px;font-weight:600;margin-right:6px}
+.tag.rule{background:#E4EFE8;color:var(--good)}
+.tag.signal{background:#F4EFD8;color:var(--warn)}
+.tag.anecdote{background:#F3E3E3;color:var(--bad)}
+.tag.stable{background:#E4EFE8;color:var(--good)}
+.tag.unstable{background:#F3E3E3;color:var(--bad)}
+.tag.type{background:var(--soft)}
+a{color:var(--accent)}
+.actorbar{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}
+.actorbar button{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 14px;font:inherit;cursor:pointer;color:var(--accent2)}
+.actorbar button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tabs{display:flex;gap:4px;margin:14px 0 0;border-bottom:2px solid var(--ink)}
+.tabs button{border:none;background:none;padding:8px 14px;font:inherit;cursor:pointer;color:var(--accent2)}
+.tabs button.on{color:var(--ink);font-weight:600;box-shadow:inset 0 -3px 0 var(--accent)}
+.meta{color:var(--accent2);font-size:14px;margin:4px 0}
+.hidden-note{background:#FBF6E8;border:1px dashed var(--warn);border-radius:6px;padding:10px 14px;margin:10px 0;font-size:14px}
+ul{padding-left:22px;max-width:80ch}
+.claim{border-left:3px solid var(--line);padding:4px 12px;margin:8px 0}
+.claim .rows{color:var(--accent2);font-size:13px}
+.small{font-size:13px;color:var(--accent2)}
+.loading{color:var(--accent2);padding:20px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>Persona Test Profiles</h1>
+  <div class="sub">Three ways to build an agent persona for the same nine actors — a plain record, a rule card, an expert read — each facing the same exam: predict the actor's own later actions. Built from the records at <a href="https://actor-persona.pages.dev/">actor-persona.pages.dev</a>.</div>
+</header>
+<nav>
+  <button id="nav-key" class="on" onclick="showKey()">The Key</button>
+  <button id="nav-actors" onclick="showActors()">Actors</button>
+</nav>
+<main id="main"><div class="loading">Loading…</div></main>
+
+<script>
+const ACTORS = ["baidu","cac","deepseek","huawei","jensen-huang","miit","mofcom","nvidia","samr"];
+const TYPELABEL = {government:"Government", company:"Company", individual:"Individual"};
+let KEY = null, INDEX = null, current = null, tab = "t1";
+const $ = id => document.getElementById(id);
+
+async function j(p){ const r = await fetch(p); if(!r.ok) throw new Error(p+": "+r.status); return r.json(); }
+
+async function boot(){
+  [KEY, INDEX] = await Promise.all([j("key.json"), j("data/index.json")]);
+  showKey();
+}
+
+function esc(s){ return (s??"").toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+/* ---------- KEY ---------- */
+function showKey(){
+  $("nav-key").classList.add("on"); $("nav-actors").classList.remove("on");
+  tab = "t1";
+  const k = KEY;
+  let h = `<h2>${esc(k.title)}</h2><p>${esc(k.intro)}</p>`;
+
+  h += `<h3>The three tests</h3>`;
+  for(const t of k.tests){
+    h += `<div class="card"><strong>${esc(t.name)}</strong> — ${esc(t.one_line)}
+      <p class="meta">${esc(t.built_from)}</p>
+      <p>${esc(t.bet)}</p>
+      <p class="small"><strong>Exam:</strong> ${esc(t.exam)}</p></div>`;
+  }
+
+  h += `<h3>What each persona is made of</h3>
+  <table><tr><th>Part</th><th>What it is</th><th>Test 1</th><th>Test 2</th><th>Test 3</th><th>In the original schema?</th></tr>`;
+  for(const row of k.structure){
+    h += `<tr><td><strong>${esc(row.part)}</strong></td><td>${esc(row.what)}</td><td>${row.t1?"✓":"—"}</td><td>${row.t2?"✓":"—"}</td><td>${row.t3?"✓":"—"}</td><td>${esc(row.origin)}</td></tr>`;
+  }
+  h += `</table>`;
+
+  h += `<h3>What we added or changed</h3><table><tr><th>Change</th><th>Why</th></tr>`;
+  for(const c of k.changes){ h += `<tr><td><strong>${esc(c.what)}</strong></td><td>${esc(c.why)}</td></tr>`; }
+  h += `</table>`;
+
+  h += `<h3>How the exam works</h3><ul>`;
+  for(const s of k.exam){ h += `<li>${esc(s)}</li>`; }
+  h += `</ul><p class="small">${esc(k.footer)}</p>`;
+  $("main").innerHTML = h;
+}
+
+/* ---------- ACTORS ---------- */
+async function showActors(aid){
+  $("nav-actors").classList.add("on"); $("nav-key").classList.remove("on");
+  if(!aid) aid = current || ACTORS[0];
+  current = aid;
+  let h = `<div class="actorbar">` + ACTORS.map(a=>`<button class="${a===aid?'on':''}" onclick="showActors('${a}')">${esc(nameOf(a))}</button>`).join("") + `</div><div id="actorview"><div class="loading">Loading ${esc(aid)}…</div></div>`;
+  $("main").innerHTML = h;
+  const data = await j(`data/test1/${aid}.json`);
+  renderActor(aid, data);
+}
+function nameOf(aid){ const p = INDEX.personas.find(x=>x.id===aid); return p?p.name:aid; }
+
+async function renderActor(aid, t1){
+  const el = $("actorview");
+  let h = `<div class="meta">${TYPELABEL[t1.actor_type]} · record stops ${esc(t1.cutoff)} · ${t1.record.length} dated facts before the cutoff · ${t1.hidden_test.length} later actions held out as exam questions</div>`;
+  h += `<div class="tabs">
+    <button id="tb-t1" class="${tab==='t1'?'on':''}" onclick="setTab('t1')">Test 1 · Plain Record</button>
+    <button id="tb-t2" class="${tab==='t2'?'on':''}" onclick="setTab('t2')">Test 2 · Rule Card</button>
+    <button id="tb-t3" class="${tab==='t3'?'on':''}" onclick="setTab('t3')">Test 3 · Expert Read</button>
+  </div><div id="tabbody"></div>`;
+  el.innerHTML = h;
+  renderTab(aid, t1);
+}
+function setTab(t){ tab = t;
+  for(const x of ["t1","t2","t3"]) $("tb-"+x).classList.toggle("on", x===tab);
+  renderTab(current, CACHE_T1);
+}
+let CACHE_T1 = null;
+async function renderTab(aid, t1){
+  CACHE_T1 = t1;
+  const body = $("tabbody");
+  if(tab==="t1"){
+    let h = `<div class="card"><strong>The prompt, in full:</strong> <span class="mono">${esc(t1.identity_line)}</span> followed by every fact below, word for word, with its date and source. Nothing else — no summary, no description, no rules.
+      <p class="meta">The agent may answer only with verbs from its own menu:</p>
+      <div>${t1.observed_verbs.core.map(v=>`<span class="chip core">${esc(v.verb)} ×${v.n}</span>`).join("")}
+      ${t1.observed_verbs.rare.map(v=>`<span class="chip" title="seen once">${esc(v.verb)}</span>`).join("")}</div></div>`;
+    h += `<table><tr><th>Date</th><th>Verb</th><th>Fact</th><th>Source</th></tr>`;
+    for(const r of t1.record){
+      h += `<tr><td class="mono">${esc(r.date)}</td><td class="mono">${esc(r.verb)}</td><td>${esc(r.text)}</td><td>${r.sources.map(s=>`<a href="${esc(s.url)}">${esc(s.label)}</a>`).join("<br>")}</td></tr>`;
+    }
+    h += `</table>`;
+    h += `<div class="hidden-note"><strong>Hidden exam answers (${t1.hidden_test.length}):</strong> everything this actor did on or after ${esc(t1.cutoff)}. Each row below is one exam question — the agent sees the record above, is told the date and situation, and must name the verb.</div>`;
+    h += `<table><tr><th>Date</th><th>Answer (verb)</th><th>What happened</th></tr>`;
+    for(const r of t1.hidden_test){ h += `<tr><td class="mono">${esc(r.date)}</td><td class="mono">${esc(r.verb)}</td><td>${esc(r.text)}</td></tr>`; }
+    h += `</table>`;
+    body.innerHTML = h;
+  }
+  else if(tab==="t2"){
+    body.innerHTML = `<div class="loading">Loading rule card…</div>`;
+    try{
+      const d = await j(`data/test2/${aid}.json`);
+      let h = `<div class="meta">${TYPELABEL[d.actor_type]} · ${d.rules.length} rules</div>`;
+      for(const r of d.rules){
+        h += `<div class="card"><span class="tag type">${TYPELABEL[d.actor_type]}</span><span class="tag ${esc(r.status)}">${esc(r.status)}</span><span class="tag ${r.stability==='loo_stable'?'stable':'unstable'}">${esc(r.stability)}</span>
+          <strong>${esc(r.name)}</strong>
+          <p><strong>When:</strong> ${esc(r.when)}<br><strong>Then:</strong> ${esc(r.then)}</p>
+          <p class="meta mono">verb: ${esc(r.verb)} · delay: median ${r.delay.median_days}d (range ${r.delay.range_days[0]}–${r.delay.range_days[1]}, n=${r.delay.n}) · size: ${r.size.value===null?"not quantified in the record":esc(String(r.size.value))+" "+esc(r.size.unit||"")} · direction: ${esc(r.direction)}</p>
+          <p class="small">Episodes: ${r.episodes.map(e=>esc(e.trigger)+"→"+esc(e.response)+" ("+e.gap_days+"d)").join(" · ")}</p>
+          <p class="small">Sources: ${r.sources.map(s=>`<a href="${esc(s.url)}">${esc(s.label)}</a>`).join(" · ")}</p></div>`;
+      }
+      if(d.research_notes && d.research_notes.length){
+        h += `<h3>Background research behind these rules</h3><ul>`;
+        for(const n of d.research_notes){ h += `<li>${esc(n.claim)} <span class="small">(used in ${esc(n.used_in)} — <a href="${esc(n.citation.url)}">${esc(n.citation.label)}</a>)</span></li>`; }
+        h += `</ul>`;
+      }
+      body.innerHTML = h;
+    }catch(e){ body.innerHTML = `<div class="hidden-note">Rule card for this actor is still being generated.</div>`; }
+  }
+  else {
+    body.innerHTML = `<div class="loading">Loading expert reads…</div>`;
+    try{
+      const d = await j(`data/test3/${aid}.json`);
+      let h = `<div class="meta">${TYPELABEL[d.actor_type]} · four expert reads, written once from the record before ${esc(d.cutoff)}</div>`;
+      for(const L of d.lenses){
+        h += `<div class="card"><strong>${esc(lensLabel(L.lens))}</strong><p>${esc(L.summary)}</p>`;
+        for(const c of L.claims){ h += `<div class="claim">${esc(c.text)} <span class="rows mono">[${(c.rows||[]).map(esc).join(", ")}]</span></div>`; }
+        h += `</div>`;
+      }
+      h += `<p class="small">At question time, only the lens matching the question's topic is attached to the plain record. Routing: ${Object.entries(d.routing||{}).slice(0,12).map(([t,l])=>esc(t)+"→"+esc(l)).join(" · ")}${Object.keys(d.routing||{}).length>12?" · …":""}</p>`;
+      body.innerHTML = h;
+    }catch(e){ body.innerHTML = `<div class="hidden-note">Expert reads for this actor are still being generated.</div>`; }
+  }
+}
+function lensLabel(l){ return {psychologist:"What a psychologist notices", economist:"What an economist notices", political_scientist:"What a political scientist notices", domain:"What a domain expert notices"}[l]||l; }
+
+boot();
+</script>
+</body>
+</html>

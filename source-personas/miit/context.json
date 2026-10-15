@@ -1,0 +1,15 @@
+[
+  {
+    "id": "C401",
+    "date": "2025-11-05",
+    "actor": "Chinese authorities (unnamed)",
+    "text": "Reuters: state-funded new data centres are told to use only domestic AI chips, and projects under 30% complete must remove foreign chips. The issuing body is not named, so this is not attributed to MIIT.",
+    "visible_to": "public",
+    "sources": [
+      {
+        "label": "Free Malaysia Today (Reuters)",
+        "url": "https://fmtv5.freemalaysiatoday.com/category/world/2025/11/05/china-bans-foreign-ai-chips-from-state-funded-data-centres"
+      }
+    ]
+  }
+]

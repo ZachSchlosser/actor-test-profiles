@@ -1,0 +1,268 @@
+{
+  "id": "samr",
+  "name": "State Administration for Market Regulation",
+  "short": "SAMR",
+  "class": "state",
+  "cutoff": "2026-01-01",
+  "context_from": [
+    "cac"
+  ],
+  "hero": {
+    "eyebrow": "State regulator persona",
+    "title": "SAMR,",
+    "title_em": "China’s antitrust lever",
+    "lede": "China’s market regulator: merger reviews, antitrust probes and national standards. Since late 2024 it has opened a case against a US firm within days of most US chip or tariff moves."
+  },
+  "short_answer": [
+    {
+      "title": "Fast, targeted counter-moves",
+      "body": "After a US chip control, tariff or entity listing, SAMR has opened or advanced a case against a US firm within 2 to 11 days, four independent times. It picks cases with a procedural hook, such as a merger condition or an unreported deal."
+    },
+    {
+      "title": "Probes are kept open as leverage",
+      "body": "It suspends or drops cases around talks, but has published no closure for its NVIDIA and Qualcomm probes."
+    }
+  ],
+  "purpose": {
+    "summary": "SAMR’s merger decisions, probes and standards are in its control, so its record can forecast how Beijing’s regulatory counter-moves follow US actions.",
+    "use_for": [
+      "After a US chip control or tariff, will SAMR open a case against a US firm, and how fast?",
+      "Around US-China talks, will SAMR suspend, drop or clear something?",
+      "Will a US chip merger clear SAMR, and on what conditions?"
+    ],
+    "dont_use_for": [
+      "Export controls on minerals, which are MOFCOM’s.",
+      "Content and algorithm rules, which CAC leads (SAMR co-issues some)."
+    ]
+  },
+  "standing": {
+    "class_role": "State · market regulator under the State Council: antitrust, merger control, product standards (with SAC).",
+    "principal": "The State Council. It co-issues some Cyberspace Commission rules with CAC.",
+    "attribution_rule": "A row is SAMR’s when SAMR or SAC (which it houses) acts. Probes it opens are its own acts, even when the timing answers a US move.",
+    "veto_players": "The State Council and trade negotiators: probes are suspended or dropped around talks (SM13, SM14).",
+    "gates_held": "Merger clearance for any deal with enough China revenue, including US chip deals (Intel–Tower lapsed, SM04; Synopsys–Ansys cleared on conditions, SM12)."
+  },
+  "powers": [
+    {
+      "id": "rule_making",
+      "status": "partial",
+      "use": "National standards and compliance guidelines; co-issues CAC’s AI rules",
+      "rows": [
+        "SM09",
+        "SM11",
+        "SM19",
+        "SM20"
+      ],
+      "limit": "Guidelines are non-binding; CAC leads AI conduct rules"
+    },
+    {
+      "id": "gatekeeping",
+      "status": "holds",
+      "use": "Merger clearance, with behavioural conditions on chip deals",
+      "rows": [
+        "SM01",
+        "SM04",
+        "SM05",
+        "SM12"
+      ],
+      "limit": "Has never formally prohibited a chip deal; kills by running out the clock"
+    },
+    {
+      "id": "information",
+      "status": "partial",
+      "use": "Merger notifications",
+      "rows": [
+        "SM16"
+      ],
+      "limit": "What it learns is not public"
+    },
+    {
+      "id": "sanctioning",
+      "status": "holds",
+      "use": "Fines for unreported deals",
+      "rows": [
+        "SM02"
+      ],
+      "limit": "Fines are small relative to the firms"
+    },
+    {
+      "id": "review",
+      "status": "holds",
+      "use": "Antitrust probes of US tech firms",
+      "rows": [
+        "SM06",
+        "SM07",
+        "SM10",
+        "SM15",
+        "SM16"
+      ],
+      "limit": "Needs a procedural hook"
+    },
+    {
+      "id": "mobilisation",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No campaigns in this log"
+    },
+    {
+      "id": "external_coercion",
+      "status": "partial",
+      "use": "Probes timed to US moves impose costs on US firms",
+      "rows": [
+        "SM06",
+        "SM15",
+        "SM16"
+      ],
+      "limit": "Only through firms with China exposure"
+    },
+    {
+      "id": "fiscal",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "No fiscal role"
+    }
+  ],
+  "verbs_ruled_out": [
+    "restrict_exports",
+    "subsidise",
+    "fund"
+  ],
+  "rules": [
+    {
+      "id": "S1",
+      "name": "US chip or tariff move → probe of a US firm",
+      "when": "Washington tightens chip controls or lists Chinese chip firms",
+      "then": "SAMR opens or advances an antitrust case against a US chip firm within days",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_restriction"
+      ],
+      "emits": "beijing_pressure",
+      "episodes": [
+        {
+          "trigger": "C29",
+          "response": "SM06"
+        },
+        {
+          "trigger": "C34",
+          "response": "SM15"
+        },
+        {
+          "trigger": "C36",
+          "response": "SM16"
+        },
+        {
+          "trigger": "C01",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C02",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C43",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C105",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "Two independent waves (December 2024; September 2025, where the entity listing and the affiliates rule fall 17 days apart). No SAMR act followed the 2022 or 2023 chip rules, the AI Diffusion Rule (C43) or the Ascend guidance (C105). The Intel probe the FT reported was never opened (SM08)."
+    },
+    {
+      "id": "S2",
+      "name": "Talks or a deal → suspend, drop or clear",
+      "when": "Washington and Beijing hold talks or strike a deal",
+      "then": "SAMR suspends or drops a probe, or clears a pending US deal on conditions, but publishes no closure of its chip probes",
+      "status": "hypothesis",
+      "triggers": [
+        "us_china_deescalation"
+      ],
+      "episodes": [
+        {
+          "trigger": "C32",
+          "response": "SM12"
+        },
+        {
+          "trigger": "C33",
+          "response": "SM13"
+        },
+        {
+          "trigger": "C35",
+          "response": "SM14"
+        }
+      ],
+      "note": "Only one episode counts: the DuPont suspension (SM13) came six days before the Stockholm talks, and the Google drop (SM14) is dated to the month. Escalation and easing can run together: in Madrid week it dropped Google and escalated on NVIDIA. The EDA rescission (C32) is a US easing step rather than talks."
+    },
+    {
+      "id": "S3",
+      "name": "CAC signs an AI rule → SAMR co-issues",
+      "when": "CAC signs an AI rule that SAMR co-issues",
+      "then": "SAMR co-issues it the same day",
+      "status": "hypothesis",
+      "triggers": [
+        "rule_signed"
+      ],
+      "episodes": [
+        {
+          "trigger": "O21",
+          "response": "SM20"
+        }
+      ],
+      "note": "One episode in this log. SAMR also co-issued the 2021 algorithm rules, before this log starts."
+    },
+    {
+      "id": "S4",
+      "name": "New US tariffs → probe of a US firm",
+      "when": "Washington raises tariffs on Chinese goods",
+      "then": "SAMR opens an antitrust case against a high-profile US firm within days, alongside MOFCOM’s countermeasures",
+      "status": "hypothesis",
+      "triggers": [
+        "us_tariff"
+      ],
+      "episodes": [
+        {
+          "trigger": "C30",
+          "response": "SM07"
+        },
+        {
+          "trigger": "C31",
+          "response": "SM10"
+        }
+      ],
+      "note": "Google (February 2025) and DuPont (April 2025): non-chip firms, so this does not count as pressure on a chip firm. The two tariff rounds are 60 days apart."
+    }
+  ],
+  "tests": [
+    {
+      "rule": "S1",
+      "result": "untested",
+      "note": "No new US chip control, listing or tariff after the cutoff drew a logged SAMR case by October 2026."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Mostly secondary",
+      "body": "Standards texts, SEC filings and Chinese government pages are primary; most probe rows rest on Reuters, Caixin or Bloomberg relays."
+    },
+    {
+      "title": "Same events, two logs",
+      "body": "The NVIDIA probe (SM06) and finding (SM15) also appear as context rows for NVIDIA (C42, C22)."
+    },
+    {
+      "title": "Mergers without triggers",
+      "body": "Merger decisions (SM01, SM03, SM05) have no clear outside trigger, so they inform powers, not reactions."
+    },
+    {
+      "title": "One coder",
+      "body": "Triggers were coded once (P6 not done)."
+    }
+  ]
+}

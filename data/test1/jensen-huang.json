@@ -1,0 +1,634 @@
+{
+ "actor": "jensen-huang",
+ "name": "Jensen Huang",
+ "actor_type": "individual",
+ "cutoff": "2026-07-01",
+ "identity_line": "Jensen Huang (individual). Record before 2026-07-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "claim",
+    "n": 9
+   },
+   {
+    "verb": "criticise",
+    "n": 6
+   },
+   {
+    "verb": "meet",
+    "n": 5
+   },
+   {
+    "verb": "travel",
+    "n": 5
+   },
+   {
+    "verb": "warn",
+    "n": 3
+   },
+   {
+    "verb": "attend",
+    "n": 2
+   }
+  ],
+  "rare": [
+   {
+    "verb": "commit",
+    "n": 1
+   },
+   {
+    "verb": "praise",
+    "n": 1
+   },
+   {
+    "verb": "predict",
+    "n": 1
+   },
+   {
+    "verb": "sell_shares",
+    "n": 1
+   },
+   {
+    "verb": "testify",
+    "n": 1
+   },
+   {
+    "verb": "walk_back",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "J01",
+   "date": "2023-12-06",
+   "verb": "commit",
+   "text": "Says NVIDIA will keep building China chips that comply with the new US limits.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2023/12/06/nvidia-to-develop-new-chips-that-comply-with-us-export-regulations.html"
+    },
+    {
+     "label": "CNN",
+     "url": "https://edition.cnn.com/2023/12/06/tech/nvidia-china-chip-development-us-curbs/index.html"
+    }
+   ]
+  },
+  {
+   "row": "J02",
+   "date": "2024-01-22",
+   "verb": "travel",
+   "text": "Lunar New Year visit to NVIDIA staff in China, his first China trip in four years, three months after the October 2023 controls. Recurring annual trip.",
+   "sources": [
+    {
+     "label": "Fortune",
+     "url": "https://fortune.com/asia/2024/01/22/nvidia-ceo-jensen-huang-lunar-new-year-trip-china-us-biden-chip-controls"
+    }
+   ]
+  },
+  {
+   "row": "J03",
+   "date": "2025-01-20",
+   "verb": "attend",
+   "text": "Does not attend Trump's inauguration, unlike other big-tech CEOs. Visits NVIDIA's China offices on the day.",
+   "sources": [
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2025-01-16/nvidia-ceo-will-miss-trump-inauguration-unlike-many-tech-peers"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3295129/nvidia-ceo-skips-trumps-inauguration-lunar-new-year-asia-visit-source-says"
+    }
+   ]
+  },
+  {
+   "row": "J04",
+   "date": "2025-01-31",
+   "verb": "meet",
+   "text": "First meeting with Trump in the second term, four days after the DeepSeek sell-off.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/01/31/nvidia-ceo-jensen-huang-to-meet-with-trump-at-white-house.html"
+    }
+   ]
+  },
+  {
+   "row": "J05",
+   "date": "2025-02-21",
+   "verb": "claim",
+   "text": "Says investors got DeepSeek wrong and calls its open reasoning model exciting.",
+   "sources": [
+    {
+     "label": "TechCrunch",
+     "url": "https://techcrunch.com/2025/02/21/nvidia-ceo-jensen-huang-says-market-got-it-wrong-about-deepseeks-impact/"
+    }
+   ]
+  },
+  {
+   "row": "J43",
+   "date": "2025-04",
+   "verb": "meet",
+   "text": "Dines with Trump at Mar-a-Lago; NVIDIA then announces US investment pledges. Exact date not reported.",
+   "sources": [
+    {
+     "label": "NPR",
+     "url": "https://www.npr.org/2025/04/09/nx-s1-5356480/nvidia-china-ai-h20-chips-trump"
+    }
+   ]
+  },
+  {
+   "row": "J06",
+   "date": "2025-04-17",
+   "verb": "travel",
+   "text": "Flies to Beijing two days after the H20 licence requirement is disclosed. Meets CCPIT head Ren Hongbin and Vice Premier He Lifeng; says NVIDIA hopes to keep working with China.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/04/17/nvidia-ceo-stresses-importance-of-china-market-in-beijing-visit.html"
+    }
+   ]
+  },
+  {
+   "row": "J07",
+   "date": "2025-04-30",
+   "verb": "warn",
+   "text": "Tells a Washington audience that China is close behind.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/04/30/nvidia-ceo-jensen-huang-says-china-not-behind-in-ai.html"
+    }
+   ]
+  },
+  {
+   "row": "J08",
+   "date": "2025-05-06",
+   "verb": "claim",
+   "text": "Says AI will change every job but won't take them.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/05/28/nvidia-ceo-jensen-huang-youll-lose-your-job-to-somebody-who-uses-ai.html"
+    }
+   ]
+  },
+  {
+   "row": "J09",
+   "date": "2025-05-13",
+   "verb": "travel",
+   "text": "Travels with Trump to the Saudi-US Investment Forum; announces Blackwell supply deal with Humain.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/05/13/photos-tech-ceos-mingle-with-trump-and-mbs-at-saudi-investment-forum.html"
+    }
+   ]
+  },
+  {
+   "row": "J10",
+   "date": "2025-05-21",
+   "verb": "criticise",
+   "text": "Calls US export controls a failure; says NVIDIA's China share fell from about 95% to 50%.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/05/21/nvidia-ceo-jensen-huang-slams-us-chip-restrictions-as-a-failure.html"
+    },
+    {
+     "label": "Tom's Hardware",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/jensen-huang-talks-ai-export-controls"
+    }
+   ]
+  },
+  {
+   "row": "J11",
+   "date": "2025-06-11",
+   "verb": "criticise",
+   "text": "Rejects Dario Amodei's job-loss warning and argues safety comes from openness.",
+   "sources": [
+    {
+     "label": "Fortune",
+     "url": "https://fortune.com/2025/06/11/nvidia-jensen-huang-disagress-anthropic-ceo-dario-amodei-ai-jobs"
+    }
+   ]
+  },
+  {
+   "row": "J12",
+   "date": "2025-06-12",
+   "verb": "warn",
+   "text": "Says that if the US stays out of China, Huawei will serve it.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/06/12/nvidia-ceo-if-us-wont-participate-in-china-huawei-has-china-covered.html"
+    }
+   ]
+  },
+  {
+   "row": "J13",
+   "date": "2025-06-20",
+   "verb": "sell_shares",
+   "text": "First sales (100,000 shares) under a 10b5-1 plan adopted 20 March 2025 for up to 6 million shares.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/06/24/nvidia-ceo-jensen-huang-sells-stock-15-million.html"
+    }
+   ]
+  },
+  {
+   "row": "J14",
+   "date": "2025-07-10",
+   "verb": "meet",
+   "text": "Meets Trump at the White House, four days before NVIDIA says H20 licences will be granted.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/07/10/nvidia-jensen-huang-donald-trump-4-trillion.html"
+    }
+   ]
+  },
+  {
+   "row": "J15",
+   "date": "2025-07-16",
+   "verb": "praise",
+   "text": "Praises Chinese AI and manufacturing; calls Huawei formidable.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/07/16/as-nvidia-gets-a-lifeline-in-china-jensen-huang-goes-on-the-charm-offensive-in-beijing.html"
+    },
+    {
+     "label": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2025/7/16/catalyst-for-progress-nvidia-ceo-hails-chinas-ai-at-beijing-expo"
+    }
+   ]
+  },
+  {
+   "row": "J16",
+   "date": "2025-08-06",
+   "verb": "meet",
+   "text": "Meets Trump; the deal for NVIDIA to pay 15% of H20 China revenue follows. Date derived from \"Wednesday\" in CNN's 11 Aug report.",
+   "sources": [
+    {
+     "label": "CNN",
+     "url": "https://www.cnn.com/2025/08/11/tech/nvidia-amd-trump-china-explained"
+    }
+   ]
+  },
+  {
+   "row": "J17",
+   "date": "2025-09-17",
+   "verb": "claim",
+   "text": "Says he is disappointed after reports that China told firms to stop buying NVIDIA's RTX Pro 6000D.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/09/17/nvidia-ceo-disappointed-after-reports-china-has-banned-its-ai-chips.html"
+    }
+   ]
+  },
+  {
+   "row": "J44",
+   "date": "2025-09-17",
+   "verb": "attend",
+   "text": "Joins Trump's UK state visit; NVIDIA pledges £11bn of UK AI investment.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/09/08/nvidia-huang-trump-uk-state-visit.html"
+    },
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/09/16/tech-giants-to-pour-billions-into-uk-ai-heres-what-we-know-so-far.html"
+    }
+   ]
+  },
+  {
+   "row": "J18",
+   "date": "2025-10-06",
+   "verb": "criticise",
+   "text": "Says NVIDIA's China share fell from about 95% to zero and calls the policy a mistake; assumes zero China revenue in forecasts.",
+   "sources": [
+    {
+     "label": "Fortune",
+     "url": "https://fortune.com/2025/10/19/jensen-huang-nvidia-china-market-share-ai-chips-trump-trade-war/"
+    },
+    {
+     "label": "Tom's Hardware",
+     "url": "https://www.tomshardware.com/tech-industry/jensen-huang-says-nvidia-china-market-share-has-fallen-to-zero"
+    }
+   ]
+  },
+  {
+   "row": "J19",
+   "date": "2025-11-05",
+   "verb": "predict",
+   "text": "Tells the FT China will win, citing cheaper energy and lighter regulation.",
+   "sources": [
+    {
+     "label": "Axios",
+     "url": "https://www.axios.com/2025/11/05/ai-nvidia-china-race"
+    },
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/11/06/jensen-huang-says-china-will-win-the-ai-race-before-clarifying-in-a-statement-nvidia-trump-xi.html"
+    }
+   ]
+  },
+  {
+   "row": "J20",
+   "date": "2025-11-05",
+   "verb": "walk_back",
+   "text": "Reframes J19 hours later around America winning.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/11/06/jensen-huang-says-china-will-win-the-ai-race-before-clarifying-in-a-statement-nvidia-trump-xi.html"
+    }
+   ]
+  },
+  {
+   "row": "J21",
+   "date": "2025-12-03",
+   "verb": "meet",
+   "text": "Meets Trump, then senators behind closed doors, as the GAIN AI Act is dropped from the defence bill.",
+   "sources": [
+    {
+     "label": "Fortune",
+     "url": "https://fortune.com/2025/12/04/nvidias-jensen-huang-trump-republican-senators-closed-door-meetings/"
+    },
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/12/03/nvidias-jensen-huang-talks-chip-controls-with-trump-hits-regulation.html"
+    }
+   ]
+  },
+  {
+   "row": "J22",
+   "date": "2025-12-03",
+   "verb": "criticise",
+   "text": "Attacks the GAIN AI Act (US buyers first) and calls leaving it out of the NDAA wise.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/12/03/nvidias-jensen-huang-talks-chip-controls-with-trump-hits-regulation.html"
+    }
+   ]
+  },
+  {
+   "row": "J23",
+   "date": "2025-12-03",
+   "verb": "claim",
+   "text": "Opposes state AI laws and backs one federal standard.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2025/12/03/nvidias-jensen-huang-talks-chip-controls-with-trump-hits-regulation.html"
+    }
+   ]
+  },
+  {
+   "row": "J25",
+   "date": "2026-01",
+   "verb": "criticise",
+   "text": "Says doom talk by respected people has done damage and deters investment that would make AI safer.",
+   "sources": [
+    {
+     "label": "Tom's Hardware",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-claims-that-god-ai-is-a-myth-nvidia-chief-says-doomer-narrative-is-extremely-hurtful"
+    }
+   ]
+  },
+  {
+   "row": "J24",
+   "date": "2026-01-06",
+   "verb": "claim",
+   "text": "Says Chinese demand for the H200 is very high.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/01/06/huang-nvidia-seeing-very-high-demand-for-h200-ai-chips-from-china.html"
+    }
+   ]
+  },
+  {
+   "row": "J26",
+   "date": "2026-01-24",
+   "verb": "travel",
+   "text": "Lunar New Year trip to China while Beijing holds H200 imports at the border. Recurring annual trip.",
+   "sources": [
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3341148/jensen-huang-celebrates-lunar-new-year-nvidia-employees-shanghai"
+    }
+   ]
+  },
+  {
+   "row": "J27",
+   "date": "2026-01-29",
+   "verb": "claim",
+   "text": "Says Beijing is still weighing whether to approve H200 imports.",
+   "sources": [
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-01-29/nvidia-ceo-says-chinese-government-yet-to-approve-h200-imports"
+    }
+   ]
+  },
+  {
+   "row": "J28",
+   "date": "2026-03-17",
+   "verb": "claim",
+   "text": "Says NVIDIA holds licences and orders from many China customers and is restarting H200 manufacturing.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/03/17/nvidia-ceo-jensen-huang-says-chipmaker-has-received-orders-from-china.html"
+    }
+   ]
+  },
+  {
+   "row": "J29",
+   "date": "2026-04-09",
+   "verb": "warn",
+   "text": "Accepts regulation in principle but warns against moving early.",
+   "sources": [
+    {
+     "label": "Stanford",
+     "url": "https://news.stanford.edu/stories/2026/04/jensen-huang-ro-khanna-ai-regulation"
+    }
+   ]
+  },
+  {
+   "row": "J30",
+   "date": "2026-05-13",
+   "verb": "travel",
+   "text": "Left off the delegation, then added after Trump calls him; flies via Alaska on Air Force One.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html"
+    },
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/05/14/nvidias-jensen-huang-on-china-trip-trump.html"
+    }
+   ]
+  },
+  {
+   "row": "J31",
+   "date": "2026-05-21",
+   "verb": "claim",
+   "text": "Says NVIDIA has largely conceded China's AI chip market to Huawei.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/05/21/nvidia-jensen-huang-china-ai-chip-market-huawei.html"
+    }
+   ]
+  },
+  {
+   "row": "J32",
+   "date": "2026-05-23",
+   "verb": "claim",
+   "text": "Tells Supermicro to tighten export compliance after a $2.5bn smuggling case and Taiwan's crackdown.",
+   "sources": [
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-05-23/nvidia-ceo-urges-super-micro-to-tighten-up-amid-taiwan-crackdown"
+    }
+   ]
+  },
+  {
+   "row": "J33",
+   "date": "2026-06-01",
+   "verb": "criticise",
+   "text": "Calls fears that AI reduces jobs nonsense.",
+   "sources": [
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/videos/2026-06-01/nvidia-s-huang-calls-ai-jobs-concerns-nonsense-video"
+    }
+   ]
+  },
+  {
+   "row": "J45",
+   "date": "2026-06-08",
+   "verb": "testify",
+   "text": "Declines Warren's invitation to testify on AI, China and export controls.",
+   "sources": [
+    {
+     "label": "CNBC",
+     "url": "https://www.cnbc.com/2026/06/08/nvidia-jensen-huang-senate-elizabeth-warren-ai-china-export-controls.html"
+    },
+    {
+     "label": "NBC News",
+     "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-declines-warren-senate-testify-ai-hearing-rcna349034"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "11 actions by this actor dated on/after 2026-07-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "J46",
+   "date": "2026-07-22",
+   "verb": "praise",
+   "topic": "open_source",
+   "text": "Defends Chinese open models such as Kimi as excellent and argues against restricting Anthropic's Mythos."
+  },
+  {
+   "row": "J34",
+   "date": "2026-07-23",
+   "verb": "criticise",
+   "topic": "safety_risk",
+   "text": "Two days after the Hugging Face breach, calls both AI-doom and mass-job-loss claims nonsense."
+  },
+  {
+   "row": "J35",
+   "date": "2026-07-24",
+   "verb": "publish",
+   "topic": "open_source",
+   "text": "Shares an open letter, signed by 20+ firms, against \"premature restrictions\" on open-weight models; says closed AI blocked the Hugging Face forensics."
+  },
+  {
+   "row": "J36",
+   "date": "2026-07-27",
+   "verb": "launch",
+   "topic": "open_source",
+   "text": "Launches an alliance with Microsoft, SpaceX, Palantir and others to defend systems with open models."
+  },
+  {
+   "row": "J37",
+   "date": "2026-09-10",
+   "verb": "criticise",
+   "topic": "safety_risk",
+   "text": "Suggests cyber-risk talk is a sales pitch, the week Anthropic publishes a misuse report."
+  },
+  {
+   "row": "J38",
+   "date": "2026-09-15",
+   "verb": "claim",
+   "topic": "regulation",
+   "text": "Three days after Amodei's slowdown essay, says market forces are enough and calls new laws or antitrust waivers unnecessary."
+  },
+  {
+   "row": "J39",
+   "date": "2026-09-17",
+   "verb": "claim",
+   "topic": "regulation",
+   "text": "Speaking after the King's warning, puts responsibility on each company rather than a pause or law."
+  },
+  {
+   "row": "J40",
+   "date": "2026-09-23",
+   "verb": "warn",
+   "topic": "safety_risk",
+   "text": "Says labs that cannot contain their experiments should be shut, while dismissing doom forecasts. Conditional statement."
+  },
+  {
+   "row": "J47",
+   "date": "2026-09-25",
+   "verb": "claim",
+   "topic": "safety_risk",
+   "text": "After new rogue-agent disclosures, puts the duty on labs to control their own systems."
+  },
+  {
+   "row": "J41",
+   "date": "2026-09-28",
+   "verb": "criticise",
+   "topic": "china_race",
+   "text": "Rejects the Treasury's view that distillation by Chinese labs is theft."
+  },
+  {
+   "row": "J42",
+   "date": "2026-09-29",
+   "verb": "sign",
+   "topic": "regulation",
+   "text": "Signs the voluntary \"White House Accord on Super Intelligence\" with Trump and other AI CEOs (self-policing, outside evaluators)."
+  }
+ ]
+}

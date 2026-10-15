@@ -1,0 +1,5577 @@
+[
+  {
+    "id": "A001",
+    "date": "2014-04-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法查处淫秽色情网站110家",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2014-04/20/c_126415247.htm"
+      }
+    ]
+  },
+  {
+    "id": "A002",
+    "date": "2014-07-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办严肃查处31家传播谣言网站",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2014-07/18/c_1111676389.htm"
+      }
+    ]
+  },
+  {
+    "id": "N01",
+    "date": "2014-08-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "即时通信工具公众信息服务发展管理暂行规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2014-08/07/c_1111983456.htm"
+      }
+    ]
+  },
+  {
+    "id": "A003",
+    "date": "2014-10-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办:“友加”软件涉嫌传播淫秽色情信息被通知下架",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2014-10/29/c_1113023943.htm"
+      }
+    ]
+  },
+  {
+    "id": "N02",
+    "date": "2015-02-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网用户账号名称管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2015-02/04/c_1114246561.htm"
+      }
+    ]
+  },
+  {
+    "id": "N03",
+    "date": "2015-02-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网危险物品信息发布管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "MPS",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2015-02/16/c_1114390709.htm"
+      }
+    ]
+  },
+  {
+    "id": "A004",
+    "date": "2015-02-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办集中查处65家违法违规婚恋网站",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2015-02/17/c_1114402414.htm"
+      }
+    ]
+  },
+  {
+    "id": "N04",
+    "date": "2015-04-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网新闻信息服务单位约谈工作规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2015-04/28/c_1115112600.htm"
+      }
+    ]
+  },
+  {
+    "id": "A005",
+    "date": "2016-01-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "互联网新闻信息服务管理规定（修订征求意见稿）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2016-01/13/c_1117757912.htm"
+      }
+    ]
+  },
+  {
+    "id": "N05",
+    "date": "2016-06-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网信息搜索服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2016-06/25/c_1119109085.htm"
+      }
+    ]
+  },
+  {
+    "id": "A006",
+    "date": "2016-09-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《未成年人网络保护条例（草案征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2016-09/30/c_1119656665.htm"
+      }
+    ]
+  },
+  {
+    "id": "N06",
+    "date": "2016-11-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网直播服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2016-11/04/c_1119847629.htm"
+      }
+    ]
+  },
+  {
+    "id": "A007",
+    "date": "2017-02-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "《网络产品和服务安全审查办法（征求意见稿）》征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-02/04/c_1120407082.htm"
+      }
+    ]
+  },
+  {
+    "id": "A008",
+    "date": "2017-02-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "拟申请国务院修改第412号令第372项审批事项公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-02/24/c_1120526548.htm"
+      }
+    ]
+  },
+  {
+    "id": "A009",
+    "date": "2017-04-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "《个人信息和重要数据出境安全评估办法（征求意见稿）》征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-04/11/c_1120785691.htm"
+      }
+    ]
+  },
+  {
+    "id": "O1",
+    "date": "2017-05-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Internet News Information Services",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网新闻信息服务管理规定",
+      "draft_date": "2016-01-13",
+      "effective": "2017-06-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-05/02/c_1120902760.htm"
+      }
+    ]
+  },
+  {
+    "id": "O2",
+    "date": "2017-05-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Law-Enforcement Procedures for Internet Information Content",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网信息内容管理行政执法程序规定",
+      "effective": "2017-06-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-05/02/c_1120902931.htm"
+      }
+    ]
+  },
+  {
+    "id": "N07",
+    "date": "2017-05-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网新闻信息服务许可管理实施细则",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-05/22/c_1121015789.htm"
+      }
+    ]
+  },
+  {
+    "id": "A010",
+    "date": "2017-07-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "《关键信息基础设施安全保护条例（征求意见稿）》征求意见通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-07/11/c_1121294220.htm"
+      }
+    ]
+  },
+  {
+    "id": "N08",
+    "date": "2017-08-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网论坛社区服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-08/25/c_1121541921.htm"
+      }
+    ]
+  },
+  {
+    "id": "N09",
+    "date": "2017-09-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网群组信息服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-09/07/c_1121623889.htm"
+      }
+    ]
+  },
+  {
+    "id": "N10",
+    "date": "2017-10-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网新闻信息服务单位内容管理从业人员管理办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-10/30/c_1121877917.htm"
+      }
+    ]
+  },
+  {
+    "id": "N11",
+    "date": "2017-10-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网新闻信息服务新技术新应用安全评估管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2017-10/30/c_1121878049.htm"
+      }
+    ]
+  },
+  {
+    "id": "A011",
+    "date": "2018-01-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "国家网信办约谈\"支付宝年度账单事件\"当事企业负责人",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2018-01/10/c_1122234687.htm"
+      }
+    ]
+  },
+  {
+    "id": "N12",
+    "date": "2018-02-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "微博客信息服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2018-02/02/c_1122358726.htm"
+      }
+    ]
+  },
+  {
+    "id": "A012",
+    "date": "2018-02-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法查处一批违规网络直播平台和主播",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2018-02/13/c_1122415948.htm"
+      }
+    ]
+  },
+  {
+    "id": "A013",
+    "date": "2018-10-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "《区块链信息服务管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2018-10/19/c_1123585598.htm"
+      }
+    ]
+  },
+  {
+    "id": "A014",
+    "date": "2018-11-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "国家网信办约谈客户端自媒体平台 主体责任不容缺失",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2018-11/16/c_1123724671.htm"
+      }
+    ]
+  },
+  {
+    "id": "O3",
+    "date": "2019-01-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Blockchain Information Services",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "区块链信息服务管理规定",
+      "draft_date": "2018-10-19",
+      "effective": "2019-02-15",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
+      }
+    ]
+  },
+  {
+    "id": "A015",
+    "date": "2019-01-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "open_filing",
+    "text": "关于区块链信息服务备案管理系统上线的通告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-01/28/c_1124053347.htm"
+      }
+    ]
+  },
+  {
+    "id": "A016",
+    "date": "2019-02-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "国家网信办约谈约见四款新发布社交类应用企业",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-02/01/c_1124077140.htm"
+      }
+    ]
+  },
+  {
+    "id": "A017",
+    "date": "2019-03-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布第一批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-03/30/c_1124305122.htm"
+      }
+    ]
+  },
+  {
+    "id": "A018",
+    "date": "2019-04-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办持续治理网络生态顽疾 集中查处一批违法违规色情、赌博和占卜网站",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-04/19/c_1124389996.htm"
+      }
+    ]
+  },
+  {
+    "id": "A019",
+    "date": "2019-05-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于征求《App违法违规收集使用个人信息行为认定方法（征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-05/06/c_1124455735.htm"
+      }
+    ]
+  },
+  {
+    "id": "A020",
+    "date": "2019-05-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于《网络安全审查办法》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-05/24/c_1124532846.htm"
+      }
+    ]
+  },
+  {
+    "id": "A021",
+    "date": "2019-05-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于《数据安全管理办法》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-05/28/c_1124546022.htm"
+      }
+    ]
+  },
+  {
+    "id": "A022",
+    "date": "2019-05-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于《儿童个人信息网络保护规定》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-05/31/c_1124568048.htm"
+      }
+    ]
+  },
+  {
+    "id": "A023",
+    "date": "2019-06-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于《个人信息出境安全评估办法》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-06/13/c_1124613618.htm"
+      }
+    ]
+  },
+  {
+    "id": "N13",
+    "date": "2019-07-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "云计算服务安全评估办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-07/22/c_1124781475.htm"
+      }
+    ]
+  },
+  {
+    "id": "A024",
+    "date": "2019-07-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "互联网《严重失信主体信用信息管理办法》征求意见",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-07/22/c_1124782573.htm"
+      }
+    ]
+  },
+  {
+    "id": "O4",
+    "date": "2019-08-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Online Protection of Children's Personal Information",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "儿童个人信息网络保护规定",
+      "draft_date": "2019-05-31",
+      "effective": "2019-10-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm"
+      }
+    ]
+  },
+  {
+    "id": "A025",
+    "date": "2019-09-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络生态治理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-09/11/c_1569729939897372.htm"
+      }
+    ]
+  },
+  {
+    "id": "A026",
+    "date": "2019-10-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-10/18/c_1572931934637684.htm"
+      }
+    ]
+  },
+  {
+    "id": "N14",
+    "date": "2019-11-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "网络音视频信息服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-11/29/c_1576561820967678.htm"
+      }
+    ]
+  },
+  {
+    "id": "A027",
+    "date": "2019-11-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络安全威胁信息发布管理办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-11/20/c_1575785387932969.htm"
+      }
+    ]
+  },
+  {
+    "id": "A028",
+    "date": "2019-12-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导有关地方网信办约谈视觉中国网站、IC photo网站负责人 即日起两家网站暂停服务全面整改",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-12/10/c_1577513335176868.htm"
+      }
+    ]
+  },
+  {
+    "id": "O5",
+    "date": "2019-12-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Ecological Governance of Online Information Content",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "网络信息内容生态治理规定",
+      "draft_date": "2019-09-10",
+      "effective": "2020-03-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm"
+      }
+    ]
+  },
+  {
+    "id": "A029",
+    "date": "2020-02-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导有关地方网信办依法查处违法违规网站平台及账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-02/05/c_1582443270836195.htm"
+      }
+    ]
+  },
+  {
+    "id": "A030",
+    "date": "2020-02-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导北京市网信办约谈凤凰网负责人 凤凰网、凤凰新闻客户端违规严重的部分频道暂停更新",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-02/15/c_1583303419227448.htm"
+      }
+    ]
+  },
+  {
+    "id": "A031",
+    "date": "2020-04-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第三批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-04/24/c_1589274590776431.htm"
+      }
+    ]
+  },
+  {
+    "id": "A032",
+    "date": "2020-05-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "国家网信办启动2020“清朗”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-05/22/c_1591689448656108.htm"
+      }
+    ]
+  },
+  {
+    "id": "A033",
+    "date": "2020-06-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导北京网信办依法约谈处罚新浪微博",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-06/10/c_1593350719478753.htm"
+      }
+    ]
+  },
+  {
+    "id": "A034",
+    "date": "2020-06-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导属地网信办依法约谈处置虎牙、斗鱼等10家网络直播平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-06/23/c_1594459834502044.htm"
+      }
+    ]
+  },
+  {
+    "id": "A035",
+    "date": "2020-06-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办指导北京市网信办依法查处《新京报》微博账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-06/25/c_1594639176791915.htm"
+      }
+    ]
+  },
+  {
+    "id": "A036",
+    "date": "2020-07-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展2020“清朗”未成年人暑期网络环境专项整治的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-07/13/c_1596175859026231.htm"
+      }
+    ]
+  },
+  {
+    "id": "A037",
+    "date": "2020-08-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法查处一批存在涉未成年人在线学习违法违规行为的网站平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-08/06/c_1598277656513147.htm"
+      }
+    ]
+  },
+  {
+    "id": "A038",
+    "date": "2020-09-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办“清朗”未成年人网络环境暨网课平台专项整治依法查处第二批存在问题的网站",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-09/14/c_1601641539700487.htm"
+      }
+    ]
+  },
+  {
+    "id": "A039",
+    "date": "2020-10-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办2020“清朗”专项行动暨网课平台专项整治依法查处第三批存在问题网站",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-10/14/c_1604237734863301.htm"
+      }
+    ]
+  },
+  {
+    "id": "A040",
+    "date": "2020-10-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第四批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-10/30/c_1605447893747716.htm"
+      }
+    ]
+  },
+  {
+    "id": "A041",
+    "date": "2020-11-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网直播营销信息内容服务管理规定（征求意见稿）》 公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-11/13/c_1606832591123790.htm"
+      }
+    ]
+  },
+  {
+    "id": "A042",
+    "date": "2020-12-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《常见类型移动互联网应用程序（App）必要个人信息范围》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2020-12/01/c_1608389002247944.htm"
+      }
+    ]
+  },
+  {
+    "id": "A043",
+    "date": "2021-01-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于《互联网信息服务管理办法（修订草案征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-01/08/c_1611676476075132.htm"
+      }
+    ]
+  },
+  {
+    "id": "N15",
+    "date": "2021-01-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网用户公众账号信息服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-01/22/c_1612887880656609.htm"
+      }
+    ]
+  },
+  {
+    "id": "A044",
+    "date": "2021-02-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "国家网信办启动2021“清朗·春节网络环境”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-02/03/c_1613923672042416.htm"
+      }
+    ]
+  },
+  {
+    "id": "A045",
+    "date": "2021-02-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "市场监管总局与中央网信办等五部门约谈特斯拉公司",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-02/08/c_1614355732930891.htm"
+      }
+    ]
+  },
+  {
+    "id": "N16",
+    "date": "2021-03-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "常见类型移动互联网应用程序必要个人信息范围规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm"
+      }
+    ]
+  },
+  {
+    "id": "A046",
+    "date": "2021-03-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办深入推进“清朗·春节网络环境”专项行动<br>依法查处一批违法违规网站平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-03/24/c_1618162064235626.htm"
+      }
+    ]
+  },
+  {
+    "id": "A047",
+    "date": "2021-05-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于输入法等33款App违法违规收集使用个人信息情况的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-04/30/c_1621370239178608.htm"
+      }
+    ]
+  },
+  {
+    "id": "A048",
+    "date": "2021-05-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于腾讯手机管家等84款App违法违规收集使用个人信息情况的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-05/10/c_1622225924090817.htm"
+      }
+    ]
+  },
+  {
+    "id": "A049",
+    "date": "2021-05-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《汽车数据安全管理若干规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-05/12/c_1622400511898266.htm"
+      }
+    ]
+  },
+  {
+    "id": "A050",
+    "date": "2021-05-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于抖音等105款App违法违规收集使用个人信息情况的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-05/20/c_1623091083320667.htm"
+      }
+    ]
+  },
+  {
+    "id": "A051",
+    "date": "2021-06-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于Keep等129款App违法违规收集使用个人信息情况的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-06/11/c_1624994586637626.htm"
+      }
+    ]
+  },
+  {
+    "id": "A052",
+    "date": "2021-06-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·‘饭圈’乱象整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-06/08/c_1624735580427196.htm"
+      }
+    ]
+  },
+  {
+    "id": "A053",
+    "date": "2021-06-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第五批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-06/18/c_1625599922076387.htm"
+      }
+    ]
+  },
+  {
+    "id": "A054",
+    "date": "2021-07-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "investigate",
+    "text": "网络安全审查办公室关于对“滴滴出行”启动网络安全审查的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/02/c_1626811521011934.htm"
+      }
+    ]
+  },
+  {
+    "id": "A055",
+    "date": "2021-07-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于下架“滴滴出行”App的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/04/c_1627016782176163.htm"
+      }
+    ]
+  },
+  {
+    "id": "A056",
+    "date": "2021-07-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "investigate",
+    "text": "网络安全审查办公室关于对“运满满”“货车帮”“BOSS直聘”启动网络安全审查的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/05/c_1627071328950274.htm"
+      }
+    ]
+  },
+  {
+    "id": "A057",
+    "date": "2021-07-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于下架“滴滴企业版”等25款App的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/09/c_1627415870012872.htm"
+      }
+    ]
+  },
+  {
+    "id": "A058",
+    "date": "2021-07-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络安全审查办法（修订草案征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/10/c_1627503724456684.htm"
+      }
+    ]
+  },
+  {
+    "id": "A059",
+    "date": "2021-07-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "investigate",
+    "text": "国家互联网信息办公室等七部门进驻滴滴出行科技有限公司开展网络安全审查",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/16/c_1628023601191804.htm"
+      }
+    ]
+  },
+  {
+    "id": "A060",
+    "date": "2021-07-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·暑期未成年人网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-07/21/c_1628455293580107.htm"
+      }
+    ]
+  },
+  {
+    "id": "O7",
+    "date": "2021-08-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Several Provisions on Automotive Data Security (Trial)",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "汽车数据安全管理若干规定（试行）",
+      "draft_date": "2021-05-12",
+      "approved": "2021-07-05",
+      "effective": "2021-10-01",
+      "co_issuers": [
+        "NDRC",
+        "MIIT",
+        "MPS",
+        "Transport"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
+      }
+    ]
+  },
+  {
+    "id": "A061",
+    "date": "2021-08-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网信息服务算法推荐管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-08/27/c_1631652502874117.htm"
+      }
+    ]
+  },
+  {
+    "id": "A062",
+    "date": "2021-08-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "国家网信办启动清朗·商业网站平台和“自媒体”违规采编发布财经类信息专项整治",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-08/27/c_1631652531513374.htm"
+      }
+    ]
+  },
+  {
+    "id": "A063",
+    "date": "2021-08-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "国家网信办启动清朗·移动应用程序PUSH弹窗突出问题专项整治",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-08/27/c_1631652531585631.htm"
+      }
+    ]
+  },
+  {
+    "id": "A064",
+    "date": "2021-10-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网用户账号名称信息管理规定（征求意见稿）》 公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-10/26/c_1636843202454310.htm"
+      }
+    ]
+  },
+  {
+    "id": "A065",
+    "date": "2021-10-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《数据出境安全评估办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-10/29/c_1637102874600858.htm"
+      }
+    ]
+  },
+  {
+    "id": "A066",
+    "date": "2021-11-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第六批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-11/09/c_1638062439100674.htm"
+      }
+    ]
+  },
+  {
+    "id": "A067",
+    "date": "2021-11-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络数据安全管理条例（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-11/14/c_1638501991577898.htm"
+      }
+    ]
+  },
+  {
+    "id": "A068",
+    "date": "2021-12-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法约谈处罚豆瓣网",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-12/02/c_1640043205326056.htm"
+      }
+    ]
+  },
+  {
+    "id": "A069",
+    "date": "2021-12-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法约谈处罚新浪微博",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2021-12/14/c_1641080795548173.htm"
+      }
+    ]
+  },
+  {
+    "id": "O8",
+    "date": "2021-12-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Cybersecurity Review Measures",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "网络安全审查办法",
+      "draft_date": "2021-07-10",
+      "approved": "2021-11-16",
+      "effective": "2022-02-15",
+      "co_issuers": [
+        "NDRC",
+        "MIIT",
+        "MPS",
+        "MSS",
+        "Finance",
+        "MOFCOM",
+        "PBOC",
+        "SAMR",
+        "NRTA",
+        "CSRC",
+        "Secrets Bureau",
+        "Cryptography Admin."
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
+      }
+    ]
+  },
+  {
+    "id": "O9",
+    "date": "2021-12-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Algorithmic Recommendation",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网信息服务算法推荐管理规定",
+      "draft_date": "2021-08-27",
+      "approved": "2021-11-16",
+      "effective": "2022-03-01",
+      "co_issuers": [
+        "MIIT",
+        "MPS",
+        "SAMR"
+      ],
+      "ai": true
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
+      }
+    ]
+  },
+  {
+    "id": "A070",
+    "date": "2022-01-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《移动互联网应用程序信息服务管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/05/c_1642983962594050.htm"
+      }
+    ]
+  },
+  {
+    "id": "A071",
+    "date": "2022-01-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·2022年春节网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/24/c_1644627964425577.htm"
+      }
+    ]
+  },
+  {
+    "id": "A072",
+    "date": "2022-01-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网信息服务深度合成管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/28/c_1644970458520968.htm"
+      }
+    ]
+  },
+  {
+    "id": "N17",
+    "date": "2022-01-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "open_filing",
+    "text": "关于开展境内金融信息服务报备工作的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-01/28/c_1644970476680085.htm"
+      }
+    ]
+  },
+  {
+    "id": "A073",
+    "date": "2022-02-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "open_filing",
+    "text": "关于互联网信息服务算法备案系统上线的通告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-02/25/c_1647395666889023.htm"
+      }
+    ]
+  },
+  {
+    "id": "A074",
+    "date": "2022-03-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "​国家互联网信息办公室关于《互联网弹窗信息推送服务管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-03/02/c_1647826956995841.htm"
+      }
+    ]
+  },
+  {
+    "id": "A075",
+    "date": "2022-03-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第七批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-03/04/c_1648000384250566.htm"
+      }
+    ]
+  },
+  {
+    "id": "A076",
+    "date": "2022-03-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《未成年人网络保护条例（征求意见稿）》再次公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-03/14/c_1648865100662480.htm"
+      }
+    ]
+  },
+  {
+    "id": "A077",
+    "date": "2022-04-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治网络直播、短视频领域乱象”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-04/15/c_1651632212222914.htm"
+      }
+    ]
+  },
+  {
+    "id": "A078",
+    "date": "2022-04-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·网络暴力专项治理行动”",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-04/24/c_1652422681278782.htm"
+      }
+    ]
+  },
+  {
+    "id": "A079",
+    "date": "2022-05-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第八批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-05/24/c_1655008221494542.htm"
+      }
+    ]
+  },
+  {
+    "id": "N18",
+    "date": "2022-06-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "移动互联网应用程序信息服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-06/14/c_1656821626455324.htm"
+      }
+    ]
+  },
+  {
+    "id": "A080",
+    "date": "2022-06-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网跟帖评论服务管理规定（修订草案征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-06/17/c_1657089000974111.htm"
+      }
+    ]
+  },
+  {
+    "id": "A081",
+    "date": "2022-06-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "investigate",
+    "text": "网络安全审查办公室对知网启动网络安全审查",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-06/24/c_1657686783575480.htm"
+      }
+    ]
+  },
+  {
+    "id": "O10",
+    "date": "2022-06-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Internet User Account Information",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网用户账号信息管理规定",
+      "draft_date": "2021-10-26",
+      "approved": "2022-06-09",
+      "effective": "2022-08-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
+      }
+    ]
+  },
+  {
+    "id": "A082",
+    "date": "2022-06-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《个人信息出境标准合同规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-06/30/c_1658205969531631.htm"
+      }
+    ]
+  },
+  {
+    "id": "O11",
+    "date": "2022-07-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures for Security Assessment of Outbound Data Transfers",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "数据出境安全评估办法",
+      "draft_date": "2021-10-29",
+      "approved": "2022-05-19",
+      "effective": "2022-09-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
+      }
+    ]
+  },
+  {
+    "id": "A083",
+    "date": "2022-07-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家互联网信息办公室对滴滴全球股份有限公司依法作出网络安全审查相关行政处罚的决定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-07/21/c_1660021534306352.htm"
+      }
+    ]
+  },
+  {
+    "id": "A084",
+    "date": "2022-07-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第九批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-07/25/c_1660369837207693.htm"
+      }
+    ]
+  },
+  {
+    "id": "A085",
+    "date": "2022-08-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布互联网信息服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-08/12/c_1661927474338504.htm"
+      }
+    ]
+  },
+  {
+    "id": "A086",
+    "date": "2022-09-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·打击网络谣言和虚假信息”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-09/02/c_1663745754062601.htm"
+      }
+    ]
+  },
+  {
+    "id": "A087",
+    "date": "2022-09-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网信部门行政执法程序规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-09/08/c_1664174174624227.htm"
+      }
+    ]
+  },
+  {
+    "id": "N19",
+    "date": "2022-09-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网弹窗信息推送服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-09/08/c_1664260384702890.htm"
+      }
+    ]
+  },
+  {
+    "id": "A088",
+    "date": "2022-09-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于公开征求《关于修改〈中华人民共和国网络安全法〉的决定（征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-09/14/c_1664781649609823.htm"
+      }
+    ]
+  },
+  {
+    "id": "A089",
+    "date": "2022-11-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法集中查处一批侵犯个人信息合法权益的违法违规App",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-11/03/c_1669106604621340.htm"
+      }
+    ]
+  },
+  {
+    "id": "N20",
+    "date": "2022-11-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "关于实施个人信息保护认证的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "SAMR",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-11/18/c_1670399936658129.htm"
+      }
+    ]
+  },
+  {
+    "id": "A090",
+    "date": "2022-11-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-11/08/c_1669544004054456.htm"
+      }
+    ]
+  },
+  {
+    "id": "N21",
+    "date": "2022-11-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网跟帖评论服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-11/16/c_1670253725725039.htm"
+      }
+    ]
+  },
+  {
+    "id": "O12",
+    "date": "2022-11-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Deep Synthesis",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网信息服务深度合成管理规定",
+      "draft_date": "2022-01-28",
+      "approved": "2022-11-03",
+      "effective": "2023-01-10",
+      "co_issuers": [
+        "MIIT",
+        "MPS"
+      ],
+      "ai": true
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+      }
+    ]
+  },
+  {
+    "id": "N22",
+    "date": "2022-11-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "关于进一步规范移动智能终端应用软件预置行为的通告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "MIIT",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-12/14/c_1672656825925035.htm"
+      }
+    ]
+  },
+  {
+    "id": "A091",
+    "date": "2022-12-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·移动互联网应用程序领域乱象整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2022-12/12/c_1672477187051942.htm"
+      }
+    ]
+  },
+  {
+    "id": "A092",
+    "date": "2023-01-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·2023年春节网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-01/18/c_1675676650690321.htm"
+      }
+    ]
+  },
+  {
+    "id": "A093",
+    "date": "2023-02-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "​国家互联网信息办公室关于发布第十一批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-02/21/c_1678614564468791.htm"
+      }
+    ]
+  },
+  {
+    "id": "O13",
+    "date": "2023-02-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures on Standard Contracts for Outbound Personal Information",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "个人信息出境标准合同办法",
+      "draft_date": "2022-06-30",
+      "approved": "2023-02-03",
+      "effective": "2023-06-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
+      }
+    ]
+  },
+  {
+    "id": "A094",
+    "date": "2023-03-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "中央网信办深入开展“清朗·2023年春节网络环境整治”专项行动 查处一批违法违规典型问题",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-03/01/c_1679242741436895.htm"
+      }
+    ]
+  },
+  {
+    "id": "O14",
+    "date": "2023-03-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Law-Enforcement Procedures of Cyberspace Departments",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "网信部门行政执法程序规定",
+      "draft_date": "2022-09-08",
+      "approved": "2023-02-03",
+      "effective": "2023-06-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
+      }
+    ]
+  },
+  {
+    "id": "A095",
+    "date": "2023-03-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "retaliate_review",
+    "text": "Cybersecurity review of Micron announced (WilmerHale report)",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/https://www.wilmerhale.com/en/insights/client-alerts/20230411-china-launches-cybersecurity-review-against-micron"
+      }
+    ]
+  },
+  {
+    "id": "A096",
+    "date": "2023-04-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《生成式人工智能服务管理办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-04/11/c_1682854275475410.htm"
+      }
+    ]
+  },
+  {
+    "id": "A097",
+    "date": "2023-04-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·优化营商网络环境 保护企业合法权益”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-04/28/c_1684238994177926.htm"
+      }
+    ]
+  },
+  {
+    "id": "A098",
+    "date": "2023-05-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "deny_permission",
+    "text": "Micron fails review; critical infrastructure operators barred from buying (corpus row)",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "secondary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/https://www.theregister.com/2023/05/21/china_micron_ban/"
+      }
+    ]
+  },
+  {
+    "id": "A099",
+    "date": "2023-06-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "​国家互联网信息办公室关于《近距离自组网信息服务管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-06/06/c_1687698272954687.htm"
+      }
+    ]
+  },
+  {
+    "id": "A100",
+    "date": "2023-06-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-06/20/c_1688910683316256.htm"
+      }
+    ]
+  },
+  {
+    "id": "A101",
+    "date": "2023-06-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·2023年暑期未成年人网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-06/27/c_1689429083835260.htm"
+      }
+    ]
+  },
+  {
+    "id": "A102",
+    "date": "2023-07-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络暴力信息治理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/07/c_1690295996362667.htm"
+      }
+    ]
+  },
+  {
+    "id": "O15",
+    "date": "2023-07-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Interim Measures for Generative AI Services",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "生成式人工智能服务管理暂行办法",
+      "draft_date": "2023-04-11",
+      "approved": "2023-05-23",
+      "effective": "2023-08-15",
+      "co_issuers": [
+        "NDRC",
+        "MOE",
+        "MOST",
+        "MIIT",
+        "MPS",
+        "NRTA"
+      ],
+      "ai": true
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+      }
+    ]
+  },
+  {
+    "id": "A103",
+    "date": "2023-07-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十二批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/12/c_1690809817142958.htm"
+      }
+    ]
+  },
+  {
+    "id": "A104",
+    "date": "2023-07-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "中央网信办依法查处杜撰、歪解公共政策的造谣传谣账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/14/c_1691014185749681.htm"
+      }
+    ]
+  },
+  {
+    "id": "A105",
+    "date": "2023-07-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·成都大运会网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/18/c_1691330434832775.htm"
+      }
+    ]
+  },
+  {
+    "id": "A106",
+    "date": "2023-07-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "“清朗·成都大运会网络环境整治”专项行动查处一批违法违规网络账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-07/31/c_1692460651755270.htm"
+      }
+    ]
+  },
+  {
+    "id": "A107",
+    "date": "2023-08-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "“清朗·优化营商网络环境 保护企业合法权益”专项行动查处一批典型案例",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-08/01/c_1692460647400775.htm"
+      }
+    ]
+  },
+  {
+    "id": "A108",
+    "date": "2023-08-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《移动互联网未成年人模式建设指南（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-08/02/c_1692541991073784.htm"
+      }
+    ]
+  },
+  {
+    "id": "A109",
+    "date": "2023-08-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《个人信息保护合规审计管理办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-08/03/c_1692628348448092.htm"
+      }
+    ]
+  },
+  {
+    "id": "A110",
+    "date": "2023-08-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《人脸识别技术应用安全管理规定（试行）（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-08/08/c_1693064670537413.htm"
+      }
+    ]
+  },
+  {
+    "id": "A111",
+    "date": "2023-08-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·杭州亚运会和亚残运会网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-08/28/c_1694881473337349.htm"
+      }
+    ]
+  },
+  {
+    "id": "A112",
+    "date": "2023-09-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/01/c_1695224377544009.htm"
+      }
+    ]
+  },
+  {
+    "id": "A113",
+    "date": "2023-09-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家互联网信息办公室对知网（CNKI）依法作出网络安全审查相关行政处罚",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/06/c_1695654024248502.htm"
+      }
+    ]
+  },
+  {
+    "id": "A114",
+    "date": "2023-09-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处腾讯QQ危害未成年人身心健康违法案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/13/c_1696259439302507.htm"
+      }
+    ]
+  },
+  {
+    "id": "A115",
+    "date": "2023-09-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第一批应用程序分发平台备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/26/c_1697385564755915.htm"
+      }
+    ]
+  },
+  {
+    "id": "A116",
+    "date": "2023-09-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《规范和促进数据跨境流动规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/28/c_1697558914242877.htm"
+      }
+    ]
+  },
+  {
+    "id": "A117",
+    "date": "2023-09-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·生活服务类平台信息内容整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/28/c_1697560160163531.htm"
+      }
+    ]
+  },
+  {
+    "id": "A118",
+    "date": "2023-09-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "“清朗·杭州亚运会和亚残运会网络环境整治”专项行动查处一批违法违规网络账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-09/29/c_1697643122481670.htm"
+      }
+    ]
+  },
+  {
+    "id": "A119",
+    "date": "2023-10-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处一批涉公共政策、社会民生领域造谣传谣账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-10/24/c_1699806903449605.htm"
+      }
+    ]
+  },
+  {
+    "id": "A120",
+    "date": "2023-10-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "​国家互联网信息办公室关于发布第十三批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-10/24/c_1699808728559930.htm"
+      }
+    ]
+  },
+  {
+    "id": "A121",
+    "date": "2023-10-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处“夸克”、“网易CC”破坏网络生态违法案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-10/30/c_1700323940777319.htm"
+      }
+    ]
+  },
+  {
+    "id": "A122",
+    "date": "2023-11-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于征求《会计师事务所数据安全管理暂行办法（征求意见稿）》意见的函",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-11/16/c_1701796837521268.htm"
+      }
+    ]
+  },
+  {
+    "id": "A123",
+    "date": "2023-11-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·网络戾气整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-11/17/c_1701809613019558.htm"
+      }
+    ]
+  },
+  {
+    "id": "A124",
+    "date": "2023-12-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络安全事件报告管理办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-12/08/c_1703609634347501.htm"
+      }
+    ]
+  },
+  {
+    "id": "A125",
+    "date": "2023-12-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治短视频信息内容导向不良问题”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-12/12/c_1704042778297969.htm"
+      }
+    ]
+  },
+  {
+    "id": "A126",
+    "date": "2023-12-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处花椒直播、天天吉历APP等破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2023-12/29/c_1705519843935413.htm"
+      }
+    ]
+  },
+  {
+    "id": "A127",
+    "date": "2024-01-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第三批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-01/05/c_1706119043746644.htm"
+      }
+    ]
+  },
+  {
+    "id": "A128",
+    "date": "2024-01-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·2024年春节网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-01/29/c_1708196062197841.htm"
+      }
+    ]
+  },
+  {
+    "id": "A129",
+    "date": "2024-02-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第四批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-02/18/c_1709925427424332.htm"
+      }
+    ]
+  },
+  {
+    "id": "A130",
+    "date": "2024-03-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展2024年“清朗”系列专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-03/15/c_1712088026696264.htm"
+      }
+    ]
+  },
+  {
+    "id": "A131",
+    "date": "2024-03-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十四批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-03/15/c_1712088027128307.htm"
+      }
+    ]
+  },
+  {
+    "id": "O16",
+    "date": "2024-03-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "ease_rule",
+    "text": "Provisions on Promoting and Regulating Cross-Border Data Flows",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "促进和规范数据跨境流动规定",
+      "draft_date": "2023-09-28",
+      "approved": "2023-11-28",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
+      }
+    ]
+  },
+  {
+    "id": "A132",
+    "date": "2024-03-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·优化营商网络环境—整治涉企侵权信息乱象”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-03/30/c_1713477220388837.htm"
+      }
+    ]
+  },
+  {
+    "id": "A133",
+    "date": "2024-04-02",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布生成式人工智能服务已备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-04/02/c_1713729983803145.htm"
+      }
+    ]
+  },
+  {
+    "id": "A134",
+    "date": "2024-04-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二批应用程序分发平台备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-04/08/c_1714249325463432.htm"
+      }
+    ]
+  },
+  {
+    "id": "A135",
+    "date": "2024-04-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第五批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-04/11/c_1714509267496697.htm"
+      }
+    ]
+  },
+  {
+    "id": "A136",
+    "date": "2024-04-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治‘自媒体’无底线博流量”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-04/23/c_1715545670217049.htm"
+      }
+    ]
+  },
+  {
+    "id": "A137",
+    "date": "2024-04-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·打击违法信息外链”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-04/28/c_1715980097151023.htm"
+      }
+    ]
+  },
+  {
+    "id": "A138",
+    "date": "2024-05-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十五批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-05/16/c_1717540070506437.htm"
+      }
+    ]
+  },
+  {
+    "id": "A139",
+    "date": "2024-06-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第六批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-06/12/c_1719783421546747.htm"
+      }
+    ]
+  },
+  {
+    "id": "O17",
+    "date": "2024-06-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Governance of Online Violence Information",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "网络暴力信息治理规定",
+      "draft_date": "2023-07-07",
+      "approved": "2023-12-25",
+      "effective": "2024-08-01",
+      "co_issuers": [
+        "MPS",
+        "Culture and Tourism",
+        "NRTA"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
+      }
+    ]
+  },
+  {
+    "id": "A140",
+    "date": "2024-07-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·2024年暑期未成年人网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-07/13/c_1722551300716785.htm"
+      }
+    ]
+  },
+  {
+    "id": "A141",
+    "date": "2024-07-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·网络直播领域虚假和低俗乱象整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-07/31/c_1724107668689755.htm"
+      }
+    ]
+  },
+  {
+    "id": "A142",
+    "date": "2024-08-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第七批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-08/05/c_1724541639039621.htm"
+      }
+    ]
+  },
+  {
+    "id": "A143",
+    "date": "2024-08-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十六批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-08/27/c_1726358145819087.htm"
+      }
+    ]
+  },
+  {
+    "id": "A144",
+    "date": "2024-09-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《人工智能生成合成内容标识办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-09/14/c_1728000676244628.htm"
+      }
+    ]
+  },
+  {
+    "id": "A145",
+    "date": "2024-09-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《终端设备直连卫星服务管理规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-09/27/c_1729036112375138.htm"
+      }
+    ]
+  },
+  {
+    "id": "A146",
+    "date": "2024-10-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·整治违规开展互联网新闻信息服务”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-10/03/c_1729643985936583.htm"
+      }
+    ]
+  },
+  {
+    "id": "A147",
+    "date": "2024-10-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·规范网络语言文字使用”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-10/11/c_1730337883698872.htm"
+      }
+    ]
+  },
+  {
+    "id": "A148",
+    "date": "2024-10-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·同城版块信息内容问题整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-10/31/c_1732065389905252.htm"
+      }
+    ]
+  },
+  {
+    "id": "A149",
+    "date": "2024-11-01",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第八批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-11/01/c_1732152604917193.htm"
+      }
+    ]
+  },
+  {
+    "id": "A150",
+    "date": "2024-11-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十七批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-11/21/c_1733706021816221.htm"
+      }
+    ]
+  },
+  {
+    "id": "A151",
+    "date": "2024-11-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "​关于开展“清朗·网络平台算法典型问题治理”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-11/24/c_1734143936205514.htm"
+      }
+    ]
+  },
+  {
+    "id": "A152",
+    "date": "2024-12-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第九批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2024-12/20/c_1736389545949567.htm"
+      }
+    ]
+  },
+  {
+    "id": "A153",
+    "date": "2025-01-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《个人信息出境个人信息保护认证办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-01/03/c_1737600915141373.htm"
+      }
+    ]
+  },
+  {
+    "id": "A154",
+    "date": "2025-01-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布2024年生成式人工智能服务已备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-01/08/c_1738034725920930.htm"
+      }
+    ]
+  },
+  {
+    "id": "A155",
+    "date": "2025-01-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络信息内容多渠道分发服务机构相关业务活动管理规定（草案稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-01/10/c_1738209405008163.htm"
+      }
+    ]
+  },
+  {
+    "id": "A156",
+    "date": "2025-01-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·2025年春节网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-01/19/c_1738899842680885.htm"
+      }
+    ]
+  },
+  {
+    "id": "N23",
+    "date": "2025-01-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "互联网军事信息传播管理办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-02/08/c_1740714184323988.htm"
+      }
+    ]
+  },
+  {
+    "id": "O18",
+    "date": "2025-02-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures for Personal Information Compliance Audits",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "个人信息保护合规审计管理办法",
+      "draft_date": "2023-08-03",
+      "approved": "2024-05-20",
+      "effective": "2025-05-01",
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
+      }
+    ]
+  },
+  {
+    "id": "A157",
+    "date": "2025-02-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十八批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-02/17/c_1741491981121565.htm"
+      }
+    ]
+  },
+  {
+    "id": "A158",
+    "date": "2025-02-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "国家网信办依法集中查处一批侵害个人信息权益的违法违规App",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-02/19/c_1741664476228611.htm"
+      }
+    ]
+  },
+  {
+    "id": "N24",
+    "date": "2025-03-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "人工智能生成合成内容标识办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+      }
+    ]
+  },
+  {
+    "id": "A159",
+    "date": "2025-03-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-03/12/c_1743480314931271.htm"
+      }
+    ]
+  },
+  {
+    "id": "O19",
+    "date": "2025-03-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures for Security Management of Facial Recognition",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "人脸识别技术应用安全管理办法",
+      "draft_date": "2023-08-08",
+      "approved": "2024-09-30",
+      "effective": "2025-06-01",
+      "co_issuers": [
+        "MPS"
+      ],
+      "ai": true
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
+      }
+    ]
+  },
+  {
+    "id": "A160",
+    "date": "2025-03-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "​关于公开征求《中华人民共和国网络安全法（修正草案再次征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-03/28/c_1744779434867328.htm"
+      }
+    ]
+  },
+  {
+    "id": "A161",
+    "date": "2025-04-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处一批低俗炒作娱乐明星信息账号",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-04/07/c_1745386537714292.htm"
+      }
+    ]
+  },
+  {
+    "id": "A162",
+    "date": "2025-04-08",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2025年1月至3月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-04/08/c_1745817775881843.htm"
+      }
+    ]
+  },
+  {
+    "id": "A163",
+    "date": "2025-04-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治短视频领域恶意营销乱象”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-04/15/c_1746334850258390.htm"
+      }
+    ]
+  },
+  {
+    "id": "N25",
+    "date": "2025-04-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "终端设备直连卫星服务管理规定",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-04/30/c_1747719075774684.htm"
+      }
+    ]
+  },
+  {
+    "id": "A164",
+    "date": "2025-04-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·整治AI技术滥用”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-04/30/c_1747719097461951.htm"
+      }
+    ]
+  },
+  {
+    "id": "A165",
+    "date": "2025-05-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于15款App和16款SDK个人信息收集使用问题的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-05/06/c_1748239411359045.htm"
+      }
+    ]
+  },
+  {
+    "id": "A166",
+    "date": "2025-05-19",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十一批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-05/19/c_1749365589879703.htm"
+      }
+    ]
+  },
+  {
+    "id": "A167",
+    "date": "2025-05-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·优化营商网络环境—整治涉企网络‘黑嘴’”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-05/22/c_1749623577748231.htm"
+      }
+    ]
+  },
+  {
+    "id": "A168",
+    "date": "2025-05-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于公开征求《网信部门行政处罚裁量权基准适用规定（征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-05/30/c_1750315544142395.htm"
+      }
+    ]
+  },
+  {
+    "id": "A169",
+    "date": "2025-05-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "open_filing",
+    "text": "关于开展人脸识别技术应用备案工作的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-05/30/c_1750315544241157.htm"
+      }
+    ]
+  },
+  {
+    "id": "A170",
+    "date": "2025-06-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十九批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-06/03/c_1750661971448959.htm"
+      }
+    ]
+  },
+  {
+    "id": "A171",
+    "date": "2025-06-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于公开征求《可能影响未成年人身心健康的网络信息分类办法（征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-06/20/c_1752130362026338.htm"
+      }
+    ]
+  },
+  {
+    "id": "A172",
+    "date": "2025-07-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2025年4月至6月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/11/c_1753948489002783.htm"
+      }
+    ]
+  },
+  {
+    "id": "A173",
+    "date": "2025-07-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十二批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/14/c_1754207718303963.htm"
+      }
+    ]
+  },
+  {
+    "id": "A174",
+    "date": "2025-07-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·2025年暑期未成年人网络环境整治”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/15/c_1754205007161931.htm"
+      }
+    ]
+  },
+  {
+    "id": "A175",
+    "date": "2025-07-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治‘自媒体’发布不实信息”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/29/c_1755503642582366.htm"
+      }
+    ]
+  },
+  {
+    "id": "A176",
+    "date": "2025-07-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·成都世运会网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/31/c_1755675733092097.htm"
+      }
+    ]
+  },
+  {
+    "id": "A177",
+    "date": "2025-07-31",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "国家互联网信息办公室就H20算力芯片漏洞后门安全风险约谈英伟达公司",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-07/31/c_1755675743897163.htm"
+      }
+    ]
+  },
+  {
+    "id": "A178",
+    "date": "2025-09-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2025年7月至8月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/10/c_1759222982377536.htm"
+      }
+    ]
+  },
+  {
+    "id": "A179",
+    "date": "2025-09-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十三批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/11/c_1759222331638208.htm"
+      }
+    ]
+  },
+  {
+    "id": "A180",
+    "date": "2025-09-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处小红书平台破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/11/c_1759309511257125.htm"
+      }
+    ]
+  },
+  {
+    "id": "N26",
+    "date": "2025-09-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "国家网络安全事件报告管理办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "own"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/15/c_1759583017717009.htm"
+      }
+    ]
+  },
+  {
+    "id": "A181",
+    "date": "2025-09-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《大型网络平台设立个人信息保护监督委员会规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/12/c_1759395487456327.htm"
+      }
+    ]
+  },
+  {
+    "id": "A182",
+    "date": "2025-09-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《促进和规范电子单证应用规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/13/c_1758792083807526.htm"
+      }
+    ]
+  },
+  {
+    "id": "A183",
+    "date": "2025-09-16",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "关于公开征求《未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定办法（征求意见稿）》意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/16/c_1759740674396520.htm"
+      }
+    ]
+  },
+  {
+    "id": "A184",
+    "date": "2025-09-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处快手平台破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/20/c_1760100540333730.htm"
+      }
+    ]
+  },
+  {
+    "id": "A185",
+    "date": "2025-09-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处微博平台破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/20/c_1760100540337711.htm"
+      }
+    ]
+  },
+  {
+    "id": "A186",
+    "date": "2025-09-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·整治恶意挑动负面情绪问题”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/22/c_1760258688713582.htm"
+      }
+    ]
+  },
+  {
+    "id": "A187",
+    "date": "2025-09-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处今日头条平台破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/23/c_1760346458766170.htm"
+      }
+    ]
+  },
+  {
+    "id": "A188",
+    "date": "2025-09-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处UC平台破坏网络生态案件",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-09/23/c_1760346458857084.htm"
+      }
+    ]
+  },
+  {
+    "id": "A189",
+    "date": "2025-10-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二十批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-10/13/c_1761998630507437.htm"
+      }
+    ]
+  },
+  {
+    "id": "O20",
+    "date": "2025-10-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures for Certification of Outbound Personal Information",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "个人信息出境认证办法",
+      "draft_date": "2025-01-03",
+      "approved": "2025-07-21",
+      "effective": "2026-01-01",
+      "co_issuers": [
+        "SAMR"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
+      }
+    ]
+  },
+  {
+    "id": "A190",
+    "date": "2025-10-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治网络直播打赏乱象”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-10/28/c_1763287168200174.htm"
+      }
+    ]
+  },
+  {
+    "id": "A191",
+    "date": "2025-11-04",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·十五运会和残特奥会网络环境整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/04/c_1763895196597274.htm"
+      }
+    ]
+  },
+  {
+    "id": "A192",
+    "date": "2025-11-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十四批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/06/c_1764156698314535.htm"
+      }
+    ]
+  },
+  {
+    "id": "A193",
+    "date": "2025-11-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2025年9月至10月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/11/c_1764585284364412.htm"
+      }
+    ]
+  },
+  {
+    "id": "A194",
+    "date": "2025-11-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "​​国家互联网信息办公室关于公开征求《网络安全标识管理办法》（征求意见稿）意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/21/c_1765450099503494.htm"
+      }
+    ]
+  },
+  {
+    "id": "A195",
+    "date": "2025-11-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室、公安部关于《大型网络平台个人信息保护规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/22/c_1765543463511624.htm"
+      }
+    ]
+  },
+  {
+    "id": "A196",
+    "date": "2025-11-25",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法集中查处一批存在人工智能生成合成内容标识违法违规问题的移动互联网应用程序",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-11/25/c_1765795550841819.htm"
+      }
+    ]
+  },
+  {
+    "id": "A197",
+    "date": "2025-12-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处网络名人账号违法违规行为",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-12/03/c_1766488328081202.htm"
+      }
+    ]
+  },
+  {
+    "id": "A198",
+    "date": "2025-12-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《网络数据安全风险评估办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-12/06/c_1766578179367262.htm"
+      }
+    ]
+  },
+  {
+    "id": "N27",
+    "date": "2025-12-26",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "可能影响未成年人身心健康的网络信息分类办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/23/c_1770728781060093.htm"
+      }
+    ]
+  },
+  {
+    "id": "A199",
+    "date": "2025-12-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《人工智能拟人化互动服务管理暂行办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-12/27/c_1768571207311996.htm"
+      }
+    ]
+  },
+  {
+    "id": "A200",
+    "date": "2025-12-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布通过备案的个人信息出境认证专业机构的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2025-12/30/c_1768735664909127.htm"
+      }
+    ]
+  },
+  {
+    "id": "A201",
+    "date": "2026-01-07",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十五批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/07/c_1769516642440314.htm"
+      }
+    ]
+  },
+  {
+    "id": "A202",
+    "date": "2026-01-09",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布2025年生成式人工智能服务已备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/09/c_1769688009588554.htm"
+      }
+    ]
+  },
+  {
+    "id": "A203",
+    "date": "2026-01-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网应用程序个人信息收集使用规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/10/c_1769603446094128.htm"
+      }
+    ]
+  },
+  {
+    "id": "A204",
+    "date": "2026-01-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二十一批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/15/c_1770207736136310.htm"
+      }
+    ]
+  },
+  {
+    "id": "A205",
+    "date": "2026-01-24",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《金融信息服务数据分类分级指南（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-01/24/c_1770812246428118.htm"
+      }
+    ]
+  },
+  {
+    "id": "N28",
+    "date": "2026-02-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "未成年人用户数量巨大和对未成年人群体具有显著影响的网络平台服务提供者认定办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-02/28/c_1774010730056867.htm"
+      }
+    ]
+  },
+  {
+    "id": "A206",
+    "date": "2026-02-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办启动“清朗·2026年营造喜庆祥和春节网络环境”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-02/12/c_1772627849788243.htm"
+      }
+    ]
+  },
+  {
+    "id": "A207",
+    "date": "2026-03-05",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二十二批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-03/05/c_1774444270311162.htm"
+      }
+    ]
+  },
+  {
+    "id": "A208",
+    "date": "2026-03-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十六批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-03/12/c_1775050837565188.htm"
+      }
+    ]
+  },
+  {
+    "id": "A209",
+    "date": "2026-03-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2026年1月至2月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-03/17/c_1775482074695536.htm"
+      }
+    ]
+  },
+  {
+    "id": "A210",
+    "date": "2026-04-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《小型个人信息处理者个人信息保护简化措施规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/03/c_1776865011603509.htm"
+      }
+    ]
+  },
+  {
+    "id": "A211",
+    "date": "2026-04-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《数字虚拟人信息服务管理办法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/03/c_1776952992709096.htm"
+      }
+    ]
+  },
+  {
+    "id": "A212",
+    "date": "2026-04-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "中央网信办、国家铁路局联合约谈7家涉火车票销售第三方平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/10/c_1777558284141711.htm"
+      }
+    ]
+  },
+  {
+    "id": "O21",
+    "date": "2026-04-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Interim Measures for Anthropomorphic AI Interaction Services",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "人工智能拟人化互动服务管理暂行办法",
+      "draft_date": "2025-12-27",
+      "approved": "2026-02-02",
+      "effective": "2026-07-15",
+      "co_issuers": [
+        "NDRC",
+        "MIIT",
+        "MPS",
+        "SAMR"
+      ],
+      "ai": true
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+      }
+    ]
+  },
+  {
+    "id": "N29",
+    "date": "2026-04-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "金融产品网络营销管理办法",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "normative",
+      "lead": "MIIT",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/24/c_1778769008779432.htm"
+      }
+    ]
+  },
+  {
+    "id": "A213",
+    "date": "2026-04-27",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于33款App个人信息收集使用问题的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/27/c_1779028107561553.htm"
+      }
+    ]
+  },
+  {
+    "id": "A214",
+    "date": "2026-04-28",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "网信部门依法查处“剪映”App等生成合成内容标识违法问题网站平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/28/c_1779119736411711.htm"
+      }
+    ]
+  },
+  {
+    "id": "A215",
+    "date": "2026-04-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·整治AI应用乱象”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-04/30/c_1779289298718765.htm"
+      }
+    ]
+  },
+  {
+    "id": "A216",
+    "date": "2026-05-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十七批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-05/06/c_1779809434590762.htm"
+      }
+    ]
+  },
+  {
+    "id": "A217",
+    "date": "2026-05-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二十三批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-05/12/c_1780238108726841.htm"
+      }
+    ]
+  },
+  {
+    "id": "A218",
+    "date": "2026-05-13",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2026年3月至4月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-05/13/c_1780413225190669.htm"
+      }
+    ]
+  },
+  {
+    "id": "A219",
+    "date": "2026-05-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·优化营商网络环境 整治恶意炒作涉企信息”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-05/29/c_1781797255442297.htm"
+      }
+    ]
+  },
+  {
+    "id": "O23",
+    "date": "2026-05-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Multi-Channel Distribution of Online Content",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "互联网信息内容多渠道分发服务管理规定",
+      "draft_date": "2025-01-10",
+      "approved": "2026-05-08",
+      "effective": "2026-09-01",
+      "co_issuers": [
+        "MPS",
+        "Culture and Tourism",
+        "SAMR",
+        "NRTA"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
+      }
+    ]
+  },
+  {
+    "id": "A220",
+    "date": "2026-06-11",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于30款App个人信息收集使用问题的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-06/11/c_1782920097670955.htm"
+      }
+    ]
+  },
+  {
+    "id": "A221",
+    "date": "2026-06-12",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "summon",
+    "text": "市场监管总局会同中央网信办、国家铁路局约谈7家涉火车票销售第三方平台",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "joint"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-06/12/c_1782920141019038.htm"
+      }
+    ]
+  },
+  {
+    "id": "A222",
+    "date": "2026-06-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗·整治账号名称信息乱象”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-06/18/c_1783524858389800.htm"
+      }
+    ]
+  },
+  {
+    "id": "A223",
+    "date": "2026-06-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《促进分布式数字身份互通互认应用规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-06/18/c_1783525605384124.htm"
+      }
+    ]
+  },
+  {
+    "id": "O24",
+    "date": "2026-06-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Measures for Network Data Security Risk Assessment",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "网络数据安全风险评估办法",
+      "draft_date": "2025-12-06",
+      "approved": "2026-06-01",
+      "effective": "2026-08-20",
+      "co_issuers": [
+        "MIIT",
+        "MPS"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
+      }
+    ]
+  },
+  {
+    "id": "A224",
+    "date": "2026-07-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "关于开展“清朗・网络娱乐团播乱象整治”专项行动的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/03/c_1784735652192477.htm"
+      }
+    ]
+  },
+  {
+    "id": "A225",
+    "date": "2026-07-03",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《互联网信息服务管理办法（修订草案征求意见稿）》再次公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/03/c_1784822399677167.htm"
+      }
+    ]
+  },
+  {
+    "id": "A226",
+    "date": "2026-07-10",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2026年5月至6月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/10/c_1785427810632554.htm"
+      }
+    ]
+  },
+  {
+    "id": "A227",
+    "date": "2026-07-15",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布7款提供手机端侧生成式人工智能服务已备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/15/c_1785861480767004.htm"
+      }
+    ]
+  },
+  {
+    "id": "A228",
+    "date": "2026-07-17",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第十八批深度合成服务算法备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/17/c_1786032856662750.htm"
+      }
+    ]
+  },
+  {
+    "id": "A229",
+    "date": "2026-07-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·未成年人网络保护”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/20/c_1786294052406609.htm"
+      }
+    ]
+  },
+  {
+    "id": "A230",
+    "date": "2026-07-21",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "国家互联网信息办公室关于发布第二十四批境内区块链信息服务备案编号的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/21/c_1786380772942179.htm"
+      }
+    ]
+  },
+  {
+    "id": "O25",
+    "date": "2026-07-22",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_rule",
+    "text": "Provisions on Simplified Protection Measures for Small Processors",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "instrument": "order",
+      "title_zh": "小型个人信息处理者个人信息保护简化措施规定",
+      "draft_date": "2026-04-03",
+      "approved": "2026-06-26",
+      "effective": "2026-09-01",
+      "co_issuers": [
+        "MPS"
+      ],
+      "ai": false
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
+      }
+    ]
+  },
+  {
+    "id": "A231",
+    "date": "2026-07-29",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《中华人民共和国反网络暴力法（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-07/29/c_1787072711938509.htm"
+      }
+    ]
+  },
+  {
+    "id": "A232",
+    "date": "2026-08-06",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "retaliate_review",
+    "text": "关于对派拓公司在华销售产品启动网络安全审查的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-08/06/c_1787764332950791.htm"
+      }
+    ]
+  },
+  {
+    "id": "A233",
+    "date": "2026-09-14",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布生成式人工智能服务已备案信息的公告（2026年7月至8月）",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-09/14/c_1791136833136332.htm"
+      }
+    ]
+  },
+  {
+    "id": "A234",
+    "date": "2026-09-18",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "issue_draft",
+    "text": "国家互联网信息办公室关于《国务院关于保障未成年人健康安全使用网络的规定（征求意见稿）》公开征求意见的通知",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {
+      "lead": "CAC",
+      "capacity": "on_behalf"
+    },
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-09/18/c_1791482017777471.htm"
+      }
+    ]
+  },
+  {
+    "id": "A235",
+    "date": "2026-09-20",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "enforce",
+    "text": "关于30款App个人信息收集使用问题的通报",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-09/20/c_1791481881543149.htm"
+      }
+    ]
+  },
+  {
+    "id": "A236",
+    "date": "2026-09-23",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "publish_list",
+    "text": "关于发布3款提供手机端侧生成式人工智能服务已备案信息的公告",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-09/23/c_1791913977404975.htm"
+      }
+    ]
+  },
+  {
+    "id": "A237",
+    "date": "2026-09-30",
+    "date_precision": "day",
+    "type": "did",
+    "verb": "launch_campaign",
+    "text": "中央网信办部署开展“清朗·整治短视频虚假人设乱象”专项行动",
+    "trigger_ref": null,
+    "visible_to": "public",
+    "verified": "primary",
+    "attributes": {},
+    "sources": [
+      {
+        "label": "cac.gov.cn",
+        "url": "https://www.cac.gov.cn/2026-09/30/c_1792520301987752.htm"
+      }
+    ]
+  }
+]

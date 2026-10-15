@@ -1,0 +1,237 @@
+{
+  "id": "miit",
+  "name": "Ministry of Industry and Information Technology",
+  "short": "MIIT",
+  "class": "state",
+  "cutoff": "2026-01-01",
+  "context_from": [
+    "cac",
+    "deepseek"
+  ],
+  "hero": {
+    "eyebrow": "State ministry persona",
+    "title": "MIIT,",
+    "title_em": "industrial policy for AI",
+    "lede": "China’s industry ministry: compute plans, AI standards, telecom rules and quiet guidance to buyers. It never answers Washington in public; it steers Chinese firms instead."
+  },
+  "short_answer": [
+    {
+      "title": "It co-signs CAC’s rules",
+      "body": "MIIT co-issued CAC’s deep-synthesis, generative-AI and anthropomorphic-AI measures within days of CAC signing them, the clearest sign of the commission’s office leading and ministries following."
+    },
+    {
+      "title": "When Washington eases, MIIT gates",
+      "body": "After the US let NVIDIA sell again, MIIT asked Chinese buyers to justify foreign chips, or approved purchases only on conditions. Two episodes: still a signal."
+    }
+  ],
+  "purpose": {
+    "summary": "MIIT’s plans, standards and buyer guidance are in its control, so its record can forecast how Beijing steers firms after US chip moves and new AI waves.",
+    "use_for": [
+      "After Washington eases chip sales, will Chinese buyers be steered back to domestic chips?",
+      "Which CAC-led AI rules will MIIT co-issue, and how soon?",
+      "After a new AI product class takes off, what promotion plan or standards body follows?"
+    ],
+    "dont_use_for": [
+      "Public responses to US rules: MIIT makes none; MOFCOM and the foreign ministry speak.",
+      "Outright purchase bans, which came from CAC and customs."
+    ]
+  },
+  "standing": {
+    "class_role": "State · ministry under the State Council for industry, telecom, software and chips.",
+    "principal": "The State Council. It co-issues and implements Cyberspace Commission rules.",
+    "attribution_rule": "A row is MIIT’s when MIIT issues or co-issues it, or when reporting names MIIT as the body giving guidance. Unattributed directives (the 2025 data-centre chip order, C401) are context.",
+    "veto_players": "CAC, which leads the AI conduct rules MIIT co-signs; NDRC and MOFCOM on chip purchases (MI13).",
+    "gates_held": "Telecom licensing, state carriers’ equipment (MI06), and guidance on chip purchases by large firms (MI10)."
+  },
+  "powers": [
+    {
+      "id": "rule_making",
+      "status": "holds",
+      "use": "Co-issues CAC’s AI rules; issues its own data rules",
+      "rows": [
+        "MI01",
+        "MI02",
+        "MI03",
+        "MI09",
+        "MI15"
+      ],
+      "limit": "Never the lead drafter of content rules"
+    },
+    {
+      "id": "gatekeeping",
+      "status": "partial",
+      "use": "Guidance and approvals on foreign-chip purchases",
+      "rows": [
+        "MI10",
+        "MI13"
+      ],
+      "limit": "Unpublished window guidance, known only through reporting"
+    },
+    {
+      "id": "information",
+      "status": "partial",
+      "use": "Vulnerability warnings (NVDB) and data classification",
+      "rows": [
+        "MI02",
+        "MI14"
+      ],
+      "limit": "Warnings, not filings"
+    },
+    {
+      "id": "sanctioning",
+      "status": "partial",
+      "use": "",
+      "rows": [],
+      "limit": "Holds telecom enforcement powers, not exercised in this log"
+    },
+    {
+      "id": "review",
+      "status": "lacks",
+      "use": "",
+      "rows": [],
+      "limit": "Security reviews belong to CAC"
+    },
+    {
+      "id": "mobilisation",
+      "status": "holds",
+      "use": "Plans and campaigns: compute, AI+ manufacturing, humanoid training",
+      "rows": [
+        "MI04",
+        "MI05",
+        "MI12"
+      ],
+      "limit": "Targets, not mandates"
+    },
+    {
+      "id": "external_coercion",
+      "status": "partial",
+      "use": "Orders to replace US chips in state networks",
+      "rows": [
+        "MI06"
+      ],
+      "limit": "Reported, never announced"
+    },
+    {
+      "id": "fiscal",
+      "status": "partial",
+      "use": "Compute vouchers for AI service providers",
+      "rows": [],
+      "limit": "Fiscal rows not yet logged"
+    }
+  ],
+  "verbs_ruled_out": [
+    "restrict_exports",
+    "retaliate_review"
+  ],
+  "rules": [
+    {
+      "id": "MI1",
+      "name": "Washington eases → buyers steered",
+      "when": "Washington lets NVIDIA sell more to China",
+      "then": "MIIT asks Chinese buyers to justify NVIDIA orders, or approves purchases only on conditions, within weeks",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_easing"
+      ],
+      "episodes": [
+        {
+          "trigger": "C05",
+          "response": "MI10"
+        },
+        {
+          "trigger": "C12",
+          "response": "MI13"
+        }
+      ],
+      "note": "Unpublished guidance reported by the FT and Reuters. The outright blocks were CAC (C08) and customs, not MIIT."
+    },
+    {
+      "id": "MI2",
+      "name": "Washington tightens → quiet substitution",
+      "when": "Washington tightens chip controls",
+      "then": "No public statement; months later, a quiet order to replace US chips in state networks",
+      "status": "hypothesis",
+      "triggers": [
+        "us_chip_restriction"
+      ],
+      "episodes": [
+        {
+          "trigger": "C02",
+          "response": "MI06"
+        },
+        {
+          "trigger": "C01",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C29",
+          "response": null,
+          "counter": true
+        },
+        {
+          "trigger": "C36",
+          "response": null,
+          "counter": true
+        }
+      ],
+      "note": "One episode, and three US moves with no logged MIIT act. Public answers come from MOFCOM and the foreign ministry."
+    },
+    {
+      "id": "MI3",
+      "name": "CAC signs an AI rule → MIIT co-issues",
+      "when": "CAC signs an AI rule that MIIT co-issues",
+      "then": "MIIT co-issues and publishes it within days",
+      "status": "hypothesis",
+      "triggers": [
+        "rule_signed"
+      ],
+      "episodes": [
+        {
+          "trigger": "O12",
+          "response": "MI01"
+        },
+        {
+          "trigger": "O15",
+          "response": "MI03"
+        },
+        {
+          "trigger": "O21",
+          "response": "MI15"
+        }
+      ],
+      "note": "Dates are MIIT’s publication dates against CAC’s signing dates. The 2026 anthropomorphic-AI measures fall after the cutoff, so only two build episodes count; the data proposes a signal until a third arrives."
+    },
+    {
+      "id": "MI4",
+      "name": "Chinese open model breaks out → MIIT promotes adoption",
+      "when": "A Chinese lab releases a major open model",
+      "then": "MIIT promotes its adoption by state firms within weeks",
+      "status": "hypothesis",
+      "triggers": [
+        "open_model_release"
+      ],
+      "episodes": [
+        {
+          "trigger": "DS05",
+          "response": "MI08"
+        }
+      ],
+      "note": "One episode: state carriers integrated DeepSeek within weeks of R1’s market shock (C03)."
+    }
+  ],
+  "limits": [
+    {
+      "title": "Window guidance is invisible",
+      "body": "MIIT’s chip guidance is unpublished; rows rest on FT, Reuters and Bloomberg reporting."
+    },
+    {
+      "title": "Silent on US rules",
+      "body": "Searches found no MIIT statement after the 2022, 2023 or 2024 US controls; this is a finding, not a gap in collection."
+    },
+    {
+      "title": "One coder",
+      "body": "Triggers were coded once (P6 not done)."
+    }
+  ]
+}

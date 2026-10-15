@@ -1,0 +1,479 @@
+{
+  "$comment": "The action vocabulary. Every row's verb must be one of these. A class (spec/classes/<class>.json) lists the subset its actors may use. To capture something new, prefer an attribute on an existing verb over a new verb.",
+  "families": [
+    {
+      "id": "rule_lifecycle",
+      "label": "Rule lifecycle",
+      "description": "Writing, changing and withdrawing binding rules",
+      "verbs": [
+        {
+          "id": "issue_draft",
+          "type": "did",
+          "definition": "Publishes a draft rule for comment",
+          "example": "Order 15 draft, 2023-04-11"
+        },
+        {
+          "id": "issue_rule",
+          "type": "did",
+          "definition": "Signs or issues a binding rule (order, regulation, measure)",
+          "example": "Generative-AI measures, 2023-07-10"
+        },
+        {
+          "id": "soften_rule",
+          "type": "did",
+          "definition": "Issues a final text weaker than its own draft on at least one point",
+          "example": "Generative-AI final vs draft"
+        },
+        {
+          "id": "ease_rule",
+          "type": "did",
+          "definition": "Relaxes an existing rule with a new instrument, leaving the original in place",
+          "example": "Cross-border data provisions, 2024"
+        },
+        {
+          "id": "revoke_rule",
+          "type": "did",
+          "definition": "Withdraws a rule or executive order",
+          "example": "Revocation of a predecessor's AI order"
+        },
+        {
+          "id": "delay_rule",
+          "type": "did",
+          "definition": "Postpones a rule's effective date or enforcement"
+        },
+        {
+          "id": "issue_guidance",
+          "type": "did",
+          "definition": "Issues non-binding guidance, standards or FAQs under a rule"
+        },
+        {
+          "id": "issue_standard",
+          "type": "did",
+          "definition": "Publishes a technical standard that operationalises a rule",
+          "example": "Labelling standard, 2025"
+        }
+      ]
+    },
+    {
+      "id": "legislation",
+      "label": "Legislation",
+      "description": "Bills and statute",
+      "verbs": [
+        {
+          "id": "introduce_bill",
+          "type": "did",
+          "definition": "Introduces or sponsors a bill"
+        },
+        {
+          "id": "pass_bill",
+          "type": "did",
+          "definition": "A chamber passes a bill"
+        },
+        {
+          "id": "enact",
+          "type": "did",
+          "definition": "A bill becomes law (signed, or passed over a veto)"
+        },
+        {
+          "id": "veto",
+          "type": "did",
+          "definition": "Rejects a bill or instrument it has the power to block"
+        },
+        {
+          "id": "vote",
+          "type": "did",
+          "definition": "A member votes on a bill or rule"
+        },
+        {
+          "id": "preempt",
+          "type": "did",
+          "definition": "Overrides lower-level rules (e.g. federal over state)",
+          "example": "DOJ task force against state AI laws, 2025"
+        }
+      ]
+    },
+    {
+      "id": "executive",
+      "label": "Executive action",
+      "description": "Orders and decisions by an executive",
+      "verbs": [
+        {
+          "id": "sign_order",
+          "type": "did",
+          "definition": "Signs an executive order or decree",
+          "example": "EO on a national AI policy framework, 2025-12"
+        },
+        {
+          "id": "license_exports",
+          "type": "did",
+          "definition": "Grants, conditions or withholds an export licence",
+          "example": "H200 sales cleared with a 25% surcharge"
+        },
+        {
+          "id": "restrict_exports",
+          "type": "did",
+          "definition": "Imposes or tightens export controls",
+          "example": "US controls on AI chips, 2022-10-07"
+        },
+        {
+          "id": "sanction",
+          "type": "did",
+          "definition": "Imposes sanctions or entity listings"
+        }
+      ]
+    },
+    {
+      "id": "market_access",
+      "label": "Market access",
+      "description": "Deciding who may enter a market",
+      "verbs": [
+        {
+          "id": "stand_up_program",
+          "type": "did",
+          "definition": "Creates an approval or registration regime and admits the first batch",
+          "example": "First 11 generative-AI approvals, 2023"
+        },
+        {
+          "id": "grant_permission",
+          "type": "did",
+          "definition": "Approves a specific actor or product",
+          "example": "Apple cleared, 2026"
+        },
+        {
+          "id": "deny_permission",
+          "type": "did",
+          "definition": "Refuses or blocks a specific actor or product",
+          "example": "Firms told to stop buying RTX Pro 6000D"
+        }
+      ]
+    },
+    {
+      "id": "oversight",
+      "label": "Oversight",
+      "description": "Seeing inside the actors governed",
+      "verbs": [
+        {
+          "id": "open_filing",
+          "type": "did",
+          "definition": "Opens a filing or registration duty",
+          "example": "Algorithm filing"
+        },
+        {
+          "id": "publish_list",
+          "type": "did",
+          "definition": "Publishes a filing list or register",
+          "example": "Deep-synthesis filing list of 41"
+        },
+        {
+          "id": "summon",
+          "type": "did",
+          "definition": "Summons a firm to explain itself",
+          "example": "CAC summons NVIDIA over H20, 2025-07-31"
+        },
+        {
+          "id": "investigate",
+          "type": "did",
+          "definition": "Opens an investigation (antitrust, consumer, security)",
+          "example": "SAMR probe of NVIDIA, 2024-12"
+        },
+        {
+          "id": "retaliate_review",
+          "type": "did",
+          "definition": "Opens a security review of a foreign firm after a foreign move",
+          "example": "Micron review, 2023"
+        }
+      ]
+    },
+    {
+      "id": "enforcement",
+      "label": "Enforcement",
+      "description": "Punishing breaches",
+      "verbs": [
+        {
+          "id": "enforce",
+          "type": "did",
+          "definition": "Fines, removes, takes down or penalises under a rule",
+          "example": "Didi fined RMB 8.026bn, 2022"
+        },
+        {
+          "id": "launch_campaign",
+          "type": "did",
+          "definition": "Runs a time-boxed campaign that directs others and reports counts",
+          "example": "Qinglang campaigns"
+        }
+      ]
+    },
+    {
+      "id": "fiscal",
+      "label": "Fiscal",
+      "description": "Spending",
+      "verbs": [
+        {
+          "id": "subsidise",
+          "type": "did",
+          "definition": "Subsidises a firm or sector"
+        },
+        {
+          "id": "fund",
+          "type": "did",
+          "definition": "Funds a programme, lab or other actor"
+        }
+      ]
+    },
+    {
+      "id": "coordination",
+      "label": "Coordination",
+      "description": "Positioning among other bodies",
+      "verbs": [
+        {
+          "id": "align_with",
+          "type": "did",
+          "definition": "Adopts or mirrors another jurisdiction's or body's measure"
+        },
+        {
+          "id": "assert_control",
+          "type": "did",
+          "definition": "Asserts authority over a domain or another body"
+        },
+        {
+          "id": "state_reason",
+          "type": "said",
+          "definition": "Gives an official reason for an act"
+        }
+      ]
+    },
+    {
+      "id": "speech",
+      "label": "Speech",
+      "description": "Statements; type is said",
+      "verbs": [
+        {
+          "id": "claim",
+          "type": "said",
+          "definition": "States a fact or position",
+          "example": "\"Export control was a failure.\""
+        },
+        {
+          "id": "warn",
+          "type": "said",
+          "definition": "Warns of a risk or consequence"
+        },
+        {
+          "id": "praise",
+          "type": "said",
+          "definition": "Praises an actor, product or policy"
+        },
+        {
+          "id": "criticise",
+          "type": "said",
+          "definition": "Criticises an actor, product or policy"
+        },
+        {
+          "id": "predict",
+          "type": "said",
+          "definition": "Predicts an outcome",
+          "example": "\"China is going to win the AI race.\""
+        },
+        {
+          "id": "commit",
+          "type": "said",
+          "definition": "Promises a future act"
+        },
+        {
+          "id": "walk_back",
+          "type": "said",
+          "definition": "Retracts or reframes its own earlier statement",
+          "example": "\"Nanoseconds behind\""
+        },
+        {
+          "id": "testify",
+          "type": "either",
+          "definition": "Testifies, or declines to, before a legislature",
+          "example": "Declines Warren's invitation, 2026"
+        }
+      ]
+    },
+    {
+      "id": "influence",
+      "label": "Influence",
+      "description": "Shaping rules others write",
+      "verbs": [
+        {
+          "id": "lobby",
+          "type": "did",
+          "definition": "Lobbies, or discloses lobbying spend"
+        },
+        {
+          "id": "comment_on_rule",
+          "type": "did",
+          "definition": "Files a comment on a draft rule"
+        },
+        {
+          "id": "publish",
+          "type": "did",
+          "definition": "Publishes an open letter, report or essay"
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "label": "Access",
+      "description": "Being in the room",
+      "verbs": [
+        {
+          "id": "meet",
+          "type": "did",
+          "definition": "Meets a decision-maker",
+          "example": "White House meetings"
+        },
+        {
+          "id": "travel",
+          "type": "did",
+          "definition": "Travels to a capital or event",
+          "example": "Beijing, two days after the H20 ban"
+        },
+        {
+          "id": "attend",
+          "type": "did",
+          "definition": "Attends an event (or, as not_taken, stays away)"
+        }
+      ]
+    },
+    {
+      "id": "agreements",
+      "label": "Agreements",
+      "description": "Binding or voluntary pacts",
+      "verbs": [
+        {
+          "id": "sign",
+          "type": "did",
+          "definition": "Signs a pledge, accord or letter",
+          "example": "White House accord, 2026-09-29"
+        },
+        {
+          "id": "partner",
+          "type": "did",
+          "definition": "Enters a partnership with another actor"
+        }
+      ]
+    },
+    {
+      "id": "capital",
+      "label": "Capital",
+      "description": "Money",
+      "verbs": [
+        {
+          "id": "invest",
+          "type": "did",
+          "definition": "Invests in another firm"
+        },
+        {
+          "id": "acquire",
+          "type": "did",
+          "definition": "Acquires a firm"
+        },
+        {
+          "id": "donate",
+          "type": "did",
+          "definition": "Makes a political or charitable donation"
+        },
+        {
+          "id": "sell_shares",
+          "type": "did",
+          "definition": "Sells personal shareholdings",
+          "example": "10b5-1 plan sales"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Product",
+      "description": "What ships, and to whom",
+      "verbs": [
+        {
+          "id": "launch",
+          "type": "did",
+          "definition": "Launches a product or platform",
+          "example": "Agent-safety platform, 2026-09"
+        },
+        {
+          "id": "release_model",
+          "type": "did",
+          "definition": "Releases a model (state open or closed weights in attributes)"
+        },
+        {
+          "id": "pause_release",
+          "type": "did",
+          "definition": "Holds back or pauses a release"
+        },
+        {
+          "id": "restrict_access",
+          "type": "did",
+          "definition": "Restricts who may use a product"
+        },
+        {
+          "id": "allocate",
+          "type": "did",
+          "definition": "Allocates scarce supply among customers"
+        }
+      ]
+    },
+    {
+      "id": "self_governance",
+      "label": "Self-governance",
+      "description": "Rules a company writes for itself",
+      "verbs": [
+        {
+          "id": "publish_framework",
+          "type": "did",
+          "definition": "Publishes a safety framework (RSP, preparedness, risk assessment)"
+        },
+        {
+          "id": "update_framework",
+          "type": "did",
+          "definition": "Publishes a new version of its framework"
+        }
+      ]
+    },
+    {
+      "id": "disclosure",
+      "label": "Disclosure and incidents",
+      "description": "What the public learns",
+      "verbs": [
+        {
+          "id": "file",
+          "type": "did",
+          "definition": "Makes a regulatory filing (e.g. SEC 8-K, 10-K)",
+          "example": "8-K on H20 licence, 2025-04-15"
+        },
+        {
+          "id": "disclose_incident",
+          "type": "did",
+          "definition": "Discloses a security or safety incident"
+        },
+        {
+          "id": "patch",
+          "type": "did",
+          "definition": "Ships a fix for a disclosed vulnerability"
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "label": "Legal",
+      "description": "Courts and compliance",
+      "verbs": [
+        {
+          "id": "sue",
+          "type": "did",
+          "definition": "Takes an actor or rule to court"
+        },
+        {
+          "id": "comply",
+          "type": "did",
+          "definition": "Takes a dated step to comply with a rule (attribute rule_ref)"
+        }
+      ]
+    }
+  ]
+}

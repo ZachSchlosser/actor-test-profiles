@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actor Personas</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M8%208%20L24%209%20M8%208%20L16%2023.8%20M24%209%20L16%2023.8%22%20stroke%3D%22%238C7B66%22%20stroke-width%3D%221.6%22%20fill%3D%22none%22/%3E%3Crect%20x%3D%223.5%22%20y%3D%223.5%22%20width%3D%229%22%20height%3D%229%22%20rx%3D%222%22%20fill%3D%22%237B1E36%22/%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%229%22%20r%3D%224.6%22%20fill%3D%22%23FDFAF3%22%20stroke%3D%22%231E1916%22%20stroke-width%3D%221.8%22/%3E%3Cpolygon%20points%3D%2216%2C18.6%2020.5%2C21.2%2020.5%2C26.4%2016%2C29%2011.5%2C26.4%2011.5%2C21.2%22%20fill%3D%22%23FDFAF3%22%20stroke%3D%22%231E1916%22%20stroke-width%3D%221.8%22/%3E%3C/svg%3E">
+<meta name="description" content="Policy-actor personas built from dated, sourced records.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="src/styles/tokens.css">
+<link rel="stylesheet" href="src/styles/components.css">
+<script type="module" src="src/app.js"></script>
+</head>
+<body><div id="app"><div class="gutter" style="padding-block:56px"><div class="wrap skel" aria-label="Loading"><i class="h"></i><i></i><i class="s"></i></div></div></div></body>
+</html>

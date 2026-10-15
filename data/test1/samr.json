@@ -1,0 +1,391 @@
+{
+ "actor": "samr",
+ "name": "State Administration for Market Regulation",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "identity_line": "State Administration for Market Regulation (government). Record before 2026-01-01.",
+ "observed_verbs": {
+  "core": [
+   {
+    "verb": "investigate",
+    "n": 6
+   },
+   {
+    "verb": "grant_permission",
+    "n": 5
+   },
+   {
+    "verb": "issue_standard",
+    "n": 2
+   }
+  ],
+  "rare": [
+   {
+    "verb": "delay_rule",
+    "n": 1
+   },
+   {
+    "verb": "enforce",
+    "n": 1
+   },
+   {
+    "verb": "issue_draft",
+    "n": 1
+   },
+   {
+    "verb": "revoke_rule",
+    "n": 1
+   },
+   {
+    "verb": "state_reason",
+    "n": 1
+   }
+  ]
+ },
+ "record": [
+  {
+   "row": "SM01",
+   "date": "2022-01-27",
+   "verb": "grant_permission",
+   "text": "SAMR approved AMD's acquisition of Xilinx on conditions, including no bundling, non-discriminatory supply, and interoperability with Chinese-market products, for six years.",
+   "sources": [
+    {
+     "label": "Ashurst: SAMR conditionally approves two tech mergers",
+     "url": "https://www.ashurst.com/en/insights/cn09---samr-conditionally-approves-two-mergers-in-the-technology-sector/"
+    },
+    {
+     "label": "Concurrences, Jan 2022",
+     "url": "https://www.concurrences.com/fr/bulletin/news-issues/january-2022/the-chinese-competition-authority-approves-2-transactions-subject-to-a-number"
+    }
+   ]
+  },
+  {
+   "row": "SM02",
+   "date": "2022-07-10",
+   "verb": "enforce",
+   "text": "SAMR fined companies including Tencent and Alibaba over 28 deals they had not reported for merger review, mostly 500,000 yuan per case.",
+   "sources": [
+    {
+     "label": "Bloomberg 2022-07-10",
+     "url": "https://www.bloomberg.com/news/articles/2022-07-10/china-watchdog-fined-alibaba-tencent-over-reporting-past-deals"
+    },
+    {
+     "label": "CGTN 2022-07-11",
+     "url": "https://news.cgtn.com/news/2022-07-11/Alibaba-Tencent-fined-for-disclosure-violations-in-China-1byGSQwRBgQ/share_amp.html"
+    }
+   ]
+  },
+  {
+   "row": "SM03",
+   "date": "2023-07-26",
+   "verb": "grant_permission",
+   "text": "SAMR approved MaxLinear's acquisition of Silicon Motion. MaxLinear sent a termination notice about 10 hours later.",
+   "sources": [
+    {
+     "label": "Silicon Motion 6-K (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1329394/000119312523195788/d522908dex991.htm"
+    },
+    {
+     "label": "Silicon Motion 20-F FY2023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1329394/000119312524125110/d78706d20f.htm"
+    }
+   ]
+  },
+  {
+   "row": "SM04",
+   "date": "2023-08-15",
+   "verb": "grant_permission",
+   "text": "SAMR did not clear Intel's $5.4bn acquisition of Tower Semiconductor before the 15 August outside date, so Intel terminated the deal on 16 August.",
+   "sources": [
+    {
+     "label": "Financier Worldwide 2023-08-17",
+     "url": "https://www.financierworldwide.com/fw-news/2023/8/17/intel-and-tower-terminate-54bn-deal"
+    },
+    {
+     "label": "AP via abc17news",
+     "url": "https://abc17news.com/?p=1205035"
+    }
+   ]
+  },
+  {
+   "row": "SM05",
+   "date": "2023-11-21",
+   "verb": "grant_permission",
+   "text": "SAMR approved Broadcom's $61bn acquisition of VMware on conditions, including interoperability with third-party hardware and no abuse of position in virtualisation software and fibre-channel adapters. It was the last clearance needed.",
+   "sources": [
+    {
+     "label": "MLex",
+     "url": "https://www.mlex.com/mlex/amp/articles/1984534"
+    },
+    {
+     "label": "Digital Policy Alert",
+     "url": "https://digitalpolicyalert.org/event/15828-issued-samr-conditional-approval-of-broadcom-and-vmware-merger"
+    }
+   ]
+  },
+  {
+   "row": "SM06",
+   "date": "2024-12-09",
+   "verb": "investigate",
+   "text": "SAMR opened an anti-monopoly investigation into NVIDIA for suspected breach of the conditions attached to its 2020 Mellanox approval. It came one week after the US BIS chip rule of 2 December. This is the same event as C42.",
+   "sources": [
+    {
+     "label": "China Daily (CN) 2024-12-09",
+     "url": "https://cn.chinadaily.com.cn/a/202412/09/WS6756e273a310b59111da7da9.html"
+    }
+   ]
+  },
+  {
+   "row": "SM07",
+   "date": "2025-02-04",
+   "verb": "investigate",
+   "text": "Minutes after the US 10% tariff took effect, SAMR announced an anti-monopoly investigation into Google, alongside MOFCOM counter-tariffs and listings.",
+   "sources": [
+    {
+     "label": "The Register 2025-02-04",
+     "url": "https://www.theregister.com/2025/02/04/china_trump_google/"
+    },
+    {
+     "label": "Reuters via Deccan Herald",
+     "url": "https://www.deccanherald.com/amp/story/business%2Fcompanies%2Fgoogle-suspected-of-violating-chinas-anti-monopoly-law-says-regulator-launching-probe-3388288"
+    }
+   ]
+  },
+  {
+   "row": "SM08",
+   "date": "2025-02-04",
+   "verb": "investigate",
+   "text": "FT reported that SAMR was weighing a formal probe of Intel, possibly depending on US-China relations. No Intel probe was announced through Oct 2026.",
+   "sources": [
+    {
+     "label": "TechCrunch 2025-02-04 (citing FT)",
+     "url": "https://techcrunch.com/2025/02/04/china-may-probe-intel-for-antitrust-report"
+    },
+    {
+     "label": "TipRanks (FT report)",
+     "url": "https://www.tipranks.com/news/the-fly/china-looking-at-launching-formal-probe-into-intel-ft-reports"
+    }
+   ]
+  },
+  {
+   "row": "SM09",
+   "date": "2025-02-28",
+   "verb": "issue_standard",
+   "text": "SAMR and SAC issued mandatory national standard GB 45438-2025 on labelling AI-generated content, effective 1 Sept 2025 alongside the CAC labelling measures.",
+   "sources": [
+    {
+     "label": "Sidley copy of GB 45438-2025",
+     "url": "https://www.sidley.com/en/-/media/resource-pages/ai-monitor/20250314-china-standard-gb-454382025-labeling-method-for-content-generated-by-ai.pdf?la=en"
+    },
+    {
+     "label": "chinesestandard.net listing",
+     "url": "https://www.chinesestandard.net/PDF/English.aspx/GB45438-2025"
+    }
+   ]
+  },
+  {
+   "row": "SM10",
+   "date": "2025-04-04",
+   "verb": "investigate",
+   "text": "SAMR opened an anti-monopoly investigation into DuPont China (Tyvek) on the same day Beijing announced 34% counter-tariffs to the US 'Liberation Day' tariffs.",
+   "sources": [
+    {
+     "label": "DuPont Reg FD filing (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000011/dd-20250404.htm"
+    },
+    {
+     "label": "GCR briefing 4 April 2025",
+     "url": "https://globalcompetitionreview.com/article/tug-of-war-the-briefing-4-april-2025"
+    }
+   ]
+  },
+  {
+   "row": "SM11",
+   "date": "2025-04-25",
+   "verb": "issue_standard",
+   "text": "SAMR and SAC issued GB/T 45654-2025, the basic security requirements for generative AI services (effective 1 Nov 2025), together with companion data-annotation and training-data standards.",
+   "sources": [
+    {
+     "label": "CSET translation",
+     "url": "https://cset.georgetown.edu/publication/china-gen-ai-safety-standard-final/"
+    },
+    {
+     "label": "SESEC",
+     "url": "https://sesec.eu/?p=2926"
+    }
+   ]
+  },
+  {
+   "row": "SM12",
+   "date": "2025-07-14",
+   "verb": "grant_permission",
+   "text": "SAMR approved Synopsys's $35bn acquisition of Ansys on conditions that EDA tools stay available to Chinese customers on non-discriminatory terms. This came 12 days after the US lifted its EDA export curbs.",
+   "sources": [
+    {
+     "label": "Korea Times (Reuters) 2025-07-14",
+     "url": "https://www.koreatimes.co.kr/amp/world/20250714/china-gives-conditional-nod-to-synopsys-ansys-deal-removing-last-major-hurdle"
+    },
+    {
+     "label": "Verdict",
+     "url": "https://www.verdict.co.uk/synopsys-clears-hurdles-ansys-acquisition/"
+    }
+   ]
+  },
+  {
+   "row": "SM13",
+   "date": "2025-07-22",
+   "verb": "delay_rule",
+   "text": "SAMR suspended its DuPont China investigation in a brief website notice the week before the US-China talks in Stockholm.",
+   "sources": [
+    {
+     "label": "MLex 2025-07-22",
+     "url": "https://www.mlex.com/mlex/amp/articles/2367626"
+    },
+    {
+     "label": "GCR: China suspends DuPont probe",
+     "url": "https://globalcompetitionreview.com/article/china-suspends-dupont-probe"
+    }
+   ]
+  },
+  {
+   "row": "SM14",
+   "date": "2025-09",
+   "verb": "revoke_rule",
+   "text": "FT reported (relayed by Bloomberg on 18 Sept) that SAMR had dropped its Google antitrust investigation during trade talks with Washington.",
+   "sources": [
+    {
+     "label": "Bloomberg 2025-09-18 (citing FT)",
+     "url": "https://www.bloomberg.com/news/articles/2025-09-18/china-drops-google-antitrust-probe-during-trade-talks-ft-says"
+    }
+   ]
+  },
+  {
+   "row": "SM15",
+   "date": "2025-09-15",
+   "verb": "investigate",
+   "text": "SAMR announced a preliminary finding that NVIDIA had violated the Anti-Monopoly Law and the Mellanox conditions, and said it would investigate further. It came during the Madrid talks and three days after the US listed 23 Chinese entities. This is the same event as C22.",
+   "sources": [
+    {
+     "label": "HK01 2025-09-15",
+     "url": "https://global.hk01.com/即时中国/60276591/中国市场监管总局-英伟达违反反垄断法-依法决定实施进一步调查"
+    },
+    {
+     "label": "CTV News (Reuters)",
+     "url": "https://www.ctvnews.ca/business/article/china-says-preliminary-probe-shows-nvidia-violated-anti-monopoly-law/"
+    }
+   ]
+  },
+  {
+   "row": "SM16",
+   "date": "2025-10-10",
+   "verb": "investigate",
+   "text": "SAMR opened an investigation into Qualcomm for closing its Autotalks acquisition without notifying the regulator. It came after the BIS affiliates rule and the day after MOFCOM's rare-earth controls.",
+   "sources": [
+    {
+     "label": "Caixin Global 2025-10-11",
+     "url": "https://www.caixinglobal.com/2025-10-11/qualcomm-faces-china-antitrust-probe-over-autotalks-deal-102370368.html"
+    },
+    {
+     "label": "Reuters via StreetInsider",
+     "url": "https://www.streetinsider.com/Reuters/China+opens+antitrust+probe+into+Qualcomm+over+its+Autotalks+deal/25442187.html"
+    }
+   ]
+  },
+  {
+   "row": "SM17",
+   "date": "2025-10-12",
+   "verb": "state_reason",
+   "text": "SAMR said it told Qualcomm in March 2024 that the Autotalks deal needed approval, and that Qualcomm had admitted closing it without notice.",
+   "sources": [
+    {
+     "label": "Free Malaysia Today (Reuters) 2025-10-12",
+     "url": "https://fmtv5.freemalaysiatoday.com/category/business/2025/10/12/china-says-qualcomm-admitted-to-acquiring-autotalks-without-informing-regulator"
+    },
+    {
+     "label": "Caixin 2025-10-13",
+     "url": "https://www.caixinglobal.com/2025-10-13/qualcomm-faces-china-antitrust-probe-over-unapproved-autotalks-deal-102371002.html"
+    }
+   ]
+  },
+  {
+   "row": "SM18",
+   "date": "2025-11-15",
+   "verb": "issue_draft",
+   "text": "SAMR released draft Anti-Monopoly Compliance Guidelines for Internet Platforms, which list eight risks including algorithmic collusion on prices and commissions.",
+   "sources": [
+    {
+     "label": "Xinhua 2025-11-15",
+     "url": "https://www.news.cn/politics/20251115/b89a6b87c92f4458b117ac3826f50726/c.html"
+    },
+    {
+     "label": "China Securities Journal 2025-11-17",
+     "url": "https://cs.com.cn/xwzx/hg/202511/t20251117_6523584.html"
+    }
+   ]
+  }
+ ],
+ "excluded_from_prompt": [
+  "purpose",
+  "standing",
+  "powers",
+  "rules",
+  "reach",
+  "limits",
+  "profile",
+  "short_answer",
+  "hero"
+ ],
+ "exam": {
+  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
+  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "baselines": [
+   "predict nothing (did-nothing base rate)",
+   "always the most common verb (modal verb)"
+  ],
+  "hidden_answers": "6 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
+ },
+ "hidden_test": [
+  {
+   "row": "SM19",
+   "date": "2026-02-13",
+   "verb": "issue_guidance",
+   "topic": "competition",
+   "text": "SAMR published the final Internet Platform Anti-Monopoly Compliance Guidelines (issued 28 Jan, 38 articles). They keep inter-platform algorithmic collusion as a risk example and are non-binding."
+  },
+  {
+   "row": "SM20",
+   "date": "2026-04-10",
+   "verb": "issue_rule",
+   "topic": "regulation",
+   "text": "SAMR co-issued the CAC-led Interim Measures on Anthropomorphic AI Interaction Services (effective 15 July 2026), covering emotional manipulation, protections for minors, and algorithm filing."
+  },
+  {
+   "row": "SM21",
+   "date": "2026-05-09",
+   "verb": "issue_standard",
+   "topic": "industrial_policy",
+   "text": "SAMR (SAC) approved 402 standards and amendments, including 39 national standards on computing power, AI, communications, cybersecurity and data."
+  },
+  {
+   "row": "SM22",
+   "date": "2026-05-22",
+   "verb": "revoke_rule",
+   "topic": "competition",
+   "text": "After the Nov 2025 Busan commitment and the May 2026 Beijing summit, SAMR had published no formal closure notice for the NVIDIA or Qualcomm probes. MOFCOM said only that 'various investigations' would end."
+  },
+  {
+   "row": "SM23",
+   "date": "2026-06-26",
+   "verb": "issue_standard",
+   "topic": "industrial_policy",
+   "text": "SAMR announced a series of seven national standards on AI agent interconnection, covering agent identity, description, discovery, interaction and tool calls."
+  },
+  {
+   "row": "SM24",
+   "date": "2026-09-10",
+   "verb": "issue_standard",
+   "topic": "industrial_policy",
+   "text": "SAMR (SAC) released 298 national standards, including 47 on AI, intelligent voice interaction and smart services."
+  }
+ ]
+}
