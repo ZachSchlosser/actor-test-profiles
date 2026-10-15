@@ -60,27 +60,71 @@ ul{padding-left:22px;max-width:80ch}
 <nav>
   <button id="nav-key" class="on" onclick="showKey()">The Key</button>
   <button id="nav-actors" onclick="showActors()">Actors</button>
+  <button id="nav-methods" onclick="showMethods()">How we built the cards</button>
+  <button id="nav-exp" onclick="showExperiment()">The experiment</button>
 </nav>
 <main id="main"><div class="loading">Loading…</div></main>
 
 <script>
 const ACTORS = ["baidu","cac","deepseek","huawei","jensen-huang","miit","mofcom","nvidia","samr"];
 const TYPELABEL = {government:"Government", company:"Company", individual:"Individual"};
-let KEY = null, INDEX = null, current = null, tab = "t1";
+let KEY = null, INDEX = null, METHODS = null, EXPERIMENT = null, current = null, tab = "t1";
 const $ = id => document.getElementById(id);
 
 async function j(p){ const r = await fetch(p); if(!r.ok) throw new Error(p+": "+r.status); return r.json(); }
 
 async function boot(){
-  [KEY, INDEX] = await Promise.all([j("key.json"), j("data/index.json")]);
+  [KEY, INDEX, METHODS, EXPERIMENT] = await Promise.all([j("key.json"), j("data/index.json"), j("methods.json"), j("experiment.json")]);
   showKey();
+}
+
+/* ---------- METHODS ---------- */
+function showMethods(){
+  for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-methods");
+  const m = METHODS;
+  let h = `<h2>${esc(m.title)}</h2><p>${esc(m.intro)}</p><div class="card"><strong>Where the data comes from.</strong> ${esc(m.source_note)}</div>`;
+  for(const t of m.methods){
+    h += `<h3>${esc(t.name)}</h3>`;
+    if(t.why) h += `<div class="card"><strong>Why this card exists.</strong> ${esc(t.why)}</div>`;
+    if(t.steps){ h += `<p><strong>How it was generated:</strong></p><ul>` + t.steps.map(s=>`<li>${esc(s)}</li>`).join("") + `</ul>`; }
+    if(t.standard_rules){
+      h += `<p><strong>The standard rules we expect each type of actor to follow</strong> - the justification and the measured values. Specific per-actor values are on each actor's Test 2 tab.</p>`;
+      for(const g of t.standard_rules){
+        h += `<div class="card"><span class="tag type">${esc(g.actor_type.split("(")[1] ? g.actor_type.split("(")[1].replace(")","").trim() : "")}</span><strong>${esc(g.actor_type)}</strong><table><tr><th>Rule</th><th>Why this rule</th><th>Measured values</th></tr>`;
+        for(const r of g.rules){ h += `<tr><td>${esc(r.rule)}</td><td>${esc(r.why)}</td><td>${esc(r.values)}</td></tr>`; }
+        h += `</table></div>`;
+      }
+      h += `<p class="small">${esc(t.per_actor_note)}</p>`;
+    }
+    if(t.generation) h += `<p class="small"><strong>What was mechanical vs model-made:</strong> ${esc(t.generation)}</p>`;
+    if(t.never) h += `<div class="hidden-note">${esc(t.never)}</div>`;
+  }
+  $("main").innerHTML = h;
+}
+
+/* ---------- EXPERIMENT ---------- */
+function showExperiment(){
+  for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-exp");
+  const e = EXPERIMENT;
+  let h = `<h2>${esc(e.title)}</h2><p>${esc(e.intro)}</p>`;
+  h += `<h3>Where this comes from: the project's earlier results</h3><ul>` + e.previous.map(p=>`<li>${esc(p)}</li>`).join("") + `</ul>`;
+  h += `<h3>The comparison</h3>`;
+  for(const d of e.design){ h += `<div class="card"><strong>${esc(d.part)}.</strong> ${esc(d.text)}</div>`; }
+  h += `<h3>What the pipeline looks like</h3><div class="card">` + e.flow.map(f=>`<div><span class="chip core">${f.step}</span> ${esc(f.text)}</div>`).join("") + `</div>`;
+  h += `<h3>Pre-registered predictions</h3><ul>` + e.predictions.map(p=>`<li>${esc(p)}</li>`).join("") + `</ul>`;
+  h += `<h3>The code to run it</h3>
+    <div class="card"><strong>Reused as-is.</strong> ${esc(e.code.reuse)}</div>
+    <div class="card"><strong>New code needed.</strong> ${esc(e.code.new_code)}</div>
+    <div class="card"><strong>Run size.</strong> ${esc(e.code.run_size)}</div>
+    <p class="small">${esc(e.code.full_plan)}</p>`;
+  $("main").innerHTML = h;
 }
 
 function esc(s){ return (s??"").toString().replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
 
 /* ---------- KEY ---------- */
 function showKey(){
-  $("nav-key").classList.add("on"); $("nav-actors").classList.remove("on");
+  for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-key");
   tab = "t1";
   const k = KEY;
   let h = `<h2>${esc(k.title)}</h2><p>${esc(k.intro)}</p>`;
@@ -112,7 +156,7 @@ function showKey(){
 
 /* ---------- ACTORS ---------- */
 async function showActors(aid){
-  $("nav-actors").classList.add("on"); $("nav-key").classList.remove("on");
+  for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-actors");
   if(!aid) aid = current || ACTORS[0];
   current = aid;
   let h = `<div class="actorbar">` + ACTORS.map(a=>`<button class="${a===aid?'on':''}" onclick="showActors('${a}')">${esc(nameOf(a))}</button>`).join("") + `</div><div id="actorview"><div class="loading">Loading ${esc(aid)}…</div></div>`;

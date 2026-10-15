@@ -1,6 +1,6 @@
 {
  "title": "The Key: three persona builds, one exam",
- "intro": "Each of the nine actors gets three different persona cards. The cards are built from the same dated record. They are then given the same exam: predict what the actor actually did next, choosing only from actions the actor has really taken. Whichever card wins tells us where a persona's power comes from - the raw facts, the patterns in them, or what they imply.",
+ "intro": "Each of the nine actors gets three different persona cards, built from the same dated record, and the cards are then raced: same questions, scored against what the actor actually did next (see The experiment tab). Where the cards come from: everything starts from actor-persona.pages.dev - the source site. That site holds each actor's dated rows (date, verb, one-line description, quote, source link), a cutoff date, and an analyst-written seven-step persona (Purpose, Standing, Powers, Record, Reactions, Reach, Limits). This project takes the source site's rows and cutoffs, and adds the three test cards, the hidden answer keys, and the comparison. It does not change the source records.",
  "tests": [
   {
    "name": "Test 1 - The Plain Record",
@@ -93,44 +93,40 @@
  ],
  "changes": [
   {
-   "what": "Added the observed action menu (core/rare verbs per actor)",
-   "why": "The exam needs the agent to choose from actions the actor has really taken. The site rules verbs out by power; nothing listed what each actor has actually done."
+   "what": "Observed action menu (core/rare verbs per actor)",
+   "why": "The source site rules verbs OUT by power (its Powers step) but never lists what the actor has actually done. We computed that list from the rows, because the exam requires the agent to choose only from actions the actor has really taken."
   },
   {
-   "what": "Kept after-cutoff rows as a hidden answer key",
-   "why": "The site treats the cutoff as the end of the data. For backtesting, everything after it is the exam - so we split instead of dropping."
+   "what": "After-cutoff rows kept as a hidden answer key",
+   "why": "On the source site the cutoff is simply the end of the data. We split instead of dropping: everything dated after the cutoff becomes the exam - 159 questions with known answers."
   },
   {
-   "what": "Added size, direction, and leave-one-out stability to rules",
-   "why": "A rule with only a delay answers 'when', not 'how much' or 'which way'. Stability keeps rules whose direction survives having any single episode removed."
+   "what": "Size, direction, and leave-one-out stability added to rules",
+   "why": "The source site's Reactions step already records trigger-to-response pairs with computed day gaps (its protocols: a trigger must be a dated row; gaps are computed, never estimated; three-plus episodes make a rule). We kept all of that and added the missing halves: how much (size), which way (direction), and whether the rule survives having any single episode removed."
   },
   {
-   "what": "Generated rules for the five actors that had none",
-   "why": "DeepSeek, Huawei, Jensen Huang, MIIT and SAMR had zero rules on the site; Test 2 needs cards for every actor."
+   "what": "Rules generated for five actors",
+   "why": "On the source site, DeepSeek, Huawei, Jensen Huang, MIIT and SAMR had no completed rules (their rule drafts existed as hypotheses). We built their cards from the rows with the same protocols."
   },
   {
-   "what": "Added the four expert readings and the topic-to-lens routing",
-   "why": "Test 3's lens layer did not exist in the schema. It is generated once from pre-cutoff rows, with claims cited to row ids, and never updated by simulation output."
+   "what": "Four expert readings and topic-to-lens routing",
+   "why": "Nothing like this exists on the source site - the nearest thing is its analyst narrative, which is excluded from every prompt. The lens layer is new: four readings per actor, written once from pre-cutoff rows, every claim citing the row it rests on."
   },
   {
-   "what": "Excluded all analyst-written sections from every prompt",
-   "why": "The three tests compare ways of turning a record into a persona. Purpose, standing, gates and short answers are analyst prose - leaving them in would contaminate all three arms equally but blur what's being tested."
+   "what": "All analyst-written sections excluded from every prompt",
+   "why": "The source site's Purpose, Standing, Powers, Reach and Limits sections are analyst prose. Leaving them in would contaminate all three arms; excluding them is what makes the comparison about the record."
   },
   {
-   "what": "Stripped rendering of the record",
-   "why": "One fixed prompt format per test, identical across actors, so score differences belong to the card, not the formatting."
+   "what": "One fixed prompt format per test",
+   "why": "Identical rendering across actors, so score differences belong to the card, not the formatting."
   },
   {
-   "what": "Rebuilt every rule card's statistics from pre-cutoff episodes only",
-   "why": "The fact-check found that 41 of the original 167 episodes used response rows from the actors' own hidden answer key - the card would have been trained on the exam. Post-cutoff episodes are kept for transparency under each rule but no longer count toward delays, sizes, or status. Two rules built entirely after the cutoff were excluded from the exam."
+   "what": "Rule statistics rebuilt from pre-cutoff episodes only",
+   "why": "Our own fact-check found the first rule build had used 41 episodes dated after the cutoff - rows from the hidden answer key, i.e. the card was partly trained on the exam. Post-cutoff episodes are kept for transparency but no longer count; two rules built entirely after the cutoff were excluded from the exam."
   }
  ],
  "exam": [
-  "Freeze the clock: each card is built only from facts dated before that actor's cutoff - for rule cards, enforced by dropping every episode whose response falls after the cutoff.",
-  "One question per hidden action: the agent is told the date and situation, then must pick one verb from its own menu plus a direction.",
-  "Scoring is mechanical: exact verb match (strict) and direction match (lenient), normalized by each actor's own consistency over time.",
-  "Two baselines run beside the three cards: predict nothing (the did-nothing base rate) and always pick the actor's most common verb.",
-  "Nothing any simulation produces is ever written back into a persona or the record."
+  "The full comparison - arms, baselines, scoring, controls, and the code to run it - is on The experiment tab."
  ],
  "footer": "Built from the public data at actor-persona.pages.dev (9 actors, 7-step persona build). This site adds the test layers; it does not change the source records."
 }
