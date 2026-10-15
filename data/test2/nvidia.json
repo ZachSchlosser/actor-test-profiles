@@ -1,310 +1,318 @@
 {
-  "actor": "nvidia",
-  "name": "NVIDIA",
-  "actor_type": "company",
-  "cutoff": "2026-07-01",
-  "rules": [
+ "actor": "nvidia",
+ "name": "NVIDIA",
+ "actor_type": "company",
+ "cutoff": "2026-07-01",
+ "rules": [
+  {
+   "id": "N1",
+   "name": "US restriction hits -> SEC filing within days",
+   "when": "The US tells NVIDIA that a new export licence requirement hits its China chips",
+   "then": "NVIDIA files an 8-K spelling out the dollar hit within 0-6 days of being told; the filing is usually how the public learns",
+   "trigger_id": "us_chip_restriction",
+   "verb": "file",
+   "delay": {
+    "median_days": 5,
+    "range_days": [
+     0,
+     6
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": 5.5,
+    "unit": "USD bn of charges disclosed (largest case)",
+    "basis": "K29 (H20, April 2025); K04 disclosed ~$400m in 2022"
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
     {
-      "id": "N1",
-      "name": "US restriction hits -> SEC filing within days",
-      "when": "The US tells NVIDIA that a new export licence requirement hits its China chips",
-      "then": "NVIDIA files an 8-K spelling out the dollar hit within 0-6 days of being told; the filing is usually how the public learns",
-      "trigger_id": "us_chip_restriction",
-      "verb": "file",
-      "delay": {
-        "median_days": 5,
-        "range_days": [
-          0,
-          6
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": 5.5,
-        "unit": "USD bn of charges disclosed (largest case)",
-        "basis": "K29 (H20, April 2025); K04 disclosed ~$400m in 2022"
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C40",
-          "response": "K04",
-          "gap_days": 5
-        },
-        {
-          "trigger": "C02",
-          "response": "K11",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C44",
-          "response": "K29",
-          "gap_days": 6
-        }
-      ],
-      "sources": [
-        {
-          "label": "SEC 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000146/nvda-20220826.htm"
-        },
-        {
-          "label": "Tom's Hardware",
-          "url": "https://tomshardware.com/news/us-export-rules-may-cost-nvidia-400-million-prevent-h100-development"
-        },
-        {
-          "label": "SEC 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000217/nvda-20231017.htm"
-        },
-        {
-          "label": "SEC 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
-        }
-      ]
+     "trigger": "C40",
+     "response": "K04",
+     "gap_days": 5
     },
     {
-      "id": "N2",
-      "name": "Public US chip-policy move -> same-day statement",
-      "when": "Washington eases or tightens chip export policy in public",
-      "then": "NVIDIA puts out a statement within a day: applause for easing, criticism or a compliance line for tightening",
-      "trigger_id": "us_chip_easing",
-      "verb": "praise",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          1
-        ],
-        "n": 4
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C43",
-          "response": "K21",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C46",
-          "response": "K31",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C10",
-          "response": "K51",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C51",
-          "response": "K60",
-          "gap_days": 1
-        }
-      ],
-      "sources": [
-        {
-          "label": "NVIDIA blog",
-          "url": "https://blogs.nvidia.com/blog/ai-policy/"
-        },
-        {
-          "label": "SiliconANGLE",
-          "url": "https://siliconangle.com/2025/05/07/backlash-us-scraps-biden-administrations-curb-ai-chip-exports/"
-        },
-        {
-          "label": "NBC Washington",
-          "url": "https://www.nbcwashington.com/news/national-international/trump-allow-nvidia-sell-some-ai-chips-china/4025974/"
-        },
-        {
-          "label": "Al Jazeera",
-          "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china"
-        }
-      ]
+     "trigger": "C02",
+     "response": "K11",
+     "gap_days": 0
     },
     {
-      "id": "N3",
-      "name": "Beijing pressure -> same-day denial or cooperation line",
-      "when": "A Chinese regulator summons or investigates NVIDIA",
-      "then": "NVIDIA answers the same or next day: denies the allegation or says it will cooperate, never challenging the regulator",
-      "trigger_id": "beijing_pressure",
-      "verb": "claim",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          1
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C42",
-          "response": "K20",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C06",
-          "response": "K38",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C22",
-          "response": "K46",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "Yicai Global",
-          "url": "https://yicaiglobal.com/news/nvidia-says-its-willing-to-answer-questions-after-china-puts-us-chipmaker-under-antitrust-probe"
-        },
-        {
-          "label": "The Register",
-          "url": "https://www.theregister.com/2025/07/31/beijing_nvidia_backdoors/"
-        },
-        {
-          "label": "Euronews",
-          "url": "https://euronews.com/business/2025/09/15/nvidia-violated-antitrust-laws-china-says-amid-trade-talks-with-the-us"
-        }
-      ]
-    },
-    {
-      "id": "N5",
-      "name": "Export limit -> compliant China chip",
-      "when": "A new export limit cuts NVIDIA's China product line",
-      "then": "A China-specific chip built to sit just under the limit follows within one to six months",
-      "trigger_id": "us_chip_restriction",
-      "verb": "launch",
-      "delay": {
-        "median_days": 96,
-        "range_days": [
-          31,
-          165
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C01",
-          "response": "K06",
-          "gap_days": 31
-        },
-        {
-          "trigger": "C01",
-          "response": "K07",
-          "gap_days": 165
-        },
-        {
-          "trigger": "C44",
-          "response": "K35",
-          "gap_days": 96
-        }
-      ],
-      "sources": [
-        {
-          "label": "iTnews Asia (Reuters)",
-          "url": "https://www.itnews.asia/news/nvidia-offers-new-advanced-chip-to-chinese-customers-587528"
-        },
-        {
-          "label": "TipRanks (Reuters)",
-          "url": "https://www.tipranks.com/news/nvidia-nasdaqnvda-dodges-china-chip-restrictions-with-h800"
-        },
-        {
-          "label": "NVIDIA blog",
-          "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
-        },
-        {
-          "label": "TechNode",
-          "url": "https://technode.com/2025/07/15/nvidia-secures-approval-to-resume-h20-ai-chip-sales-in-china-announces-new-gpu-rtx-pro/"
-        }
-      ]
-    },
-    {
-      "id": "N6",
-      "name": "Smuggling case public -> 'nonstarter' statement",
-      "when": "Prosecutors announce a case involving smuggled NVIDIA chips",
-      "then": "NVIDIA says the same or next day that smuggling is a nonstarter and diverted chips get no support",
-      "trigger_id": "smuggling_case",
-      "verb": "claim",
-      "delay": {
-        "median_days": 1,
-        "range_days": [
-          0,
-          1
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C49",
-          "response": "K42",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C52",
-          "response": "K62",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C53",
-          "response": "K66",
-          "gap_days": 1
-        }
-      ],
-      "sources": [
-        {
-          "label": "TechCrunch",
-          "url": "https://techcrunch.com/2025/08/06/two-arrested-for-smuggling-ai-chips-to-china-nvidia-says-no-to-kill-switches"
-        },
-        {
-          "label": "Taipei Times",
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/07/29/2003861557"
-        },
-        {
-          "label": "Transport Topics",
-          "url": "https://www.ttnews.com/articles/calif-man-charged-nvidia-chips"
-        }
-      ]
+     "trigger": "C44",
+     "response": "K29",
+     "gap_days": 6
     }
-  ],
-  "research_notes": [
+   ],
+   "sources": [
     {
-      "claim": "China (including Hong Kong) was about 13% of NVIDIA's revenue in fiscal 2025 ($17.1bn of $130.5bn), down from about 17% in fiscal 2024 - the exposure that makes 'comply, disclose, redesign' worth months of engineering effort.",
-      "used_in": "N1, N5",
-      "citation": {
-        "label": "Bullfincher (compiled from NVIDIA 10-K geographic disclosures)",
-        "url": "https://bullfincher.io/companies/nvidia-corporation/revenue-by-geography"
-      }
+     "label": "SEC 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000146/nvda-20220826.htm"
+    },
+    {
+     "label": "Tom's Hardware",
+     "url": "https://tomshardware.com/news/us-export-rules-may-cost-nvidia-400-million-prevent-h100-development"
+    },
+    {
+     "label": "SEC 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000217/nvda-20231017.htm"
+    },
+    {
+     "label": "SEC 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
     }
-  ]
+   ]
+  },
+  {
+   "id": "N2",
+   "name": "Public US chip-policy move -> same-day statement",
+   "when": "Washington eases or tightens chip export policy in public",
+   "then": "NVIDIA puts out a statement within a day: applause for easing, criticism or a compliance line for tightening",
+   "trigger_id": "us_chip_easing",
+   "verb": "praise",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     1
+    ],
+    "n": 4
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "C43",
+     "response": "K21",
+     "gap_days": 0
+    },
+    {
+     "trigger": "C46",
+     "response": "K31",
+     "gap_days": 0
+    },
+    {
+     "trigger": "C10",
+     "response": "K51",
+     "gap_days": 0
+    },
+    {
+     "trigger": "C51",
+     "response": "K60",
+     "gap_days": 1
+    }
+   ],
+   "sources": [
+    {
+     "label": "NVIDIA blog",
+     "url": "https://blogs.nvidia.com/blog/ai-policy/"
+    },
+    {
+     "label": "SiliconANGLE",
+     "url": "https://siliconangle.com/2025/05/07/backlash-us-scraps-biden-administrations-curb-ai-chip-exports/"
+    },
+    {
+     "label": "NBC Washington",
+     "url": "https://www.nbcwashington.com/news/national-international/trump-allow-nvidia-sell-some-ai-chips-china/4025974/"
+    },
+    {
+     "label": "Al Jazeera",
+     "url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china"
+    }
+   ]
+  },
+  {
+   "id": "N3",
+   "name": "Beijing pressure -> same-day denial or cooperation line",
+   "when": "A Chinese regulator summons or investigates NVIDIA",
+   "then": "NVIDIA answers the same or next day: denies the allegation or says it will cooperate, never challenging the regulator",
+   "trigger_id": "beijing_pressure",
+   "verb": "claim",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     1
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "C42",
+     "response": "K20",
+     "gap_days": 1
+    },
+    {
+     "trigger": "C06",
+     "response": "K38",
+     "gap_days": 0
+    },
+    {
+     "trigger": "C22",
+     "response": "K46",
+     "gap_days": 0
+    }
+   ],
+   "sources": [
+    {
+     "label": "Yicai Global",
+     "url": "https://yicaiglobal.com/news/nvidia-says-its-willing-to-answer-questions-after-china-puts-us-chipmaker-under-antitrust-probe"
+    },
+    {
+     "label": "The Register",
+     "url": "https://www.theregister.com/2025/07/31/beijing_nvidia_backdoors/"
+    },
+    {
+     "label": "Euronews",
+     "url": "https://euronews.com/business/2025/09/15/nvidia-violated-antitrust-laws-china-says-amid-trade-talks-with-the-us"
+    }
+   ]
+  },
+  {
+   "id": "N5",
+   "name": "Export limit -> compliant China chip",
+   "when": "A new export limit cuts NVIDIA's China product line",
+   "then": "A China-specific chip built to sit just under the limit follows within one to six months",
+   "trigger_id": "us_chip_restriction",
+   "verb": "launch",
+   "delay": {
+    "median_days": 96,
+    "range_days": [
+     31,
+     165
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C01",
+     "response": "K06",
+     "gap_days": 31
+    },
+    {
+     "trigger": "C01",
+     "response": "K07",
+     "gap_days": 165
+    },
+    {
+     "trigger": "C44",
+     "response": "K35",
+     "gap_days": 96
+    }
+   ],
+   "sources": [
+    {
+     "label": "iTnews Asia (Reuters)",
+     "url": "https://www.itnews.asia/news/nvidia-offers-new-advanced-chip-to-chinese-customers-587528"
+    },
+    {
+     "label": "TipRanks (Reuters)",
+     "url": "https://www.tipranks.com/news/nvidia-nasdaqnvda-dodges-china-chip-restrictions-with-h800"
+    },
+    {
+     "label": "NVIDIA blog",
+     "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
+    },
+    {
+     "label": "TechNode",
+     "url": "https://technode.com/2025/07/15/nvidia-secures-approval-to-resume-h20-ai-chip-sales-in-china-announces-new-gpu-rtx-pro/"
+    }
+   ]
+  },
+  {
+   "id": "N6",
+   "name": "Smuggling case public -> 'nonstarter' statement",
+   "when": "Prosecutors announce a case involving smuggled NVIDIA chips",
+   "then": "NVIDIA says the same or next day that smuggling is a nonstarter and diverted chips get no support",
+   "trigger_id": "smuggling_case",
+   "verb": "claim",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     0
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C49",
+     "response": "K42",
+     "gap_days": 0
+    }
+   ],
+   "sources": [
+    {
+     "label": "TechCrunch",
+     "url": "https://techcrunch.com/2025/08/06/two-arrested-for-smuggling-ai-chips-to-china-nvidia-says-no-to-kill-switches"
+    },
+    {
+     "label": "Taipei Times",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/07/29/2003861557"
+    },
+    {
+     "label": "Transport Topics",
+     "url": "https://www.ttnews.com/articles/calif-man-charged-nvidia-chips"
+    }
+   ],
+   "note": "2 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C52",
+     "response": "K62",
+     "gap_days": 1
+    },
+    {
+     "trigger": "C53",
+     "response": "K66",
+     "gap_days": 1
+    }
+   ]
+  }
+ ],
+ "research_notes": [
+  {
+   "claim": "China (including Hong Kong) was about 13% of NVIDIA's revenue in fiscal 2025 ($17.1bn of $130.5bn), down from about 17% in fiscal 2024 - the exposure that makes 'comply, disclose, redesign' worth months of engineering effort.",
+   "used_in": "N1, N5",
+   "citation": {
+    "label": "Bullfincher (compiled from NVIDIA 10-K geographic disclosures)",
+    "url": "https://bullfincher.io/companies/nvidia-corporation/revenue-by-geography"
+   }
+  }
+ ],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 2
+ }
 }

@@ -1,54 +1,136 @@
 {
-  "title": "The Key: three persona builds, one exam",
-  "intro": "Each of the nine actors gets three different persona cards. The cards are built from the same dated record. They are then given the same exam: predict what the actor actually did next, choosing only from actions the actor has really taken. Whichever card wins tells us where a persona's power comes from - the raw facts, the patterns in them, or what they imply.",
-  "tests": [
-    {
-      "name": "Test 1 - The Plain Record",
-      "one_line": "The agent sees the actor's history word for word: every dated, sourced fact in order, with a one-line identity at the top. Nothing else.",
-      "built_from": "The dated rows already on actor-persona.pages.dev, plus a new computed menu of the verbs the actor has actually used.",
-      "bet": "The record itself is the persona. Anything fancier has to beat this card to justify itself.",
-      "exam": "Pick the verb (and its direction) for each hidden later action. Scored by exact match against the real action."
-    },
-    {
-      "name": "Test 2 - The Rule Card",
-      "one_line": "Instead of every fact, the agent gets a short list of patterns pulled from those facts: when X happened, this actor did Y, by about this much, within this many days.",
-      "built_from": "Trigger-to-response pairs computed from the dated rows and shared event list, following the site's own protocols (a trigger must be a dated row; gaps are computed, never guessed; three or more episodes make a rule). Sizes come from the record or from cited background research.",
-      "bet": "A few measured patterns beat a pile of facts, because patterns generalize and facts only describe.",
-      "exam": "Same hidden actions as Test 1. A rule fires when its trigger occurs in the question; the prediction is the rule's verb. Rules must beat 'nothing happens' and 'always the most common action'."
-    },
-    {
-      "name": "Test 3 - The Expert Read",
-      "one_line": "The plain record plus four short readings of it, written once: what a psychologist, an economist, a political scientist, and a domain expert would notice.",
-      "built_from": "The four readings are written from the pre-cutoff rows only. Every claim uses action words and cites the row it rests on. At question time only the matching reading is attached.",
-      "bet": "The record says more than it states outright - trained eyes can pull out what it implies.",
-      "exam": "Same hidden actions. Only difference from Test 1 is the added lens, so any score gap belongs to the lens."
-    }
-  ],
-  "structure": [
-    {"part": "Identity line", "what": "One line: the actor's name and what kind of actor it is.", "t1": true, "t2": true, "t3": true, "origin": "Yes - persona name and class"},
-    {"part": "Dated record", "what": "Every fact with its date, its verb, its wording, and a link to its source, in chronological order.", "t1": true, "t2": false, "t3": true, "origin": "Yes - the rows"},
-    {"part": "Observed action menu", "what": "The verbs this actor has actually used, split into core (used twice or more) and rare (used once). The agent may answer only from this menu.", "t1": true, "t2": true, "t3": true, "origin": "NEW - the site defines verbs ruled out, but not a per-actor menu of verbs observed"},
-    {"part": "Behavior rules", "what": "Trigger, response, delay (median and range in days), size where the record quantifies it, direction (open or closed), and a stability check.", "t1": false, "t2": true, "t2_note": "", "t3": false, "origin": "Partly - the site's reactions step has trigger/response and computed gaps; we add size, direction, stability, and status tiers"},
-    {"part": "Four expert readings", "what": "Psychologist, economist, political scientist, domain expert - each a short reading of the record, every claim citing rows.", "t1": false, "t2": false, "t3": true, "origin": "NEW - nothing like it in the schema"},
-    {"part": "Question routing", "what": "Each topic maps to the one expert reading that answers it, so only that reading is attached per question.", "t1": false, "t2": false, "t3": true, "origin": "NEW - reuses the site's topic taxonomy"},
-    {"part": "Hidden test set", "what": "The actor's actions dated after its cutoff - each one is an exam question with a known answer (the verb).", "t1": true, "t2": true, "t3": true, "origin": "NEW - the site stops at the cutoff; we keep the after-cutoff rows as the answer key"},
-    {"part": "Purpose, standing, powers, reach, limits", "what": "The site's analyst-written sections: what the persona is for, who can stop the actor, what it can and cannot do, who follows its acts, what we don't know.", "t1": false, "t2": false, "t3": false, "origin": "Yes - deliberately EXCLUDED from all three prompts so the tests measure the record, not analyst prose"}
-  ],
-  "changes": [
-    {"what": "Added the observed action menu (core/rare verbs per actor)", "why": "The exam needs the agent to choose from actions the actor has really taken. The site rules verbs out by power; nothing listed what each actor has actually done."},
-    {"what": "Kept after-cutoff rows as a hidden answer key", "why": "The site treats the cutoff as the end of the data. For backtesting, everything after it is the exam - so we split instead of dropping."},
-    {"what": "Added size, direction, and leave-one-out stability to rules", "why": "A rule with only a delay answers 'when', not 'how much' or 'which way'. Stability keeps rules whose direction survives having any single episode removed."},
-    {"what": "Generated rules for the five actors that had none", "why": "DeepSeek, Huawei, Jensen Huang, MIIT and SAMR had zero rules on the site; Test 2 needs cards for every actor."},
-    {"what": "Added the four expert readings and the topic-to-lens routing", "why": "Test 3's lens layer did not exist in the schema. It is generated once from pre-cutoff rows, with claims cited to row ids, and never updated by simulation output."},
-    {"what": "Excluded all analyst-written sections from every prompt", "why": "The three tests compare ways of turning a record into a persona. Purpose, standing, gates and short answers are analyst prose - leaving them in would contaminate all three arms equally but blur what's being tested."},
-    {"what": "Stripped rendering of the record", "why": "One fixed prompt format per test, identical across actors, so score differences belong to the card, not the formatting."}
-  ],
-  "exam": [
-    "Freeze the clock: each card is built only from facts dated before that actor's cutoff.",
-    "One question per hidden action: the agent is told the date and situation, then must pick one verb from its own menu plus a direction.",
-    "Scoring is mechanical: exact verb match (strict) and direction match (lenient), normalized by each actor's own consistency over time.",
-    "Two baselines run beside the three cards: predict nothing (the did-nothing base rate) and always pick the actor's most common verb.",
-    "Nothing any simulation produces is ever written back into a persona or the record."
-  ],
-  "footer": "Built from the public data at actor-persona.pages.dev (9 actors, 7-step persona build). This site adds the test layers; it does not change the source records."
+ "title": "The Key: three persona builds, one exam",
+ "intro": "Each of the nine actors gets three different persona cards. The cards are built from the same dated record. They are then given the same exam: predict what the actor actually did next, choosing only from actions the actor has really taken. Whichever card wins tells us where a persona's power comes from - the raw facts, the patterns in them, or what they imply.",
+ "tests": [
+  {
+   "name": "Test 1 - The Plain Record",
+   "one_line": "The agent sees the actor's history word for word: every dated, sourced fact in order, with a one-line identity at the top. Nothing else.",
+   "built_from": "The dated rows already on actor-persona.pages.dev, plus a new computed menu of the verbs the actor has actually used.",
+   "bet": "The record itself is the persona. Anything fancier has to beat this card to justify itself.",
+   "exam": "Pick the verb (and its direction) for each hidden later action. Scored by exact match against the real action."
+  },
+  {
+   "name": "Test 2 - The Rule Card",
+   "one_line": "Instead of every fact, the agent gets a short list of patterns pulled from those facts: when X happened, this actor did Y, by about this much, within this many days.",
+   "built_from": "Trigger-to-response pairs computed from the dated rows and shared event list, following the site's own protocols (a trigger must be a dated row; gaps are computed, never guessed; three or more episodes make a rule). Sizes come from the record or from cited background research.",
+   "bet": "A few measured patterns beat a pile of facts, because patterns generalize and facts only describe.",
+   "exam": "Same hidden actions as Test 1. A rule fires when its trigger occurs in the question; the prediction is the rule's verb. Rules must beat 'nothing happens' and 'always the most common action'."
+  },
+  {
+   "name": "Test 3 - The Expert Read",
+   "one_line": "The plain record plus four short readings of it, written once: what a psychologist, an economist, a political scientist, and a domain expert would notice.",
+   "built_from": "The four readings are written from the pre-cutoff rows only. Every claim uses action words and cites the row it rests on. At question time only the matching reading is attached.",
+   "bet": "The record says more than it states outright - trained eyes can pull out what it implies.",
+   "exam": "Same hidden actions. Only difference from Test 1 is the added lens, so any score gap belongs to the lens."
+  }
+ ],
+ "structure": [
+  {
+   "part": "Identity line",
+   "what": "One line: the actor's name and what kind of actor it is.",
+   "t1": true,
+   "t2": true,
+   "t3": true,
+   "origin": "Yes - persona name and class"
+  },
+  {
+   "part": "Dated record",
+   "what": "Every fact with its date, its verb, its wording, and a link to its source, in chronological order.",
+   "t1": true,
+   "t2": false,
+   "t3": true,
+   "origin": "Yes - the rows"
+  },
+  {
+   "part": "Observed action menu",
+   "what": "The verbs this actor has actually used, split into core (used twice or more) and rare (used once). The agent may answer only from this menu.",
+   "t1": true,
+   "t2": true,
+   "t3": true,
+   "origin": "NEW - the site defines verbs ruled out, but not a per-actor menu of verbs observed"
+  },
+  {
+   "part": "Behavior rules",
+   "what": "Trigger, response, delay (median and range in days), size where the record quantifies it, direction (open or closed), and a stability check.",
+   "t1": false,
+   "t2": true,
+   "t2_note": "",
+   "t3": false,
+   "origin": "Partly - the site's reactions step has trigger/response and computed gaps; we add size, direction, stability, and status tiers"
+  },
+  {
+   "part": "Four expert readings",
+   "what": "Psychologist, economist, political scientist, domain expert - each a short reading of the record, every claim citing rows.",
+   "t1": false,
+   "t2": false,
+   "t3": true,
+   "origin": "NEW - nothing like it in the schema"
+  },
+  {
+   "part": "Question routing",
+   "what": "Each topic maps to the one expert reading that answers it, so only that reading is attached per question.",
+   "t1": false,
+   "t2": false,
+   "t3": true,
+   "origin": "NEW - reuses the site's topic taxonomy"
+  },
+  {
+   "part": "Hidden test set",
+   "what": "The actor's actions dated after its cutoff - each one is an exam question with a known answer (the verb).",
+   "t1": true,
+   "t2": true,
+   "t3": true,
+   "origin": "NEW - the site stops at the cutoff; we keep the after-cutoff rows as the answer key"
+  },
+  {
+   "part": "Purpose, standing, powers, reach, limits",
+   "what": "The site's analyst-written sections: what the persona is for, who can stop the actor, what it can and cannot do, who follows its acts, what we don't know.",
+   "t1": false,
+   "t2": false,
+   "t3": false,
+   "origin": "Yes - deliberately EXCLUDED from all three prompts so the tests measure the record, not analyst prose"
+  }
+ ],
+ "changes": [
+  {
+   "what": "Added the observed action menu (core/rare verbs per actor)",
+   "why": "The exam needs the agent to choose from actions the actor has really taken. The site rules verbs out by power; nothing listed what each actor has actually done."
+  },
+  {
+   "what": "Kept after-cutoff rows as a hidden answer key",
+   "why": "The site treats the cutoff as the end of the data. For backtesting, everything after it is the exam - so we split instead of dropping."
+  },
+  {
+   "what": "Added size, direction, and leave-one-out stability to rules",
+   "why": "A rule with only a delay answers 'when', not 'how much' or 'which way'. Stability keeps rules whose direction survives having any single episode removed."
+  },
+  {
+   "what": "Generated rules for the five actors that had none",
+   "why": "DeepSeek, Huawei, Jensen Huang, MIIT and SAMR had zero rules on the site; Test 2 needs cards for every actor."
+  },
+  {
+   "what": "Added the four expert readings and the topic-to-lens routing",
+   "why": "Test 3's lens layer did not exist in the schema. It is generated once from pre-cutoff rows, with claims cited to row ids, and never updated by simulation output."
+  },
+  {
+   "what": "Excluded all analyst-written sections from every prompt",
+   "why": "The three tests compare ways of turning a record into a persona. Purpose, standing, gates and short answers are analyst prose - leaving them in would contaminate all three arms equally but blur what's being tested."
+  },
+  {
+   "what": "Stripped rendering of the record",
+   "why": "One fixed prompt format per test, identical across actors, so score differences belong to the card, not the formatting."
+  },
+  {
+   "what": "Rebuilt every rule card's statistics from pre-cutoff episodes only",
+   "why": "The fact-check found that 41 of the original 167 episodes used response rows from the actors' own hidden answer key - the card would have been trained on the exam. Post-cutoff episodes are kept for transparency under each rule but no longer count toward delays, sizes, or status. Two rules built entirely after the cutoff were excluded from the exam."
+  }
+ ],
+ "exam": [
+  "Freeze the clock: each card is built only from facts dated before that actor's cutoff - for rule cards, enforced by dropping every episode whose response falls after the cutoff.",
+  "One question per hidden action: the agent is told the date and situation, then must pick one verb from its own menu plus a direction.",
+  "Scoring is mechanical: exact verb match (strict) and direction match (lenient), normalized by each actor's own consistency over time.",
+  "Two baselines run beside the three cards: predict nothing (the did-nothing base rate) and always pick the actor's most common verb.",
+  "Nothing any simulation produces is ever written back into a persona or the record."
+ ],
+ "footer": "Built from the public data at actor-persona.pages.dev (9 actors, 7-step persona build). This site adds the test layers; it does not change the source records."
 }

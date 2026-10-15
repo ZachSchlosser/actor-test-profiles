@@ -1,175 +1,183 @@
 {
-  "actor": "deepseek",
-  "name": "DeepSeek",
-  "actor_type": "company",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "deepseek",
+ "name": "DeepSeek",
+ "actor_type": "company",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "DS1",
+   "name": "Foreign restriction -> minimal same-day answer",
+   "when": "A foreign government blocks or queries the DeepSeek app",
+   "then": "DeepSeek gives the minimum answer the same day: pulls the app, agrees a suspension, or stays silent",
+   "trigger_id": "foreign_ban",
+   "verb": "restrict_access",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     0
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_unstable",
+   "status": "signal",
+   "episodes": [
     {
-      "id": "DS1",
-      "name": "Foreign restriction -> minimal same-day answer",
-      "when": "A foreign government blocks or queries the DeepSeek app",
-      "then": "DeepSeek gives the minimum answer the same day: pulls the app, agrees a suspension, or stays silent",
-      "trigger_id": "foreign_ban",
-      "verb": "restrict_access",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          0
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C602",
-          "response": "DS09",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C603",
-          "response": "DS10",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C605",
-          "response": "DS16",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "Reuters via StreetInsider",
-          "url": "https://www.streetinsider.com/Reuters/Italy%27s+regulator+blocks+Chinese+AI+app+DeepSeek+on+data+protection/24272382.html"
-        },
-        {
-          "label": "NBC News",
-          "url": "https://www.nbcnews.com/news/world/south-korea-suspends-new-downloads-deepseek-citing-privacy-concerns-rcna192432"
-        },
-        {
-          "label": "The Hacker News",
-          "url": "https://thehackernews.com/2025/02/south-korea-suspends-deepseek-ai.html"
-        },
-        {
-          "label": "JURIST",
-          "url": "https://www.jurist.org/news/2025/06/germany-data-commissioner-orders-apple-and-google-to-remove-deepseek-over-data-concerns"
-        },
-        {
-          "label": "Gigazine",
-          "url": "https://gigazine.net/gsc_news/en/20250628-deepseek-ban-apple-google-app-stores-germany"
-        }
-      ]
+     "trigger": "C602",
+     "response": "DS09",
+     "gap_days": 0
     },
     {
-      "id": "DS2",
-      "name": "NVIDIA access cut -> open release on Chinese hardware",
-      "when": "Beijing or Washington cuts NVIDIA supply in China",
-      "then": "DeepSeek's next flagship ships as open weights with day-zero Chinese-chip support, weeks to months later",
-      "trigger_id": "nvidia_access_cut",
-      "verb": "release_model",
-      "delay": {
-        "median_days": 64,
-        "range_days": [
-          21,
-          106
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C06",
-          "response": "DS17",
-          "gap_days": 21
-        },
-        {
-          "trigger": "C11",
-          "response": "DS24",
-          "gap_days": 106
-        }
-      ],
-      "sources": [
-        {
-          "label": "DeepSeek API news",
-          "url": "https://api-docs.deepseek.com/news/news250821"
-        },
-        {
-          "label": "The Register",
-          "url": "https://www.theregister.com/2025/08/22/deepseek_v31_chinese_chip_hints/"
-        },
-        {
-          "label": "DeepSeek API news",
-          "url": "https://api-docs.deepseek.com/news/news260424"
-        },
-        {
-          "label": "Hugging Face (MIT)",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
-        },
-        {
-          "label": "TechRepublic (Huawei day-0)",
-          "url": "https://www.techrepublic.com/article/news-apac-deepseek-v4-ai-model-huawei-ascend-chips-support/"
-        }
-      ]
+     "trigger": "C603",
+     "response": "DS10",
+     "gap_days": 0
     },
     {
-      "id": "DS3",
-      "name": "CAC rule takes effect -> same-day compliance notice",
-      "when": "A CAC rule covering its services takes effect",
-      "then": "DeepSeek posts a terse compliance notice on the effective date",
-      "trigger_id": "rule_takes_effect",
-      "verb": "comply",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          0
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "N24",
-          "response": "DS18",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "IT之家",
-          "url": "https://www.ithome.com/0/879/640.htm"
-        },
-        {
-          "label": "DoNews",
-          "url": "https://www.donews.com/news/detail/1/6041790.html"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
-        }
-      ]
+     "trigger": "C605",
+     "response": "DS16",
+     "gap_days": 0
     }
-  ],
-  "research_notes": []
+   ],
+   "sources": [
+    {
+     "label": "Reuters via StreetInsider",
+     "url": "https://www.streetinsider.com/Reuters/Italy%27s+regulator+blocks+Chinese+AI+app+DeepSeek+on+data+protection/24272382.html"
+    },
+    {
+     "label": "NBC News",
+     "url": "https://www.nbcnews.com/news/world/south-korea-suspends-new-downloads-deepseek-citing-privacy-concerns-rcna192432"
+    },
+    {
+     "label": "The Hacker News",
+     "url": "https://thehackernews.com/2025/02/south-korea-suspends-deepseek-ai.html"
+    },
+    {
+     "label": "JURIST",
+     "url": "https://www.jurist.org/news/2025/06/germany-data-commissioner-orders-apple-and-google-to-remove-deepseek-over-data-concerns"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://gigazine.net/gsc_news/en/20250628-deepseek-ban-apple-google-app-stores-germany"
+    }
+   ]
+  },
+  {
+   "id": "DS2",
+   "name": "NVIDIA access cut -> open release on Chinese hardware",
+   "when": "Beijing or Washington cuts NVIDIA supply in China",
+   "then": "DeepSeek's next flagship ships as open weights with day-zero Chinese-chip support, weeks to months later",
+   "trigger_id": "nvidia_access_cut",
+   "verb": "release_model",
+   "delay": {
+    "median_days": 21,
+    "range_days": [
+     21,
+     21
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C06",
+     "response": "DS17",
+     "gap_days": 21
+    }
+   ],
+   "sources": [
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250821"
+    },
+    {
+     "label": "The Register",
+     "url": "https://www.theregister.com/2025/08/22/deepseek_v31_chinese_chip_hints/"
+    },
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news260424"
+    },
+    {
+     "label": "Hugging Face (MIT)",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+    },
+    {
+     "label": "TechRepublic (Huawei day-0)",
+     "url": "https://www.techrepublic.com/article/news-apac-deepseek-v4-ai-model-huawei-ascend-chips-support/"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C11",
+     "response": "DS24",
+     "gap_days": 106
+    }
+   ]
+  },
+  {
+   "id": "DS3",
+   "name": "CAC rule takes effect -> same-day compliance notice",
+   "when": "A CAC rule covering its services takes effect",
+   "then": "DeepSeek posts a terse compliance notice on the effective date",
+   "trigger_id": "rule_takes_effect",
+   "verb": "comply",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     0
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "N24",
+     "response": "DS18",
+     "gap_days": 0
+    }
+   ],
+   "sources": [
+    {
+     "label": "IT之家",
+     "url": "https://www.ithome.com/0/879/640.htm"
+    },
+    {
+     "label": "DoNews",
+     "url": "https://www.donews.com/news/detail/1/6041790.html"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+    }
+   ]
+  }
+ ],
+ "research_notes": [],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 1
+ }
 }

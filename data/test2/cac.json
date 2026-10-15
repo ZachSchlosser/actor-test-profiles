@@ -1,1086 +1,1109 @@
 {
-  "actor": "cac",
-  "name": "Cyberspace Administration of China",
-  "actor_type": "government",
-  "cutoff": "2025-01-01",
-  "rules": [
+ "actor": "cac",
+ "name": "Cyberspace Administration of China",
+ "actor_type": "government",
+ "cutoff": "2025-01-01",
+ "rules": [
+  {
+   "id": "C1",
+   "name": "Draft -> final text",
+   "when": "CAC publishes a draft rule for comment",
+   "then": "A signed final text follows, co-issued with other bodies; the wait has ranged from three months to nearly two years (median about half a year)",
+   "trigger_id": "cac_draft",
+   "verb": "issue_rule",
+   "delay": {
+    "median_days": 171,
+    "range_days": [
+     83,
+     475
+    ],
+    "n": 19
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
     {
-      "id": "C1",
-      "name": "Draft -> final text",
-      "when": "CAC publishes a draft rule for comment",
-      "then": "A signed final text follows, co-issued with other bodies; the wait has ranged from three months to nearly two years (median about half a year)",
-      "trigger_id": "cac_draft",
-      "verb": "issue_rule",
-      "delay": {
-        "median_days": 189,
-        "range_days": [
-          83,
-          643
-        ],
-        "n": 31
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "A005",
-          "response": "O1",
-          "gap_days": 475
-        },
-        {
-          "trigger": "A013",
-          "response": "O3",
-          "gap_days": 83
-        },
-        {
-          "trigger": "A022",
-          "response": "O4",
-          "gap_days": 83
-        },
-        {
-          "trigger": "A025",
-          "response": "O5",
-          "gap_days": 96
-        },
-        {
-          "trigger": "A049",
-          "response": "O7",
-          "gap_days": 96
-        },
-        {
-          "trigger": "A058",
-          "response": "O8",
-          "gap_days": 171
-        },
-        {
-          "trigger": "A061",
-          "response": "O9",
-          "gap_days": 126
-        },
-        {
-          "trigger": "A064",
-          "response": "O10",
-          "gap_days": 244
-        },
-        {
-          "trigger": "A065",
-          "response": "O11",
-          "gap_days": 251
-        },
-        {
-          "trigger": "A072",
-          "response": "O12",
-          "gap_days": 301
-        },
-        {
-          "trigger": "A082",
-          "response": "O13",
-          "gap_days": 237
-        },
-        {
-          "trigger": "A087",
-          "response": "O14",
-          "gap_days": 191
-        },
-        {
-          "trigger": "A096",
-          "response": "O15",
-          "gap_days": 90
-        },
-        {
-          "trigger": "A116",
-          "response": "O16",
-          "gap_days": 176
-        },
-        {
-          "trigger": "A102",
-          "response": "O17",
-          "gap_days": 341
-        },
-        {
-          "trigger": "A109",
-          "response": "O18",
-          "gap_days": 559
-        },
-        {
-          "trigger": "A110",
-          "response": "O19",
-          "gap_days": 583
-        },
-        {
-          "trigger": "A153",
-          "response": "O20",
-          "gap_days": 284
-        },
-        {
-          "trigger": "A199",
-          "response": "O21",
-          "gap_days": 104
-        },
-        {
-          "trigger": "A155",
-          "response": "O23",
-          "gap_days": 504
-        },
-        {
-          "trigger": "A198",
-          "response": "O24",
-          "gap_days": 194
-        },
-        {
-          "trigger": "A210",
-          "response": "O25",
-          "gap_days": 110
-        },
-        {
-          "trigger": "A144",
-          "response": "N24",
-          "gap_days": 174
-        },
-        {
-          "trigger": "A042",
-          "response": "N16",
-          "gap_days": 101
-        },
-        {
-          "trigger": "A070",
-          "response": "N18",
-          "gap_days": 160
-        },
-        {
-          "trigger": "A074",
-          "response": "N19",
-          "gap_days": 191
-        },
-        {
-          "trigger": "A080",
-          "response": "N21",
-          "gap_days": 152
-        },
-        {
-          "trigger": "A124",
-          "response": "N26",
-          "gap_days": 643
-        },
-        {
-          "trigger": "A145",
-          "response": "N25",
-          "gap_days": 208
-        },
-        {
-          "trigger": "A171",
-          "response": "N27",
-          "gap_days": 189
-        },
-        {
-          "trigger": "A183",
-          "response": "N28",
-          "gap_days": 148
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2017-05/02/c_1120902760.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2016-01/13/c_1117757912.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2018-10/19/c_1123585598.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-05/31/c_1124568048.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-09/11/c_1569729939897372.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-05/12/c_1622400511898266.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-07/10/c_1627503724456684.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-08/27/c_1631652502874117.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-10/26/c_1636843202454310.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-10/29/c_1637102874600858.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/28/c_1644970458520968.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/30/c_1658205969531631.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-09/08/c_1664174174624227.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-04/11/c_1682854275475410.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-09/28/c_1697558914242877.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/07/c_1690295996362667.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-08/03/c_1692628348448092.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-08/08/c_1693064670537413.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-01/03/c_1737600915141373.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-12/27/c_1768571207311996.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-01/10/c_1738209405008163.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-12/06/c_1766578179367262.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/03/c_1776865011603509.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-09/14/c_1728000676244628.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2020-12/01/c_1608389002247944.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/14/c_1656821626455324.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/05/c_1642983962594050.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-09/08/c_1664260384702890.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-03/02/c_1647826956995841.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-11/16/c_1670253725725039.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/17/c_1657089000974111.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-09/15/c_1759583017717009.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-12/08/c_1703609634347501.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-04/30/c_1747719075774684.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-09/27/c_1729036112375138.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-01/23/c_1770728781060093.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-06/20/c_1752130362026338.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-02/28/c_1774010730056867.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-09/16/c_1759740674396520.htm"
-        }
-      ]
+     "trigger": "A005",
+     "response": "O1",
+     "gap_days": 475
     },
     {
-      "id": "C2a",
-      "name": "Office meeting passes -> signed",
-      "when": "CAC's internal office meeting passes a rule",
-      "then": "The rule is signed weeks later, usually within three months (one case, the audit measures, took nine)",
-      "trigger_id": "cac_approval",
-      "verb": "issue_rule",
-      "delay": {
-        "median_days": 44,
-        "range_days": [
-          17,
-          268
-        ],
-        "n": 18
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "OFFICE-2021-07-05",
-          "response": "O7",
-          "gap_days": 42
-        },
-        {
-          "trigger": "OFFICE-2021-11-16",
-          "response": "O8",
-          "gap_days": 42
-        },
-        {
-          "trigger": "OFFICE-2021-11-16",
-          "response": "O9",
-          "gap_days": 45
-        },
-        {
-          "trigger": "OFFICE-2022-06-09",
-          "response": "O10",
-          "gap_days": 18
-        },
-        {
-          "trigger": "OFFICE-2022-05-19",
-          "response": "O11",
-          "gap_days": 49
-        },
-        {
-          "trigger": "OFFICE-2022-11-03",
-          "response": "O12",
-          "gap_days": 22
-        },
-        {
-          "trigger": "OFFICE-2023-02-03",
-          "response": "O13",
-          "gap_days": 19
-        },
-        {
-          "trigger": "OFFICE-2023-02-03",
-          "response": "O14",
-          "gap_days": 43
-        },
-        {
-          "trigger": "OFFICE-2023-05-23",
-          "response": "O15",
-          "gap_days": 48
-        },
-        {
-          "trigger": "OFFICE-2023-11-28",
-          "response": "O16",
-          "gap_days": 115
-        },
-        {
-          "trigger": "OFFICE-2023-12-25",
-          "response": "O17",
-          "gap_days": 170
-        },
-        {
-          "trigger": "OFFICE-2024-05-20",
-          "response": "O18",
-          "gap_days": 268
-        },
-        {
-          "trigger": "OFFICE-2024-09-30",
-          "response": "O19",
-          "gap_days": 164
-        },
-        {
-          "trigger": "OFFICE-2025-07-21",
-          "response": "O20",
-          "gap_days": 85
-        },
-        {
-          "trigger": "OFFICE-2026-02-02",
-          "response": "O21",
-          "gap_days": 67
-        },
-        {
-          "trigger": "OFFICE-2026-05-08",
-          "response": "O23",
-          "gap_days": 21
-        },
-        {
-          "trigger": "OFFICE-2026-06-01",
-          "response": "O24",
-          "gap_days": 17
-        },
-        {
-          "trigger": "OFFICE-2026-06-26",
-          "response": "O25",
-          "gap_days": 26
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
-        }
-      ]
+     "trigger": "A013",
+     "response": "O3",
+     "gap_days": 83
     },
     {
-      "id": "C2b",
-      "name": "Signed -> in force",
-      "when": "A CAC rule is signed",
-      "then": "It takes effect one to three months later",
-      "trigger_id": "rule_signed",
-      "verb": "issue_rule",
-      "delay": {
-        "median_days": 53,
-        "range_days": [
-          30,
-          99
-        ],
-        "n": 22
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "O1",
-          "response": "EFFECT-2017-06-01",
-          "gap_days": 30
-        },
-        {
-          "trigger": "O2",
-          "response": "EFFECT-2017-06-01",
-          "gap_days": 30
-        },
-        {
-          "trigger": "O3",
-          "response": "EFFECT-2019-02-15",
-          "gap_days": 36
-        },
-        {
-          "trigger": "O4",
-          "response": "EFFECT-2019-10-01",
-          "gap_days": 40
-        },
-        {
-          "trigger": "O5",
-          "response": "EFFECT-2020-03-01",
-          "gap_days": 77
-        },
-        {
-          "trigger": "O7",
-          "response": "EFFECT-2021-10-01",
-          "gap_days": 46
-        },
-        {
-          "trigger": "O8",
-          "response": "EFFECT-2022-02-15",
-          "gap_days": 49
-        },
-        {
-          "trigger": "O9",
-          "response": "EFFECT-2022-03-01",
-          "gap_days": 60
-        },
-        {
-          "trigger": "O10",
-          "response": "EFFECT-2022-08-01",
-          "gap_days": 35
-        },
-        {
-          "trigger": "O11",
-          "response": "EFFECT-2022-09-01",
-          "gap_days": 56
-        },
-        {
-          "trigger": "O12",
-          "response": "EFFECT-2023-01-10",
-          "gap_days": 46
-        },
-        {
-          "trigger": "O13",
-          "response": "EFFECT-2023-06-01",
-          "gap_days": 99
-        },
-        {
-          "trigger": "O14",
-          "response": "EFFECT-2023-06-01",
-          "gap_days": 75
-        },
-        {
-          "trigger": "O15",
-          "response": "EFFECT-2023-08-15",
-          "gap_days": 36
-        },
-        {
-          "trigger": "O17",
-          "response": "EFFECT-2024-08-01",
-          "gap_days": 50
-        },
-        {
-          "trigger": "O18",
-          "response": "EFFECT-2025-05-01",
-          "gap_days": 78
-        },
-        {
-          "trigger": "O19",
-          "response": "EFFECT-2025-06-01",
-          "gap_days": 80
-        },
-        {
-          "trigger": "O20",
-          "response": "EFFECT-2026-01-01",
-          "gap_days": 79
-        },
-        {
-          "trigger": "O21",
-          "response": "EFFECT-2026-07-15",
-          "gap_days": 96
-        },
-        {
-          "trigger": "O23",
-          "response": "EFFECT-2026-09-01",
-          "gap_days": 95
-        },
-        {
-          "trigger": "O24",
-          "response": "EFFECT-2026-08-20",
-          "gap_days": 63
-        },
-        {
-          "trigger": "O25",
-          "response": "EFFECT-2026-09-01",
-          "gap_days": 41
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2017-05/02/c_1120902760.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2017-05/02/c_1120902931.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
-        }
-      ]
+     "trigger": "A022",
+     "response": "O4",
+     "gap_days": 83
     },
     {
-      "id": "C3",
-      "name": "Filing duty -> first public list",
-      "when": "A rule with a filing duty takes effect",
-      "then": "A first public filing list follows within about one to eight months, then lists about every two months",
-      "trigger_id": "rule_takes_effect",
-      "verb": "publish_list",
-      "delay": {
-        "median_days": 161,
-        "range_days": [
-          -2,
-          231
-        ],
-        "n": 5
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "O3",
-          "response": "A017",
-          "gap_days": 43
-        },
-        {
-          "trigger": "O9",
-          "response": "A085",
-          "gap_days": 164
-        },
-        {
-          "trigger": "O12",
-          "response": "A100",
-          "gap_days": 161
-        },
-        {
-          "trigger": "O15",
-          "response": "A133",
-          "gap_days": 231
-        },
-        {
-          "trigger": "O20",
-          "response": "A200",
-          "gap_days": -2
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-03/30/c_1124305122.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-08/12/c_1661927474338504.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-06/20/c_1688910683316256.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-04/02/c_1713729983803145.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-12/30/c_1768735664909127.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
-        }
-      ]
+     "trigger": "A025",
+     "response": "O5",
+     "gap_days": 96
     },
     {
-      "id": "C4a",
-      "name": "Lunar New Year campaign",
-      "when": "Lunar New Year approaches",
-      "then": "A 'Qinglang' clean-up campaign launches 4-12 days before the holiday (a calendar regularity, not a reaction to an event)",
-      "trigger_id": "lunar_new_year",
-      "verb": "launch_campaign",
-      "delay": {
-        "median_days": 8,
-        "range_days": [
-          4,
-          12
-        ],
-        "n": 6
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "LNY-2021-02-12",
-          "response": "A044",
-          "gap_days": -8
-        },
-        {
-          "trigger": "LNY-2022-02-01",
-          "response": "A071",
-          "gap_days": -8
-        },
-        {
-          "trigger": "LNY-2023-01-22",
-          "response": "A092",
-          "gap_days": -4
-        },
-        {
-          "trigger": "LNY-2024-02-10",
-          "response": "A128",
-          "gap_days": -12
-        },
-        {
-          "trigger": "LNY-2025-01-29",
-          "response": "A156",
-          "gap_days": -10
-        },
-        {
-          "trigger": "LNY-2026-02-17",
-          "response": "A206",
-          "gap_days": -5
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2021-02/03/c_1613923672042416.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-01/24/c_1644627964425577.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-01/18/c_1675676650690321.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2024-01/29/c_1708196062197841.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-01/19/c_1738899842680885.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-02/12/c_1772627849788243.htm"
-        }
-      ]
+     "trigger": "A049",
+     "response": "O7",
+     "gap_days": 96
     },
     {
-      "id": "H2",
-      "name": "US chip move -> security action on a US chip firm",
-      "when": "Washington tightens or eases chip policy toward China",
-      "then": "CAC opens a security review of, or summons, a US chip firm, citing security, within weeks to six months",
-      "trigger_id": "us_chip_restriction",
-      "verb": "retaliate_review",
-      "delay": {
-        "median_days": 96,
-        "range_days": [
-          16,
-          175
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C01",
-          "response": "A095",
-          "gap_days": 175
-        },
-        {
-          "trigger": "C05",
-          "response": "A177",
-          "gap_days": 16
-        }
-      ],
-      "sources": [
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/https://www.wilmerhale.com/en/insights/client-alerts/20230411-china-launches-cybersecurity-review-against-micron"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2025-07/31/c_1755675743897163.htm"
-        }
-      ]
+     "trigger": "A058",
+     "response": "O8",
+     "gap_days": 171
+    },
+    {
+     "trigger": "A061",
+     "response": "O9",
+     "gap_days": 126
+    },
+    {
+     "trigger": "A064",
+     "response": "O10",
+     "gap_days": 244
+    },
+    {
+     "trigger": "A065",
+     "response": "O11",
+     "gap_days": 251
+    },
+    {
+     "trigger": "A072",
+     "response": "O12",
+     "gap_days": 301
+    },
+    {
+     "trigger": "A082",
+     "response": "O13",
+     "gap_days": 237
+    },
+    {
+     "trigger": "A087",
+     "response": "O14",
+     "gap_days": 191
+    },
+    {
+     "trigger": "A096",
+     "response": "O15",
+     "gap_days": 90
+    },
+    {
+     "trigger": "A116",
+     "response": "O16",
+     "gap_days": 176
+    },
+    {
+     "trigger": "A102",
+     "response": "O17",
+     "gap_days": 341
+    },
+    {
+     "trigger": "A042",
+     "response": "N16",
+     "gap_days": 101
+    },
+    {
+     "trigger": "A070",
+     "response": "N18",
+     "gap_days": 160
+    },
+    {
+     "trigger": "A074",
+     "response": "N19",
+     "gap_days": 191
+    },
+    {
+     "trigger": "A080",
+     "response": "N21",
+     "gap_days": 152
     }
-  ],
-  "research_notes": [
+   ],
+   "sources": [
     {
-      "claim": "CAC's only completed security review of a foreign chip firm (Micron, 2023) ended with a ban on purchases by critical-information-infrastructure operators rather than a fine - the likely shape of any repeat.",
-      "used_in": "H2",
-      "citation": {
-        "label": "cac.gov.cn",
-        "url": "https://www.cac.gov.cn/https://www.theregister.com/2023/05/21/china_micron_ban/"
-      }
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2017-05/02/c_1120902760.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2016-01/13/c_1117757912.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2018-10/19/c_1123585598.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-05/31/c_1124568048.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-09/11/c_1569729939897372.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-05/12/c_1622400511898266.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-07/10/c_1627503724456684.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-08/27/c_1631652502874117.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-10/26/c_1636843202454310.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-10/29/c_1637102874600858.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/28/c_1644970458520968.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/30/c_1658205969531631.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-09/08/c_1664174174624227.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-04/11/c_1682854275475410.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-09/28/c_1697558914242877.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/07/c_1690295996362667.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-08/03/c_1692628348448092.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-08/08/c_1693064670537413.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-01/03/c_1737600915141373.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-12/27/c_1768571207311996.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-01/10/c_1738209405008163.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-12/06/c_1766578179367262.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/03/c_1776865011603509.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-09/14/c_1728000676244628.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2020-12/01/c_1608389002247944.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/14/c_1656821626455324.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/05/c_1642983962594050.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-09/08/c_1664260384702890.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-03/02/c_1647826956995841.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-11/16/c_1670253725725039.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/17/c_1657089000974111.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-09/15/c_1759583017717009.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-12/08/c_1703609634347501.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-04/30/c_1747719075774684.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-09/27/c_1729036112375138.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-01/23/c_1770728781060093.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-06/20/c_1752130362026338.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-02/28/c_1774010730056867.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-09/16/c_1759740674396520.htm"
     }
-  ]
+   ],
+   "note": "12 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "A109",
+     "response": "O18",
+     "gap_days": 559
+    },
+    {
+     "trigger": "A110",
+     "response": "O19",
+     "gap_days": 583
+    },
+    {
+     "trigger": "A153",
+     "response": "O20",
+     "gap_days": 284
+    },
+    {
+     "trigger": "A199",
+     "response": "O21",
+     "gap_days": 104
+    },
+    {
+     "trigger": "A155",
+     "response": "O23",
+     "gap_days": 504
+    },
+    {
+     "trigger": "A198",
+     "response": "O24",
+     "gap_days": 194
+    },
+    {
+     "trigger": "A210",
+     "response": "O25",
+     "gap_days": 110
+    },
+    {
+     "trigger": "A144",
+     "response": "N24",
+     "gap_days": 174
+    },
+    {
+     "trigger": "A124",
+     "response": "N26",
+     "gap_days": 643
+    },
+    {
+     "trigger": "A145",
+     "response": "N25",
+     "gap_days": 208
+    },
+    {
+     "trigger": "A171",
+     "response": "N27",
+     "gap_days": 189
+    },
+    {
+     "trigger": "A183",
+     "response": "N28",
+     "gap_days": 148
+    }
+   ]
+  },
+  {
+   "id": "C2a",
+   "name": "Office meeting passes -> signed",
+   "when": "CAC's internal office meeting passes a rule",
+   "then": "The rule is signed weeks later, usually within three months (one case, the audit measures, took nine)",
+   "trigger_id": "cac_approval",
+   "verb": "issue_rule",
+   "delay": {
+    "median_days": 43,
+    "range_days": [
+     18,
+     170
+    ],
+    "n": 11
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "OFFICE-2021-07-05",
+     "response": "O7",
+     "gap_days": 42
+    },
+    {
+     "trigger": "OFFICE-2021-11-16",
+     "response": "O8",
+     "gap_days": 42
+    },
+    {
+     "trigger": "OFFICE-2021-11-16",
+     "response": "O9",
+     "gap_days": 45
+    },
+    {
+     "trigger": "OFFICE-2022-06-09",
+     "response": "O10",
+     "gap_days": 18
+    },
+    {
+     "trigger": "OFFICE-2022-05-19",
+     "response": "O11",
+     "gap_days": 49
+    },
+    {
+     "trigger": "OFFICE-2022-11-03",
+     "response": "O12",
+     "gap_days": 22
+    },
+    {
+     "trigger": "OFFICE-2023-02-03",
+     "response": "O13",
+     "gap_days": 19
+    },
+    {
+     "trigger": "OFFICE-2023-02-03",
+     "response": "O14",
+     "gap_days": 43
+    },
+    {
+     "trigger": "OFFICE-2023-05-23",
+     "response": "O15",
+     "gap_days": 48
+    },
+    {
+     "trigger": "OFFICE-2023-11-28",
+     "response": "O16",
+     "gap_days": 115
+    },
+    {
+     "trigger": "OFFICE-2023-12-25",
+     "response": "O17",
+     "gap_days": 170
+    }
+   ],
+   "sources": [
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
+    }
+   ],
+   "note": "7 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "OFFICE-2024-05-20",
+     "response": "O18",
+     "gap_days": 268
+    },
+    {
+     "trigger": "OFFICE-2024-09-30",
+     "response": "O19",
+     "gap_days": 164
+    },
+    {
+     "trigger": "OFFICE-2025-07-21",
+     "response": "O20",
+     "gap_days": 85
+    },
+    {
+     "trigger": "OFFICE-2026-02-02",
+     "response": "O21",
+     "gap_days": 67
+    },
+    {
+     "trigger": "OFFICE-2026-05-08",
+     "response": "O23",
+     "gap_days": 21
+    },
+    {
+     "trigger": "OFFICE-2026-06-01",
+     "response": "O24",
+     "gap_days": 17
+    },
+    {
+     "trigger": "OFFICE-2026-06-26",
+     "response": "O25",
+     "gap_days": 26
+    }
+   ]
+  },
+  {
+   "id": "C2b",
+   "name": "Signed -> in force",
+   "when": "A CAC rule is signed",
+   "then": "It takes effect one to three months later",
+   "trigger_id": "rule_signed",
+   "verb": "issue_rule",
+   "delay": {
+    "median_days": 46,
+    "range_days": [
+     30,
+     99
+    ],
+    "n": 15
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "O1",
+     "response": "EFFECT-2017-06-01",
+     "gap_days": 30
+    },
+    {
+     "trigger": "O2",
+     "response": "EFFECT-2017-06-01",
+     "gap_days": 30
+    },
+    {
+     "trigger": "O3",
+     "response": "EFFECT-2019-02-15",
+     "gap_days": 36
+    },
+    {
+     "trigger": "O4",
+     "response": "EFFECT-2019-10-01",
+     "gap_days": 40
+    },
+    {
+     "trigger": "O5",
+     "response": "EFFECT-2020-03-01",
+     "gap_days": 77
+    },
+    {
+     "trigger": "O7",
+     "response": "EFFECT-2021-10-01",
+     "gap_days": 46
+    },
+    {
+     "trigger": "O8",
+     "response": "EFFECT-2022-02-15",
+     "gap_days": 49
+    },
+    {
+     "trigger": "O9",
+     "response": "EFFECT-2022-03-01",
+     "gap_days": 60
+    },
+    {
+     "trigger": "O10",
+     "response": "EFFECT-2022-08-01",
+     "gap_days": 35
+    },
+    {
+     "trigger": "O11",
+     "response": "EFFECT-2022-09-01",
+     "gap_days": 56
+    },
+    {
+     "trigger": "O12",
+     "response": "EFFECT-2023-01-10",
+     "gap_days": 46
+    },
+    {
+     "trigger": "O13",
+     "response": "EFFECT-2023-06-01",
+     "gap_days": 99
+    },
+    {
+     "trigger": "O14",
+     "response": "EFFECT-2023-06-01",
+     "gap_days": 75
+    },
+    {
+     "trigger": "O15",
+     "response": "EFFECT-2023-08-15",
+     "gap_days": 36
+    },
+    {
+     "trigger": "O17",
+     "response": "EFFECT-2024-08-01",
+     "gap_days": 50
+    }
+   ],
+   "sources": [
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2017-05/02/c_1120902760.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2017-05/02/c_1120902931.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-08/23/c_1124913903.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-12/20/c_1578375159509309.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-08/20/c_1631049984897667.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-06/26/c_1657868775042841.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-03/23/c_1681211418907384.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-06/14/c_1720043894161555.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-03/21/c_1744174262156096.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-05/29/c_1781795864412597.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-07/24/c_1786638889704872.htm"
+    }
+   ],
+   "note": "7 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "O18",
+     "response": "EFFECT-2025-05-01",
+     "gap_days": 78
+    },
+    {
+     "trigger": "O19",
+     "response": "EFFECT-2025-06-01",
+     "gap_days": 80
+    },
+    {
+     "trigger": "O20",
+     "response": "EFFECT-2026-01-01",
+     "gap_days": 79
+    },
+    {
+     "trigger": "O21",
+     "response": "EFFECT-2026-07-15",
+     "gap_days": 96
+    },
+    {
+     "trigger": "O23",
+     "response": "EFFECT-2026-09-01",
+     "gap_days": 95
+    },
+    {
+     "trigger": "O24",
+     "response": "EFFECT-2026-08-20",
+     "gap_days": 63
+    },
+    {
+     "trigger": "O25",
+     "response": "EFFECT-2026-09-01",
+     "gap_days": 41
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "name": "Filing duty -> first public list",
+   "when": "A rule with a filing duty takes effect",
+   "then": "A first public filing list follows within about one to eight months, then lists about every two months",
+   "trigger_id": "rule_takes_effect",
+   "verb": "publish_list",
+   "delay": {
+    "median_days": 162,
+    "range_days": [
+     43,
+     231
+    ],
+    "n": 4
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "O3",
+     "response": "A017",
+     "gap_days": 43
+    },
+    {
+     "trigger": "O9",
+     "response": "A085",
+     "gap_days": 164
+    },
+    {
+     "trigger": "O12",
+     "response": "A100",
+     "gap_days": 161
+    },
+    {
+     "trigger": "O15",
+     "response": "A133",
+     "gap_days": 231
+    }
+   ],
+   "sources": [
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-03/30/c_1124305122.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2019-01/10/c_1123971164.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-08/12/c_1661927474338504.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-06/20/c_1688910683316256.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-04/02/c_1713729983803145.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-12/30/c_1768735664909127.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-10/17/c_1762449728720008.htm"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "O20",
+     "response": "A200",
+     "gap_days": -2
+    }
+   ]
+  },
+  {
+   "id": "C4a",
+   "name": "Lunar New Year campaign",
+   "when": "Lunar New Year approaches",
+   "then": "A 'Qinglang' clean-up campaign launches 4-12 days before the holiday (a calendar regularity, not a reaction to an event)",
+   "trigger_id": "lunar_new_year",
+   "verb": "launch_campaign",
+   "delay": {
+    "median_days": 8,
+    "range_days": [
+     4,
+     12
+    ],
+    "n": 4
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "LNY-2021-02-12",
+     "response": "A044",
+     "gap_days": -8
+    },
+    {
+     "trigger": "LNY-2022-02-01",
+     "response": "A071",
+     "gap_days": -8
+    },
+    {
+     "trigger": "LNY-2023-01-22",
+     "response": "A092",
+     "gap_days": -4
+    },
+    {
+     "trigger": "LNY-2024-02-10",
+     "response": "A128",
+     "gap_days": -12
+    }
+   ],
+   "sources": [
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2021-02/03/c_1613923672042416.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-01/24/c_1644627964425577.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-01/18/c_1675676650690321.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2024-01/29/c_1708196062197841.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-01/19/c_1738899842680885.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-02/12/c_1772627849788243.htm"
+    }
+   ],
+   "note": "2 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "LNY-2025-01-29",
+     "response": "A156",
+     "gap_days": -10
+    },
+    {
+     "trigger": "LNY-2026-02-17",
+     "response": "A206",
+     "gap_days": -5
+    }
+   ]
+  },
+  {
+   "id": "H2",
+   "name": "US chip move -> security action on a US chip firm",
+   "when": "Washington tightens or eases chip policy toward China",
+   "then": "CAC opens a security review of, or summons, a US chip firm, citing security, within weeks to six months",
+   "trigger_id": "us_chip_restriction",
+   "verb": "retaliate_review",
+   "delay": {
+    "median_days": 175,
+    "range_days": [
+     175,
+     175
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_unstable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C01",
+     "response": "A095",
+     "gap_days": 175
+    }
+   ],
+   "sources": [
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.wilmerhale.com/en/insights/client-alerts/20230411-china-launches-cybersecurity-review-against-micron"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2025-07/31/c_1755675743897163.htm"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C05",
+     "response": "A177",
+     "gap_days": 16
+    }
+   ]
+  }
+ ],
+ "research_notes": [
+  {
+   "claim": "CAC's only completed security review of a foreign chip firm (Micron, 2023) ended with a ban on purchases by critical-information-infrastructure operators rather than a fine - the likely shape of any repeat.",
+   "used_in": "H2",
+   "citation": {
+    "label": "cac.gov.cn",
+    "url": "https://www.theregister.com/2023/05/21/china_micron_ban/"
+   }
+  }
+ ],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 30
+ }
 }

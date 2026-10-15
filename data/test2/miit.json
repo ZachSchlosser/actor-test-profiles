@@ -1,224 +1,235 @@
 {
-  "actor": "miit",
-  "name": "Ministry of Industry and Information Technology",
-  "actor_type": "government",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "miit",
+ "name": "Ministry of Industry and Information Technology",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "MI3",
+   "name": "CAC signs an AI rule -> MIIT co-issues",
+   "when": "CAC signs an AI rule that MIIT co-issues",
+   "then": "MIIT co-issues and publishes it within days (two build episodes; the 2026 one falls after the cutoff)",
+   "trigger_id": "rule_signed",
+   "verb": "issue_rule",
+   "delay": {
+    "median_days": 10,
+    "range_days": [
+     3,
+     16
+    ],
+    "n": 2
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
     {
-      "id": "MI3",
-      "name": "CAC signs an AI rule -> MIIT co-issues",
-      "when": "CAC signs an AI rule that MIIT co-issues",
-      "then": "MIIT co-issues and publishes it within days (two build episodes; the 2026 one falls after the cutoff)",
-      "trigger_id": "rule_signed",
-      "verb": "issue_rule",
-      "delay": {
-        "median_days": 3,
-        "range_days": [
-          0,
-          16
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "O12",
-          "response": "MI01",
-          "gap_days": 16
-        },
-        {
-          "trigger": "O15",
-          "response": "MI03",
-          "gap_days": 3
-        },
-        {
-          "trigger": "O21",
-          "response": "MI15",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "CAC 2022-12-11",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm"
-        },
-        {
-          "label": "gov.cn text",
-          "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/12/content_5731431.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
-        },
-        {
-          "label": "gov.cn text",
-          "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm"
-        },
-        {
-          "label": "gov.cn news 2023-07-13",
-          "url": "https://www.gov.cn/lianbo/bumen/202307/content_6891748.htm"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
-        },
-        {
-          "label": "Xinhua 2026-04-10",
-          "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
-        }
-      ]
+     "trigger": "O12",
+     "response": "MI01",
+     "gap_days": 16
     },
     {
-      "id": "MI1",
-      "name": "Washington eases -> buyers steered",
-      "when": "Washington lets NVIDIA sell more to China",
-      "then": "Within weeks MIIT asks Chinese buyers to justify NVIDIA orders, or approves purchases only on conditions",
-      "trigger_id": "us_chip_easing",
-      "verb": "summon",
-      "delay": {
-        "median_days": 22,
-        "range_days": [
-          16,
-          28
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C05",
-          "response": "MI10",
-          "gap_days": 28
-        },
-        {
-          "trigger": "C12",
-          "response": "MI13",
-          "gap_days": 16
-        }
-      ],
-      "sources": [
-        {
-          "label": "BusinessDay 2025-08-12 (citing FT)",
-          "url": "https://www.businessday.co.za/bd/companies/2025-08-12-china-warns-local-firms-on-nvidias-h20-chips-after-backdoor-claims"
-        },
-        {
-          "label": "Bloomberg 2025-08-12",
-          "url": "https://bloomberg.com/news/articles/2025-08-12/china-urges-firms-not-to-use-nvidia-h20-chips-in-new-guidance"
-        },
-        {
-          "label": "Aaj (Reuters) 2026-01-30",
-          "url": "https://english.aaj.tv/news/amp/330451722"
-        },
-        {
-          "label": "The Standard HK 2026-01-28",
-          "url": "https://www.thestandard.com.hk/innovation/article/322910/China-gives-nod-to-ByteDance-Alibaba-and-Tencent-to-buy-Nvidias-H200-chips-says-sources"
-        }
-      ]
-    },
-    {
-      "id": "MI2",
-      "name": "Washington tightens -> quiet substitution",
-      "when": "Washington tightens chip controls",
-      "then": "No public statement; months later, a quiet order to replace US chips in state networks",
-      "trigger_id": "us_chip_restriction",
-      "verb": "deny_permission",
-      "delay": {
-        "median_days": 177,
-        "range_days": [
-          177,
-          177
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "C02",
-          "response": "MI06",
-          "gap_days": 177
-        }
-      ],
-      "sources": [
-        {
-          "label": "DCD (citing WSJ)",
-          "url": "https://datacenterdynamics.com/en/news/chinese-government-issues-rip-and-replace-order-for-us-made-chips-in-countrys-telco-networks"
-        },
-        {
-          "label": "IEEE ComSoc techblog",
-          "url": "https://techblog.comsoc.org/2024/04/15/wsj-china-telecom-carriers-to-phase-out-foreign-chips-intel-amd-hit-hard/"
-        }
-      ]
-    },
-    {
-      "id": "MI4",
-      "name": "Chinese open model breaks out -> MIIT promotes adoption",
-      "when": "A Chinese lab releases a major open model",
-      "then": "MIIT promotes its adoption by state firms within weeks",
-      "trigger_id": "open_model_release",
-      "verb": "state_reason",
-      "delay": {
-        "median_days": 24,
-        "range_days": [
-          24,
-          24
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "DS05",
-          "response": "MI08",
-          "gap_days": 24
-        }
-      ],
-      "sources": [
-        {
-          "label": "Science and Technology Daily 2025-02-13",
-          "url": "https://www.stdaily.com/web/gdxw/2025-02/13/content_296431.html"
-        },
-        {
-          "label": "DeepSeek API news",
-          "url": "https://api-docs.deepseek.com/news/news250120"
-        },
-        {
-          "label": "Gigazine",
-          "url": "https://www.gigazine.net/gsc_news/en/20250121-deepseek-r1-open-released"
-        }
-      ]
+     "trigger": "O15",
+     "response": "MI03",
+     "gap_days": 3
     }
-  ],
-  "research_notes": []
+   ],
+   "sources": [
+    {
+     "label": "CAC 2022-12-11",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm"
+    },
+    {
+     "label": "gov.cn text",
+     "url": "https://www.gov.cn/zhengce/zhengceku/2022-12/12/content_5731431.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm"
+    },
+    {
+     "label": "gov.cn text",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm"
+    },
+    {
+     "label": "gov.cn news 2023-07-13",
+     "url": "https://www.gov.cn/lianbo/bumen/202307/content_6891748.htm"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    },
+    {
+     "label": "Xinhua 2026-04-10",
+     "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "O21",
+     "response": "MI15",
+     "gap_days": 0
+    }
+   ]
+  },
+  {
+   "id": "MI1",
+   "name": "Washington eases -> buyers steered",
+   "when": "Washington lets NVIDIA sell more to China",
+   "then": "Within weeks MIIT asks Chinese buyers to justify NVIDIA orders, or approves purchases only on conditions",
+   "trigger_id": "us_chip_easing",
+   "verb": "summon",
+   "delay": {
+    "median_days": 28,
+    "range_days": [
+     28,
+     28
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_unstable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C05",
+     "response": "MI10",
+     "gap_days": 28
+    }
+   ],
+   "sources": [
+    {
+     "label": "BusinessDay 2025-08-12 (citing FT)",
+     "url": "https://www.businessday.co.za/bd/companies/2025-08-12-china-warns-local-firms-on-nvidias-h20-chips-after-backdoor-claims"
+    },
+    {
+     "label": "Bloomberg 2025-08-12",
+     "url": "https://bloomberg.com/news/articles/2025-08-12/china-urges-firms-not-to-use-nvidia-h20-chips-in-new-guidance"
+    },
+    {
+     "label": "Aaj (Reuters) 2026-01-30",
+     "url": "https://english.aaj.tv/news/amp/330451722"
+    },
+    {
+     "label": "The Standard HK 2026-01-28",
+     "url": "https://www.thestandard.com.hk/innovation/article/322910/China-gives-nod-to-ByteDance-Alibaba-and-Tencent-to-buy-Nvidias-H200-chips-says-sources"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C12",
+     "response": "MI13",
+     "gap_days": 16
+    }
+   ]
+  },
+  {
+   "id": "MI2",
+   "name": "Washington tightens -> quiet substitution",
+   "when": "Washington tightens chip controls",
+   "then": "No public statement; months later, a quiet order to replace US chips in state networks",
+   "trigger_id": "us_chip_restriction",
+   "verb": "deny_permission",
+   "delay": {
+    "median_days": 177,
+    "range_days": [
+     177,
+     177
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C02",
+     "response": "MI06",
+     "gap_days": 177
+    }
+   ],
+   "sources": [
+    {
+     "label": "DCD (citing WSJ)",
+     "url": "https://datacenterdynamics.com/en/news/chinese-government-issues-rip-and-replace-order-for-us-made-chips-in-countrys-telco-networks"
+    },
+    {
+     "label": "IEEE ComSoc techblog",
+     "url": "https://techblog.comsoc.org/2024/04/15/wsj-china-telecom-carriers-to-phase-out-foreign-chips-intel-amd-hit-hard/"
+    }
+   ]
+  },
+  {
+   "id": "MI4",
+   "name": "Chinese open model breaks out -> MIIT promotes adoption",
+   "when": "A Chinese lab releases a major open model",
+   "then": "MIIT promotes its adoption by state firms within weeks",
+   "trigger_id": "open_model_release",
+   "verb": "state_reason",
+   "delay": {
+    "median_days": 24,
+    "range_days": [
+     24,
+     24
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "DS05",
+     "response": "MI08",
+     "gap_days": 24
+    }
+   ],
+   "sources": [
+    {
+     "label": "Science and Technology Daily 2025-02-13",
+     "url": "https://www.stdaily.com/web/gdxw/2025-02/13/content_296431.html"
+    },
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250120"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://www.gigazine.net/gsc_news/en/20250121-deepseek-r1-open-released"
+    }
+   ]
+  }
+ ],
+ "research_notes": [],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 2
+ }
 }

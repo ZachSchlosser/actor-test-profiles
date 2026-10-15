@@ -1,241 +1,238 @@
 {
-  "actor": "baidu",
-  "name": "Baidu",
-  "actor_type": "company",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "baidu",
+ "name": "Baidu",
+ "actor_type": "company",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "BD3",
+   "name": "NVIDIA supply cut -> 'manageable'",
+   "when": "A US rule or a Chinese purchase halt cuts NVIDIA chip supply",
+   "then": "Baidu plays down the hit at its next scheduled event (earnings call, Baidu Create, Baidu World), citing stockpiles and Kunlun chips",
+   "trigger_id": "nvidia_access_cut",
+   "verb": "claim",
+   "delay": {
+    "median_days": 35,
+    "range_days": [
+     10,
+     57
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": 30000,
+    "unit": "count of Kunlun P800 chips in the cluster Baidu says it switched on",
+    "basis": "BD14"
+   },
+   "direction": "neutral",
+   "stability": "loo_unstable",
+   "status": "rule",
+   "episodes": [
     {
-      "id": "BD3",
-      "name": "NVIDIA supply cut -> 'manageable'",
-      "when": "A US rule or a Chinese purchase halt cuts NVIDIA chip supply",
-      "then": "Baidu plays down the hit at its next scheduled event (earnings call, Baidu Create, Baidu World), citing stockpiles and Kunlun chips",
-      "trigger_id": "nvidia_access_cut",
-      "verb": "claim",
-      "delay": {
-        "median_days": 35,
-        "range_days": [
-          10,
-          57
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": 30000,
-        "unit": "count of Kunlun P800 chips in the cluster Baidu says it switched on",
-        "basis": "BD14"
-      },
-      "direction": "neutral",
-      "stability": "loo_unstable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C02",
-          "response": "BD04",
-          "gap_days": 35
-        },
-        {
-          "trigger": "C04",
-          "response": "BD14",
-          "gap_days": 10
-        },
-        {
-          "trigger": "C08",
-          "response": "BD20",
-          "gap_days": 57
-        }
-      ],
-      "sources": [
-        {
-          "label": "SCMP",
-          "url": "https://mcdn.i-scmp.com/tech/big-tech/article/3242461/baidu-forecasts-ai-revenue-growth-and-limited-short-term-impact-us-chip-curbs"
-        },
-        {
-          "label": "DCD",
-          "url": "https://datacenterdynamics.com/en/news/impact-of-us-gpu-sanctions-minimal-baidu-claims"
-        },
-        {
-          "label": "Reuters via Yahoo",
-          "url": "https://finance.yahoo.com/news/baidu-launches-ai-model-amid-021731378.html"
-        },
-        {
-          "label": "Seeking Alpha",
-          "url": "https://seekingalpha.com/news/4435467-baidu-unveils-new-ernie-ai-models-says-self-made-chip-cluster-can-train-deepseek-like-models"
-        },
-        {
-          "label": "Caixin",
-          "url": "https://www.caixinglobal.com/2025-11-14/tech-brief-nov-14-baidu-unveils-ambitious-ai-chip-roadmap-102382783.html"
-        },
-        {
-          "label": "China Daily",
-          "url": "https://mobile.chinadaily.com.cn/html5/2025-11/14/content_013_6916532bed50ccabe151cebd.htm"
-        }
-      ]
+     "trigger": "C02",
+     "response": "BD04",
+     "gap_days": 35
     },
     {
-      "id": "BD1",
-      "name": "Rival open model or price cut -> Baidu matches",
-      "when": "A Chinese rival releases a major open model or slashes prices",
-      "then": "Baidu matches within hours to weeks with free tiers, price cuts or open weights",
-      "trigger_id": "open_model_release",
-      "verb": "commit",
-      "delay": {
-        "median_days": 24,
-        "range_days": [
-          0,
-          25
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C504",
-          "response": "BD06",
-          "gap_days": 0
-        },
-        {
-          "trigger": "DS05",
-          "response": "BD07",
-          "gap_days": 24
-        },
-        {
-          "trigger": "DS05",
-          "response": "BD08",
-          "gap_days": 25
-        }
-      ],
-      "sources": [
-        {
-          "label": "Yicai Global",
-          "url": "https://yicaiglobal.com/news/baidu-offers-two-ernie-models-for-free-as-chinese-llm-market-ushers-in-price-war"
-        },
-        {
-          "label": "Bloomberg",
-          "url": "https://www.bloomberg.com/news/articles/2024-05-21/alibaba-sparks-china-ai-price-war-with-spate-of-steep-discounts"
-        },
-        {
-          "label": "Fortune",
-          "url": "https://www.fortune.com/asia/2025/02/13/baidu-makes-ernie-bot-free-china-ai-shares"
-        },
-        {
-          "label": "DeepSeek API news",
-          "url": "https://api-docs.deepseek.com/news/news250120"
-        },
-        {
-          "label": "Gigazine",
-          "url": "https://www.gigazine.net/gsc_news/en/20250121-deepseek-r1-open-released"
-        },
-        {
-          "label": "Reuters via Business Standard",
-          "url": "https://www.business-standard.com/world-news/baidu-to-make-latest-ernie-ai-model-open-source-as-competition-heats-up-125021400534_1.html"
-        },
-        {
-          "label": "RTHK",
-          "url": "https://news.rthk.hk/rthk/en/component/k2/1791606-20250214.htm"
-        }
-      ]
+     "trigger": "C04",
+     "response": "BD14",
+     "gap_days": 10
     },
     {
-      "id": "BD2",
-      "name": "CAC approves services -> Baidu launches that day",
-      "when": "CAC approves a batch of generative-AI services",
-      "then": "Baidu opens the approved product to the public the same day",
-      "trigger_id": "cac_service_approval",
-      "verb": "launch",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          0
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "C502",
-          "response": "BD02",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "TechNode",
-          "url": "https://technode.com/2023/08/31/baidu-opens-ernie-bot-to-public-after-regulatory-approval/"
-        },
-        {
-          "label": "TechNode (11 firms approved)",
-          "url": "https://technode.com/2023/08/31/11-chinese-tech-companies-granted-permission-to-fully-release-chatgpt-like-tools/"
-        },
-        {
-          "label": "Reuters via FMT",
-          "url": "https://www.freemalaysiatoday.com/category/business/2023/08/31/baidu-ai-bot-gets-chinese-regulatory-ok"
-        }
-      ]
-    },
-    {
-      "id": "BD4",
-      "name": "Announced release date -> ships on it",
-      "when": "Baidu commits to a public release date for an open model",
-      "then": "It ships on the announced date",
-      "trigger_id": "",
-      "verb": "release_model",
-      "delay": {
-        "median_days": 136,
-        "range_days": [
-          136,
-          136
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "BD08",
-          "response": "BD16",
-          "gap_days": 136
-        }
-      ],
-      "sources": [
-        {
-          "label": "Hugging Face model card",
-          "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT"
-        },
-        {
-          "label": "Gigazine",
-          "url": "https://www.gigazine.net/news/20250630-baidu-ernie-open-source/"
-        },
-        {
-          "label": "Reuters via Business Standard",
-          "url": "https://www.business-standard.com/world-news/baidu-to-make-latest-ernie-ai-model-open-source-as-competition-heats-up-125021400534_1.html"
-        },
-        {
-          "label": "RTHK",
-          "url": "https://news.rthk.hk/rthk/en/component/k2/1791606-20250214.htm"
-        }
-      ]
+     "trigger": "C08",
+     "response": "BD20",
+     "gap_days": 57
     }
-  ],
-  "research_notes": []
+   ],
+   "sources": [
+    {
+     "label": "SCMP",
+     "url": "https://mcdn.i-scmp.com/tech/big-tech/article/3242461/baidu-forecasts-ai-revenue-growth-and-limited-short-term-impact-us-chip-curbs"
+    },
+    {
+     "label": "DCD",
+     "url": "https://datacenterdynamics.com/en/news/impact-of-us-gpu-sanctions-minimal-baidu-claims"
+    },
+    {
+     "label": "Reuters via Yahoo",
+     "url": "https://finance.yahoo.com/news/baidu-launches-ai-model-amid-021731378.html"
+    },
+    {
+     "label": "Seeking Alpha",
+     "url": "https://seekingalpha.com/news/4435467-baidu-unveils-new-ernie-ai-models-says-self-made-chip-cluster-can-train-deepseek-like-models"
+    },
+    {
+     "label": "Caixin",
+     "url": "https://www.caixinglobal.com/2025-11-14/tech-brief-nov-14-baidu-unveils-ambitious-ai-chip-roadmap-102382783.html"
+    },
+    {
+     "label": "China Daily",
+     "url": "https://mobile.chinadaily.com.cn/html5/2025-11/14/content_013_6916532bed50ccabe151cebd.htm"
+    }
+   ]
+  },
+  {
+   "id": "BD1",
+   "name": "Rival open model or price cut -> Baidu matches",
+   "when": "A Chinese rival releases a major open model or slashes prices",
+   "then": "Baidu matches within hours to weeks with free tiers, price cuts or open weights",
+   "trigger_id": "open_model_release",
+   "verb": "commit",
+   "delay": {
+    "median_days": 24,
+    "range_days": [
+     0,
+     25
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C504",
+     "response": "BD06",
+     "gap_days": 0
+    },
+    {
+     "trigger": "DS05",
+     "response": "BD07",
+     "gap_days": 24
+    },
+    {
+     "trigger": "DS05",
+     "response": "BD08",
+     "gap_days": 25
+    }
+   ],
+   "sources": [
+    {
+     "label": "Yicai Global",
+     "url": "https://yicaiglobal.com/news/baidu-offers-two-ernie-models-for-free-as-chinese-llm-market-ushers-in-price-war"
+    },
+    {
+     "label": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2024-05-21/alibaba-sparks-china-ai-price-war-with-spate-of-steep-discounts"
+    },
+    {
+     "label": "Fortune",
+     "url": "https://www.fortune.com/asia/2025/02/13/baidu-makes-ernie-bot-free-china-ai-shares"
+    },
+    {
+     "label": "DeepSeek API news",
+     "url": "https://api-docs.deepseek.com/news/news250120"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://www.gigazine.net/gsc_news/en/20250121-deepseek-r1-open-released"
+    },
+    {
+     "label": "Reuters via Business Standard",
+     "url": "https://www.business-standard.com/world-news/baidu-to-make-latest-ernie-ai-model-open-source-as-competition-heats-up-125021400534_1.html"
+    }
+   ]
+  },
+  {
+   "id": "BD2",
+   "name": "CAC approves services -> Baidu launches that day",
+   "when": "CAC approves a batch of generative-AI services",
+   "then": "Baidu opens the approved product to the public the same day",
+   "trigger_id": "cac_service_approval",
+   "verb": "launch",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     0
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C502",
+     "response": "BD02",
+     "gap_days": 0
+    }
+   ],
+   "sources": [
+    {
+     "label": "TechNode",
+     "url": "https://technode.com/2023/08/31/baidu-opens-ernie-bot-to-public-after-regulatory-approval/"
+    },
+    {
+     "label": "TechNode (11 firms approved)",
+     "url": "https://technode.com/2023/08/31/11-chinese-tech-companies-granted-permission-to-fully-release-chatgpt-like-tools/"
+    },
+    {
+     "label": "Reuters via FMT",
+     "url": "https://www.freemalaysiatoday.com/category/business/2023/08/31/baidu-ai-bot-gets-chinese-regulatory-ok"
+    }
+   ]
+  },
+  {
+   "id": "BD4",
+   "name": "Announced release date -> ships on it",
+   "when": "Baidu commits to a public release date for an open model",
+   "then": "It ships on the announced date",
+   "trigger_id": "",
+   "verb": "release_model",
+   "delay": {
+    "median_days": 136,
+    "range_days": [
+     136,
+     136
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "BD08",
+     "response": "BD16",
+     "gap_days": 136
+    }
+   ],
+   "sources": [
+    {
+     "label": "Hugging Face model card",
+     "url": "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT"
+    },
+    {
+     "label": "Gigazine",
+     "url": "https://www.gigazine.net/news/20250630-baidu-ernie-open-source/"
+    },
+    {
+     "label": "Reuters via Business Standard",
+     "url": "https://www.business-standard.com/world-news/baidu-to-make-latest-ernie-ai-model-open-source-as-competition-heats-up-125021400534_1.html"
+    }
+   ]
+  }
+ ],
+ "research_notes": [],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 0
+ }
 }

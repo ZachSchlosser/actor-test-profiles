@@ -1,232 +1,240 @@
 {
-  "actor": "huawei",
-  "name": "Huawei",
-  "actor_type": "company",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "huawei",
+ "name": "Huawei",
+ "actor_type": "company",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "HU5",
+   "name": "Public allegation -> next-day denial or silence",
+   "when": "A public report alleges sanctions violations or copying against Huawei",
+   "then": "Huawei denies it or declines to comment the next day, without addressing the substance",
+   "trigger_id": "",
+   "verb": "claim",
+   "delay": {
+    "median_days": 1,
+    "range_days": [
+     1,
+     1
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
     {
-      "id": "HU5",
-      "name": "Public allegation -> next-day denial or silence",
-      "when": "A public report alleges sanctions violations or copying against Huawei",
-      "then": "Huawei denies it or declines to comment the next day, without addressing the substance",
-      "trigger_id": "",
-      "verb": "claim",
-      "delay": {
-        "median_days": 1,
-        "range_days": [
-          1,
-          1
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C102",
-          "response": "HW05",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C103",
-          "response": "HW10",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C107",
-          "response": "HW18",
-          "gap_days": 1
-        }
-      ],
-      "sources": [
-        {
-          "label": "Prothom Alo (Reuters) 2023-09-05",
-          "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
-        },
-        {
-          "label": "Korea Times (Reuters) 2024-10-23",
-          "url": "https://www.koreatimes.co.kr/world/20241023/tsmc-told-us-of-chip-in-huawei-product-after-techinsights-finding-source"
-        },
-        {
-          "label": "Korea JoongAng Daily (Reuters) 2025-07-07",
-          "url": "https://www.koreajoongangdaily.com/world/huaweis-ai-lab-denies-that-one-of-its-pangu-models-copied-alibabas-qwen/11983549"
-        }
-      ]
+     "trigger": "C102",
+     "response": "HW05",
+     "gap_days": 1
     },
     {
-      "id": "HU1",
-      "name": "US chip tightening -> self-reliance answer",
-      "when": "The US tightens chip controls or targets Huawei's chips",
-      "then": "Weeks to months later Huawei answers with a self-reliance product, roadmap or claim, never a statement on the rule itself",
-      "trigger_id": "us_chip_restriction",
-      "verb": "claim",
-      "delay": {
-        "median_days": 84,
-        "range_days": [
-          28,
-          128
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C01",
-          "response": "HW02",
-          "gap_days": 84
-        },
-        {
-          "trigger": "C105",
-          "response": "HW15",
-          "gap_days": 28
-        },
-        {
-          "trigger": "C105",
-          "response": "HW21",
-          "gap_days": 128
-        }
-      ],
-      "sources": [
-        {
-          "label": "TechXplore/AFP 2022-12-30",
-          "url": "https://techxplore.com/news/2022-12-sanctions-hit-huawei-business-usual.html"
-        },
-        {
-          "label": "The Register 2025-06-10",
-          "url": "https://www.theregister.com/2025/06/10/huawei_founder_interview_semiconductor_sophistication/"
-        },
-        {
-          "label": "Huawei newsroom keynote",
-          "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
-        },
-        {
-          "label": "SCMP",
-          "url": "https://www.scmp.com/tech/big-tech/article/3326210/tech-war-huaweis-ai-chip-road-map-bolsters-chinas-tech-self-sufficiency-efforts"
-        }
-      ]
+     "trigger": "C103",
+     "response": "HW10",
+     "gap_days": 1
     },
     {
-      "id": "HU2",
-      "name": "NVIDIA loses Chinese buyers -> Ascend push",
-      "when": "NVIDIA's access to Chinese buyers is cut (a US licence rule, a CAC summons, a purchase halt)",
-      "then": "Huawei unveils or pulls forward Ascend products and opens its software stack within days to weeks",
-      "trigger_id": "nvidia_access_cut",
-      "verb": "commit",
-      "delay": {
-        "median_days": 3,
-        "range_days": [
-          1,
-          5
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C06",
-          "response": "HW20",
-          "gap_days": 5
-        },
-        {
-          "trigger": "C08",
-          "response": "HW21",
-          "gap_days": 1
-        }
-      ],
-      "sources": [
-        {
-          "label": "HuaweiCentral 2025-08-06",
-          "url": "https://www.huaweicentral.com/huawei-open-sourcing-ai-chip-toolkit-amid-nvidia-h20s-re-entry-in-china/amp/"
-        },
-        {
-          "label": "Huawei newsroom keynote",
-          "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
-        },
-        {
-          "label": "SCMP",
-          "url": "https://www.scmp.com/tech/big-tech/article/3326210/tech-war-huaweis-ai-chip-road-map-bolsters-chinas-tech-self-sufficiency-efforts"
-        }
-      ]
-    },
-    {
-      "id": "HU3",
-      "name": "NVIDIA regains access -> head-to-head claims",
-      "when": "Washington lets NVIDIA sell more to China",
-      "then": "Huawei compares Ascend directly with NVIDIA's China parts within weeks",
-      "trigger_id": "us_chip_easing",
-      "verb": "claim",
-      "delay": {
-        "median_days": 38,
-        "range_days": [
-          11,
-          65
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C05",
-          "response": "HW19",
-          "gap_days": 11
-        },
-        {
-          "trigger": "C12",
-          "response": "HW24",
-          "gap_days": 65
-        }
-      ],
-      "sources": [
-        {
-          "label": "SiliconANGLE 2025-07-27",
-          "url": "https://siliconangle.com/2025/07/27/huawei-launches-cloudmatrix-384-server-alternative-nvidias-ai-infrastructure-stack/"
-        },
-        {
-          "label": "TrendForce 2026-03-23",
-          "url": "https://www.trendforce.com/news/2026/03/23/news-huawei-debuts-atlas-350-on-ascend-950pr-with-in-house-hbm-touting-2-8x-h20-performance/"
-        },
-        {
-          "label": "RTHK (Reuters) 2026-03-27, orders/750k plan",
-          "url": "https://news.rthk.hk/rthk/en/component/k2/1849055-20260327.htm"
-        }
-      ]
+     "trigger": "C107",
+     "response": "HW18",
+     "gap_days": 1
     }
-  ],
-  "research_notes": [
+   ],
+   "sources": [
     {
-      "claim": "Huawei has been on the US Entity List since 16 May 2019 (with 68 affiliates across 26 countries, licence reviews presumptively denied) - the standing baseline behind its self-reliance answers.",
-      "used_in": "HU1, HU2, HU3",
-      "citation": {
-        "label": "Federal Register, Addition of Entities to the Entity List (84 FR 22961)",
-        "url": "https://www.govinfo.gov/content/pkg/FR-2019-05-21/html/2019-10616.htm"
-      }
+     "label": "Prothom Alo (Reuters) 2023-09-05",
+     "url": "https://en.prothomalo.com/science-technology/qtoviiozas"
+    },
+    {
+     "label": "Korea Times (Reuters) 2024-10-23",
+     "url": "https://www.koreatimes.co.kr/world/20241023/tsmc-told-us-of-chip-in-huawei-product-after-techinsights-finding-source"
+    },
+    {
+     "label": "Korea JoongAng Daily (Reuters) 2025-07-07",
+     "url": "https://www.koreajoongangdaily.com/world/huaweis-ai-lab-denies-that-one-of-its-pangu-models-copied-alibabas-qwen/11983549"
     }
-  ]
+   ]
+  },
+  {
+   "id": "HU1",
+   "name": "US chip tightening -> self-reliance answer",
+   "when": "The US tightens chip controls or targets Huawei's chips",
+   "then": "Weeks to months later Huawei answers with a self-reliance product, roadmap or claim, never a statement on the rule itself",
+   "trigger_id": "us_chip_restriction",
+   "verb": "claim",
+   "delay": {
+    "median_days": 84,
+    "range_days": [
+     28,
+     128
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C01",
+     "response": "HW02",
+     "gap_days": 84
+    },
+    {
+     "trigger": "C105",
+     "response": "HW15",
+     "gap_days": 28
+    },
+    {
+     "trigger": "C105",
+     "response": "HW21",
+     "gap_days": 128
+    }
+   ],
+   "sources": [
+    {
+     "label": "TechXplore/AFP 2022-12-30",
+     "url": "https://techxplore.com/news/2022-12-sanctions-hit-huawei-business-usual.html"
+    },
+    {
+     "label": "The Register 2025-06-10",
+     "url": "https://www.theregister.com/2025/06/10/huawei_founder_interview_semiconductor_sophistication/"
+    },
+    {
+     "label": "Huawei newsroom keynote",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3326210/tech-war-huaweis-ai-chip-road-map-bolsters-chinas-tech-self-sufficiency-efforts"
+    }
+   ]
+  },
+  {
+   "id": "HU2",
+   "name": "NVIDIA loses Chinese buyers -> Ascend push",
+   "when": "NVIDIA's access to Chinese buyers is cut (a US licence rule, a CAC summons, a purchase halt)",
+   "then": "Huawei unveils or pulls forward Ascend products and opens its software stack within days to weeks",
+   "trigger_id": "nvidia_access_cut",
+   "verb": "commit",
+   "delay": {
+    "median_days": 3,
+    "range_days": [
+     1,
+     5
+    ],
+    "n": 2
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_unstable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C06",
+     "response": "HW20",
+     "gap_days": 5
+    },
+    {
+     "trigger": "C08",
+     "response": "HW21",
+     "gap_days": 1
+    }
+   ],
+   "sources": [
+    {
+     "label": "HuaweiCentral 2025-08-06",
+     "url": "https://www.huaweicentral.com/huawei-open-sourcing-ai-chip-toolkit-amid-nvidia-h20s-re-entry-in-china/amp/"
+    },
+    {
+     "label": "Huawei newsroom keynote",
+     "url": "https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech"
+    },
+    {
+     "label": "SCMP",
+     "url": "https://www.scmp.com/tech/big-tech/article/3326210/tech-war-huaweis-ai-chip-road-map-bolsters-chinas-tech-self-sufficiency-efforts"
+    }
+   ]
+  },
+  {
+   "id": "HU3",
+   "name": "NVIDIA regains access -> head-to-head claims",
+   "when": "Washington lets NVIDIA sell more to China",
+   "then": "Huawei compares Ascend directly with NVIDIA's China parts within weeks",
+   "trigger_id": "us_chip_easing",
+   "verb": "claim",
+   "delay": {
+    "median_days": 11,
+    "range_days": [
+     11,
+     11
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_unstable",
+   "status": "anecdote",
+   "episodes": [
+    {
+     "trigger": "C05",
+     "response": "HW19",
+     "gap_days": 11
+    }
+   ],
+   "sources": [
+    {
+     "label": "SiliconANGLE 2025-07-27",
+     "url": "https://siliconangle.com/2025/07/27/huawei-launches-cloudmatrix-384-server-alternative-nvidias-ai-infrastructure-stack/"
+    },
+    {
+     "label": "TrendForce 2026-03-23",
+     "url": "https://www.trendforce.com/news/2026/03/23/news-huawei-debuts-atlas-350-on-ascend-950pr-with-in-house-hbm-touting-2-8x-h20-performance/"
+    },
+    {
+     "label": "RTHK (Reuters) 2026-03-27, orders/750k plan",
+     "url": "https://news.rthk.hk/rthk/en/component/k2/1849055-20260327.htm"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C12",
+     "response": "HW24",
+     "gap_days": 65
+    }
+   ]
+  }
+ ],
+ "research_notes": [
+  {
+   "claim": "Huawei has been on the US Entity List since 16 May 2019 (with 68 affiliates across 26 countries, licence reviews presumptively denied) - the standing baseline behind its self-reliance answers.",
+   "used_in": "HU1, HU2, HU3",
+   "citation": {
+    "label": "Federal Register, Addition of Entities to the Entity List (84 FR 22961)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2019-05-21/html/2019-10616.htm"
+   }
+  }
+ ],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 1
+ }
 }

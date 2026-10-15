@@ -1,352 +1,357 @@
 {
-  "actor": "mofcom",
-  "name": "Ministry of Commerce",
-  "actor_type": "government",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "mofcom",
+ "name": "Ministry of Commerce",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "M1",
+   "name": "US chip rule -> same-day condemnation",
+   "when": "Washington issues a major chip or AI export-control rule",
+   "then": "A MOFCOM spokesperson condemns it within 0-3 days and promises 'necessary measures' that only sometimes come",
+   "trigger_id": "us_chip_restriction",
+   "verb": "state_reason",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     3
+    ],
+    "n": 6
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "neutral",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
     {
-      "id": "M1",
-      "name": "US chip rule -> same-day condemnation",
-      "when": "Washington issues a major chip or AI export-control rule",
-      "then": "A MOFCOM spokesperson condemns it within 0-3 days and promises 'necessary measures' that only sometimes come",
-      "trigger_id": "us_chip_restriction",
-      "verb": "state_reason",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          3
-        ],
-        "n": 6
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "neutral",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C01",
-          "response": "MC01",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C02",
-          "response": "MC04",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C29",
-          "response": "MC07",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C43",
-          "response": "MC10",
-          "gap_days": 0
-        },
-        {
-          "trigger": "C205",
-          "response": "MC20",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C36",
-          "response": "MC23",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "MOFCOM spokesperson remarks (CN), 2022-10-10",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2022/art_3088eda9585040e785c43cd23e656fca.html"
-        },
-        {
-          "label": "MOFCOM spokesperson remarks (CN), 2023-10-18",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_e2ad3f4029ec4a1fb67de37d2acabcfc.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN), 2024-12-02",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_be61cee67b6340e59038896021e67453.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN), 2025-01-13",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_4955f2d7ff714592bcf33e2dcd8062c5.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (EN)",
-          "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_267bddaf8d52497289627453b3d5636a.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN), 2025-08-30",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_0562e88bac2f4b16b549d4fa97610acd.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN), 2025-09-29",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_220cc0d9436d455eab67490be3d45265.html"
-        }
-      ]
+     "trigger": "C01",
+     "response": "MC01",
+     "gap_days": 3
     },
     {
-      "id": "M2",
-      "name": "Big chip escalation -> mineral export control",
-      "when": "A large US or allied chip-control escalation lands",
-      "then": "MOFCOM restricts a critical mineral within 1-10 days, framed as routine and 'not targeting any country'",
-      "trigger_id": "us_chip_restriction",
-      "verb": "restrict_exports",
-      "delay": {
-        "median_days": 3,
-        "range_days": [
-          1,
-          10
-        ],
-        "n": 4
-      },
-      "size": {
-        "value": 0.1,
-        "unit": "% Chinese rare-earth content that triggers licensing (October 2025 extraterritorial rule)",
-        "basis": "MC25"
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "rule",
-      "episodes": [
-        {
-          "trigger": "C201",
-          "response": "MC03",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C02",
-          "response": "MC05",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C29",
-          "response": "MC08",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C36",
-          "response": "MC25",
-          "gap_days": 10
-        }
-      ],
-      "sources": [
-        {
-          "label": "MOFCOM Announcement 23/2023 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_ee1756db75754420b820d34d4fd3d2d3.html"
-        },
-        {
-          "label": "MOFCOM Announcement 39/2023 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_2b2f5a88d0354d6ea761a1de0fa427de.html"
-        },
-        {
-          "label": "MOFCOM spokesperson on graphite (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_06e2fa2af7b64257af0537f49559d3b0.html"
-        },
-        {
-          "label": "MOFCOM Announcement 46/2024 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_3d5e990b43424e60828030f58a547b60.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN), 2024-12-03",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_1fb6c837ed174fc69db96a97471eed0b.html"
-        },
-        {
-          "label": "MOFCOM Announcement 61/2025 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html"
-        },
-        {
-          "label": "MOFCOM Announcement 62/2025 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_6cb42957741440c6984de696b70df9ae.html"
-        },
-        {
-          "label": "MOFCOM spokesperson, 12 Oct (EN; cites the Affiliates Rule)",
-          "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_c202dcc0433d476db52b1e7f7fe53926.html"
-        }
-      ]
+     "trigger": "C02",
+     "response": "MC04",
+     "gap_days": 1
     },
     {
-      "id": "M3",
-      "name": "New US tariffs -> controls and listings",
-      "when": "Washington imposes new tariffs on China",
-      "then": "MOFCOM answers within 1-3 days with a package of mineral export controls and entity listings (one chained wave in the 2025 tariff war)",
-      "trigger_id": "us_tariff",
-      "verb": "restrict_exports",
-      "delay": {
-        "median_days": 2,
-        "range_days": [
-          1,
-          3
-        ],
-        "n": 5
-      },
-      "size": {
-        "value": 25,
-        "unit": "count of goods put under export licensing in one answer",
-        "basis": "MC12 (tungsten, tellurium, bismuth, molybdenum, indium products)"
-      },
-      "direction": "closed",
-      "stability": "loo_unstable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C30",
-          "response": "MC12",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C30",
-          "response": "MC13",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C203",
-          "response": "MC14",
-          "gap_days": 1
-        },
-        {
-          "trigger": "C31",
-          "response": "MC15",
-          "gap_days": 2
-        },
-        {
-          "trigger": "C31",
-          "response": "MC16",
-          "gap_days": 2
-        }
-      ],
-      "sources": [
-        {
-          "label": "MOFCOM Announcement 10/2025 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e623090907fc4e1092f0a4db72f57b95.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7b08ff0fc4f0405d855c03a48cdbbea1.html"
-        },
-        {
-          "label": "UEL announcement (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_ab15d2258dda4e93b8ad1ec4776d37c3.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_c7c7d2b79488401f8d0de093e91d8c2f.html"
-        },
-        {
-          "label": "MOFCOM spokesperson on 15 entities (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_917a395fd6614f07abd0f6bdc71a6e9a.html"
-        },
-        {
-          "label": "MOFCOM spokesperson on Illumina (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7f92dc4e457d496782e65f09db4749b1.html"
-        },
-        {
-          "label": "UEL announcement, 10 US firms (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_beb25dc3bf9447f9ba7a34b25cca8f64.html"
-        },
-        {
-          "label": "MOFCOM Announcement 18/2025 (EN)",
-          "url": "https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html"
-        },
-        {
-          "label": "MOFCOM spokesperson (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_2eb722ef209c4d268dcd1aca8b2abf40.html"
-        },
-        {
-          "label": "UEL announcement, Skydio etc. (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e4f474d3aeba4672913db1042d845d78.html"
-        },
-        {
-          "label": "MOFCOM spokesperson on 16 entities (CN)",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_b79820f22afe4b0b835cd996432f1b52.html"
-        },
-        {
-          "label": "UEL announcement, Shield AI etc., 9 Apr (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_c29bed8111a5406ea44f363694865ac2.html"
-        }
-      ]
+     "trigger": "C29",
+     "response": "MC07",
+     "gap_days": 0
     },
     {
-      "id": "M4",
-      "name": "Truce -> suspend, not revoke",
-      "when": "Washington and Beijing strike a trade truce",
-      "then": "MOFCOM suspends countermeasures within days, with sunset dates matched to US suspensions, and keeps the licensing regimes in place",
-      "trigger_id": "us_china_deescalation",
-      "verb": "delay_rule",
-      "delay": {
-        "median_days": 6,
-        "range_days": [
-          2,
-          8
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": 90,
-        "unit": "days of suspension (shortest; the October 2025 package is suspended until 10 November 2026)",
-        "basis": "MC17, MC28, MC29"
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C204",
-          "response": "MC17",
-          "gap_days": 2
-        },
-        {
-          "trigger": "C38",
-          "response": "MC28",
-          "gap_days": 6
-        },
-        {
-          "trigger": "C38",
-          "response": "MC29",
-          "gap_days": 8
-        }
-      ],
-      "sources": [
-        {
-          "label": "MOFCOM spokesperson (CN), 2025-05-14",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_53ec1f591dba49a39b65fd89b6d73e6f.html"
-        },
-        {
-          "label": "MOFCOM/GAC Announcement 70/2025 (CN)",
-          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html"
-        },
-        {
-          "label": "MOFCOM on Kuala Lumpur outcomes (EN)",
-          "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_d3b018b922a4458989e43a46a04be6fe.html"
-        },
-        {
-          "label": "MOFCOM on UEL adjustment (CN), 2025-11-05",
-          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_3cd57285290044edb3036563bc4c7352.html"
-        },
-        {
-          "label": "Reuters via Engineering News",
-          "url": "https://www.engineeringnews.co.za/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10"
-        },
-        {
-          "label": "TVB News",
-          "url": "https://news.tvb.com/en/802902-ChinasuspendsabanonexportsofgalliumgermaniumandantimonytoUS"
-        }
-      ]
+     "trigger": "C43",
+     "response": "MC10",
+     "gap_days": 0
+    },
+    {
+     "trigger": "C205",
+     "response": "MC20",
+     "gap_days": 1
+    },
+    {
+     "trigger": "C36",
+     "response": "MC23",
+     "gap_days": 0
     }
-  ],
-  "research_notes": [
+   ],
+   "sources": [
     {
-      "claim": "The October 2025 rare-earth rule reaches foreign-made items containing at least 0.1% Chinese rare-earth content, MOFCOM's most extraterritorial instrument to date.",
-      "used_in": "M2",
-      "citation": {
-        "label": "MOFCOM Announcement 61/2025 (CN)",
-        "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html"
-      }
+     "label": "MOFCOM spokesperson remarks (CN), 2022-10-10",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2022/art_3088eda9585040e785c43cd23e656fca.html"
+    },
+    {
+     "label": "MOFCOM spokesperson remarks (CN), 2023-10-18",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_e2ad3f4029ec4a1fb67de37d2acabcfc.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2024-12-02",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_be61cee67b6340e59038896021e67453.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-01-13",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_4955f2d7ff714592bcf33e2dcd8062c5.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_267bddaf8d52497289627453b3d5636a.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-08-30",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_0562e88bac2f4b16b549d4fa97610acd.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-09-29",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_220cc0d9436d455eab67490be3d45265.html"
     }
-  ]
+   ]
+  },
+  {
+   "id": "M2",
+   "name": "Big chip escalation -> mineral export control",
+   "when": "A large US or allied chip-control escalation lands",
+   "then": "MOFCOM restricts a critical mineral within 1-10 days, framed as routine and 'not targeting any country'",
+   "trigger_id": "us_chip_restriction",
+   "verb": "restrict_exports",
+   "delay": {
+    "median_days": 3,
+    "range_days": [
+     1,
+     10
+    ],
+    "n": 4
+   },
+   "size": {
+    "value": 0.1,
+    "unit": "% Chinese rare-earth content that triggers licensing (October 2025 extraterritorial rule)",
+    "basis": "MC25"
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "rule",
+   "episodes": [
+    {
+     "trigger": "C201",
+     "response": "MC03",
+     "gap_days": 3
+    },
+    {
+     "trigger": "C02",
+     "response": "MC05",
+     "gap_days": 3
+    },
+    {
+     "trigger": "C29",
+     "response": "MC08",
+     "gap_days": 1
+    },
+    {
+     "trigger": "C36",
+     "response": "MC25",
+     "gap_days": 10
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 23/2023 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_ee1756db75754420b820d34d4fd3d2d3.html"
+    },
+    {
+     "label": "MOFCOM Announcement 39/2023 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2023/art_2b2f5a88d0354d6ea761a1de0fa427de.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on graphite (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2023/art_06e2fa2af7b64257af0537f49559d3b0.html"
+    },
+    {
+     "label": "MOFCOM Announcement 46/2024 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_3d5e990b43424e60828030f58a547b60.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN), 2024-12-03",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2024/art_1fb6c837ed174fc69db96a97471eed0b.html"
+    },
+    {
+     "label": "MOFCOM Announcement 61/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html"
+    },
+    {
+     "label": "MOFCOM Announcement 62/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_6cb42957741440c6984de696b70df9ae.html"
+    },
+    {
+     "label": "MOFCOM spokesperson, 12 Oct (EN; cites the Affiliates Rule)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_c202dcc0433d476db52b1e7f7fe53926.html"
+    }
+   ]
+  },
+  {
+   "id": "M3",
+   "name": "New US tariffs -> controls and listings",
+   "when": "Washington imposes new tariffs on China",
+   "then": "MOFCOM answers within 1-3 days with a package of mineral export controls and entity listings (one chained wave in the 2025 tariff war)",
+   "trigger_id": "us_tariff",
+   "verb": "restrict_exports",
+   "delay": {
+    "median_days": 2,
+    "range_days": [
+     1,
+     3
+    ],
+    "n": 5
+   },
+   "size": {
+    "value": 25,
+    "unit": "count of goods put under export licensing in one answer",
+    "basis": "MC12 (tungsten, tellurium, bismuth, molybdenum, indium products)"
+   },
+   "direction": "closed",
+   "stability": "loo_unstable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C30",
+     "response": "MC12",
+     "gap_days": 3
+    },
+    {
+     "trigger": "C30",
+     "response": "MC13",
+     "gap_days": 3
+    },
+    {
+     "trigger": "C203",
+     "response": "MC14",
+     "gap_days": 1
+    },
+    {
+     "trigger": "C31",
+     "response": "MC15",
+     "gap_days": 2
+    },
+    {
+     "trigger": "C31",
+     "response": "MC16",
+     "gap_days": 2
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOFCOM Announcement 10/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e623090907fc4e1092f0a4db72f57b95.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7b08ff0fc4f0405d855c03a48cdbbea1.html"
+    },
+    {
+     "label": "UEL announcement (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_ab15d2258dda4e93b8ad1ec4776d37c3.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_c7c7d2b79488401f8d0de093e91d8c2f.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on 15 entities (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_917a395fd6614f07abd0f6bdc71a6e9a.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on Illumina (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_7f92dc4e457d496782e65f09db4749b1.html"
+    },
+    {
+     "label": "UEL announcement, 10 US firms (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_beb25dc3bf9447f9ba7a34b25cca8f64.html"
+    },
+    {
+     "label": "MOFCOM Announcement 18/2025 (EN)",
+     "url": "https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html"
+    },
+    {
+     "label": "MOFCOM spokesperson (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_2eb722ef209c4d268dcd1aca8b2abf40.html"
+    },
+    {
+     "label": "UEL announcement, Skydio etc. (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e4f474d3aeba4672913db1042d845d78.html"
+    },
+    {
+     "label": "MOFCOM spokesperson on 16 entities (CN)",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_b79820f22afe4b0b835cd996432f1b52.html"
+    },
+    {
+     "label": "UEL announcement, Shield AI etc., 9 Apr (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_c29bed8111a5406ea44f363694865ac2.html"
+    }
+   ]
+  },
+  {
+   "id": "M4",
+   "name": "Truce -> suspend, not revoke",
+   "when": "Washington and Beijing strike a trade truce",
+   "then": "MOFCOM suspends countermeasures within days, with sunset dates matched to US suspensions, and keeps the licensing regimes in place",
+   "trigger_id": "us_china_deescalation",
+   "verb": "delay_rule",
+   "delay": {
+    "median_days": 6,
+    "range_days": [
+     2,
+     8
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": 90,
+    "unit": "days of suspension (shortest; the October 2025 package is suspended until 10 November 2026)",
+    "basis": "MC17, MC28, MC29"
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C204",
+     "response": "MC17",
+     "gap_days": 2
+    },
+    {
+     "trigger": "C38",
+     "response": "MC28",
+     "gap_days": 6
+    },
+    {
+     "trigger": "C38",
+     "response": "MC29",
+     "gap_days": 8
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOFCOM spokesperson (CN), 2025-05-14",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_53ec1f591dba49a39b65fd89b6d73e6f.html"
+    },
+    {
+     "label": "MOFCOM/GAC Announcement 70/2025 (CN)",
+     "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html"
+    },
+    {
+     "label": "MOFCOM on Kuala Lumpur outcomes (EN)",
+     "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2025/art_d3b018b922a4458989e43a46a04be6fe.html"
+    },
+    {
+     "label": "MOFCOM on UEL adjustment (CN), 2025-11-05",
+     "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2025/art_3cd57285290044edb3036563bc4c7352.html"
+    },
+    {
+     "label": "Reuters via Engineering News",
+     "url": "https://www.engineeringnews.co.za/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10"
+    },
+    {
+     "label": "TVB News",
+     "url": "https://news.tvb.com/en/802902-ChinasuspendsabanonexportsofgalliumgermaniumandantimonytoUS"
+    }
+   ]
+  }
+ ],
+ "research_notes": [
+  {
+   "claim": "The October 2025 rare-earth rule reaches foreign-made items containing at least 0.1% Chinese rare-earth content, MOFCOM's most extraterritorial instrument to date.",
+   "used_in": "M2",
+   "citation": {
+    "label": "MOFCOM Announcement 61/2025 (CN)",
+    "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html"
+   }
+  }
+ ],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 0
+ }
 }

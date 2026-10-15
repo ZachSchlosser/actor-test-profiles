@@ -1,230 +1,240 @@
 {
-  "actor": "samr",
-  "name": "State Administration for Market Regulation",
-  "actor_type": "government",
-  "cutoff": "2026-01-01",
-  "rules": [
+ "actor": "samr",
+ "name": "State Administration for Market Regulation",
+ "actor_type": "government",
+ "cutoff": "2026-01-01",
+ "rules": [
+  {
+   "id": "S1",
+   "name": "US chip escalation -> antitrust probe of a US chip firm",
+   "when": "Washington tightens chip controls or lists Chinese chip firms",
+   "then": "SAMR opens or advances an antitrust case against a US chip firm within days (two independent waves so far)",
+   "trigger_id": "us_chip_restriction",
+   "verb": "investigate",
+   "delay": {
+    "median_days": 7,
+    "range_days": [
+     3,
+     11
+    ],
+    "n": 3
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
     {
-      "id": "S1",
-      "name": "US chip escalation -> antitrust probe of a US chip firm",
-      "when": "Washington tightens chip controls or lists Chinese chip firms",
-      "then": "SAMR opens or advances an antitrust case against a US chip firm within days (two independent waves so far)",
-      "trigger_id": "us_chip_restriction",
-      "verb": "investigate",
-      "delay": {
-        "median_days": 7,
-        "range_days": [
-          3,
-          11
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C29",
-          "response": "SM06",
-          "gap_days": 7
-        },
-        {
-          "trigger": "C34",
-          "response": "SM15",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C36",
-          "response": "SM16",
-          "gap_days": 11
-        }
-      ],
-      "sources": [
-        {
-          "label": "China Daily (CN) 2024-12-09",
-          "url": "https://cn.chinadaily.com.cn/a/202412/09/WS6756e273a310b59111da7da9.html"
-        },
-        {
-          "label": "HK01 2025-09-15",
-          "url": "https://global.hk01.com/即时中国/60276591/中国市场监管总局-英伟达违反反垄断法-依法决定实施进一步调查"
-        },
-        {
-          "label": "CTV News (Reuters)",
-          "url": "https://www.ctvnews.ca/business/article/china-says-preliminary-probe-shows-nvidia-violated-anti-monopoly-law/"
-        },
-        {
-          "label": "Caixin Global 2025-10-11",
-          "url": "https://www.caixinglobal.com/2025-10-11/qualcomm-faces-china-antitrust-probe-over-autotalks-deal-102370368.html"
-        },
-        {
-          "label": "Reuters via StreetInsider",
-          "url": "https://www.streetinsider.com/Reuters/China+opens+antitrust+probe+into+Qualcomm+over+its+Autotalks+deal/25442187.html"
-        }
-      ]
+     "trigger": "C29",
+     "response": "SM06",
+     "gap_days": 7
     },
     {
-      "id": "S4",
-      "name": "New US tariffs -> probe of a US firm",
-      "when": "Washington raises tariffs on Chinese goods",
-      "then": "SAMR opens an antitrust case against a high-profile US firm within days, alongside MOFCOM's countermeasures",
-      "trigger_id": "us_tariff",
-      "verb": "investigate",
-      "delay": {
-        "median_days": 2,
-        "range_days": [
-          2,
-          3
-        ],
-        "n": 2
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C30",
-          "response": "SM07",
-          "gap_days": 3
-        },
-        {
-          "trigger": "C31",
-          "response": "SM10",
-          "gap_days": 2
-        }
-      ],
-      "sources": [
-        {
-          "label": "The Register 2025-02-04",
-          "url": "https://www.theregister.com/2025/02/04/china_trump_google/"
-        },
-        {
-          "label": "Reuters via Deccan Herald",
-          "url": "https://www.deccanherald.com/amp/story/business%2Fcompanies%2Fgoogle-suspected-of-violating-chinas-anti-monopoly-law-says-regulator-launching-probe-3388288"
-        },
-        {
-          "label": "DuPont Reg FD filing (SEC)",
-          "url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000011/dd-20250404.htm"
-        },
-        {
-          "label": "GCR briefing 4 April 2025",
-          "url": "https://globalcompetitionreview.com/article/tug-of-war-the-briefing-4-april-2025"
-        }
-      ]
+     "trigger": "C34",
+     "response": "SM15",
+     "gap_days": 3
     },
     {
-      "id": "S2",
-      "name": "Talks or a deal -> suspend, drop or clear",
-      "when": "Washington and Beijing hold talks or strike a deal",
-      "then": "SAMR suspends or drops a probe, or clears a pending US deal on conditions, but publishes no formal closure of its chip probes",
-      "trigger_id": "us_china_deescalation",
-      "verb": "revoke_rule",
-      "delay": {
-        "median_days": 4,
-        "range_days": [
-          -6,
-          8
-        ],
-        "n": 3
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "open",
-      "stability": "loo_stable",
-      "status": "signal",
-      "episodes": [
-        {
-          "trigger": "C33",
-          "response": "SM13",
-          "gap_days": -6
-        },
-        {
-          "trigger": "C35",
-          "response": "SM14",
-          "gap_days": 4
-        },
-        {
-          "trigger": "C39",
-          "response": "SM22",
-          "gap_days": 8
-        }
-      ],
-      "sources": [
-        {
-          "label": "MLex 2025-07-22",
-          "url": "https://www.mlex.com/mlex/amp/articles/2367626"
-        },
-        {
-          "label": "GCR: China suspends DuPont probe",
-          "url": "https://globalcompetitionreview.com/article/china-suspends-dupont-probe"
-        },
-        {
-          "label": "Bloomberg 2025-09-18 (citing FT)",
-          "url": "https://www.bloomberg.com/news/articles/2025-09-18/china-drops-google-antitrust-probe-during-trade-talks-ft-says"
-        },
-        {
-          "label": "Tech Times 2026-05-22",
-          "url": "https://www.techtimes.com/articles/317037/20260522/beijing-presses-washington-honor-summit-deal-nvidia-qualcomm-probe-status-stays-unresolved.htm"
-        },
-        {
-          "label": "GCR briefing 3 Nov 2025",
-          "url": "https://globalcompetitionreview.com/article/chip-shots-the-briefing-3-november-2025"
-        }
-      ]
-    },
-    {
-      "id": "S3",
-      "name": "CAC signs an AI rule -> SAMR co-issues",
-      "when": "CAC signs an AI rule that SAMR co-issues",
-      "then": "SAMR co-issues it the same day",
-      "trigger_id": "rule_signed",
-      "verb": "issue_rule",
-      "delay": {
-        "median_days": 0,
-        "range_days": [
-          0,
-          0
-        ],
-        "n": 1
-      },
-      "size": {
-        "value": null,
-        "unit": "",
-        "basis": ""
-      },
-      "direction": "closed",
-      "stability": "loo_stable",
-      "status": "anecdote",
-      "episodes": [
-        {
-          "trigger": "O21",
-          "response": "SM20",
-          "gap_days": 0
-        }
-      ],
-      "sources": [
-        {
-          "label": "Xinhua 2026-04-10",
-          "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html"
-        },
-        {
-          "label": "cac.gov.cn",
-          "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
-        }
-      ]
+     "trigger": "C36",
+     "response": "SM16",
+     "gap_days": 11
     }
-  ],
-  "research_notes": []
+   ],
+   "sources": [
+    {
+     "label": "China Daily (CN) 2024-12-09",
+     "url": "https://cn.chinadaily.com.cn/a/202412/09/WS6756e273a310b59111da7da9.html"
+    },
+    {
+     "label": "HK01 2025-09-15",
+     "url": "https://global.hk01.com/即时中国/60276591/中国市场监管总局-英伟达违反反垄断法-依法决定实施进一步调查"
+    },
+    {
+     "label": "CTV News (Reuters)",
+     "url": "https://www.ctvnews.ca/business/article/china-says-preliminary-probe-shows-nvidia-violated-anti-monopoly-law/"
+    },
+    {
+     "label": "Caixin Global 2025-10-11",
+     "url": "https://www.caixinglobal.com/2025-10-11/qualcomm-faces-china-antitrust-probe-over-autotalks-deal-102370368.html"
+    },
+    {
+     "label": "Reuters via StreetInsider",
+     "url": "https://www.streetinsider.com/Reuters/China+opens+antitrust+probe+into+Qualcomm+over+its+Autotalks+deal/25442187.html"
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "name": "New US tariffs -> probe of a US firm",
+   "when": "Washington raises tariffs on Chinese goods",
+   "then": "SAMR opens an antitrust case against a high-profile US firm within days, alongside MOFCOM's countermeasures",
+   "trigger_id": "us_tariff",
+   "verb": "investigate",
+   "delay": {
+    "median_days": 2,
+    "range_days": [
+     2,
+     3
+    ],
+    "n": 2
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C30",
+     "response": "SM07",
+     "gap_days": 3
+    },
+    {
+     "trigger": "C31",
+     "response": "SM10",
+     "gap_days": 2
+    }
+   ],
+   "sources": [
+    {
+     "label": "The Register 2025-02-04",
+     "url": "https://www.theregister.com/2025/02/04/china_trump_google/"
+    },
+    {
+     "label": "Reuters via Deccan Herald",
+     "url": "https://www.deccanherald.com/amp/story/business%2Fcompanies%2Fgoogle-suspected-of-violating-chinas-anti-monopoly-law-says-regulator-launching-probe-3388288"
+    },
+    {
+     "label": "DuPont Reg FD filing (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1666700/000166670025000011/dd-20250404.htm"
+    },
+    {
+     "label": "GCR briefing 4 April 2025",
+     "url": "https://globalcompetitionreview.com/article/tug-of-war-the-briefing-4-april-2025"
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "name": "Talks or a deal -> suspend, drop or clear",
+   "when": "Washington and Beijing hold talks or strike a deal",
+   "then": "SAMR suspends or drops a probe, or clears a pending US deal on conditions, but publishes no formal closure of its chip probes",
+   "trigger_id": "us_china_deescalation",
+   "verb": "revoke_rule",
+   "delay": {
+    "median_days": 5,
+    "range_days": [
+     4,
+     6
+    ],
+    "n": 2
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "open",
+   "stability": "loo_stable",
+   "status": "signal",
+   "episodes": [
+    {
+     "trigger": "C33",
+     "response": "SM13",
+     "gap_days": -6
+    },
+    {
+     "trigger": "C35",
+     "response": "SM14",
+     "gap_days": 4
+    }
+   ],
+   "sources": [
+    {
+     "label": "MLex 2025-07-22",
+     "url": "https://www.mlex.com/mlex/amp/articles/2367626"
+    },
+    {
+     "label": "GCR: China suspends DuPont probe",
+     "url": "https://globalcompetitionreview.com/article/china-suspends-dupont-probe"
+    },
+    {
+     "label": "Bloomberg 2025-09-18 (citing FT)",
+     "url": "https://www.bloomberg.com/news/articles/2025-09-18/china-drops-google-antitrust-probe-during-trade-talks-ft-says"
+    },
+    {
+     "label": "Tech Times 2026-05-22",
+     "url": "https://www.techtimes.com/articles/317037/20260522/beijing-presses-washington-honor-summit-deal-nvidia-qualcomm-probe-status-stays-unresolved.htm"
+    },
+    {
+     "label": "GCR briefing 3 Nov 2025",
+     "url": "https://globalcompetitionreview.com/article/chip-shots-the-briefing-3-november-2025"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "C39",
+     "response": "SM22",
+     "gap_days": 8
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "name": "CAC signs an AI rule -> SAMR co-issues",
+   "when": "CAC signs an AI rule that SAMR co-issues",
+   "then": "SAMR co-issues it the same day",
+   "trigger_id": "rule_signed",
+   "verb": "issue_rule",
+   "delay": {
+    "median_days": 0,
+    "range_days": [
+     0,
+     0
+    ],
+    "n": 1
+   },
+   "size": {
+    "value": null,
+    "unit": "",
+    "basis": ""
+   },
+   "direction": "closed",
+   "stability": "loo_stable",
+   "status": "excluded_post_cutoff",
+   "episodes": [],
+   "sources": [
+    {
+     "label": "Xinhua 2026-04-10",
+     "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html"
+    },
+    {
+     "label": "cac.gov.cn",
+     "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm"
+    }
+   ],
+   "note": "1 post-cutoff episode(s) excluded from statistics to keep the exam blind.",
+   "post_cutoff_episodes": [
+    {
+     "trigger": "O21",
+     "response": "SM20",
+     "gap_days": 0
+    }
+   ]
+  }
+ ],
+ "research_notes": [],
+ "leakage_fix": {
+  "applied": true,
+  "note": "Rule statistics recomputed from pre-cutoff episodes only; post-cutoff episodes retained under post_cutoff_episodes for transparency. Statuses re-derived from remaining episode counts (>=3 rule, 2 signal, 1 anecdote).",
+  "excluded_episodes": 2
+ }
 }

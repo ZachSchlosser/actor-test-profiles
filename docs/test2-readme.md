@@ -35,3 +35,7 @@ All nine files parse as JSON. Every episode trigger and response id resolves to 
 | jensen-huang | 0 | 3 | 2 | 9 |
 | miit | 0 | 2 | 2 | 7 |
 | samr | 0 | 3 | 1 | 9 |
+
+---
+
+**Correction (post fact-check):** 41 of the original 167 episodes used response rows dated after their actor's cutoff — i.e., drawn from the hidden answer key. All rule statistics on the site have been recomputed from pre-cutoff episodes only; excluded episodes are retained per rule under `post_cutoff_episodes`. Two rules (R4 Jensen Huang, S3 SAMR) were built entirely from post-cutoff rows and are excluded from the exam. Episode totals in the original verification table above describe the pre-correction build.
