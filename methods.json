@@ -23,7 +23,7 @@
     "For each rule, compute the delay as the median and range of the day-gaps between trigger and response dates. Gaps are always computed from dates, never estimated by hand.",
     "Compute the size where the record quantifies it (fine amounts, percent of sales, counts of goods). Where the record does not quantify, the size stays empty - never guessed.",
     "Set the direction from the verb: open (eases, releases, funds) or closed (restricts, fines, bans).",
-    "Check stability: remove each episode in turn; if the direction or verb flips, the rule is marked unstable.",
+    "Check stability: recompute each rule with every single episode removed in turn; if the direction or the verb flips, the rule is marked unstable.",
     "Carry over the rules already on the source site where present (CAC, NVIDIA, MOFCOM, Baidu had some; the other five had none) and generate the rest from the rows.",
     "After the fact-check: recompute every rule from pre-cutoff episodes only. The first build had used 41 post-cutoff episodes - rows from the hidden answer key - which would have trained the card on the exam. Those episodes are kept for transparency but no longer count."
    ],
@@ -100,7 +100,20 @@
      ]
     }
    ],
-   "per_actor_note": "The specific rule values for each actor - delays, sizes, episodes, sources - are on each actor's Test 2 tab. Counts after the leakage fix: NVIDIA 5 rules kept (3 rule-status), CAC 6 (5), MOFCOM 4 (2), Baidu 4 (1), Huawei 4 (1), Jensen Huang 4 (0 dropped R4), DeepSeek 3, MIIT 4, SAMR 3 (0 dropped S3)."
+   "per_actor_note": "The specific rule values for each actor - delays, sizes, episodes, sources - are on each actor's Test 2 tab. Counts after the leakage fix: NVIDIA 5 rules kept (3 rule-status), CAC 6 (5), MOFCOM 4 (2), Baidu 4 (1), Huawei 4 (1), Jensen Huang 4 (0 dropped R4), DeepSeek 3, MIIT 4, SAMR 3 (0 dropped S3).",
+   "how_to_read": [
+    "verb - the rule's predicted answer. When the rule's trigger occurs in a question, the rule predicts the actor will do this verb.",
+    "delay - the rule's timing claim: median and range of the day-gaps between trigger dates and response dates across the rule's episodes (n = number of episodes).",
+    "size - the rule's quantity claim where the record contains one (a fine amount, a share of sales, a count of goods). 'Not quantified in the record' means the rule predicts what and when, never how much.",
+    "direction - a descriptive label computed from the verb: open (eases, releases, funds), closed (restricts, fines, bans), or neutral (positioning actions such as claims and denials that open or close nothing). Not a scored quantity.",
+    "status - rule (three or more independent episodes), signal (two), anecdote (one; displayed but never predicts)."
+   ],
+   "provenance": [
+    "The card's design idea - a few estimated patterns per actor, tested out-of-sample - comes from the economic agent-modeling literature ([Wiese et al., 2024](https://arxiv.org/abs/2409.18760)). The generation mechanics do not follow that paper's estimation (joint Bayesian calibration on decades of series); they follow the source site's episode protocols and descriptive statistics, which is what records of this size can support.",
+    "The direction label descends from the project's own earlier scoring (GPS-Bench's aspect directions); it is descriptive here, not scored.",
+    "The stability check is a leave-one-out (jackknife) test, applied as a rule-admission filter - our procedure, not one from the reference papers.",
+    "All verbs across all actors come from the source site's single global vocabulary (65 verbs in 18 families), so a verb means the same thing for every actor. The verbs actually observed are disjoint across actor types (governments, companies, individuals share none), which is why scores are reported per actor type."
+   ]
   },
   {
    "name": "Test 3 - The Expert Read: how it was built",
