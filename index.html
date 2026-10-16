@@ -96,7 +96,9 @@ function showMethods(){
       }
       h += `<p class="small">${fmt(t.per_actor_note)}</p>`;
     }
+    if(t.how_to_read){ h += `<p><strong>How to read a rule:</strong></p><ul>` + t.how_to_read.map(x=>`<li>${fmt(x)}</li>`).join("") + `</ul>`; }
     if(t.generation) h += `<p class="small"><strong>What was mechanical vs model-made:</strong> ${fmt(t.generation)}</p>`;
+    if(t.provenance){ h += `<p><strong>Where each part comes from:</strong></p><ul>` + t.provenance.map(x=>`<li>${fmt(x)}</li>`).join("") + `</ul>`; }
     if(t.never) h += `<div class="hidden-note">${fmt(t.never)}</div>`;
   }
   $("main").innerHTML = h;
