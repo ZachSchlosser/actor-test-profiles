@@ -19,7 +19,7 @@
    "Run all three persona arms plus the no-persona baseline over the same golden cohort. Score with the paper's own harness. Report per-outcome (status, category, description, policy): which arms improve, which hurt, and whether the Stage 1 winner stays the winner under the full simulation.",
    "The exact wiring of persona-grounded generation into the rollout (one call per antecedent, or a persona-conditioned refinement pass over the antecedent sequence) is still being designed; both variants use the same cards and the same scoring."
   ],
-  "why_it_matters": "Stage 1 shows the persona methods differ. Stage 2 shows whether personas make the simulation itself better - which is the claim the whole persona program stands on."
+  "why_it_matters": "Stage 1 shows the persona methods differ. Stage 2 shows whether personas make the simulation itself better."
  },
  "previous": [
   "Both stages inherit the discipline the project's earlier results established ([GPS-Bench, arXiv 2609.03553](https://arxiv.org/abs/2609.03553); code: linhlt-it-ee/castbench):",
@@ -30,7 +30,7 @@
  ],
  "predictions": [
   "Stage 1, pre-registered: plain record at or above expert readings; expert readings at or above rule cards for data-rich actors; rule cards above the plain record for sparse actors. If the crossover holds, the deliverable is a rule for which card to build for which actor.",
-  "Stage 2, pre-registered: any persona arm beats the no-persona baseline on the policy-response outcome (the most actor-sensitive of the four), with the Stage 1 winner the likeliest to improve; if no persona arm helps, the honest result is that actor grounding does not transfer to the incident task - worth knowing before more is built on it."
+  "Stage 2, pre-registered: any persona arm beats the no-persona baseline on the policy-response outcome (the most actor-sensitive of the four), with the Stage 1 winner the likeliest to improve; if no persona arm helps, actor grounding does not transfer to the incident task."
  ],
  "code": {
   "reuse": "Stage 1: linhlt-it-ee/castbench branch main - datasets/incident_rollout.py (OpenRouter, temperature 0, cached), datasets/score_incident_forecast.py (macro-F1, baselines, bootstrap), datasets/m5_common.py (leakage guards). Stage 2: branch iclr2027 - the IncidentBench pipeline itself, run unmodified for the baseline and with persona-card injection for the new arms.",

@@ -5,7 +5,7 @@
  "methods": [
   {
    "name": "Test 1 - The Plain Record: how it was built",
-   "why": "The two strongest results in the field got there with exactly this: a lawmaker agent that saw nothing but the member's party, committees, bills and past votes predicted votes at 92% ([Political Actor Agent, AAAI 2025](https://arxiv.org/abs/2412.07144)); interview agents that saw nothing but a person's own two-hour transcript matched 86% of that person's own consistency ([Park et al., Stanford, 2024](https://arxiv.org/abs/2411.10109)). So the plain record is both the simplest card and the one to beat.",
+   "why": "The two strongest results in the field got there with exactly this: a lawmaker agent that saw nothing but the member's party, committees, bills and past votes predicted votes at 92% ([Political Actor Agent, AAAI 2025](https://arxiv.org/abs/2412.07144)); interview agents that saw nothing but a person's own two-hour transcript matched 86% of that person's own consistency ([Park et al., Stanford, 2024](https://arxiv.org/abs/2411.10109)). The plain record is the simplest card and the one to beat.",
    "steps": [
     "Take every row the source site has for the actor, dated before that actor's cutoff. Nothing is rewritten, summarized, or re-worded.",
     "Compute the actor's action menu from those rows: every verb the actor has used, split into core (used twice or more) and rare (used once). This is new - the source rules verbs out by power but never lists what the actor has actually done.",
