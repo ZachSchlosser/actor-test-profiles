@@ -107,16 +107,22 @@ function showExperiment(){
   for(const id of ["nav-key","nav-actors","nav-methods","nav-exp"]) $(id).classList.toggle("on", id==="nav-exp");
   const e = EXPERIMENT;
   let h = `<h2>${fmt(e.title)}</h2><p>${fmt(e.intro)}</p>`;
-  h += `<h3>Where this comes from: the project's earlier results</h3><ul>` + e.previous.map(p=>`<li>${fmt(p)}</li>`).join("") + `</ul>`;
-  h += `<h3>The comparison</h3>`;
-  for(const d of e.design){ h += `<div class="card"><strong>${fmt(d.part)}.</strong> ${fmt(d.text)}</div>`; }
-  h += `<h3>What the pipeline looks like</h3><div class="card">` + e.flow.map(f=>`<div><span class="chip core">${f.step}</span> ${fmt(f.text)}</div>`).join("") + `</div>`;
+  for(const st of [e.stage1, e.stage2]){
+    h += `<h3>${fmt(st.name)}</h3><div class="card"><strong>What is being tested.</strong> ${fmt(st.what)}</div>`;
+    if(st.arms) h += `<div class="card"><strong>The arms.</strong> ${fmt(st.arms)}</div>`;
+    if(st.questions) h += `<div class="card"><strong>The questions.</strong> ${fmt(st.questions)}</div>`;
+    if(st.scoring) h += `<div class="card"><strong>Scoring.</strong> ${fmt(st.scoring)}</div>`;
+    if(st.run_size) h += `<div class="card"><strong>Run size.</strong> ${fmt(st.run_size)}</div>`;
+    if(st.how){ h += `<p><strong>How:</strong></p><ul>` + st.how.map(x=>`<li>${fmt(x)}</li>`).join("") + `</ul>`; }
+    if(st.why_it_matters) h += `<div class="hidden-note">${fmt(st.why_it_matters)}</div>`;
+  }
+  h += `<h3>What both stages inherit from the project's earlier results</h3><ul>` + e.previous.map(p=>`<li>${fmt(p)}</li>`).join("") + `</ul>`;
   h += `<h3>Pre-registered predictions</h3><ul>` + e.predictions.map(p=>`<li>${fmt(p)}</li>`).join("") + `</ul>`;
   h += `<h3>The code to run it</h3>
     <div class="card"><strong>Reused as-is.</strong> ${fmt(e.code.reuse)}</div>
     <div class="card"><strong>New code needed.</strong> ${fmt(e.code.new_code)}</div>
-    <div class="card"><strong>Run size.</strong> ${fmt(e.code.run_size)}</div>
     <p class="small">${fmt(e.code.full_plan)}</p>`;
+  h += `<h3>The two stages at a glance</h3><div class="card">` + e.flow.map(f=>`<div><span class="chip core">${f.step}</span> ${fmt(f.text)}</div>`).join("") + `</div>`;
   $("main").innerHTML = h;
 }
 

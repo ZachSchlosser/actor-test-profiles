@@ -1,65 +1,62 @@
 {
- "title": "The experiment: comparing the three persona methods",
- "intro": "The point of building three cards is to race them. Each method gets the same questions about the same actors, and we score each against what the actor actually did. This page describes the comparison, how it connects to the project's earlier results, and exactly what code would run it.",
+ "title": "The experiment: from a prototype race to IncidentBench",
+ "intro": "There are two stages. Stage 1 is a small, cheap race between the three persona methods, using nothing but the data on this site - its job is to check that the methods actually produce different predictions before anything bigger is built. Stage 2 is the real experiment: put the personas inside the IncidentBench methodology exactly as it already runs, and test whether adding personas - and which method - improves the simulation's published performance.",
+ "stage1": {
+  "name": "Stage 1 - The prototype race (this site's data)",
+  "what": "Each persona card gets the same questions about the same actors - one per hidden later action - and is scored against what the actor actually did. If the three methods produce the same predictions, or none beats the dumb baselines, there is nothing to take to Stage 2.",
+  "arms": "Three persona cards plus two baselines that must be beaten: predict nothing, and always pick the actor's most common verb.",
+  "questions": "159 questions total (CAC 99, Jensen Huang 11, MOFCOM 10, MIIT 9, Baidu 7, DeepSeek 7, SAMR 6, Huawei 5, NVIDIA 5). The agent is told the date and situation, sees its card, and answers with one verb from the actor's own action menu. It never sees the answer.",
+  "scoring": "Exact verb match (strict), direction match (lenient), macro-F1. Reported per actor, per actor type, and per evidence density; every number also reported with CAC excluded, since CAC holds 99 of the 159 questions. Paired arm comparisons use McNemar's test and bootstrap intervals.",
+  "run_size": "159 questions x 4-5 arms x 4 models is roughly 2,500 to 3,200 model calls - a few dollars, one afternoon."
+ },
+ "stage2": {
+  "name": "Stage 2 - Personas inside IncidentBench (the real test)",
+  "what": "IncidentBench (the team's paper under review, submission 225) already runs an end-to-end simulation: given antecedent conditions, models predict the incident's status, its category across seven domains, its description, and the policy response - scored on a held-out 2026-onward golden cohort with macro-F1, paired bootstrap, and McNemar. Today it runs with no personas at all; actors appear only as metadata. Stage 2 runs that exact pipeline again with one change: the actors in the simulation are grounded in persona cards, so that responses to antecedent actions - and to each other's responses - are generated persona-based rather than by a generic model.",
+  "arms": "The paper's own no-persona runs are the baseline. The new arms are the same pipeline with personas injected, one arm per method: plain record, rule card, expert read. The question is whether any persona arm beats the published no-persona numbers, and which method improves the simulation most.",
+  "how": [
+   "Keep everything IncidentBench already does fixed: its datasets, its splits, its metrics, its models (the Qwen and Llama LoRA arms), its scoring scripts. The comparison only means something if the baseline is the paper's own run.",
+   "The single intervention: where the pipeline conditions on an antecedent action by an actor, prepend that actor's rendered persona card (the same JSON renderers Stage 1 uses). When one actor's response becomes another actor's input, the second actor's card conditions that step too - personas respond to antecedents and to each other.",
+   "Run all three persona arms plus the no-persona baseline over the same golden cohort. Score with the paper's own harness. Report per-outcome (status, category, description, policy): which arms improve, which hurt, and whether the Stage 1 winner stays the winner under the full simulation.",
+   "The exact wiring of persona-grounded generation into the rollout (one call per antecedent, or a persona-conditioned refinement pass over the antecedent sequence) is still being designed; both variants use the same cards and the same scoring."
+  ],
+  "why_it_matters": "Stage 1 shows the persona methods differ. Stage 2 shows whether personas make the simulation itself better - which is the claim the whole persona program stands on."
+ },
  "previous": [
-  "This is the next step of the GPS-Bench line of work (paper: [GPS-Bench, arXiv 2609.03553](https://arxiv.org/abs/2609.03553); code: linhlt-it-ee/castbench). That project established the discipline this experiment inherits:",
-  "One model reading an actor's whole record predicted policy impacts far better than six agents each seeing a slice (0.92 versus 0.73) - so all three cards here are single-model, no multi-agent chatter.",
-  "Fine-tuning on the grounded record beat every prompt-based mode on actor-level tasks (0.716 LoRA versus 0.604 prompted) - a fourth, weight-based arm is the natural extension once the three prompt arms are raced.",
-  "Contamination dominated early results (a clean-checkpoint model scored 0.577 where a contaminated one scored 0.885) - hence the frozen clocks, the pre-cutoff-only rule statistics, and a clean-cutoff model arm as control.",
-  "Per-actor admission gates already proved out in validation lanes: trade-data foundry agents called 6 of 6 real responses, lobbying-data lab agents 4 of 4, government agents 8 of 8 out-of-distribution, while regulators managed only 0.57 - the same gate logic decides which cards get to compete here."
- ],
- "design": [
-  {
-   "part": "The question",
-   "text": "Which persona method best predicts what a real actor did next: the raw record (Test 1), the distilled rules (Test 2), or the record plus expert readings (Test 3)? And does the answer depend on how much record an actor has?"
-  },
-  {
-   "part": "The arms",
-   "text": "Three persona cards, plus two baselines that must be beaten for any card to count: predict nothing (the did-nothing base rate) and always pick the actor's most common verb. A fifth, optional arm re-runs the same questions under a different framing to check we are modeling the actor, not the story."
-  },
-  {
-   "part": "The questions",
-   "text": "One per hidden action: 159 in total (CAC 99, Jensen Huang 11, MOFCOM 10, MIIT 9, Baidu 7, DeepSeek 7, SAMR 6, Huawei 5, NVIDIA 5). The agent is told the date and the situation, sees its card, and must answer with one verb from its own observed-action menu. It never sees the answer."
-  },
-  {
-   "part": "Scoring",
-   "text": "Mechanical. Exact verb match (strict), direction match (lenient), macro-F1 across verbs. Reported per actor, per actor type (government, company, individual), and per evidence density (actors with fewer than 25 pre-cutoff rows versus more). Because CAC holds 99 of the 159 questions, every number is also reported with CAC excluded. Paired comparisons between arms use McNemar's test and bootstrap confidence intervals across actors."
-  },
-  {
-   "part": "Controls",
-   "text": "Temperature 0, fixed decoding, identical question wording for every arm, question wording held fixed after piloting (the earlier project measured wording alone moving accuracy 0.698 to 0.804). Nothing any run produces is ever written back into a card or the record. The IncidentBench paper under review (submission 225) supplies the paired-bootstrap and McNemar machinery for arm-versus-arm comparison."
-  }
+  "Both stages inherit the discipline the project's earlier results established ([GPS-Bench, arXiv 2609.03553](https://arxiv.org/abs/2609.03553); code: linhlt-it-ee/castbench):",
+  "One model reading an actor's whole record beat six agents each seeing a slice (0.92 versus 0.73) - single-model arms first, multi-agent wiring only where the IncidentBench rollout already requires it.",
+  "Fine-tuning on the grounded record beat every prompt-based mode on actor-level tasks (0.716 LoRA versus 0.604 prompted) - a fine-tuned persona arm is the natural extension after the three prompt arms.",
+  "Contamination dominated early results (0.577 clean-checkpoint versus 0.885 contaminated) - hence frozen clocks, pre-cutoff-only statistics, and a clean-cutoff control model.",
+  "Per-actor admission gates held up in validation (foundries 6 of 6, labs 4 of 4, governments 8 of 8; regulators 0.57) - the same gate decides which actors' personas enter Stage 2."
  ],
  "predictions": [
-  "Pre-registered before running: fine-tuned weights (future arm) at or above the plain record; plain record above expert readings; expert readings above rule cards for data-rich actors; rule cards above the plain record for sparse actors. If the last holds, the practical deliverable is a rule for which card to build for which actor: match the card type to the evidence volume.",
-  "What each outcome means: the record wins - collect more evidence, summarize nothing. Rules win - estimation beats description. Lenses win - trained inference adds signal. Baselines win everywhere - none of these personas works yet, and the honest report says so."
+  "Stage 1, pre-registered: plain record at or above expert readings; expert readings at or above rule cards for data-rich actors; rule cards above the plain record for sparse actors. If the crossover holds, the deliverable is a rule for which card to build for which actor.",
+  "Stage 2, pre-registered: any persona arm beats the no-persona baseline on the policy-response outcome (the most actor-sensitive of the four), with the Stage 1 winner the likeliest to improve; if no persona arm helps, the honest result is that actor grounding does not transfer to the incident task - worth knowing before more is built on it."
  ],
  "code": {
-  "reuse": "The harness already exists in linhlt-it-ee/castbench (private; branch main for the persona stack, branch iclr2027 for the incident family): datasets/incident_rollout.py calls models through OpenRouter at temperature 0 with prompt caching; datasets/score_incident_forecast.py computes macro-F1, baselines, and paired bootstrap; datasets/m5_common.py carries the leakage guards and checkpointing.",
-  "new_code": "Three small renderers (one per card format, reading the JSONs on this site), a question builder (date + situation + verb menu from each actor's Test 1 file), a scoring adapter to the verb vocabulary, and a verb alias table. A few hundred lines total.",
-  "run_size": "159 questions x 4-5 arms x 4 models is roughly 2,500 to 3,200 model calls - a few dollars at current OpenRouter prices, one afternoon of wall-clock.",
-  "full_plan": "The complete runnable plan, with file names and step order, is in the repo docs and in persona-comparison-experiment-plan.md."
+  "reuse": "Stage 1: linhlt-it-ee/castbench branch main - datasets/incident_rollout.py (OpenRouter, temperature 0, cached), datasets/score_incident_forecast.py (macro-F1, baselines, bootstrap), datasets/m5_common.py (leakage guards). Stage 2: branch iclr2027 - the IncidentBench pipeline itself, run unmodified for the baseline and with persona-card injection for the new arms.",
+  "new_code": "Three card renderers (one per method, reading this site's JSONs), a Stage 1 question builder, a verb alias table, and the Stage 2 injection hook where the rollout conditions on an actor's action. A few hundred lines.",
+  "full_plan": "Step-by-step details in the repo docs and in persona-comparison-experiment-plan.md; the Stage 2 wiring is specified once the rollout design is settled."
  },
  "flow": [
   {
    "step": 1,
-   "text": "The actor's dated record, frozen at the cutoff."
+   "text": "Stage 1: the actor's record, frozen at the cutoff, rendered three ways."
   },
   {
    "step": 2,
-   "text": "Rendered three ways: plain record, rule card, record plus lens."
+   "text": "Stage 1: each card answers the 159 hidden-action questions; scored beside two dumb baselines."
   },
   {
    "step": 3,
-   "text": "One question per hidden later action: the date and the situation."
+   "text": "Stage 2: the IncidentBench pipeline runs unchanged as the no-persona baseline."
   },
   {
    "step": 4,
-   "text": "Each arm answers with one verb from the actor's own menu."
+   "text": "Stage 2: the same pipeline with persona cards injected wherever an actor responds to an antecedent - or to another actor."
   },
   {
    "step": 5,
-   "text": "Scored against the real action: exact verb, direction, macro-F1 - beside the two baselines."
+   "text": "Stage 2: scored with the paper's own harness - does persona grounding improve the simulation, and which method improves it most?"
   }
  ]
 }
