@@ -356,11 +356,11 @@
   "hero"
  ],
  "exam": {
-  "predict": "For each question, the agent must pick one verb from its own observed_verbs menu (core or rare) plus a direction (open/closed/neutral). Never free text.",
-  "scored_on": "exact verb match against the real later action; direction as the lenient score.",
+  "predict": "For each question, the agent picks one verb from its own observed_verbs menu (core or rare). Never free text.",
+  "scored_on": "exact verb match against the real later action, normalized by the actor's own consistency over time.",
   "baselines": [
-   "predict nothing (did-nothing base rate)",
-   "always the most common verb (modal verb)"
+   "always the actor's most common verb (majority baseline)",
+   "the no-change base rate"
   ],
   "hidden_answers": "5 actions by this actor dated on/after 2026-01-01, already collected below - each is one exam question (predict the verb)."
  },

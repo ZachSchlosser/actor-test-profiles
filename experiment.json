@@ -4,9 +4,9 @@
  "stage1": {
   "name": "Stage 1 - The prototype race (this site's data)",
   "what": "Each persona card gets the same questions about the same actors - one per hidden later action - and is scored against what the actor actually did. If the three methods produce the same predictions, or none beats the dumb baselines, there is nothing to take to Stage 2.",
-  "arms": "Three persona cards plus two baselines that must be beaten: predict nothing, and always pick the actor's most common verb.",
+  "arms": "Three persona cards plus the baselines used in the reference papers: predict the actor's most common action (the party-line-style baseline of the legislative papers), and the no-change base rate.",
   "questions": "159 questions total (CAC 99, Jensen Huang 11, MOFCOM 10, MIIT 9, Baidu 7, DeepSeek 7, SAMR 6, Huawei 5, NVIDIA 5). The agent is told the date and situation, sees its card, and answers with one verb from the actor's own action menu. It never sees the answer.",
-  "scoring": "Exact verb match (strict), direction match (lenient), macro-F1. Reported per actor, per actor type, and per evidence density; every number also reported with CAC excluded, since CAC holds 99 of the 159 questions. Paired arm comparisons use McNemar's test and bootstrap intervals.",
+  "scoring": "Exact verb match, normalized by each actor's own consistency over time (Park et al.'s normalization), and macro-F1 across verbs - the same metrics the reference persona papers use (roll-call accuracy in the Political Actor Agent; exact item match and normalized accuracy in the interview agents). Arm-versus-arm comparisons use McNemar's test and bootstrap intervals, from IncidentBench's evaluation. Reported per actor, per actor type, and per evidence density; every number also reported with CAC excluded, since CAC holds 99 of the 159 questions.",
   "run_size": "159 questions x 4-5 arms x 4 models is roughly 2,500 to 3,200 model calls - a few dollars, one afternoon."
  },
  "stage2": {

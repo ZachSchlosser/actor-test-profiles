@@ -7,14 +7,14 @@
    "one_line": "The agent sees the actor's history word for word: every dated, sourced fact in order, with a one-line identity at the top. Nothing else.",
    "built_from": "The dated rows already on actor-persona.pages.dev, plus a new computed menu of the verbs the actor has actually used.",
    "bet": "The record itself is the persona - the bet behind the two best results in the field ([Political Actor Agent, AAAI 2025](https://arxiv.org/abs/2412.07144); [Park et al., Stanford, 2024](https://arxiv.org/abs/2411.10109)). Anything fancier has to beat this card to justify itself.",
-   "exam": "Pick the verb (and its direction) for each hidden later action. Scored by exact match against the real action."
+   "exam": "Pick the verb for each hidden later action. Scored by exact match against the real action, normalized by the actor's own consistency."
   },
   {
    "name": "Test 2 - The Rule Card",
    "one_line": "Instead of every fact, the agent gets a short list of patterns pulled from those facts: when X happened, this actor did Y, by about this much, within this many days.",
    "built_from": "Trigger-to-response pairs computed from the dated rows and shared event list, following the site's own protocols (a trigger must be a dated row; gaps are computed, never guessed; three or more episodes make a rule). Sizes come from the record or from cited background research.",
    "bet": "A few measured patterns beat a pile of facts, because patterns generalize and facts only describe - the bet behind the only simulation that ever beat standard forecasts ([Wiese et al., Oxford / Farmer group, 2024](https://arxiv.org/abs/2409.18760)).",
-   "exam": "Same hidden actions as Test 1. A rule fires when its trigger occurs in the question; the prediction is the rule's verb. Rules must beat 'nothing happens' and 'always the most common action'."
+   "exam": "Same hidden actions as Test 1. A rule fires when its trigger occurs in the question; the prediction is the rule's verb. Scored identically."
   },
   {
    "name": "Test 3 - The Expert Read",
@@ -126,7 +126,7 @@
   }
  ],
  "exam": [
-  "The full comparison - arms, baselines, scoring, controls, and the code to run it - is on The experiment tab."
+  "The full comparison - arms, metrics, controls, and the code to run it - is on The experiment tab. Metrics are those of the reference papers: exact action match, consistency-normalized accuracy, macro-F1; IncidentBench's McNemar and bootstrap for comparisons."
  ],
  "footer": "Built from the public data at actor-persona.pages.dev (9 actors, 7-step persona build). This site adds the test layers; it does not change the source records."
 }
